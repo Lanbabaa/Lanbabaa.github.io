@@ -22,21 +22,54 @@
     	text-align: center;
     	text-shadow: 5px 5px 5px #FF0000;
     }
-#ad{
-    	margin:30px;
-width:200px;
-height:100px;
-background-color:yellow;
-transform:rotate(9deg);
--ms-transform:rotate(9deg); 
--moz-transform:rotate(9deg); 
--webkit-transform:rotate(9deg); 
--o-transform:rotate(9deg); 
-text-align:center;
-color:#000000;
-text-shadow: 5px 5px 5px #FF0000;
-	font-size:20px;
-    }	
+    #ad{
+text-align: center;
+color: #E0FFFF;
+width:100px;
+height:40px;
+background:red;
+position:relative;
+animation:myfirst 30s;
+-moz-animation:myfirst 30s; 
+-webkit-animation:myfirst 30s; 
+-o-animation:myfirst 30s; 
+}
+
+@keyframes myfirst
+{
+0%   {background:red; left:0px; top:0px;}
+25%  {background:yellow; left:250px; top:0px;}
+50%  {background:blue; left:500px; top:500px;}
+75%  {background:green; left:0px; top:500px;}
+100% {background:red; left:0px; top:0px;}
+}
+
+@-moz-keyframes myfirst
+{
+0%   {background:red; left:0px; top:0px;}
+25%  {background:yellow; left:500px; top:0px;}
+50%  {background:blue; left:500px; top:500px;}
+75%  {background:green; left:0px; top:500px;}
+100% {background:red; left:0px; top:0px;}
+}
+
+@-webkit-keyframes myfirst
+{
+0%   {background:red; left:0px; top:0px;}
+25%  {background:yellow; left:500px; top:0px;}
+50%  {background:blue; left:500px; top:500px;}
+75%  {background:green; left:0px; top:500px;}
+100% {background:red; left:0px; top:0px;}
+}
+
+@-o-keyframes myfirst
+{
+0%   {background:red; left:0px; top:0px;}
+25%  {background:yellow; left:100px; top:0px;}
+50%  {background:blue; left:100px; top:100px;}
+75%  {background:green; left:0px; top:100px;}
+100% {background:red; left:0px; top:0px;}
+    }
     h3{
     	font-weight:200;
     }
