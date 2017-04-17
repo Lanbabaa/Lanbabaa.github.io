@@ -28,27 +28,31 @@ main{
 h1{
 	margin: 20px;
 }
-li{
-	display: block;
-	float: right;
-	margin: 30px;
 
+ul
+{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
 }
-a{
-	text-decoration: none;
-	font-size: 20px;
-	font-weight: 700;
+li
+{
+float:right;
 }
-a:link{
-	color: #000;
+a:link,a:visited
+{
+display:block;
+width:120px;
+font-weight:bold;
+color:#FFFFFF;
+background-color:#bebebe;
+text-align:center;
+padding:4px;
+text-decoration:none;
+text-transform:uppercase;
 }
-a:visited{
-	background-color: #99DDFF;
-} 
-a:hover{
-	color: #0f0;
+a:hover,a:active
+{
+background-color:#cc0000;
 }
-a:active{
-	color: #f00;
-}
-
