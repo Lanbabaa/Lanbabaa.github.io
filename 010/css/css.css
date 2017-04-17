@@ -47,6 +47,7 @@ a:visited{
 } 
 a:hover{
 	color: #0f0;
+	font-size:180%;
 }
 a:active{
 	color: #f00;
