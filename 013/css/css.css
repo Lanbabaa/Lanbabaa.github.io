@@ -27,17 +27,14 @@
 	cursor: pointer;
 	box-shadow: 0px 0px 4px 0px rgba(0,0,0,.5);
 }
-.a figure:nth-child(1):hover{
+.a figure:hover img{
 		transform: scale(1.2) rotate(6deg);
-}.a figure:nth-child(2):hover{
-		transform: scale(1.2) rotate(-6deg);
-}.a figure:nth-child(3):hover{
-		transform: scale(1.2) rotate(7deg);
 }
 .a figure img{
 	width: 100%;
 }
 .a figure figcaption{
+	z-index: 1;
 	position: absolute;
 	width: 60%;
 	height: 40%;
@@ -53,6 +50,7 @@
 	opacity: 1;
 }
 .a figure figcaption::before{
+	z-index: 2;
 	content: "";
 	width: 130%;
 	height: 1px;
@@ -93,6 +91,7 @@
 	top:-500px
 }
 .a figure figcaption h3::before{
+	z-index: 2;
 	bottom: 0px;
 	left: 0px;
 	content: "";
