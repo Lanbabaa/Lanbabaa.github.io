@@ -42,6 +42,11 @@
 	right: 20%;
 	text-align: center;
 	color: #fff;
+	background: rgba(0,0,0,.5);
+	transition: 1s;
+}
+.a figure:hover figcaption{
+		background: rgba(0,0,0,0);
 }
 .a figure figcaption p{
 	opacity: 0;
