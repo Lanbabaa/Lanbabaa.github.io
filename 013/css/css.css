@@ -1,0 +1,107 @@
+.a *,
+.a *::before,
+.a *::after{
+	box-sizing: border-box;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.clearfix::after{
+	content: "";
+	display:table;
+	clear: both;
+}
+.a{
+	width:1200px;
+	margin: auto;	
+}
+.a figure{
+	float: left;
+	width: 30%;
+	margin: calc(10%/6);
+	overflow: hidden;
+	position: relative;
+	border: 10px solid #fff;
+	cursor: pointer;
+	box-shadow: 0px 0px 4px 0px rgba(0,0,0,.5);
+}
+.a figure:nth-child(1):hover{
+		transform: scale(1.2) rotate(6deg);
+}.a figure:nth-child(2):hover{
+		transform: scale(1.2) rotate(-6deg);
+}.a figure:nth-child(3):hover{
+		transform: scale(1.2) rotate(7deg);
+}
+.a figure img{
+	width: 100%;
+}
+.a figure figcaption{
+	position: absolute;
+	width: 60%;
+	height: 40%;
+	top:30%;
+	right: 20%;
+	text-align: center;
+	color: #fff;
+}
+.a figure figcaption p{
+	opacity: 0;
+}
+.a figure:hover figcaption p{
+	opacity: 1;
+}
+.a figure figcaption::before{
+	content: "";
+	width: 130%;
+	height: 1px;
+	background-color: #fff;
+	position: absolute;
+	right:0px;
+	transition: 2s;
+}
+.a figure:hover figcaption::before{
+	right:-500px;
+}
+.a figure figcaption::after{
+	z-index: 2;
+	bottom: 0px;
+	content: "";
+	height: 150%;
+	width:1px;
+	background-color: #fff;
+	position: absolute;
+	right:0px;
+	transition: 2s;
+}
+.a figure:hover figcaption::after{
+	bottom:-500px;
+}
+.a figure figcaption h3::after{
+	z-index: 2;
+	left: 0px;
+	top:0px;
+	content: "";
+	height: 150%;
+	width:1px;
+	background-color: #fff;
+	position: absolute;
+	transition: 2s;
+}
+.a figure:hover figcaption h3::after{
+	top:-500px
+}
+.a figure figcaption h3::before{
+	bottom: 0px;
+	left: 0px;
+	content: "";
+	width: 130%;
+	height: 1px;
+	background-color: #fff;
+	position: absolute;
+	transition: 2s;
+}
+.a figure:hover figcaption h3::before{
+	left:-500px;
+}
