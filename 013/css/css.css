@@ -49,6 +49,7 @@
 	opacity: 1;
 }
 .a figure figcaption::before{
+	z-index: 2;
 	content: "";
 	width: 130%;
 	height: 1px;
@@ -89,6 +90,7 @@
 	top:-500px
 }
 .a figure figcaption h3::before{
+	z-index: 2;
 	bottom: 0px;
 	left: 0px;
 	content: "";
