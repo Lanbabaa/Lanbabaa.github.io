@@ -1,0 +1,47 @@
+body{
+	background-color: #eee;
+}
+.f{
+	width: 500px;
+	height: 300px;
+	background-color: #fff;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	text-align: center;
+	box-shadow: 0 0 4px 0 rgba(0,0,0,.5);	
+}
+.f input{
+	display: inline-block;
+	width: 70%;
+	height: 30px;
+	margin: 15px 0px;
+	text-indent: 1em;
+	border: none;
+	outline: none;
+	border: 1px dashed #ded;
+	transition: all .5s;
+}
+.f input:not([type="submit"]):hover{
+	box-shadow: inset 0px 0px 4px 0px rgba(200,190,70,.8); 	
+}
+.f input[type="submit"]{
+	width: 30%;
+	height: 40px;
+	margin: 22px;
+	text-indent: 0em;
+	border: none;
+	outline: none;
+	background-color: rgba(150,200,40,.7);
+	transition: all .5s;
+}
+.f input[type="submit"]:hover{
+	background-color: rgba(30,100,40,.7);
+	color: #fff;
+	letter-spacing: .5em;
+	cursor: pointer;
+}
+
