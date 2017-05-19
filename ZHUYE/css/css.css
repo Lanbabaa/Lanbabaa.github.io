@@ -22,6 +22,9 @@ header{
 	margin: auto;
 	position: relative;
 }
+.a{
+	height: 200px;
+}
 header nav{
 	position: absolute;
 	right:10px;
