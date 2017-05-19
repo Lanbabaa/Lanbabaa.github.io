@@ -8,7 +8,7 @@
 }
 body{
 	color: #fff;
-	background: url(../img/autumn-free-license-cc0.jpg) no-repeat fixed;	
+	background: url(../img/elias-ehmann-100542.jpg) no-repeat fixed;	
 }
 li{
 	list-style-type: none;
@@ -17,13 +17,17 @@ a{
 	text-decoration: none;
 	color: #fff;
 }
-header{
+header,section{
 	width: 1200px;
 	margin: auto;
 	position: relative;
 }
+
 .a{
-	height: 200px;
+	height: 150px;
+}
+h2{
+	margin: 50px;
 }
 header nav{
 	position: absolute;
@@ -56,6 +60,11 @@ p a{
 	transition: border .5s;
 }
 p a:hover{
-	border-bottom: 1px solid #fff;
-	
+	border-bottom: 1px solid #fff;	
+}
+section ul li{
+	float: left;
+	margin: 30px 20px;
+	padding: 20px 60px ;
+	background-color: rgba(50,80,100,.5);
 }
