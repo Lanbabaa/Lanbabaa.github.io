@@ -1,0 +1,58 @@
+*{
+	box-sizing: border-box;
+}
+.clearfix{
+	content: "";
+	display: table;
+	clear: both;
+}
+body{
+	color: #fff;
+	background: url(../img/autumn-free-license-cc0.jpg) no-repeat fixed;	
+}
+li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+header{
+	width: 1200px;
+	margin: auto;
+	position: relative;
+}
+header nav{
+	position: absolute;
+	right:10px;
+	top: 10px;
+}
+header nav li{
+	float: left;
+	margin: 20px 50px;
+}
+header nav li a{
+	padding: 15px;
+	transition: border,padding,color .5s; 
+}
+header nav li:hover a{
+	border: 1px solid #fff;
+	padding: 14px;
+	color: #000;
+}
+.logo{
+	margin-top: 40px;
+	width: 150px;
+}
+p{
+	text-indent: 2em;
+}
+p a{
+	padding-bottom: 7px;
+	border-bottom: 1px dashed #fff;
+	transition: border .5s;
+}
+p a:hover{
+	border-bottom: 1px solid #fff;
+	
+}
