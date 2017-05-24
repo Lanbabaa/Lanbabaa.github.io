@@ -1,3 +1,6 @@
+body{
+	margin: 0px;
+}
 *{
 	box-sizing: border-box;
 }
@@ -112,4 +115,53 @@ main .a2 figure:hover figcaption{
 main .a2 figure:hover img{
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
+}
+.a3 dt{
+	width: 100px;
+	padding: 10px 0;
+	text-align: center;
+	background-color: #fff;
+	color: #000;
+	display: inline-block;	
+}
+.a3 dd{
+	padding: 10px 100px;
+	text-align: center;
+	background-color: #000;
+	display: inline-block;
+	margin-left: 0;
+	margin-right: 10px;	
+	
+}
+.a3 .c1 input{
+	width: 31%;
+	padding: 10px 3% 10px 0;
+	border: none;
+	outline: none;
+	text-indent: 1em;
+	margin: 10px 5px 10px 0;
+}
+.a3 .c1 select{
+	width: 31%;	
+	padding: 8px 3% 8px 0;
+	border: none;
+	outline: none;
+	color: #888;
+}
+.a3 .c1 input[type="submit"]{
+	cursor: pointer;
+	background-color: rgba(80,100,180,.7);
+	color: #fff;
+}
+.a3 .c1 textarea,
+.a3 .c1 input[type="submit"]{
+	vertical-align: middle;
+}
+footer{
+	height: 48px;
+	text-align: center;
+	font-size: 10px;
+	line-height: 48px;
+	color: #666;
+	background-color: #333;
 }
