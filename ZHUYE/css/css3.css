@@ -147,6 +147,7 @@ main .a2 figure:hover img{
 	border: none;
 	outline: none;
 	color: #888;
+	text-indent: 1em;
 }
 .a3 .c1 input[type="submit"]{
 	cursor: pointer;
