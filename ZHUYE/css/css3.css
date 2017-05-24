@@ -153,6 +153,7 @@ main .a2 figure:hover img{
 	cursor: pointer;
 	background-color: rgba(80,100,180,.7);
 	color: #fff;
+	width: 18%;
 }
 .a3 .c1 textarea,
 .a3 .c1 input[type="submit"]{
