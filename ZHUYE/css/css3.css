@@ -155,6 +155,9 @@ main .a2 figure:hover img{
 	color: #fff;
 	width: 18%;
 }
+.a3 .c1 textarea{
+	text-indent: 1em;
+}
 .a3 .c1 textarea,
 .a3 .c1 input[type="submit"]{
 	vertical-align: middle;
