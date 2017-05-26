@@ -26,7 +26,7 @@ header,main,section{
 	margin: auto;
 	position: relative;
 }
-.a{
+.MyHeader{
 	height: 150px;
 }
 header nav{
@@ -62,10 +62,10 @@ p a:hover{
 section{
 	margin: 50px 0px;
 }
-main .a1 ul{
+main .MyInterest ul{
 	margin: 0px -40px ;
 }
-main .a1 ul li{
+main .MyInterest ul li{
 	float: left;
 	width: 160px;
 	height: 50px;
@@ -77,11 +77,11 @@ main .a1 ul li{
 	transition: background-color .5s,border-radius .5s;
 	cursor: pointer;
 }
-main .a1 ul li:hover{
+main .MyInterest ul li:hover{
 	background-color: rgba(50,80,100,.8);
 	border-radius: 0px;
 }
-main .a2 figure{
+main .Item figure{
 	width: 30%;
 	margin: 15px 30px 0px 0px;
 	overflow: hidden;
@@ -89,16 +89,16 @@ main .a2 figure{
 	position: relative;
 	cursor: pointer;
 }
-main .a2 figure:nth-child(3*n){
+main .Item figure:nth-child(3*n){
 	margin-right:0px;
 }
-main .a2 figure img{
+main .Item figure img{
 	width: 100%;
 	-webkit-filter: grayscale(.5);
 	filter: grayscale(.5);
 	transition: -webkit-filter .5s,filter .5s;
 }
-main .a2 figure figcaption{
+main .Item figure figcaption{
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -109,14 +109,14 @@ main .a2 figure figcaption{
 	transition: opacity .5s;
 	z-index: 1;
 }
-main .a2 figure:hover figcaption{
+main .Item figure:hover figcaption{
 	opacity: 1;
 }
-main .a2 figure:hover img{
+main .Item figure:hover img{
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
 }
-.a3 dt{
+.Contact dt{
 	width: 100px;
 	padding: 10px 0;
 	text-align: center;
@@ -124,7 +124,7 @@ main .a2 figure:hover img{
 	color: #000;
 	display: inline-block;	
 }
-.a3 dd{
+.Contact dd{
 	padding: 10px 100px;
 	text-align: center;
 	background-color: #000;
@@ -133,7 +133,7 @@ main .a2 figure:hover img{
 	margin-right: 10px;	
 	
 }
-.a3 .c1 input{
+.Contact .c1 input{
 	width: 31%;
 	padding: 10px 3% 10px 0;
 	border: none;
@@ -141,7 +141,7 @@ main .a2 figure:hover img{
 	text-indent: 1em;
 	margin: 10px 5px 10px 0;
 }
-.a3 .c1 select{
+.Contact .c1 select{
 	width: 31%;	
 	padding: 8px 3% 8px 0;
 	border: none;
@@ -149,17 +149,17 @@ main .a2 figure:hover img{
 	color: #888;
 	text-indent: 1em;
 }
-.a3 .c1 input[type="submit"]{
+.Contact .c1 input[type="submit"]{
 	cursor: pointer;
 	background-color: rgba(80,100,180,.7);
 	color: #fff;
 	width: 18%;
 }
-.a3 .c1 textarea{
+.Contact .c1 textarea{
 	text-indent: 1em;
 }
-.a3 .c1 textarea,
-.a3 .c1 input[type="submit"]{
+.Contact .c1 textarea,
+.Contact .c1 input[type="submit"]{
 	vertical-align: middle;
 }
 footer{
