@@ -1,0 +1,52 @@
+.clearfix{
+	content: "";
+	display: table;
+	clear: none;
+}
+li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+header{
+	width: 100%;
+	background-color: rgba(0,0,0,.5);
+}
+header .container{
+	width:1200px;
+	margin: auto;
+}
+header .container .logo{
+	float: left;
+	margin: 20px 0;
+}
+header .container .logo img,
+header .container span{
+	vertical-align:middle ;
+}
+header .container span{
+	font-size: 3em;
+	font-family: 'Niconne', cursive;
+	color: #fff;
+}
+header .container .topMenu{
+	float: right;
+}
+header .container .topMenu li{
+	float: left;
+	margin: 30px;
+}
+header .container .topMenu li a{
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+}
+header .container .topMenu li a:hover{
+	color: #f60f00;
+}
+main .banner{
+	background: url(../img/banner.jpg) no-repeat center top;
+	background-size: cover;
+	width: 100%;
+	min-height:800px;
+}
