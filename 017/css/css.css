@@ -135,7 +135,7 @@ section h2+p{
 }
 section p{
 	line-height: 1.5;
-	margin: 20px 0;
+	margin: 25px 0;
 }
 section .img{
 	width: 48%;
@@ -151,6 +151,9 @@ section .note{
 section .note ol{
 	padding: 0;
 	list-style: none;
+}
+section .note ol{
+	line-height: 2;
 }
 section .note p:first-child{
 	margin-top: 0;
