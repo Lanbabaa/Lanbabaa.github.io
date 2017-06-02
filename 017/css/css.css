@@ -147,13 +147,30 @@ section .img img{
 section .note{
 	width: 48%;
 	float: right;
+	counter-reset: licounter;
 }
 section .note ol{
 	padding: 0;
 	list-style: none;
-}
-section .note ol{
 	line-height: 2;
+}
+section .note li{
+	counter-increment: licounter 1;	
+}
+section .note li::before{
+	content: counter(licounter);
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	border: 1px dashed #000;
+	border-radius: 20px;
+	margin-right: 10px;
+	transition:  transform .5s;
+}
+section .note li:hover::before{
+	transform: translate(10px);
 }
 section .note p:first-child{
 	margin-top: 0;
