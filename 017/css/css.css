@@ -1,4 +1,7 @@
-
+/*
+ * 全局 
+ * 
+ * */
 .clearfix::after{
 	content: "";
 	display: table;
@@ -59,6 +62,10 @@ body{
   src: local('Shadows Into Light'), local('ShadowsIntoLight'), url(http://fonts-gstatic.googlefonts.net/s/shadowsintolight/v6/clhLqOv7MXn459PTh0gXYFK2TSYBz0eNcHnp4YqE4Ts.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
+
+/*
+ * header部分
+ * */
 header{
 	position: fixed;
 	width: 100%;
@@ -96,6 +103,9 @@ header .topMenu ul li{
 	float: left;
 	margin: 0px 30px;
 }
+/*
+ * banner
+ * */
 .banner{
 	min-height: 600px;
 	background: url(../img/banner.jpg) no-repeat center top;
@@ -125,53 +135,118 @@ header .topMenu ul li{
 	font-weight: normal;
 	
 }
+/*
+ * 关于我们的设置
+ * */
 section h2{
 	text-align: center;
 	margin-top: 50px;
 }
 section h2+p{
 	text-align: center;
-	margin-bottom: 50px;
+	margin-bottom: 80px;
 }
-section p{
-	line-height: 1.5;
-	margin: 25px 0;
+.about{
+	
 }
-section .img{
-	width: 48%;
+.about .img{
 	float: left;
+	width: 48%;
 }
-section .img img{
+.about .img img{
 	width: 100%;
 }
-section .note{
-	width: 48%;
+.about .note{
 	float: right;
-	counter-reset: licounter;
+	width: 48%;
 }
-section .note ol{
-	padding: 0;
+.about .note p{
+	line-height: 2;
+	margin: 20px 0px;
+}
+.about .note p:first-child{
+	margin-top: 0px;
+}
+.about .note ol{
 	list-style: none;
 	line-height: 2;
+	padding: 0;
+	counter-reset: liCounter;
 }
-section .note li{
-	counter-increment: licounter 1;	
+.about .note li{
+	counter-increment: liCounter;
 }
-section .note li::before{
-	content: counter(licounter);
-	display: inline-block;
+.about .note li::before{
+	/*计数器使用*/
+	content: counter(liCounter);
 	width: 20px;
 	height: 20px;
-	line-height: 20px;
+	display: inline-block;
 	text-align: center;
-	border: 1px dashed #000;
+	line-height: 20px;
 	border-radius: 20px;
+	border: 1px dashed #000;
 	margin-right: 10px;
-	transition:  transform .5s;
+	transition: transform .5s;
 }
-section .note li:hover::before{
+.about .note li:hover::before{
 	transform: translate(10px);
 }
-section .note p:first-child{
-	margin-top: 0;
+.service{
+	background: url(../img/desktop.jpg) center center;
+	background-size: cover;
+	
+}
+.service .container li{
+	width: 45%;
+	height: 80px;
+	float: left;
+	margin: 0  30px 20px 10px;
+}
+.service .container li:nth-child(2n-1){
+	text-align: right;
+}
+.service .container li i{
+	float: right;	
+	padding: 5px 0 5px 30px;
+	transition:transform .5s,color .5s;
+}
+.service .container li i:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.service .container li:hover i{
+	transform: scale(1.2);
+	color: #339BEB;
+}
+.service .container li:nth-child(2n) i{
+	float: left;
+	padding: 5px 30px 5px 0;
+}
+.service .container li h3{
+	display: inline-block;
+	margin: 0;
+}
+.case .container p a{
+	color: #339BEB;
+}
+.case .container figure{
+	width: 30%;
+	float: left;
+	overflow: hidden;
+	margin: calc(10%/6);
+	z-index: -1;
+	position: relative;
+}
+.case .container figure img{
+	width: 100%;
+}
+.case .container figure figcaption{
+	position: absolute;
+	bottom: 10px;
+	background-color: rgba(255,255,255,.5);
+	z-index: 1;
+}
+.case .container figure figcaption .time .month{
 }
