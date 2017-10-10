@@ -67,7 +67,7 @@
 			var h,m,s;
 			function a(){				
 				now=new Date();
-				h=now.getHours()*30+now.getMinutes()/20;
+				h=now.getHours()*30+now.getMinutes()/60*30;
 				m=now.getMinutes()*6;
 				s=now.getSeconds()*6;
 				oS.style.transform="rotate("+s+"deg)";
