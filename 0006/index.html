@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>第六次作业</title>
+		<style type="text/css">
+			body{
+				background-color: red;				
+			}
+			
+			#a{
+				text-align: center;
+				color: white;
+				border: 0;
+				outline:none;
+			}
+			
+		</style>
+	</head>
+	<body>
+			<h1 id="a">我自己万岁好吧！</h1>
+		<script type="text/javascript">
+			var oH=document.getElementById("a");
+			var str=oH.innerText;
+			var i=0;
+			oH.innerHTML="";
+			function fun(){
+				
+				if(i<str.length)
+					oH.innerText+=str[i];
+				else{
+					i=-1;
+					oH.innerHTML="";
+				}
+					
+				i++;
+			}
+			setInterval(fun,500);			
+		</script>
+	</body>
+</html>
