@@ -39,16 +39,21 @@
 		<div class="a"><a href="#">模拟窗口</a></div>
 		<div class="b">
 			<div class="c">
-				<a>×</a>
+				<i class='fa fa-close' id="aa"></i>
 			</div>
 		</div>
 		<script type="text/javascript">
 			oA=document.querySelector(".a");
 			oB=document.querySelector(".b");
 			oC=document.querySelector(".c");
+			oAA=document.getElementById("aa")
 			oA.onclick=function(){
-				oB.className="d b"
+				oB.className="d b";
 				oC.className="d c";
+			}
+			oAA.onclick=function(){
+				oB.className="b";
+				oC.className="c";
 			}
 		</script>
 	</body>
