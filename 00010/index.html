@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.menuContainer {
+				border: 1px dashed #333;
+				width: 400px;
+				padding: 3px 2px 2px 10px;
+			}
+			
+			.menu {
+				padding: 0;
+				margin: 0;
+				overflow: hidden;
+			}
+			
+			.menu li {
+				list-style-type: none;
+				font-size: 12px;
+				line-height: 18px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="menuContainer">
+			<ul class="menu">
+				<li>1111</li>
+				<li>2222</li>
+				<li>3333</li>
+				<li>444</li>
+				<li>55555</li>
+				<li>666666</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			var oMenu = document.querySelector('.menu');
+			var oMenuItme = document.querySelectorAll('.menu li');
+			oMenu.style.height = '36px';
+			oMenu.innerHTML += oMenu.innerHTML;
+
+			function run() {
+				if(oMenu.scrollTop > 108) {
+					oMenu.scrollTop = 1;
+					setTimeout(run, 100);
+				} 
+				else {
+					oMenu.scrollTop++;
+					if(oMenu.scrollTop % 36 == 0)
+						setTimeout(run, 1000);
+					else
+						setTimeout(run, 100);
+				}
+				console.log(oMenu.scrollTop)
+			}
+			run();
+		</script>
+	</body>
+
+</html>
