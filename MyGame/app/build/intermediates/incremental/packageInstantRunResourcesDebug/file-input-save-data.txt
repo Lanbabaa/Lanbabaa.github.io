@@ -1,0 +1,30 @@
+#Internal package file, do not edit.
+#Wed Dec 27 09:05:30 CST 2017
+2.base=C\:\\MyGame\\app\\build\\intermediates\\res\\resources-debug.ap_
+5.file=C\:\\MyGame\\app\\build\\intermediates\\res\\resources-debug.ap_\\resources.arsc
+5.set=ANDROID_RESOURCE
+3.base=C\:\\MyGame\\app\\build\\intermediates\\res\\resources-debug.ap_
+6.file=C\:\\MyGame\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\border.xml
+2.set=ANDROID_RESOURCE
+4.base=C\:\\MyGame\\app\\build\\intermediates\\res\\resources-debug.ap_
+7.file=C\:\\MyGame\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_main.xml
+7.set=ANDROID_RESOURCE
+count=9
+0.file=C\:\\MyGame\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\menu-v11\\main.xml
+5.base=C\:\\MyGame\\app\\build\\intermediates\\res\\resources-debug.ap_
+8.file=C\:\\MyGame\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\menu\\main.xml
+4.set=ANDROID_RESOURCE
+6.base=C\:\\MyGame\\app\\build\\intermediates\\res\\resources-debug.ap_
+1.file=C\:\\MyGame\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_launcher.png
+1.set=ANDROID_RESOURCE
+7.base=C\:\\MyGame\\app\\build\\intermediates\\res\\resources-debug.ap_
+2.file=C\:\\MyGame\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\btn.xml
+6.set=ANDROID_RESOURCE
+0.base=C\:\\MyGame\\app\\build\\intermediates\\res\\resources-debug.ap_
+8.base=C\:\\MyGame\\app\\build\\intermediates\\res\\resources-debug.ap_
+3.file=C\:\\MyGame\\app\\build\\intermediates\\res\\resources-debug.ap_\\AndroidManifest.xml
+3.set=ANDROID_RESOURCE
+1.base=C\:\\MyGame\\app\\build\\intermediates\\res\\resources-debug.ap_
+4.file=C\:\\MyGame\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\banner.jpg
+8.set=ANDROID_RESOURCE
+0.set=ANDROID_RESOURCE
