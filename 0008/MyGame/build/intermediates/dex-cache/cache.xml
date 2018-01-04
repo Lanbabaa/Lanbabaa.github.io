@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\MyGame\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="04ea860adecdfa088c365df273efd747bfa52519">
+        <dex dex="C:\MyGame\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_6997eba486eb43a22dbd9affea5e584afe6bf401\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="C:\MyGame\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-v4-18.0.0_2205dc014a04cdd7fdcc3c6d3e2e8c6be689c2fc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\MyGame\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8d04bf0bae07e1f6340b5c062f9e7838fbe748dd">
+        <dex dex="C:\MyGame\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_ddad7ac9c1fe923b786cf13ae66de60d6ce08cf8\classes.dex" />
+    </item>
+
+</items>
