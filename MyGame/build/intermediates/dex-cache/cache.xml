@@ -3,12 +3,12 @@
 
     <item
         is-multidex="true"
-        jar="C:\MyGame\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\ydkf051\Desktop\MyGame\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="04ea860adecdfa088c365df273efd747bfa52519">
-        <dex dex="C:\MyGame\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_6997eba486eb43a22dbd9affea5e584afe6bf401\classes.dex" />
+        sha1="ef5d4c012a44c0712a5b681dc4f1abb42c93bf83">
+        <dex dex="C:\Users\ydkf051\Desktop\MyGame\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_c67b02252244170beb901b2698c02b90226595d2\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -17,16 +17,16 @@
         optimize="true"
         revision="25.0.3"
         sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
-        <dex dex="C:\MyGame\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-v4-18.0.0_2205dc014a04cdd7fdcc3c6d3e2e8c6be689c2fc\classes.dex" />
+        <dex dex="C:\Users\ydkf051\Desktop\MyGame\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-v4-18.0.0_2205dc014a04cdd7fdcc3c6d3e2e8c6be689c2fc\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\MyGame\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="C:\Users\ydkf051\Desktop\MyGame\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="8d04bf0bae07e1f6340b5c062f9e7838fbe748dd">
-        <dex dex="C:\MyGame\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_ddad7ac9c1fe923b786cf13ae66de60d6ce08cf8\classes.dex" />
+        sha1="26795bc2bcfca241c2f4a88431f1f7c382b057d6">
+        <dex dex="C:\Users\ydkf051\Desktop\MyGame\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_b498b354db6deeb2c89000e715d7f2c20e86c473\classes.dex" />
     </item>
 
 </items>

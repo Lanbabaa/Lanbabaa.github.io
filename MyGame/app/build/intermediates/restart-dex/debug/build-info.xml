@@ -4,39 +4,46 @@
     density="560dpi"
     format="8"
     plugin-version="2.2.0"
-    timestamp="4134347903383"
-    token="1293858910696718646"
-    verifier="STATIC_INITIALIZER_CHANGE" >
+    timestamp="7404643140822"
+    token="1194251384291621118"
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="77" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="5" />
+        duration="0" />
     <task
         name="verifier"
-        duration="1" />
+        duration="0" />
 
     <artifact
-        location="C:\MyGame\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
+        location="C:\Users\ydkf051\Desktop\MyGame\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
         type="DEX" />
 
     <build
-        timestamp="2110721319353"
-        verifier="BINARY_MANIFEST_FILE_CHANGE" >
+        timestamp="6267390638056"
+        verifier="MANIFEST_FILE_CHANGE" >
         <artifact
-            location="C:\MyGame\app\build\outputs\apk\app-debug.apk"
+            location="C:\Users\ydkf051\Desktop\MyGame\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="4134347903383"
-        verifier="STATIC_INITIALIZER_CHANGE" >
+        timestamp="7344411677681"
+        verifier="CLASS_ADDED" >
         <artifact
-            location="C:\MyGame\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
+            location="C:\Users\ydkf051\Desktop\MyGame\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
+    </build>
+    <build
+        timestamp="7404643140822"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\ydkf051\Desktop\MyGame\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
             type="DEX" />
     </build>
 
