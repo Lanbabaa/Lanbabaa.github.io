@@ -1,0 +1,110 @@
+body {
+	height: 1500px;
+}
+
+.banner {
+	width: 100%;
+	position: fixed;
+}
+
+.box {
+	width: 80%;
+	margin: auto;
+	background-color: #0f0;
+}
+
+.layui-header {
+	background-color: #1E9FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.layui-main {
+	margin-top: 60px;
+}
+
+.mainnav,
+.layui-main {
+	width: 80%;
+	background-color: #fff;
+}
+
+.navlogo {
+	float: left;
+	width: 250px;
+	margin-left: 10%;
+}
+
+.navlogo img {
+	width: 100%;
+	overflow: hidden;
+}
+
+.mainnav {
+	width: 100%;
+}
+
+.fixed {
+	width: 70px;
+	height: 70px;
+	bottom: 20px;
+	right: 20px;
+	border-radius: 35px;
+	background-color: #FFB800;
+	position: fixed;
+}
+
+.layui-icon-up {
+	padding: 20px;
+	font-size: 30px;
+	margin: auto;
+	color: ;
+}
+
+.fixeda {
+	color: white;
+	padding: 5px;
+}
+
+.layui-carousel {
+	margin: auto;
+}
+
+.layui-carousel img {
+	width: 50%;
+	overflow: hidden;
+}
+
+.content1 {
+	position: absolute;
+	color: white;
+	right: 20px;
+	top: 20px;
+}
+
+.words .xm {
+	margin-left: 50%;
+}
+
+.photo {
+	width: 577px;
+}
+
+.photo img {
+	width: 50%;
+	overflow: hidden;
+}
+
+.erweima {
+	position: fixed;
+	width: 10%;
+	bottom: 20px;
+	z-index: 999;
+}
+
+.erweima img {
+	width: 100%;
+	overflow: hidden;
+}
