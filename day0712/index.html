@@ -84,7 +84,7 @@
 					<div><img src="img/bgimg.jpg" /><img src="img/bgimg2.jpg" /></div>
 					<div><img src="img/sp1.jpg" /><img src="img/sp2.jpg" /><img src="img/sp3.jpg" /><img src="img/sp4.jpg" /></div>
 					<div><img src="img/arjh4.jpg" /><img src="img/arjh3.jpg" /></div>
-					<div><img src="img/banner3.jpg" style="width: 100%;"/></div>
+					<div><img src="img/banner3.jpg" style="width: 100%;" /></div>
 				</div>
 			</div>
 			<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
@@ -200,24 +200,24 @@
 							<legend>致青春</legend>
 							<div class="layui-field-box zhiqc">
 								<p>遥望着远方，看到了地平线的光影，不知道是否真的存在。</p><br />
-								<img src="img/zhiqc1.jpg"/>
+								<img src="img/zhiqc1.jpg" />
 								<p>岁月极美，在于它的必然消逝。</p><br />
 								<p>或许每个人的人生都是不曾后悔的印迹。或许有一天我们会忘记彼此的名字，忘了曾经的容颜，可是永远会记得曾经爱过伤过得美好和那份年少时的悸动。</p><br />
-								<img src="img/zhiqc2.jpg"/>
+								<img src="img/zhiqc2.jpg" />
 								<p>爱是种眼看不到的温柔，只有在冷冷的黑夜，在乎给予彼此的依靠。 </p><br />
 								<p>年华似乎真的不明白的就停驻在一个叫曾经的年代，纯纯的，似乎真的那么美好。 </p><br />
 								<p>终你一生，在你的青春里所有的阵痛，眼泪，快乐，幸福，微笑不过就是那最长最深的一吻而已。你到最后也许才明白， 那不是爱，而是青春。 </p>　<br />
-								<img src="img/zhiqc3.jpg"/>
+								<img src="img/zhiqc3.jpg" />
 								<p>青春真的很无聊，很幼稚，很空虚，很乏味。 　　 　　</p><br />
 								<p>但是，谁又舍得拒绝那些热血纯粹执着无瑕的时光 ，如果有一天， 让你心动的再也感动不了你，让你愤怒的再也激怒不了你，让你悲伤的再也不能让你流泪。你便知道这时光，这生活给了你什么，你为了成长，付出了什么。 　</p><br />
 								<p>那是人生一期一会的最绝美的风景，那是人世不可再得的绝代时光 　　</p><br />
-								<img src="img/zhiqc4.jpg"/>
+								<img src="img/zhiqc4.jpg" />
 								<p>用淡淡的文字抒写着青春在我的青春里有一份渴望，走过了青春的时间，安静下来了，默默的细数这些年里的所有。</p><br />
 								<p>在这个夏季即将过去的日子里，我用文字，安放青春的梦想。</p><br />
 								<p>哪怕没有人为我鼓掌我也会用生命和热血为青春激荡。</p><br />
 							</div>
 						</fieldset>
-					</div>					
+					</div>
 					<div class="layui-tab-item">
 						<fieldset class="layui-elem-field">
 							<legend>一句话简述我们的曾经</legend>
@@ -250,10 +250,37 @@
 								</div>
 							</div>
 						</fieldset>
+						<div class="layui-card">
+							<div class="layui-card-header"><h3>留言板</h3></div>
+							<div class="layui-card-body">
+								<p>透心凉：留言板功能暂未实现</p>								
+								</div>
+							</div>
+							<form class="layui-form" action="">
+									<div class="layui-form-item">
+										<label class="layui-form-label">输入框</label>
+										<div class="layui-input-block">
+											<input type="text" name="title" required lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+										</div>
+									</div>																	
+									<div class="layui-form-item">
+										<div class="layui-form-item layui-form-text">
+											<label class="layui-form-label">文本域</label>
+											<div class="layui-input-block">
+												<textarea name="desc" placeholder="请输入内容" class="layui-textarea"></textarea>
+											</div>
+										</div>
+										<div class="layui-form-item">
+											<div class="layui-input-block">
+												<button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+												<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+											</div>
+										</div>
+								</form>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
 	</body>
 	<script src="layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
