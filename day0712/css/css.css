@@ -108,3 +108,13 @@ body {
 	width: 100%;
 	overflow: hidden;
 }
+.zhiqc{
+	font-family: "楷体";
+	font-size: 20px;
+	width: 70%;
+	margin: auto;
+	text-indent:40px;
+}
+.zhiqc img{
+	margin-bottom: 20px;
+}
