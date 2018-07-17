@@ -218,7 +218,7 @@
 							</div>
 						</fieldset>
 					</div>
-					<div class="layui-tab-item">
+					<div class="layui-tab-item" id="app">
 						<fieldset class="layui-elem-field">
 							<legend>一句话简述我们的曾经</legend>
 							<div class="layui-field-box">
@@ -253,11 +253,11 @@
 						<div class="layui-card">
 							<div class="layui-card-header"><h3>留言板</h3></div>
 							<div class="layui-card-body">
-								<p>透心凉：留言板功能暂未实现，无法进行留言</p>								
+								<p>透心凉：留言板功能暂未实现，无法进行留言</p>	
+								<p>{{ name }}  {{ content }}</p>
 								</div>
 							</div>
 							<form class="layui-form" action="" id="app">
-							<p style="margin-left:1% ;">{{ name }}  {{ content }}</p>
 							<div class="layui-form-item">
 								<label class="layui-form-label">留言人</label>
 								<div class="layui-input-block">
@@ -333,7 +333,7 @@
 			el:'#app',
 			data:{
 				name:'',
-				content:':'
+				content:'：'
 			}
 		})
 	</script>
