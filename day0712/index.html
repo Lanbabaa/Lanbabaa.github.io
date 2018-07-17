@@ -256,35 +256,38 @@
 								<p>透心凉：留言板功能暂未实现，无法进行留言</p>								
 								</div>
 							</div>
-							<form class="layui-form" action="">
-									<div class="layui-form-item">
-										<label class="layui-form-label">留言人</label>
-										<div class="layui-input-block">
-											<input type="text" name="title" required lay-verify="required" placeholder="请输入姓名" autocomplete="off" class="layui-input">
-										</div>
-									</div>																	
-									<div class="layui-form-item">
-										<div class="layui-form-item layui-form-text">
-											<label class="layui-form-label">文本域</label>
-											<div class="layui-input-block">
-												<textarea name="desc" placeholder="请输入内容" class="layui-textarea"></textarea>
-											</div>
-										</div>
-										<div class="layui-form-item">
-											<div class="layui-input-block">
-												<button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
-												<button type="reset" class="layui-btn layui-btn-primary">重置</button>
-											</div>
-										</div>
-								</form>
+							<form class="layui-form" action="" id="app">
+							<p style="margin-left:1% ;">{{ name }}  {{ content }}</p>
+							<div class="layui-form-item">
+								<label class="layui-form-label">留言人</label>
+								<div class="layui-input-block">
+									<input type="text" name="title" required lay-verify="required" placeholder="请输入姓名" autocomplete="off" class="layui-input" v-model="name">
+								</div>
+							</div>
+							<div class="layui-form-item">
+								<div class="layui-form-item layui-form-text">
+									<label class="layui-form-label">文本域</label>
+									<div class="layui-input-block">
+										<textarea name="desc" placeholder="请输入内容" required lay-verify="required" class="layui-textarea" v-model="content"></textarea>
+									</div>
+								</div>
+								<div class="layui-form-item">
+									<div class="layui-input-block">
+										<button class="layui-btn" lay-submit lay-filter="formDemo" id="btn">立即提交</button>
+										<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+									</div>
+								</div>
+							</div>
+						</form>								
 						</div>
 					</div>
 				</div>
-			</div>
 
 	</body>
 	<script src="layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<script type="text/javascript">
 		layui.use('carousel', function() {
 			var carousel = layui.carousel;
@@ -326,6 +329,13 @@
 			document.getElementById("show").innerHTML = w + "  " + h + ":" + m + ":" + s;
 			t = setTimeout('showTime()', 500)
 		}
+		var app=new Vue({
+			el:'#app',
+			data:{
+				name:'',
+				content:''
+			}
+		})
 	</script>
 
 </html>
