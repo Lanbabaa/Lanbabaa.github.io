@@ -62,8 +62,8 @@ body {
 	padding: 20px;
 	font-size: 30px;
 	margin: auto;
-	color: ;
 }
+
 .fixeda {
 	color: white;
 	padding: 5px;
@@ -78,14 +78,17 @@ body {
 	height: 100%;
 	overflow: hidden;
 }
-.layui-carousel .imghalf img{
+
+.layui-carousel .imghalf img {
 	height: 50%;
 }
+
 .content1 {
 	position: absolute;
 	color: white;
 	right: 20px;
 	top: 20px;
+	z-index: 0;
 }
 
 .words .xm {
@@ -112,14 +115,16 @@ body {
 	width: 100%;
 	overflow: hidden;
 }
-.zhiqc{
+
+.zhiqc {
 	font-family: "楷体";
 	font-size: 20px;
 	width: 70%;
 	margin: auto;
-	text-indent:40px;
+	text-indent: 40px;
 	padding: 50px;
 }
-.zhiqc img{
+
+.zhiqc img {
 	margin-bottom: 20px;
 }

@@ -10,7 +10,9 @@
 	</head>
 
 	<body>
-		<div class="erweima"><img src="img/erweima.png" /><a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=50f3f01418aab85a5d6577320b47ee88100b3c0719bd399aa1c490fd5f29c990"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="原来我们一直都在" title="原来我们一直都在" style="width: 50%; margin-left: 25%;"></a></div>
+		<div class="erweima"><img src="img/erweima.png" />
+			<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=50f3f01418aab85a5d6577320b47ee88100b3c0719bd399aa1c490fd5f29c990"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="原来我们一直都在" title="原来我们一直都在" style="width: 50%; margin-left: 25%;"></a>
+		</div>
 		<img src="img/banner.jpg" class="banner">
 		<a class="fixed" href="#top1">
 			<i class="layui-icon layui-icon-up" style="color: azure;"></i>
@@ -22,7 +24,7 @@
 			<div class="mainnav">
 				<ul class="layui-nav layui-bg-blue">
 					<div href="" class="navlogo"><img src="img/logo.png" /></div>
-					<li class="layui-nav-item" style="margin-left: 28%;">
+					<li class="layui-nav-item" style="margin-left: 30%;">
 						<a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=3220992644"><img src="img/mm.jpg" class="layui-nav-img" />默默</a>
 						<dl class="layui-nav-child">
 							<dd>
@@ -70,11 +72,13 @@
 							</dd>
 						</dl>
 					</li>
+					<div class="content1 layui-inline">
+					<strong><div id="show" class="layui-inline">网页加载有点久，耐心等待</div></strong>
+					</div>
 				</ul>
+				
 			</div>
-			<div class="content1">
-				<strong><div id="show">网页加载有点久，耐心等待</div></strong>
-			</div>
+
 		</div>
 
 		<div class="layui-main" id="top1">
@@ -82,7 +86,7 @@
 				<div carousel-item>
 					<div><img src="img/arjh1.jpg" /><img src="img/arjh2.jpg" /></div>
 					<div><img src="img/bgimg.jpg" /><img src="img/bgimg2.jpg" /></div>
-					<div class="imghalf"><img src="img/sp1.jpg" /><img src="img/sp2.jpg" /><img src="img/sp5.jpg"/><img src="img/sp4.jpg" /></div>
+					<div class="imghalf"><img src="img/sp1.jpg" /><img src="img/sp2.jpg" /><img src="img/sp5.jpg" /><img src="img/sp4.jpg" /></div>
 					<div><img src="img/arjh4.jpg" /><img src="img/arjh3.jpg" /></div>
 					<div><img src="img/banner3.jpg" style="width: 100%;" /></div>
 				</div>
@@ -251,13 +255,14 @@
 							</div>
 						</fieldset>
 						<div class="layui-card">
-							<div class="layui-card-header"><h3>留言板</h3></div>
+							<div class="layui-card-header">
+								<h3>留言板</h3></div>
 							<div class="layui-card-body">
-								<p>透心凉：留言板功能暂未实现，无法进行留言</p>	
-								<p>{{ name }}  {{ content }}</p>
-								</div>
+								<p>透心凉：留言板功能暂未实现，无法进行留言</p>
+								<p>{{ name }} {{ content }}</p>
 							</div>
-							<form class="layui-form" action="" id="app">
+						</div>
+						<form class="layui-form" action="" id="app">
 							<div class="layui-form-item">
 								<label class="layui-form-label">留言人</label>
 								<div class="layui-input-block">
@@ -278,10 +283,10 @@
 									</div>
 								</div>
 							</div>
-						</form>								
-						</div>
+						</form>
 					</div>
 				</div>
+			</div>
 
 	</body>
 	<script src="layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
@@ -329,11 +334,11 @@
 			document.getElementById("show").innerHTML = w + "  " + h + ":" + m + ":" + s;
 			t = setTimeout('showTime()', 500)
 		}
-		var app=new Vue({
-			el:'#app',
-			data:{
-				name:'',
-				content:'：'
+		var app = new Vue({
+			el: '#app',
+			data: {
+				name: '',
+				content: '：'
 			}
 		})
 	</script>
