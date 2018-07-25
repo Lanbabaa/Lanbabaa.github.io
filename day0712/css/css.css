@@ -47,7 +47,7 @@ body {
 }
 
 .fixed {
-	z-index: 9999;
+	z-index: 999;
 	width: 70px;
 	height: 70px;
 	bottom: 20px;
