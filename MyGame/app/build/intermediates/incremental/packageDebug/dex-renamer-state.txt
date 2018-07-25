@@ -1,7 +1,0 @@
-#Wed Jan 03 09:45:34 CST 2018
-base.0=C\:\\Users\\ydkf051\\Desktop\\MyGame\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_c67b02252244170beb901b2698c02b90226595d2
-renamed.1=classes2.dex
-renamed.0=classes.dex
-file.1=C\:\\Users\\ydkf051\\Desktop\\MyGame\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_b498b354db6deeb2c89000e715d7f2c20e86c473\\classes.dex
-base.1=C\:\\Users\\ydkf051\\Desktop\\MyGame\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_b498b354db6deeb2c89000e715d7f2c20e86c473
-file.0=C\:\\Users\\ydkf051\\Desktop\\MyGame\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_c67b02252244170beb901b2698c02b90226595d2\\classes.dex
