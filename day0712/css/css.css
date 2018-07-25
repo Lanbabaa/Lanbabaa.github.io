@@ -48,6 +48,7 @@ body {
 }
 
 .fixed {
+	z-index: 9999;
 	width: 70px;
 	height: 70px;
 	bottom: 20px;
@@ -75,6 +76,7 @@ body {
 
 .layui-carousel img {
 	width: 50%;
+	height: 100%;
 	overflow: hidden;
 }
 
