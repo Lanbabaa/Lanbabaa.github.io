@@ -1,5 +1,5 @@
 body {
-	height: 1500px;
+	min-height: 1500px;
 }
 
 .banner {
@@ -64,7 +64,6 @@ body {
 	margin: auto;
 	color: ;
 }
-
 .fixeda {
 	color: white;
 	padding: 5px;
@@ -79,7 +78,9 @@ body {
 	height: 100%;
 	overflow: hidden;
 }
-
+.layui-carousel .imghalf img{
+	height: 50%;
+}
 .content1 {
 	position: absolute;
 	color: white;
