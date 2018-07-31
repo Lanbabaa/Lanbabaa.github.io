@@ -32,11 +32,20 @@ body {
 	background-color: #fff;
 }
 
-.navlogo {
+.navlogo{
 	float: left;
-	margin-left: 10%;
+}
+@media screen and (min-width: 1200px) {
+	.navlogo {
+			margin-left: 10%;
+	}
 }
 
+@media screen and (max-width: 1200px) {
+	.navlogo {
+		margin-left: 6%;
+	}
+}
 .navlogo img {
 	width: 100%;
 	overflow: hidden;
