@@ -8,8 +8,8 @@
 		<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
 		<link rel="stylesheet" type="text/css" href="css/css.css" />
 	</head>
-
 	<body>
+		<canvas id="canvas" ></canvas>	
 		<div class="erweima"><img src="img/erweima.png" />
 			<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=50f3f01418aab85a5d6577320b47ee88100b3c0719bd399aa1c490fd5f29c990"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="原来我们一直都在" title="原来我们一直都在" style="width: 50%; margin-left: 25%;"></a>
 		</div>
@@ -266,7 +266,7 @@
 							<div class="layui-form-item">
 								<label class="layui-form-label">留言人</label>
 								<div class="layui-input-block">
-									<input type="text" name="title" required lay-verify="required" placeholder="请输入姓名" autocomplete="off" class="layui-input" v-model="name">
+									<input type="text" name="title" required lay-verify="required" placeholder="请输入姓名" autocomplete="off" class="layui-input " v-model="name">
 								</div>
 							</div>
 							<div class="layui-form-item">
@@ -342,6 +342,66 @@
 				content: ''
 			}
 		})
+		var canvas = document.querySelector('#canvas');
+var ctx = canvas.getContext("2d");
+var starlist = [];
+function init(){
+	canvas.width = window.innerWidth;
+	canvas.height = window.innerHeight;
+}
+init();
+window.onresize = init;
+
+canvas.addEventListener('mousemove',function(e){
+	starlist.push(new Star(e.offsetX,e.offsetY));
+	console.log(starlist)
+})
+
+function random(min,max){
+	return Math.floor((max-min)*Math.random()+ min);
+}
+
+function Star(x,y){
+	this.x = x;
+	this.y = y;
+	this.vx = (Math.random()-0.5)*3;
+	this.vy = (Math.random()-0.5)*3;
+	this.color = 'rgb('+random(0,256)+','+random(0,256)+','+random(0,256)+')';
+	this.a = 1;
+	console.log(this.color);
+	this.draw();
+}
+Star.prototype={
+	draw:function(){
+		ctx.beginPath();
+		ctx.fillStyle = this.color;
+		ctx.globalCompositeOperation='lighter'
+		ctx.globalAlpha= this.a;
+		ctx.arc(this.x,this.y,30,0,Math.PI*2,false);
+		ctx.fill();
+		this.updata();
+	},
+	updata(){
+		this.x+=this.vx;
+		this.y+=this.vy;
+		this.a*=0.98;
+	}
+}
+console.log(new Star(150,200));
+function render(){
+	ctx.clearRect(0,0,canvas.width,canvas.height)
+	
+	starlist.forEach((item,i)=>{
+		item.draw();
+		if(item.a<0.05){
+			starlist.splice(i,1);
+		}
+	})
+	
+	requestAnimationFrame(render);
+}
+render();	
+
 	</script>
 
 </html>

@@ -32,12 +32,13 @@ body {
 	background-color: #fff;
 }
 
-.navlogo{
+.navlogo {
 	float: left;
 }
+
 @media screen and (min-width: 1200px) {
 	.navlogo {
-			margin-left: 10%;
+		margin-left: 10%;
 	}
 }
 
@@ -46,6 +47,7 @@ body {
 		margin-left: 6%;
 	}
 }
+
 .navlogo img {
 	width: 100%;
 	overflow: hidden;
@@ -111,11 +113,13 @@ body {
 	top: 20px;
 	z-index: 0;
 }
+
 @media screen and (max-width: 1200px) {
 	.content1 {
 		display: none;
 	}
 }
+
 .words .xm {
 	margin-left: 50%;
 }
@@ -157,3 +161,19 @@ body {
 .layui-card .layui-card-body p {
 	margin: 5px;
 }
+
+#canvas {
+	background-color: rgba(0, 0, 0, 0);
+	width: 100%;
+	position: fixed;
+	z-index: 30;
+}
+.layui-main{
+	z-index: 99;
+}
+
+.layui-tab-title{
+	z-index: 999;
+}
+
+
