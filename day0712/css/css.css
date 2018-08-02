@@ -174,5 +174,9 @@ body {
 .layui-tab-title{
 	z-index: 999;
 }
-
-
+.liuy{
+	height: 250px;
+}
+.liuy button{
+	margin: 100px 45%;
+}
