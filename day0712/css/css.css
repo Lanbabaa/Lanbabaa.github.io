@@ -168,15 +168,19 @@ body {
 	position: fixed;
 	z-index: 30;
 }
-.layui-main{
+
+.layui-main {
 	z-index: 99;
 }
-.layui-tab-title{
+
+.layui-tab-title {
 	z-index: 999;
 }
-.liuy{
+
+.liuy {
 	height: 250px;
 }
-.liuy button{
+
+.liuy button {
 	margin: 100px 45%;
 }
