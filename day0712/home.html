@@ -8,8 +8,9 @@
 		<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
 		<link rel="stylesheet" type="text/css" href="css/css.css" />
 	</head>
+
 	<body>
-		<canvas id="canvas" ></canvas>	
+		<canvas id="canvas"></canvas>
 		<div class="erweima"><img src="img/erweima.png" />
 			<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=50f3f01418aab85a5d6577320b47ee88100b3c0719bd399aa1c490fd5f29c990"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="原来我们一直都在" title="原来我们一直都在" style="width: 50%; margin-left: 25%;"></a>
 		</div>
@@ -101,7 +102,8 @@
 				<div class="layui-tab-content">
 					<div class="layui-tab-item layui-show">
 						<fieldset class="layui-elem-field">
-							<legend><h3>原来我们一直都在</h3></legend>
+							<legend>
+								<h3>原来我们一直都在</h3></legend>
 							<div class="layui-field-box">
 								<ul class="layui-timeline">
 									<li class="layui-timeline-item">
@@ -193,7 +195,8 @@
 					</div>
 					<div class="layui-tab-item">
 						<fieldset class="layui-elem-field">
-							<legend> <h3>文章正在编写，敬请期待...</h3></legend>
+							<legend>
+								<h3>文章正在编写，敬请期待...</h3></legend>
 							<div class="layui-field-box">
 								目前文章由阿梦编写，敬请期待...
 							</div>
@@ -201,7 +204,8 @@
 					</div>
 					<div class="layui-tab-item">
 						<fieldset class="layui-elem-field">
-							<legend><h3>致青春</h3></legend>
+							<legend>
+								<h3>致青春</h3></legend>
 							<div class="layui-field-box zhiqc">
 								<p>遥望着远方，看到了地平线的光影，不知道是否真的存在。</p><br />
 								<img src="img/zhiqc1.jpg" />
@@ -224,7 +228,8 @@
 					</div>
 					<div class="layui-tab-item" id="app">
 						<fieldset class="layui-elem-field">
-							<legend><h3>一句话简述我们的曾经</h3></legend>
+							<legend>
+								<h3>一句话简述我们的曾经</h3></legend>
 							<div class="layui-field-box">
 								<div class="layui-collapse">
 									<div class="layui-colla-item">
@@ -259,10 +264,10 @@
 								<h3>留言板</h3></div>
 							<div class="layui-card-body">
 								<p>透心凉：留言板功能暂未实现，无法进行留言</p>
-								<p v-if="name != '' || content != ''">{{ name+'：' }} {{ content }}</p>
+								<p v-if="name != '' || content != ''" >{{ name+'：' }} {{ content }}</p>
 							</div>
 						</div>
-						<form class="layui-form" action="" id="app">
+						<form class="layui-form" action="">
 							<div class="layui-form-item">
 								<label class="layui-form-label">留言人</label>
 								<div class="layui-input-block">
@@ -291,7 +296,7 @@
 	</body>
 	<script src="layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script> 
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<script type="text/javascript">
@@ -335,73 +340,77 @@
 			document.getElementById("show").innerHTML = w + "  " + h + ":" + m + ":" + s;
 			t = setTimeout('showTime()', 500)
 		}
-		var app = new Vue({
-			el: '#app',
-			data: {
-				name: '',
-				content: ''
-			}
-		})
+		document.addEventListener('DOMContentLoaded', function() {
+			var app = new Vue({
+				el: '#app',
+				data: {
+					name: '',
+					content: ''
+				}
+			});
+		}, false);
+
 		var canvas = document.querySelector('#canvas');
-var ctx = canvas.getContext("2d");
-var starlist = [];
-function init(){
-	canvas.width = window.innerWidth;
-	canvas.height = window.innerHeight;
-}
-init();
-window.onresize = init;
+		var ctx = canvas.getContext("2d");
+		var starlist = [];
 
-canvas.addEventListener('mousemove',function(e){
-	starlist.push(new Star(e.offsetX,e.offsetY));
-	console.log(starlist)
-})
-
-function random(min,max){
-	return Math.floor((max-min)*Math.random()+ min);
-}
-
-function Star(x,y){
-	this.x = x;
-	this.y = y;
-	this.vx = (Math.random()-0.5)*3;
-	this.vy = (Math.random()-0.5)*3;
-	this.color = 'rgb('+random(0,256)+','+random(0,256)+','+random(0,256)+')';
-	this.a = 1;
-	console.log(this.color);
-	this.draw();
-}
-Star.prototype={
-	draw:function(){
-		ctx.beginPath();
-		ctx.fillStyle = this.color;
-		ctx.globalCompositeOperation='lighter'
-		ctx.globalAlpha= this.a;
-		ctx.arc(this.x,this.y,30,0,Math.PI*2,false);
-		ctx.fill();
-		this.updata();
-	},
-	updata(){
-		this.x+=this.vx;
-		this.y+=this.vy;
-		this.a*=0.98;
-	}
-}
-console.log(new Star(150,200));
-function render(){
-	ctx.clearRect(0,0,canvas.width,canvas.height)
-	
-	starlist.forEach((item,i)=>{
-		item.draw();
-		if(item.a<0.05){
-			starlist.splice(i,1);
+		function init() {
+			canvas.width = window.innerWidth;
+			canvas.height = window.innerHeight;
 		}
-	})
-	
-	requestAnimationFrame(render);
-}
-render();	
+		init();
+		window.onresize = init;
 
+		canvas.addEventListener('mousemove', function(e) {
+			starlist.push(new Star(e.offsetX, e.offsetY));
+			console.log(starlist)
+		})
+
+		function random(min, max) {
+			return Math.floor((max - min) * Math.random() + min);
+		}
+
+		function Star(x, y) {
+			this.x = x;
+			this.y = y;
+			this.vx = (Math.random() - 0.5) * 3;
+			this.vy = (Math.random() - 0.5) * 3;
+			this.color = 'rgb(' + random(0, 256) + ',' + random(0, 256) + ',' + random(0, 256) + ')';
+			this.a = 1;
+			console.log(this.color);
+			this.draw();
+		}
+		Star.prototype = {
+			draw: function() {
+				ctx.beginPath();
+				ctx.fillStyle = this.color;
+				ctx.globalCompositeOperation = 'lighter'
+				ctx.globalAlpha = this.a;
+				ctx.arc(this.x, this.y, 30, 0, Math.PI * 2, false);
+				ctx.fill();
+				this.updata();
+			},
+			updata() {
+				this.x += this.vx;
+				this.y += this.vy;
+				this.a *= 0.98;
+			}
+		}
+		console.log(new Star(150, 200));
+
+		function render() {
+			ctx.clearRect(0, 0, canvas.width, canvas.height)
+
+			starlist.forEach((item, i) => {
+				item.draw();
+				if(item.a < 0.05) {
+					starlist.splice(i, 1);
+				}
+			})
+
+			requestAnimationFrame(render);
+		}
+		render();
 	</script>
 
 </html>
