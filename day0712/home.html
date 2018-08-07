@@ -10,9 +10,12 @@
 	</head>
 
 	<body>
-		<div class="loading">
-			<p>第一次加载时间可能比较长,请耐心等待...</p>
+		<div class="loadingbox">
+			<div class="loading">
+			<p><i class="layui-icon" style="margin-right: 10px;">&#xe63d;</i>第一次加载时间可能比较长,请耐心等待...</p>
+			</div>
 		</div>
+		
 		<canvas id="canvas"></canvas>
 		<div class="erweima"><img src="img/erweima.png" />
 			<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=50f3f01418aab85a5d6577320b47ee88100b3c0719bd399aa1c490fd5f29c990"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="原来我们一直都在" title="原来我们一直都在" style="width: 50%; margin-left: 25%;"></a>
@@ -284,6 +287,9 @@
 	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<script type="text/javascript">
+			window.onload = function(){
+			$("body").hide();
+			}
 		layui.use('carousel', function() {
 			var carousel = layui.carousel;
 			carousel.render({
@@ -389,9 +395,10 @@
 		document.onreadystatechange = loadingChange; //当页面加载状态改变的时候执行这个方法.
 		function loadingChange() {
 			if(document.readyState == "complete") { //当页面加载状态为完全结束时进入 
-				$(".loading").hide(); //当页面加载完成后将loading页隐藏
+				$(".loadingbox").hide();//当页面加载完成后将loading页隐藏
 			}
 		}
+
 	</script>
 
 </html>
