@@ -184,3 +184,16 @@ body {
 .liuy button {
 	margin: 100px 45%;
 }
+.loading {
+	width: 300px;
+	height: 80px;
+	z-index: 9999;
+	position: fixed;
+	top: 50%;
+	left: 40%;
+	background-color: rgba(0, 0, 0, .4);
+	text-align: center;
+	line-height: 80px;
+	border-radius:5px ;
+	color: white;
+}
