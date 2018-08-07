@@ -202,7 +202,7 @@
 							<!-- 将单选按钮的数据进行双向绑定，选中与不选中传值 -->
 							<!--<label class="fl" for=""><a href="javascript:;" v-text="item.title"></a></label>-->
 							<label class="fl" for=""><a href="javascript:;" @dblclick="edtorTodo(item)">{{ item.title }}</a></label>
-							<a href="javascript:;" class="destroy fr" @click="delTodo(item)">删除</a>
+<!--							<a href="javascript:;" class="destroy fr" @click="delTodo(item)">删除</a>-->
 						</div>
 						<input @blur="edtorTodoed(item)" @keyup.13="edtorTodoed(item)" @keyup.esc="cancelTodo(item)" v-focus="editorTodos === item" type="text" disabled="disabled" class="edit" v-model="item.title" />
 					</li>
