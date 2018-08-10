@@ -382,10 +382,10 @@
 			requestAnimationFrame(render);
 		}
 		render();
-		document.onreadystatechange = loadingChange; //当页面加载状态改变的时候执行这个方法.
+		document.onreadystatechange = loadingChange; 
 		function loadingChange() {
-			if(document.readyState == "complete") { //当页面加载状态为完全结束时进入 
-				$(".loadingbox").hide();//当页面加载完成后将loading页隐藏
+			if(document.readyState == "complete") {  
+				$(".loadingbox").hide();
 			}
 		}
 
