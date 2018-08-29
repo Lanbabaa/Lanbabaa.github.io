@@ -169,7 +169,7 @@
 	<body>
 		<div class="page-top">
 			<div style="float: left;margin-top: 8px; margin-left: 40px;">
-				<a href="home.html" style="color: white;">返回</a>
+				<a onclick="back()" href="home.html" style="color: white;">返回</a>
 			</div>
 			<div class="page-content wrap">
 				<h2>简单留言板</h2>
@@ -350,6 +350,10 @@
 			watchHashChange();
 			window.addEventListener('hashchange', watchHashChange, false);
 		}, false);
+		function back(){
+  			window.history.back()
+  
+		}
 	</script>
 
 </html>
