@@ -6,6 +6,7 @@
 		<meta charset="UTF-8">
 		<title>留言板</title>
 		<link rel="shortcut icon" type="image/x-icon" href="img/demoicon.ico" media="screen" />
+		<link rel="stylesheet" type="text/css" href="layui/css/layui.css"/>
 		<style type="text/css">
 			* {
 				margin: 0;
@@ -79,7 +80,7 @@
 			
 			.main .task-input {
 				margin-top: 15px;
-				width: calc(100% - 20px);
+				width: calc(90%);
 				height: 30px;
 				padding-left: 20px;
 				font-size: 12px;
@@ -178,7 +179,9 @@
 		<div class="main wrap">
 			<h3 class="big-title">留言：</h3>
 			<input @keyup.enter="addTodo" v-model="todo" type="text" placeholder="例如：名字：留言内容   提示：+回车即可添加留言" class="task-input" />
-			<!-- addTodo(123,$event)行间传参的时候，vue里面还要用事件对象的话就用$event-->
+			<!-- 
+				(123,$event)行间传参的时候，vue里面还要用事件对象的话就用$event-->
+				<button v-on:click="addTodo" class="layui-btn layui-btn-danger">留言</button>
 			<ul class="task-count clearFix">
 				<li class="fl" style="color: #ff8000;margin-left: 20px;">
 					<!--{{
