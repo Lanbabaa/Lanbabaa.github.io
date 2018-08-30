@@ -4,6 +4,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>注册</title>
+		<link rel="icon" type="image/x-icon" href="img/icon.ico" />
 		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 		<style type="text/css">
 			a {
@@ -18,7 +19,6 @@
 				background: url(img/banner.jpg) no-repeat;
 				background-size: 100%;
 			}
-			
 			
 			.signIn {
 				position: relative;
@@ -66,46 +66,47 @@
 				border: 0px solid #000;
 				background-color: #9370DB;
 			}
-			.success{
+			
+			.success {
 				position: absolute;
 				width: 200px;
 				height: 50px;
-				border: 2px solid rgba(	50,205,50,.4);
+				border: 2px solid rgba( 50, 205, 50, .4);
 				text-align: center;
 				line-height: 50px;
 				border-radius: 10px;
 				color: #fff;
-				background-color: rgba(	50,205,50,.4);
+				background-color: rgba( 50, 205, 50, .4);
 				left: 20%;
-				top:50%;
+				top: 50%;
 				display: none;
 			}
 		</style>
 	</head>
 
 	<body>
-		
+
 		<div class="signIn">
 			<h2 style="color: rgba(	0,0,0,.7);">注册</h2>
 			<div class="success">
-			注册成功
+				注册成功
 			</div>
 			<div class="content">
 				<input type="text" id="" value="" placeholder="请输入用户名" autofocus="autofocus" /><br /><br />
 				<input type="password" name="" placeholder="请输入密码" /><br /><br />
 				<input type="text" style="width: 126px;" placeholder="请输入手机号" />
 				<input type="button" style="height:32px;width:120px;" value="点击发送验证码" onclick="sendCode(this)" /><br /><br />
-				<input type="button" name="" id="register" value="注册" onclick="register()"/><br /><br />
+				<input type="button" name="" id="register" value="注册" onclick="register()" /><br /><br />
 				<a href="Sign.html" style="color: 	#00BFFF	;">已有账号?返回登录</a>
 			</div>
 		</div>
 	</body>
 
 	<script type="text/javascript">
-		
 		var clock = '';
 		var nums = 60;
 		var btn;
+
 		function sendCode(thisBtn) {
 			btn = thisBtn;
 			btn.disabled = true; //将按钮置为不可点击
@@ -124,15 +125,16 @@
 				nums = 60; //重置时间
 			}
 		}
-		function register(){
+
+		function register() {
 			$(".success").fadeIn(1000);
-			setInterval('disappear()',1500)
-		}
-		function disappear(){
-			$(".success").fadeOut(2000);
-			window.location.href="Sign.html";
+			setInterval('disappear()', 1500)
 		}
 
+		function disappear() {
+			$(".success").fadeOut(2000);
+			window.location.href = "Sign.html";
+		}
 	</script>
 
 </html>
