@@ -5,11 +5,35 @@
 		<meta charset="UTF-8">
 		<title>首页</title>
 		<link rel="icon" type="image/x-icon" href="img/icon.ico" />
-		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
-		<script src="bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" />
+		
+		<style type="text/css">
+			.Sidenav {
+				width: 500px;
+				min-height: 500px;
+				border: 1px solid 	#FF4500;
+				position: absolute;
+				left: 20px;
+				top: 180px;
+				border-radius: 5px;
+			}
+			
+			.search {
+				width: 500px;
+				height: 50px;
+				margin: auto;
+			}
+			
+			.search input {
+				width: 300px;
+			}
+		</style>
 	</head>
 
 	<body>
+		<script src="bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.js" type="text/javascript" ch data-type = ""arset="utf-8"></script>
 		<nav class="navbar navbar-default">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
@@ -25,20 +49,6 @@
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin:0 100px 0 40%;">
-					<ul class="nav navbar-nav">
-						<li class="active">
-							<a href="#">Link <span class="sr-only">(current)</span></a>
-						</li>
-						<li>
-							<a href="#">Link</a>
-						</li>
-					</ul>
-					<form class="navbar-form navbar-left">
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Search">
-						</div>
-						<button type="submit" class="btn btn-default">Submit</button>
-					</form>
 					<ul class="nav navbar-nav navbar-right">
 						<li>
 							<a href="Sign.html">亲，请登录</a>
@@ -46,12 +56,69 @@
 						<li>
 							<a href="register.html"><span>还没账号?</span> 注册一个</a>
 						</li>
-
+						
+						<li>
+							<div class="btn-group" style="margin-top: 10px;">
+								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border: 0px; background-color: rgba(0,0,0,0);">
+							   设置 <span class="caret"></span>
+							  </button>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">Action</a>
+									</li>
+									<li>
+										<a href="#">Another action</a>
+									</li>
+									<li>
+										<a href="#">Something else here</a>
+									</li>
+									<li role="separator" class="divider"></li>
+									<li>
+										<a href="#">Separated link</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+						<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=3e784edefb77f5a6bf6ee70b13621e4e6915aa6cc1044cbe41b5a300a6e34d21"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="免考三门！！" title="免考三门！！"></a>
+						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
+		<div class="search">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="input-group">
+						<div class="input-group-btn">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Action</a>
+								</li>
+								<li>
+									<a href="#">Another action</a>
+								</li>
+								<li>
+									<a href="#">Something else here</a>
+								</li>
+								<li role="separator" class="divider"></li>
+								<li>
+									<a href="#">Separated link</a>
+								</li>
+							</ul>
+						</div>
+						<!-- /btn-group -->
+						<input type="text" class="form-control" aria-label="...">
+					</div>
+					<!-- /input-group -->
+				</div>
+				<!-- /.col-lg-6 -->
 
+			</div>
+			<div class="Sidenav">
+				
+			</div>
 	</body>
 
 </html>
