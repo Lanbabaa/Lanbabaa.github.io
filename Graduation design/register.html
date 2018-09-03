@@ -32,9 +32,13 @@
 				border-radius: 5px;
 				padding: 20px 0;
 			}
-			
-			.content .jizhu {
-				padding: 15px;
+			.User {
+				background: url(img/yhu.png) no-repeat;
+				background-position: 5px;
+			}	
+			.Password {
+				background: url(img/password.png) no-repeat;
+				background-position: 5px;
 			}
 			
 			.signIn input {
@@ -81,6 +85,7 @@
 				top: 45%;
 				display: none;
 			}
+			
 		</style>
 	</head>
 
@@ -92,9 +97,9 @@
 				注册成功
 			</div>
 			<div class="content">
-				<input type="text" id="" value="" placeholder="请输入用户名" autofocus="autofocus" /><br /><br />
-				<input type="password" name="" placeholder="请输入密码" /><br /><br />
-				<input type="text" id="phone" style="width: 126px;" placeholder="请输入手机号" />
+				<input type="text" id="" value="" placeholder="请输入用户名" autofocus="autofocus" class="User" style="padding-left: 25px" /><br /><br />
+				<input type="password" name="" placeholder="请输入密码" class="Password" style="padding-left: 25px" /><br /><br />
+				<input type="text" id="phone" style="width: 144px;" placeholder="请输入手机号" 	 />
 				<input type="button" style="height:32px;width:120px;" value="点击发送验证码" onclick="sendCode(this)" /><br /><br />
 				<input type="button" name="" id="register" value="注册" onclick="register()" /><br /><br />
 				<a href="Sign.html" style="color: 	#00BFFF	;">已有账号?返回登录</a>
