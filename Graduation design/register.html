@@ -154,8 +154,8 @@
 			else if(user != "" && pwd != "" &&phone.length!=11){
 				alert("注册：请输入正确的手机号码")
 			}
-			else if(user == "" && pwd == "" && phone.length!=11){
-				alert("注册：请输入用户名和密码及正确的手机号码")
+			else if(user == "" && pwd == "" && phone.length==""){
+				alert("注册：请输入用户名和密码及手机号码")
 			}
 			else if(user == "" && pwd == "" && phone.length==11){
 				alert("注册：请输入用户名和密码")
