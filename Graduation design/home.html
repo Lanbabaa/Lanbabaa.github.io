@@ -7,15 +7,22 @@
 		<link rel="icon" type="image/x-icon" href="img/icon.ico" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
 		<style type="text/css">
+			a {
+				text-decoration: none;
+				list-style: none;
+			}
+			
 			.Sidenav {
-				width: 500px;
+				width: 300px;
 				min-height: 500px;
 				border: 1px solid #FF4500;
 				position: absolute;
 				left: 20px;
 				top: 180px;
 				border-radius: 5px;
+				text-align: center;
 			}
 			
 			.search {
@@ -27,10 +34,19 @@
 			.search input {
 				width: 300px;
 			}
+			
+			.Sidenav li {
+				float: left;
+			}
+			
+			table {
+				text-align: center;
+			}
 		</style>
 	</head>
 
 	<body>
+		<script src="layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
@@ -113,8 +129,293 @@
 
 			</div>
 			<div class="Sidenav">
-
+				<div class="layui-collapse" lay-accordion>
+					<div class="layui-colla-item">
+						<h2 class="layui-colla-title">女装</h2>
+						<div class="layui-colla-content layui-show">
+							<table width="260px" border="1">
+								<tr>
+									<td>
+										<a href="">上装</a>
+									</td>
+									<td>
+										<a href="">2</a>
+									</td>
+									<td>
+										<a href="">3</a>
+									</td>
+									<td>
+										<a href="">4</a>
+									</td>
+									<td>
+										<a href="">5</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="">下装</a>
+									</td>
+									<td>
+										<a href="">2</a>
+									</td>
+									<td>
+										<a href="">3</a>
+									</td>
+									<td>
+										<a href="">4</a>
+									</td>
+									<td>
+										<a href="">5</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="">鞋包</a>
+									</td>
+									<td>
+										<a href="">2</a>
+									</td>
+									<td>
+										<a href="">3</a>
+									</td>
+									<td>
+										<a href="">4</a>
+									</td>
+									<td>
+										<a href="">5</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="">其他</a>
+									</td>
+									<td>
+										<a href="">2</a>
+									</td>
+									<td>
+										<a href="">3</a>
+									</td>
+									<td>
+										<a href="">4</a>
+									</td>
+									<td>
+										<a href="">5</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="">1</a>
+									</td>
+									<td>
+										<a href="">2</a>
+									</td>
+									<td>
+										<a href="">3</a>
+									</td>
+									<td>
+										<a href="">4</a>
+									</td>
+									<td>
+										<a href="">5</a>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="layui-colla-item">
+						<h2 class="layui-colla-title">男装</h2>
+						<div class="layui-colla-content layui-show">
+							<table width="260px" border="1">
+								<tr>
+									<td>
+										<a href="">1</a>
+									</td>
+									<td>
+										<a href="">2</a>
+									</td>
+									<td>
+										<a href="">3</a>
+									</td>
+									<td>
+										<a href="">4</a>
+									</td>
+									<td>
+										<a href="">5</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="">1</a>
+									</td>
+									<td>
+										<a href="">2</a>
+									</td>
+									<td>
+										<a href="">3</a>
+									</td>
+									<td>
+										<a href="">4</a>
+									</td>
+									<td>
+										<a href="">5</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="">1</a>
+									</td>
+									<td>
+										<a href="">2</a>
+									</td>
+									<td>
+										<a href="">3</a>
+									</td>
+									<td>
+										<a href="">4</a>
+									</td>
+									<td>
+										<a href="">5</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="">1</a>
+									</td>
+									<td>
+										<a href="">2</a>
+									</td>
+									<td>
+										<a href="">3</a>
+									</td>
+									<td>
+										<a href="">4</a>
+									</td>
+									<td>
+										<a href="">5</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="">1</a>
+									</td>
+									<td>
+										<a href="">2</a>
+									</td>
+									<td>
+										<a href="">3</a>
+									</td>
+									<td>
+										<a href="">4</a>
+									</td>
+									<td>
+										<a href="">5</a>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="layui-colla-item">
+						<h2 class="layui-colla-title">数码</h2>
+						<div class="layui-colla-content layui-show">
+							<table width="260px" border="1">
+								<tr>
+									<td>
+										<a href="">1</a>
+									</td>
+									<td>
+										<a href="">2</a>
+									</td>
+									<td>
+										<a href="">3</a>
+									</td>
+									<td>
+										<a href="">4</a>
+									</td>
+									<td>
+										<a href="">5</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="">1</a>
+									</td>
+									<td>
+										<a href="">2</a>
+									</td>
+									<td>
+										<a href="">3</a>
+									</td>
+									<td>
+										<a href="">4</a>
+									</td>
+									<td>
+										<a href="">5</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="">1</a>
+									</td>
+									<td>
+										<a href="">2</a>
+									</td>
+									<td>
+										<a href="">3</a>
+									</td>
+									<td>
+										<a href="">4</a>
+									</td>
+									<td>
+										<a href="">5</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="">1</a>
+									</td>
+									<td>
+										<a href="">2</a>
+									</td>
+									<td>
+										<a href="">3</a>
+									</td>
+									<td>
+										<a href="">4</a>
+									</td>
+									<td>
+										<a href="">5</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="">1</a>
+									</td>
+									<td>
+										<a href="">2</a>
+									</td>
+									<td>
+										<a href="">3</a>
+									</td>
+									<td>
+										<a href="">4</a>
+									</td>
+									<td>
+										<a href="">5</a>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
 			</div>
 	</body>
+	<script type="text/javascript">
+		layui.use('element', function() {
+			var element = layui.element;
+
+			//…
+		});
+	</script>
+	</script>
 
 </html>
