@@ -12,12 +12,12 @@
 				color: #000000;
 				font-size: 12px;
 			}
+			
 			body {
 				padding: 0;
 				margin: 0;
 				background: url(img/banner.jpg) no-repeat;
 				background-size: 100%;
-				
 			}
 			
 			.signIn {
@@ -102,7 +102,7 @@
 				<input type="password" name="" placeholder="请输入密码" class="Password" style="padding-left: 25px" /><br /><br />
 				<input type="text" id="phone" style="width: 144px;" placeholder="请输入手机号" />
 				<input type="button" style="height:32px;width:120px;" value="点击发送验证码" onclick="sendCode(this)" /><br /><br />
-				<input type="button" name="" id="register" value="注册" onclick="register()" style="width: 275px;"/><br /><br />
+				<input type="button" name="" id="register" value="注册" onclick="register()" style="width: 275px;" /><br /><br />
 				<a href="Sign.html" style="color: 	#00BFFF	;">已有账号?返回登录</a>
 			</div>
 		</div>
@@ -138,13 +138,13 @@
 		}
 
 		function register() {
-			var user=$(".User").val();
-			var pwd=$(".Password").val();
-			var phone=$("#phone").val();
-			if (user!=""&&pwd!=""&&phone!="") {
+			var user = $(".User").val();
+			var pwd = $(".Password").val();
+			var phone = $("#phone").val();
+			if(user != "" && pwd != "" && phone != "") {
 				$(".success").fadeIn(1000);
 				setInterval('disappear()', 1500)
-			} else{
+			} else {
 				alert("注册：请输入用户名和密码及手机号")
 			}
 		}
