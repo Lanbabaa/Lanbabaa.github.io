@@ -113,10 +113,15 @@
 		var btn;
 
 		function sendCode(thisBtn) {
-			btn = thisBtn;
-			btn.disabled = true; //将按钮置为不可点击
-			btn.value = nums + '秒后可重新获取';
-			clock = setInterval(doLoop, 1000); //一秒执行一次
+			var n=$('#phone').val();
+			if (n.length==11) {
+				btn = thisBtn;
+				btn.disabled = true; //将按钮置为不可点击
+				btn.value = nums + '秒后可重新获取';
+				clock = setInterval(doLoop, 1000); //一秒执行一次
+			} else{
+				alert("请输入正确的手机号码")
+			}
 		}
 
 		function doLoop() {
