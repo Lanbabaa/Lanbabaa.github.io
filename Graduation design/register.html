@@ -32,10 +32,12 @@
 				border-radius: 5px;
 				padding: 20px 0;
 			}
+			
 			.User {
 				background: url(img/yhu.png) no-repeat;
 				background-position: 5px;
-			}	
+			}
+			
 			.Password {
 				background: url(img/password.png) no-repeat;
 				background-position: 5px;
@@ -85,7 +87,6 @@
 				top: 45%;
 				display: none;
 			}
-			
 		</style>
 	</head>
 
@@ -99,7 +100,7 @@
 			<div class="content">
 				<input type="text" id="" value="" placeholder="请输入用户名" autofocus="autofocus" class="User" style="padding-left: 25px" /><br /><br />
 				<input type="password" name="" placeholder="请输入密码" class="Password" style="padding-left: 25px" /><br /><br />
-				<input type="text" id="phone" style="width: 144px;" placeholder="请输入手机号" 	 />
+				<input type="text" id="phone" style="width: 144px;" placeholder="请输入手机号" />
 				<input type="button" style="height:32px;width:120px;" value="点击发送验证码" onclick="sendCode(this)" /><br /><br />
 				<input type="button" name="" id="register" value="注册" onclick="register()" /><br /><br />
 				<a href="Sign.html" style="color: 	#00BFFF	;">已有账号?返回登录</a>
@@ -113,13 +114,13 @@
 		var btn;
 
 		function sendCode(thisBtn) {
-			var n=$('#phone').val();
-			if (n.length==11) {
+			var n = $('#phone').val();
+			if(n.length == 11) {
 				btn = thisBtn;
 				btn.disabled = true; //将按钮置为不可点击
 				btn.value = nums + '秒后可重新获取';
 				clock = setInterval(doLoop, 1000); //一秒执行一次
-			} else{
+			} else {
 				alert("请输入正确的手机号码")
 			}
 		}
