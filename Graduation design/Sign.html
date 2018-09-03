@@ -58,6 +58,7 @@
 			}
 			
 			.signIn input[type=button] {
+				width: 275px;
 				cursor: pointer;
 				height: 35px;
 				text-align: center;
@@ -99,7 +100,7 @@
 					<input type="checkbox" name="" id="zd" value="" />
 					<label for="zd" style="font-size:12px ;">自动登录</label>
 				</div>
-				<a href="home.html"><input type="button" name="" id="" value="登录" /></a><br /><br />
+				<input type="button" name="" id="" value="登录" onclick="sign()"/><br /><br />
 				<a href="register.html" style="color: #00BFFF	;">还没账号?注册一个</a>
 			</div>
 		</div>
@@ -113,6 +114,15 @@
 				$('#jz').removeProp('checked');
 			}
 		})
+		function sign(){
+			var user=$(".User").val();
+			var pwd=$(".Password").val();
+			if (user!=""&&pwd!="") {
+				window.location.href="home.html"
+			} else{
+				alert("请输入用户名和密码")
+			}
+		}
 	</script>
 	</script>
 
