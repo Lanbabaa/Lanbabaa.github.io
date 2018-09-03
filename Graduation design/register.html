@@ -141,14 +141,35 @@
 			var user = $(".User").val();
 			var pwd = $(".Password").val();
 			var phone = $("#phone").val();
-			if(user != "" && pwd != "" && phone != "") {
+			if(user != "" && pwd != "" && phone != ""&&phone.length==11) {
 				$(".success").fadeIn(1000);
 				setInterval('disappear()', 1500)
-			} else {
-				alert("注册：请输入用户名和密码及手机号")
+			}
+			else if(user==""&&pwd != "" ) {
+				alert("注册：请输入用户名")
+			}
+			else if(user!=""&&pwd == "" ){
+				alert("注册：请输入密码")
+			}
+			else if(user != "" && pwd != "" &&phone.length!=11){
+				alert("注册：请输入正确的手机号码")
+			}
+			else if(user == "" && pwd == "" && phone.length!=11){
+				alert("注册：请输入用户名和密码及正确的手机号码")
+			}
+			else if(user == "" && pwd == "" && phone.length==11){
+				alert("注册：请输入用户名和密码")
+			}
+			else{
+				alert("注册：请输入用户名、密码、手机号")
 			}
 		}
-
+		$(document).ready(function(){
+		　　document.onkeydown = function (event){
+		　　if (event.keyCode==13) 
+		　　　　register();
+		　　};
+		});
 		function disappear() {
 			$(".success").fadeOut(2000);
 			window.location.href = "home.html";

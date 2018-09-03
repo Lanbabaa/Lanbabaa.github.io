@@ -114,14 +114,28 @@
 				$('#jz').removeProp('checked');
 			}
 		})
-
+		$(document).ready(function(){
+		　　document.onkeydown = function (event){
+		　　if (event.keyCode==13) 
+		　　　　sign();
+		　　};
+		});
 		function sign() {
 			var user = $(".User").val();
 			var pwd = $(".Password").val();
-			if(user != "" && pwd != "") {
+			if(user == "adm" && pwd == "123456") {
 				window.location.href = "home.html"
-			} else {
+			} else if(user == "" && pwd != ""){
+				alert("登录：请输入用户名")
+			}
+			else if(user != "" && pwd == ""){
+				alert("登录：请输入密码")
+			}
+			else if(user == "" && pwd == ""){
 				alert("登录：请输入用户名和密码")
+			}
+			else{
+				alert("用户名或密码错误")	
 			}
 		}
 	</script>
