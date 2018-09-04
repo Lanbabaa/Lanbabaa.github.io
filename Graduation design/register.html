@@ -43,6 +43,16 @@
 				background-position: 5px;
 			}
 			
+			.phone {
+				background: url(img/phone.png) no-repeat;
+				background-position: 5px;
+			}
+			
+			.yzm {
+				background: url(img/yzm.png) no-repeat;
+				background-position: 5px;
+			}
+			
 			.signIn input {
 				width: 250px;
 				height: 25px;
@@ -98,11 +108,13 @@
 				注册成功
 			</div>
 			<div class="content">
-				<input type="text" id="" value="" placeholder="请输入用户名" autofocus="autofocus" class="User" style="padding-left: 25px" /><br /><br />
-				<input type="password" name="" placeholder="请输入密码" class="Password" style="padding-left: 25px" /><br /><br />
-				<input type="text" id="phone" style="width: 144px;" placeholder="请输入手机号" />
+				<input type="text" placeholder="请输入用户名" autofocus="autofocus" class="User" style="padding-left: 25px" /><br /><br />
+				<input type="password" placeholder="请输入密码" class="Password" style="padding-left: 25px" /><br /><br />
+				<input type="text" id="phone" value="" placeholder="请输入手机号" autofocus="autofocus" class="phone" style="padding-left: 25px" /><br /><br />
+				<input type="text" id="" class="yzm" style="width: 125px; padding-left: 25px;" placeholder="请输入验证码" />
 				<input type="button" style="height:32px;width:120px;" value="点击发送验证码" onclick="sendCode(this)" /><br /><br />
 				<input type="button" name="" id="register" value="注册" onclick="register()" style="width: 275px;" /><br /><br />
+
 				<a href="Sign.html" style="color: 	#00BFFF	;">已有账号?返回登录</a>
 			</div>
 		</div>
