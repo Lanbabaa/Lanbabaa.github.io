@@ -8,29 +8,36 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
 		<style type="text/css">
-			body{
+			body {
 				text-align: center;
 			}
+			
 			a {
 				text-decoration: none;
 				list-style: none;
 			}
 			
-			table a{
+			table a {
 				color: #FF4500;
-				padding:10px;
+				padding: 10px;
 				margin: 5px;
 			}
-			table{margin-top: 50px;}
-			tr td:first-child a{
-				
+			
+			table {
+				margin-top: 50px;
+			}
+			
+			tr td:first-child a {
 				text-decoration: none;
 				color: #000000;
 				width: 100px;
 			}
+			
 			.Sidenav {
-				width: :;px;
+				width: :;
+				px;
 				min-height: 500px;
 				border: 1px solid #FF4500;
 				position: absolute;
@@ -56,6 +63,17 @@
 			
 			table {
 				text-align: center;
+			}
+			
+			.ac {
+				margin-left: 65px;
+				width: 170px;
+				text-align: left;
+				border: 1px solid #ccc;
+				display: block;
+			}
+			.ac p{
+				padding: 10px;
 			}
 		</style>
 	</head>
@@ -117,31 +135,26 @@
 			</div>
 		</nav>
 		<div class="search">
-			<div class="row">
+			<div class="row" id="app">
 				<div class="col-lg-6">
 					<div class="input-group">
 						<div class="input-group-btn">
 							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 宝贝 <span class="caret"></span></button>
 							<ul class="dropdown-menu">
 								<li>
-									<a href="#">Action</a>
+									<a href="#">宝贝</a>
 								</li>
 								<li>
-									<a href="#">Another action</a>
-								</li>
-								<li>
-									<a href="#">Something else here</a>
-								</li>
-								<li role="separator" class="divider"></li>
-								<li>
-									<a href="#">Separated link</a>
+									<a href="#">店铺</a>
 								</li>
 							</ul>
 						</div>
-						<input type="text" class="form-control" aria-label="...">
+						<input type="text" class="form-control" aria-label="..." v-model="text">
+					</div>
+					<div class="ac">
+						<p>{{ text }}</p>
 					</div>
 				</div>
-
 			</div>
 			<div class="Sidenav">
 				<table>
@@ -390,8 +403,14 @@
 				</table>
 			</div>
 		</div>
-		<h1>林都儿子，你来了啊，快叫爸爸</h1>
 	</body>
 	<script type="text/javascript">
+		new Vue({
+			el: '#app',
+			data: {
+				text: ''
+			}
+		});
 	</script>
+
 </html>
