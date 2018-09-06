@@ -85,29 +85,33 @@
 			label {
 				padding: 0px 10px;
 			}
-			.huanfunav{				
+			
+			.huanfunav {
 				position: absolute;
 				right: 100px;
 				top: 10px;
-				
 			}
-			.huanfu{
+			
+			.huanfu {
 				width: 30px;
 				position: absolute;
 				right: -50px;
 				top: 10px;
 			}
-			.huanfu img{
+			
+			.huanfu img {
 				overflow: hidden;
 				width: 100%;
 				cursor: pointer;
 			}
-			.aaa{
+			
+			.aaa {
 				width: 350px;
 				height: 50px;
 				display: none;
 			}
-			.aaa img{
+			
+			.aaa img {
 				width: 40px;
 				height: 40px;
 				margin: 10px;
@@ -118,17 +122,17 @@
 	<body>
 		<div class="huanfunav">
 			<div class="aaa">
-				<img src="img/banner.jpg" onclick="diyi()" title="沙滩鸡尾酒"/>
-				<img src="img/dier.jpg" onclick="dier()" title="朦胧森林"/>
-				<img src="img/disan.jpg" onclick="disan()" title="富士山"/>
-				<img src="img/disi.jpg" onclick="disi()" title="星空浪漫"/>
-				<img src="img/diwu.jpg" onclick="diwu()" title="宏伟礁石"/>
+				<img src="img/banner.jpg" onclick="diyi()" title="沙滩鸡尾酒" />
+				<img src="img/dier.jpg" onclick="dier()" title="朦胧森林" />
+				<img src="img/disan.jpg" onclick="disan()" title="富士山" />
+				<img src="img/disi.jpg" onclick="disi()" title="星空浪漫" />
+				<img src="img/diwu.jpg" onclick="diwu()" title="宏伟礁石" />
 			</div>
-			<div class="huanfu"  title="个性装扮">
-				<img src="img/huanfu.png"  id="huanfu"/>
+			<div class="huanfu" title="个性装扮">
+				<img src="img/huanfu.png" id="huanfu" />
 			</div>
 		</div>
-		
+
 		<div class="signIn">
 			<h2 style="color: rgba(	0,0,0,.7);">登录</h2>
 			<div class="content">
@@ -147,25 +151,29 @@
 	</body>
 	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
-		function diyi(){
-			$("body").css("background","url(img/banner.jpg) no-repeat")
-			$("body").css("background-size","100%")
+		function diyi() {
+			$("body").css("background", "url(img/banner.jpg) no-repeat")
+			$("body").css("background-size", "100%")
 		}
-		function dier(){
-			$("body").css("background","url(img/dier.jpg) no-repeat")
-			$("body").css("background-size","100%")
+
+		function dier() {
+			$("body").css("background", "url(img/dier.jpg) no-repeat")
+			$("body").css("background-size", "100%")
 		}
-		function disan(){
-			$("body").css("background","url(img/disan.jpg) no-repeat")
-			$("body").css("background-size","100%")
+
+		function disan() {
+			$("body").css("background", "url(img/disan.jpg) no-repeat")
+			$("body").css("background-size", "100%")
 		}
-		function disi(){
-			$("body").css("background","url(img/disi.jpg)	no-repeat")
-			$("body").css("background-size","100%")
+
+		function disi() {
+			$("body").css("background", "url(img/disi.jpg)	no-repeat")
+			$("body").css("background-size", "100%")
 		}
-		function diwu(){
-			$("body").css("background","url(img/diwu.jpg) no-repeat")
-			$("body").css("background-size","100%")
+
+		function diwu() {
+			$("body").css("background", "url(img/diwu.jpg) no-repeat")
+			$("body").css("background-size", "100%")
 		}
 		$('#zd').on('change', function() {
 			if($(this).is(':checked')) {
@@ -181,23 +189,22 @@
 				}　　　　
 			}
 		});
-		$("#huanfu").click(function(){
-		  $(".aaa").slideToggle();
+		$("#huanfu").click(function() {
+			$(".aaa").slideToggle();
 		});
+
 		function sign() {
 			var user = $(".User").val();
 			var pwd = $(".Password").val();
 			if(user == "adm" && pwd == "123456") {
 				window.location.href = "home.html"
-			} 
-			else if(user == ""&& pwd==""){
+			} else if(user == "" && pwd == "") {
 				alert("登录：请输入用户名、密码")
-			}
-			else if(user != "adm" && pwd!=""){
+			} else if(user != "adm" && pwd != "") {
 				alert("登录：用户名不存在")
-			}else if(user == "adm" && pwd != "123456"){
+			} else if(user == "adm" && pwd != "123456") {
 				alert("登录：密码错误")
-			}else if(user == "" && pwd != "") {
+			} else if(user == "" && pwd != "") {
 				alert("登录：请输入用户名")
 			} else if(user != "" && pwd == "") {
 				alert("登录：请输入密码")
