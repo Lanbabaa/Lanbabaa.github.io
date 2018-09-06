@@ -111,12 +111,14 @@
 				top: 10px;
 			}
 			
-			.huanfu:hover{
+			.huanfu:hover {
 				width: 30px;
 			}
-			.huanfu:hover img{
+			
+			.huanfu:hover img {
 				opacity: 1;
 			}
+			
 			.huanfu img {
 				overflow: hidden;
 				width: 100%;
@@ -134,7 +136,7 @@
 				width: 40px;
 				height: 40px;
 				margin: 10px;
-				border-radius:50% ;
+				border-radius: 50%;
 			}
 		</style>
 	</head>
@@ -176,15 +178,14 @@
 
 		function sendCode(thisBtn) {
 			var n = $('#phone').val();
-			if(n.length == 11&&n.length!="") {
+			if(n.length == 11 && n.length != "") {
 				btn = thisBtn;
 				btn.disabled = true; //将按钮置为不可点击
 				btn.value = nums + '秒后可重新获取';
 				clock = setInterval(doLoop, 1000); //一秒执行一次
-			}else if(n.length==""){
+			} else if(n.length == "") {
 				alert("请输入手机号码")
-			}
-			else {
+			} else {
 				alert("请输入正确的手机号码")
 			}
 		}
@@ -212,14 +213,13 @@
 				alert("注册：请输入用户名")
 			} else if(user != "" && pwd == "") {
 				alert("注册：请输入密码")
-			} else if(user != "" && pwd != "" && phone.length != 11&&phone.length != "") {
+			} else if(user != "" && pwd != "" && phone.length != 11 && phone.length != "") {
 				alert("注册：请输入正确的手机号码")
 			} else if(user == "" && pwd == "" && phone.length == "") {
 				alert("注册：请输入用户名和密码及手机号码")
-			} 
-			 else if(user != "" && pwd != "" && phone.length == "") {
+			} else if(user != "" && pwd != "" && phone.length == "") {
 				alert("注册：请输入手机号码")
-			}else if(user == "" && pwd == "" && phone.length == 11||user == "" && pwd == "" && phone.length != "") {
+			} else if(user == "" && pwd == "" && phone.length == 11 || user == "" && pwd == "" && phone.length != "") {
 				alert("注册：请输入用户名和密码")
 			} else {
 				alert("注册：请输入用户名、密码、手机号")
