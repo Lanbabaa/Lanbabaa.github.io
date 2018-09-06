@@ -1,397 +1,157 @@
 <!DOCTYPE html>
-<html>
-
-	<head>
-		<meta charset="UTF-8">
-		<title>首页</title>
-		<link rel="icon" type="image/x-icon" href="img/icon.ico" />
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
-		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
-		<style type="text/css">
-			body {
-				text-align: center;
-			}
-			
-			a {
-				text-decoration: none;
-				list-style: none;
-			}
-			
-			table a {
-				color: #FF4500;
-				padding: 10px;
-				margin: 5px;
-			}
-			
-			
-			tr td:first-child a {
-				text-decoration: none;
-				color: #000000;
-				width: 100px;
-			}
-			
-			.Sidenav {
-				min-height: 500px;
-				border: 1px solid #FF4500;
-				position: absolute;
-				left: 20px;
-				top: 180px;
-				border-radius: 5px;
-				text-align: center;
-			}
-			
-			.search {
-				width: 500px;
-				height: 50px;
-				margin: auto;
-			}
-			
-			.search input {
-				width: 300px;
-			}
-			
-			.Sidenav li {
-				float: left;
-			}
-			
-			table {
-				text-align: center;
-			}
-			
-			.ac {
-				margin-left: 65px;
-				width: 170px;
-				text-align: left;
-				border: 1px solid #ccc;
-				display: block;
-			}
-			.ac p{
-				padding: 10px;
-			}
-			td{
-				height: 30px;
-			}
-			.nvz,
-			.nanz,
-			.shum{
-				margin-bottom: 10px;
-				width: 100%;
-				height: 50px;
-				background-color: #0f0;
-			}
-		</style>
-	</head>
-
-	<body>
-		<script src="layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/npm.js" type="text/javascript" charset="utf-8"></script>
-		<nav class="navbar navbar-default">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				        <span class="sr-only">Toggle navigation</span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				      </button>
-					<a class="navbar-brand" href="#">Shopping</a>
-				</div>
-
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin:0 100px 0 40%;">
-					<ul class="nav navbar-nav navbar-right">
-						<li>
-							<a href="Sign.html">亲，请登录</a>
-						</li>
-						<li>
-							<a href="register.html"><span>还没账号?</span> 注册一个</a>
-						</li>
-
-						<li>
-							<div class="btn-group" style="margin-top: 10px;">
-								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border: 0px; background-color: rgba(0,0,0,0);">
-							   设置 <span class="caret"></span>
-							  </button>
-								<ul class="dropdown-menu">
-									<li>
-										<a href="#">Action</a>
-									</li>
-									<li>
-										<a href="#">Another action</a>
-									</li>
-									<li>
-										<a href="#">Something else here</a>
-									</li>
-									<li role="separator" class="divider"></li>
-									<li>
-										<a href="#">Separated link</a>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li>
-							<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=e1abd3c6cab27fed0289e7d5a65aac0ac9ab68bd60a18f022129e358c5c81668"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="610" title="610"></a>
-						</li>
-					</ul>
-				</div>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>首页</title>
+	<link rel="icon" type="image/x-icon" href="img/icon.ico" />
+<style>
+	*{margin:0; padding:0;}
+	body,html{width:100%; height:100%;}
+	.bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.bg-box-1{
+		background: url('img/1.jpg') no-repeat center/cover;
+	}
+	.bg-box-2{
+		background: url('img/2.jpg') no-repeat center/cover;
+	}
+	.bg-box-3{
+		background: url('img/3.jpg') no-repeat center/cover;
+	}
+	.bg-box-4{
+		background: url('img/4.jpg') no-repeat center/cover;
+	}
+	#wrap{
+		position: absolute;
+		overflow: hidden;
+		top:0; left:0; right:0; bottom:0;
+		margin:auto;
+		width: 1000px;
+		height: 400px;
+	}
+	#wrap > ul{
+		width: 120%;
+		list-style: none;
+	}
+	#wrap > ul > li{
+		float: left;
+		width: 100px;
+		height: 400px;
+		cursor: pointer;
+	}
+	#wrap > ul > li:nth-child(1){
+		background: url('img/1.jpg') no-repeat center/cover;
+	}
+	#wrap > ul > li:nth-child(2){
+		background: url('img/2.jpg') no-repeat center/cover;
+	}
+	#wrap > ul > li:nth-child(3){
+		background: url('img/3.jpg') no-repeat center/cover;
+	}
+	#wrap > ul > li:nth-child(4){
+		background: url('img/4.jpg') no-repeat center/cover;
+		width: 700px;
+	}	
+	#wrap > ul > li > .text{
+		width: 100px;
+		height: 100%;
+		background: #000;
+		opacity: .5;
+	}
+	#wrap > ul > li > .text p{
+		padding: 20px 40px;
+		font-family: 'Microsoft yahei';
+		color: #fff;
+	}
+	.nav{
+		width: 150px;
+		height: 80px;
+		z-index: 999;
+		position: absolute;
+		top: 30px;
+		right: 30px;
+	}
+	.nav a{
+		list-style: none;
+		text-decoration: none;
+		color: #fff;
+	}
+	.nav .dl{
+		border: 1px solid #fff;
+		padding: 10px 20px;		
+	}
+	.nav .dl:hover{
+		box-shadow: 0 0 10px #fff;
+		transform:rotate(7deg);
+		-ms-transform:rotate(7deg); 
+		-webkit-transform:rotate(7deg); 
+	}
+</style>
+</head>
+<body>
+<div class="nav">
+	<a href="Sign.html" class="dl">登录</a>
+</div>
+<div class="bg bg-box-1"></div>
+<div class="bg bg-box-2"></div>
+<div class="bg bg-box-3"></div>
+<div class="bg bg-box-4"></div>
+<div id="wrap">
+	<ul>
+		<li>
+			<div class="text">
+				<p>尼尔机械纪元</p>
 			</div>
-		</nav>
-		<div class="search">
-			<div class="row" id="app">
-				<div class="col-lg-6">
-					<div class="input-group">
-						<div class="input-group-btn">
-							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 宝贝 <span class="caret"></span></button>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="#">宝贝</a>
-								</li>
-								<li>
-									<a href="#">店铺</a>
-								</li>
-							</ul>
-						</div>
-						<input type="text" class="form-control" aria-label="..." v-model="text">
-					</div>
-					<div class="ac">
-						<p>{{ text }}</p>
-					</div>
-				</div>
+		</li>
+		<li>
+			<div class="text">
+				<p>尼尔机械纪元2</p>
 			</div>
-			<div class="Sidenav">
-				<div class="nvz">
-					
-				</div>
-				<table>
-					<tr>
-						<td>
-							<a>上装：</a>
-						</td>
-						<td>
-							<a href="">T恤</a>
-						</td>
-						<td>
-							<a href="">连衣裙</a>
-						</td>
-						<td>
-							<a href="">长袖</a>
-						</td>
-						<td>
-							<a href="">外套</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a>下装：</a>
-						</td>
-						<td>
-							<a href="">牛仔裤</a>
-						</td>
-						<td>
-							<a href="">短裙</a>
-						</td>
-						<td>
-							<a href="">长裙</a>
-						</td>
-						<td>
-							<a href="">休闲裤</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a>鞋包：</a>
-						</td>
-						<td>
-							<a href="">雪地靴</a>
-						</td>
-						<td>
-							<a href="">帆布鞋</a>
-						</td>
-						<td>
-							<a href="">运动鞋</a>
-						</td>
-						<td>
-							<a href="">包包</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a>其他：</a>
-						</td>
-						<td>
-							<a href="">胸徽</a>
-						</td>
-						<td>
-							<a href="">发夹</a>
-						</td>
-						<td>
-							<a href="">4</a>
-						</td>
-						<td>
-							<a href="">5</a>
-						</td>
-					</tr>
-				</table>
-				<div class="nanz">
-					
-				</div>
-				<table>
-					<tr>
-						<td>
-							<a>上装：</a>
-						</td>
-						<td>
-							<a href="">T恤</a>
-						</td>
-						<td>
-							<a href="">连衣裙</a>
-						</td>
-						<td>
-							<a href="">长袖</a>
-						</td>
-						<td>
-							<a href="">外套</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a>下装：</a>
-						</td>
-						<td>
-							<a href="">牛仔裤</a>
-						</td>
-						<td>
-							<a href="">短裙</a>
-						</td>
-						<td>
-							<a href="">长裙</a>
-						</td>
-						<td>
-							<a href="">休闲裤</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a>鞋包：</a>
-						</td>
-						<td>
-							<a href="">雪地靴</a>
-						</td>
-						<td>
-							<a href="">帆布鞋</a>
-						</td>
-						<td>
-							<a href="">运动鞋</a>
-						</td>
-						<td>
-							<a href="">包包</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a>其他：</a>
-						</td>
-						<td>
-							<a href="">胸徽</a>
-						</td>
-						<td>
-							<a href="">发夹</a>
-						</td>
-						<td>
-							<a href="">4</a>
-						</td>
-						<td>
-							<a href="">5</a>
-						</td>
-					</tr>
-				</table>
-				<div class="shum">
-					
-				</div>
-				<table>
-					<tr>
-						<td>
-							<a>上装：</a>
-						</td>
-						<td>
-							<a href="">T恤</a>
-						</td>
-						<td>
-							<a href="">连衣裙</a>
-						</td>
-						<td>
-							<a href="">长袖</a>
-						</td>
-						<td>
-							<a href="">外套</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a>下装：</a>
-						</td>
-						<td>
-							<a href="">牛仔裤</a>
-						</td>
-						<td>
-							<a href="">短裙</a>
-						</td>
-						<td>
-							<a href="">长裙</a>
-						</td>
-						<td>
-							<a href="">休闲裤</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a>鞋包：</a>
-						</td>
-						<td>
-							<a href="">雪地靴</a>
-						</td>
-						<td>
-							<a href="">帆布鞋</a>
-						</td>
-						<td>
-							<a href="">运动鞋</a>
-						</td>
-						<td>
-							<a href="">包包</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a>其他：</a>
-						</td>
-						<td>
-							<a href="">胸徽</a>
-						</td>
-						<td>
-							<a href="">发夹</a>
-						</td>
-						<td>
-							<a href="">4</a>
-						</td>
-						<td>
-							<a href="">5</a>
-						</td>
-					</tr>
-				</table>
+		</li>
+		<li>
+			<div class="text">
+				<p>尼尔机械纪元3</p>
 			</div>
-		</div>
-	</body>
-	<script type="text/javascript">
-		new Vue({
-			el: '#app',
-			data: {
-				text: ''
-			}
-		});
-	</script>
+		</li>
+		<li class="curr">
+			<div class="text">
+				<p>尼尔机械纪元4</p>
+			</div>
+		</li>
+	</ul>
+</div>
 
+<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+(function(){
+	$('#wrap li').mouseover(function(){
+		if(!$(this).hasClass('curr')){
+			$('#wrap li').removeClass('curr');
+			$(this).addClass('curr');
+
+			// 切换背景
+			$('#wrap li').each(function(index){
+				if($(this).hasClass('curr')){
+					$('.bg').fadeOut(300);
+					$('.bg:eq(' + index + ')').fadeIn(500);
+				}
+			});
+
+			$('.curr').stop().animate({
+				width: 700
+			}, 500, 'linear');
+			$('#wrap li').not('.curr').stop().animate({
+				width: 100
+			}, 500, 'linear');
+		}
+	});
+})()
+</script>
+
+</body>
 </html>
