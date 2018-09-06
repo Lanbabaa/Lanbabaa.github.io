@@ -89,6 +89,7 @@
 				position: absolute;
 				right: 100px;
 				top: 10px;
+				
 			}
 			.huanfu{
 				width: 30px;
@@ -102,14 +103,14 @@
 				cursor: pointer;
 			}
 			.aaa{
-				width: 300px;
+				width: 350px;
 				height: 50px;
-				border: 1px solid #000;
+				display: none;
 			}
 			.aaa img{
 				width: 40px;
 				height: 40px;
-				margin: 5px;
+				margin: 10px;
 			}
 		</style>
 	</head>
@@ -119,13 +120,12 @@
 			<div class="aaa">
 				<img src="img/banner.jpg" onclick="diyi()"/>
 				<img src="img/dier.jpg" onclick="dier()"/>
-				<img src="img/banner.jpg" onclick="disan()"/>
-				<img src="img/banner.jpg"/>
-				<img src="img/banner.jpg"/>
-				
+				<img src="img/disan.jpg" onclick="disan()"/>
+				<img src="img/disi.jpg" onclick="disi()"/>
+				<img src="img/diwu.jpg" onclick="diwu()"/>
 			</div>
 			<div class="huanfu">
-				<img src="img/huanfu.png"/>
+				<img src="img/huanfu.png"  id="huanfu"/>
 			</div>
 		</div>
 		
@@ -160,7 +160,12 @@
 			$("body").css("background-size","100%")
 		}
 		function disi(){
-			$("body").css("background","url(img/huanfu.png)")
+			$("body").css("background","url(img/disi.jpg)	")
+			$("body").css("background-size","100%")
+		}
+		function diwu(){
+			$("body").css("background","url(img/diwu.jpg)")
+			$("body").css("background-size","100%")
 		}
 		$('#zd').on('change', function() {
 			if($(this).is(':checked')) {
@@ -176,7 +181,9 @@
 				}　　　　
 			}
 		});
-
+		$("#huanfu").click(function(){
+		  $(".aaa").slideToggle();
+		});
 		function sign() {
 			var user = $(".User").val();
 			var pwd = $(".Password").val();
