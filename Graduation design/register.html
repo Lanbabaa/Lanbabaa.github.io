@@ -152,6 +152,7 @@
 				<img src="img/disan.jpg" onclick="disan()" title="富士山" id="disan"/>
 				<img src="img/disi.jpg" onclick="disi()" title="星空浪漫" id="disi"/>
 				<img src="img/diwu.jpg" onclick="diwu()" title="宏伟礁石" id="diwu"/>
+				<img src="img/diliu.jpg" onclick="diliu()" title="绿色爱心" id="diliu"/>
 			</div>
 			<div class="huanfu" title="个性装扮">
 				<img src="img/huanfu.png" id="huanfu" />
@@ -249,6 +250,7 @@
 			$("#disan").show(500)
 			$("#disi").show(500)
 			$("#diwu").show(500)
+			$("#diliu").show(500)
 		}
 
 		function dier() {
@@ -259,7 +261,7 @@
 			$("#disan").show(500)
 			$("#disi").show(500)
 			$("#diwu").show(500)
-			
+			$("#diliu").show(500)
 		}
 
 		function disan() {
@@ -270,6 +272,7 @@
 			$("#disan").hide(500)
 			$("#disi").show(500)
 			$("#diwu").show(500)
+			$("#diliu").show(500)
 		}
 
 		function disi() {
@@ -280,6 +283,7 @@
 			$("#disan").show(500)
 			$("#disi").hide(500)
 			$("#diwu").show(500)
+			$("#diliu").show(500)
 		}
 
 		function diwu() {
@@ -290,6 +294,17 @@
 			$("#disan").show(500)
 			$("#disi").show(500)
 			$("#diwu").hide(500)
+			$("#diliu").show(500)
+		}
+		function diliu() {
+			$("body").css("background", "url(img/diliu.jpg)")
+			$("body").css("background-size", "100%")
+			$("#diyi").show(500)
+			$("#dier").show(500)
+			$("#disan").show(500)
+			$("#disi").show(500)
+			$("#diwu").show(500)
+			$("#diliu").hide(500)
 		}
 		$('#zd').on('change', function() {
 			if($(this).is(':checked')) {
