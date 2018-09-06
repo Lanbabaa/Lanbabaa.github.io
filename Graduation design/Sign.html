@@ -123,17 +123,20 @@
 				margin: 10px;
 				border-radius: 50%;
 			}
+			#diyi{
+				display: none;
+			}
 		</style>
 	</head>
 
 	<body>
 		<div class="huanfunav">
 			<div class="aaa">
-				<img src="img/banner.jpg" onclick="diyi()" title="沙滩鸡尾酒" />
-				<img src="img/dier.jpg" onclick="dier()" title="朦胧森林" />
-				<img src="img/disan.jpg" onclick="disan()" title="富士山" />
-				<img src="img/disi.jpg" onclick="disi()" title="星空浪漫" />
-				<img src="img/diwu.jpg" onclick="diwu()" title="宏伟礁石" />
+				<img src="img/banner.jpg" onclick="diyi()" title="沙滩鸡尾酒" id="diyi"/>
+				<img src="img/dier.jpg" onclick="dier()" title="朦胧森林" id="dier"/>
+				<img src="img/disan.jpg" onclick="disan()" title="富士山" id="disan"/>
+				<img src="img/disi.jpg" onclick="disi()" title="星空浪漫" id="disi"/>
+				<img src="img/diwu.jpg" onclick="diwu()" title="宏伟礁石" id="diwu"/>
 			</div>
 			<div class="huanfu" title="个性装扮">
 				<img src="img/huanfu.png" id="huanfu" />
@@ -146,10 +149,10 @@
 				<input type="text" placeholder="用户名" autofocus="autofocus" class="User" style="padding-left: 25px" /><br /><br />
 				<input type="password" placeholder="密码" class="Password" style="padding-left: 25px" />
 				<div class="a">
-					<input type="checkbox" id="jz" />
-					<label for="jz" style="font-size:12px ;">记住密码</label>
-					<input type="checkbox" id="zd" />
-					<label for="zd" style="font-size:12px ;">自动登录</label>
+					<input type="checkbox" id="jz" title="记住密码"/>
+					<label for="jz" style="font-size:12px ;" title="记住密码">记住密码</label>
+					<input type="checkbox" id="zd" title="自动登录"/>
+					<label for="zd" style="font-size:12px ;" title="自动登录"> 自动登录</label>
 				</div>
 				<input type="button" value="登录" onclick="sign()" /><br /><br />
 				<a href="register.html" style="color: #00BFFF	;">还没账号?注册一个</a>
@@ -161,26 +164,52 @@
 		function diyi() {
 			$("body").css("background", "url(img/banner.jpg) no-repeat")
 			$("body").css("background-size", "100%")
+			$("#diyi").hide(500)
+			$("#dier").show(500)
+			$("#disan").show(500)
+			$("#disi").show(500)
+			$("#diwu").show(500)
 		}
 
 		function dier() {
 			$("body").css("background", "url(img/dier.jpg) no-repeat")
 			$("body").css("background-size", "100%")
+			$("#diyi").show(500)
+			$("#dier").hide(500)
+			$("#disan").show(500)
+			$("#disi").show(500)
+			$("#diwu").show(500)
+			
 		}
 
 		function disan() {
 			$("body").css("background", "url(img/disan.jpg) no-repeat")
 			$("body").css("background-size", "100%")
+			$("#diyi").show(500)
+			$("#dier").show(500)
+			$("#disan").hide(500)
+			$("#disi").show(500)
+			$("#diwu").show(500)
 		}
 
 		function disi() {
 			$("body").css("background", "url(img/disi.jpg)	no-repeat")
 			$("body").css("background-size", "100%")
+			$("#diyi").show(500)
+			$("#dier").show(500)
+			$("#disan").show(500)
+			$("#disi").hide(500)
+			$("#diwu").show(500)
 		}
 
 		function diwu() {
 			$("body").css("background", "url(img/diwu.jpg) no-repeat")
 			$("body").css("background-size", "100%")
+			$("#diyi").show(500)
+			$("#dier").show(500)
+			$("#disan").show(500)
+			$("#disi").show(500)
+			$("#diwu").hide(500)
 		}
 		$('#zd').on('change', function() {
 			if($(this).is(':checked')) {
