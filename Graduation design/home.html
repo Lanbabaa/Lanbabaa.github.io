@@ -101,24 +101,24 @@
 <div class="bg bg-box-4"></div>
 <div id="wrap">
 	<ul>
-		<li>
+		<li class="a1">
 			<div class="text">
-				<p>尼尔机械纪元</p>
+				<p>首页1</p>
 			</div>
 		</li>
-		<li>
+		<li class="a2">
 			<div class="text">
-				<p>尼尔机械纪元2</p>
+				<p>首页2</p>
 			</div>
 		</li>
-		<li>
+		<li class="a3">
 			<div class="text">
-				<p>尼尔机械纪元3</p>
+				<p>首页3</p>
 			</div>
 		</li>
-		<li class="curr">
+		<li class="curr" class="a4">
 			<div class="text">
-				<p>尼尔机械纪元4</p>
+				<p>首页4</p>
 			</div>
 		</li>
 	</ul>
@@ -126,6 +126,19 @@
 
 <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
+	$('.a1').click(function(){
+		window.location.href = "home.html";
+	});
+	$('.a2').click(function(){
+		window.location.href = "home.html";
+	});
+	$('.a3').click(function(){
+		window.location.href = "home.html";
+	});
+	$('.a4').click(function(){
+		window.location.href = "home.html";
+	});
+
 (function(){
 	$('#wrap li').mouseover(function(){
 		if(!$(this).hasClass('curr')){
