@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		#myDiv{
+			width: 850px;
+			margin: auto;
+			line-height: 45px;
+		}
+		#b01{
+			width: 100px;
+			height: 40px;
+			margin: auto;
+		}
+	</style>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<body>
+		<div id="myDiv">
+			<h2>《剑斩苍穹》</h2>
+			<p>全集 作者：天外之人 简介 一代剑术天才因偷学至高禁术剑阵大典而被处死，转世重生来到天魄大陆，成为云家三公子云天恒。</p>
+			<button id="b01" type="button">点击阅读</button>
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#b01").click(function() {
+				htmlobj = $.ajax({
+					url: "xiaoshuo/xiaos1.txt",
+					async: false
+				});
+				$("#myDiv").html(htmlobj.responseText);
+			});
+		});
+	</script>
+
+</html>
