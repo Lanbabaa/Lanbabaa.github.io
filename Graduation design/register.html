@@ -184,9 +184,9 @@
 			var n = $('#phone').val();
 			if(n.length == 11 && n.length != "") {
 				btn = thisBtn;
-				btn.disabled = true; //将按钮置为不可点击
+				btn.disabled = true; 
 				btn.value = nums + '秒后可重新获取';
-				clock = setInterval(doLoop, 1000); //一秒执行一次
+				clock = setInterval(doLoop, 1000);
 			} else if(n.length == "") {
 				alert("请输入手机号码")
 			} else {
@@ -199,10 +199,10 @@
 			if(nums > 0) {
 				btn.value = nums + '秒后可重新获取';
 			} else {
-				clearInterval(clock); //清除js定时器
+				clearInterval(clock); 
 				btn.disabled = false;
 				btn.value = '点击发送验证码';
-				nums = 60; //重置时间
+				nums = 60;
 			}
 		}
 
