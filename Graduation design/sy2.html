@@ -38,10 +38,32 @@
 		}
 		button:hover{
 		color: #f00;
-		border: 1px solid #f00;
+		border: 1px solid f00;
 		box-shadow: 0 0 10px #FF6600;
 		text-shadow: 0 0 10px #FF6600;
 		cursor: pointer;
+	}
+	.nav{
+		width: 150px;
+		height: 80px;
+		z-index: 999;
+		position: fixed;
+		top: 30px;
+		right: 30px;
+		display: none;
+	}
+	.nav a{
+		list-style: none;
+		text-decoration: none;
+		color: #f00;
+	}
+	.nav .dl{
+		border: 1px solid #f00;
+		padding: 10px 20px;		
+	}
+	.nav .dl:hover{
+		box-shadow: 0 0 10px #FF6600;
+		text-shadow: 0 0 10px #FF6600;		
 	}
 	</style>
 	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
@@ -52,7 +74,9 @@
 			<p>全集 作者：天外之人 简介 一代剑术天才因偷学至高禁术剑阵大典而被处死，转世重生来到天魄大陆，成为云家三公子云天恒。</p>
 			<button id="b01" type="button">点击阅读</button>
 		</div>
-
+		<div class="nav">
+	<a href="" class="dl">返回</a>
+</div>
 	</body>
 	<script type="text/javascript">
 		$("#b01").click(function() {
@@ -61,6 +85,8 @@
 				async: false
 			});
 			$("#myDiv").html(htmlobj.responseText);
+			document.title="《剑斩苍穹》";
+			$(".nav").css('display','block')
 		});
 	</script>
 
