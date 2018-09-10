@@ -17,55 +17,81 @@
 			width: 110px;
 			float: left;
 		}
-		.tit{
+		
+		.tit {
 			background-color: #A0A0A0;
 			margin-bottom: 50px;
 			text-align: center;
 			padding: 10px;
 		}
-		.tit img{
+		
+		.tit img {
 			width: 110px;
 			float: left;
 		}
+		
 		#b01 {
 			width: 100px;
 			height: 40px;
 			margin: auto;
 		}
-		button{
+		
+		button {
 			color: #FF6600;
-			background-color: rgba(255,255,255,0);
+			background-color: rgba(255, 255, 255, 0);
 			border: 1px solid #FF6600;
 		}
-		button:hover{
-		color: #f00;
-		border: 1px solid f00;
-		box-shadow: 0 0 10px #FF6600;
-		text-shadow: 0 0 10px #FF6600;
-		cursor: pointer;
-	}
-	.nav{
-		width: 150px;
-		height: 80px;
-		z-index: 999;
-		position: fixed;
-		top: 30px;
-		right: 30px;
-		display: none;
-	}
-	.nav a{
-		list-style: none;
-		text-decoration: none;
-		color: #f00;
-	}
-	.nav .dl{
-		border: 1px solid #f00;
-		padding: 10px 20px;		
-	}
-	.nav .dl:hover{
-		box-shadow: 0 0 10px #FF6600;
-		text-shadow: 0 0 10px #FF6600;		
-	}
+		
+		button:hover {
+			color: #f00;
+			border: 1px solid f00;
+			box-shadow: 0 0 10px #FF6600;
+			text-shadow: 0 0 10px #FF6600;
+			cursor: pointer;
+		}
+		
+		.nav {
+			width: 150px;
+			height: 80px;
+			z-index: 999;
+			position: fixed;
+			top: 30px;
+			right: 30px;
+			display: none;
+		}
+		
+		.fy {
+			position: fixed;
+			bottom: 10px;
+			cursor: pointer;
+		}
+		
+		.syy {
+			left: 20px;
+		}
+		
+		.xyy {
+			right: 20px;
+		}
+		
+		.nav a,
+		.fy {
+			list-style: none;
+			text-decoration: none;
+			color: #f00;
+		}
+		
+		.nav .dl,
+		.fy {
+			border: 1px solid #f00;
+			padding: 10px 20px;
+		}
+		
+		.nav .dl:hover,
+		.fy:hover {
+			box-shadow: 0 0 10px #FF6600;
+			text-shadow: 0 0 10px #FF6600;
+		}
 	</style>
 	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 
@@ -76,8 +102,10 @@
 			<button id="b01" type="button">点击阅读</button>
 		</div>
 		<div class="nav">
-	<a href="" class="dl">返回</a>
-</div>
+			<a href="" class="dl">返回</a>
+		</div>
+		<a class="fy syy">上一页</a>
+		<a class="fy xyy">下一页</a>
 	</body>
 	<script type="text/javascript">
 		$("#b01").click(function() {
@@ -86,8 +114,57 @@
 				async: false
 			});
 			$("#myDiv").html(htmlobj.responseText);
-			document.title="《剑斩苍穹》";
-			$(".nav").css('display','block')
+			document.title = "《剑斩苍穹》";
+			$(".nav").css('display', 'block')
+		});
+		var i = 1;
+		$(".xyy").click(function() {
+			if(i <= 8) {
+				i++;
+				htmlobj = $.ajax({
+					url: "xiaoshuo/00" + i + ".txt",
+					async: false
+				});
+				$("#myDiv").html(htmlobj.responseText);
+				document.title = "《剑斩苍穹》";
+				$(".nav").css('display', 'block')
+			}else if(i==19){
+				alert("没有下一页了，敬请期待")
+			} else {
+				i++;
+				htmlobj = $.ajax({
+					url: "xiaoshuo/0" + i + ".txt",
+					async: false
+				});
+				$("#myDiv").html(htmlobj.responseText);
+				document.title = "《剑斩苍穹》";
+				$(".nav").css('display', 'block')
+			}
+		});
+		$(".syy").click(function() {
+			if(i <= 1) {
+				alert("前面没有了");
+			} 
+			else if(i>=11){
+				i--;
+				htmlobj = $.ajax({
+					url: "xiaoshuo/0" + i + ".txt",
+					async: false
+				});
+				$("#myDiv").html(htmlobj.responseText);
+				document.title = "《剑斩苍穹》";
+				$(".nav").css('display', 'block')
+			}
+			else {
+				i--;
+				htmlobj = $.ajax({
+					url: "xiaoshuo/00" + i + ".txt",
+					async: false
+				});
+				$("#myDiv").html(htmlobj.responseText);
+				document.title = "《剑斩苍穹》";
+				$(".nav").css('display', 'block')
+			}
 		});
 	</script>
 
