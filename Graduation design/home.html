@@ -145,8 +145,6 @@
 		if(!$(this).hasClass('curr')){
 			$('#wrap li').removeClass('curr');
 			$(this).addClass('curr');
-
-			// 切换背景
 			$('#wrap li').each(function(index){
 				if($(this).hasClass('curr')){
 					$('.bg').fadeOut(300);
