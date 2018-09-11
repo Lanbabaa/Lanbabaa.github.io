@@ -167,16 +167,7 @@
 
 	</body>
 	<script type="text/javascript">
-		$("#b01").click(function() {
-			htmlobj = $.ajax({
-				url: "xiaoshuo/001.txt",
-				async: false
-			});
-			$(".xiaos").html(htmlobj.responseText);
-			document.title = "《剑斩苍穹》";
-			$(".nav").css('display', 'block')
-			$(".fy").css('display', 'block')
-		});
+		
 		$("a,button").click(function() {
 			$('html,body').animate({
 				scrollTop: 0
@@ -236,6 +227,16 @@
 				$(".xiaos").html(htmlobj.responseText);
 
 			}
+		});
+		$("#b01").click(function() {
+			htmlobj = $.ajax({
+				url: "xiaoshuo/001.txt",
+				async: false
+			});
+			$(".xiaos").html(htmlobj.responseText);
+			document.title = "《剑斩苍穹》";
+			$(".nav").css('display', 'block')
+			$(".fy").css('display', 'block')
 		});
 		$("#b02").click(function() {
 			htmlobj = $.ajax({
