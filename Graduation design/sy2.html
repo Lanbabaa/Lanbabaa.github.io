@@ -10,15 +10,16 @@
 	<style type="text/css">
 		.continued {
 			color: #f00;
-			
 		}
 		
 		.whole {
 			color: #009F95;
 		}
-		.continued span{
+		
+		.continued span {
 			margin-left: 30px;
 		}
+		
 		.xiaos {
 			width: 850px;
 			margin: auto;
@@ -130,10 +131,8 @@
 				<h2><img src="img/02.jpg"/>《最强特种兵王》</h2>
 				<p class="continued"> 更新中 <span>更新至第五章</span></p>
 				<p> 作者：云中羊</p>
-				<p> 简介: 军刀榜，东象、西虎、南狂、北妖，我就是兵王叶凡，绰号【南狂】。
-    特殊长假回都市中，巧遇尤物老板娘，妩媚，且凶悍，嗯，有挑战！
-    再遇绝色女总裁，为毛总是看不对眼，你是猴子派来和我撕逼的吗？
-    一双铁拳，疯魔都市，一把军刀，傲视群雄，舍-我-其-谁！</p>
+				<p> 简介: 军刀榜，东象、西虎、南狂、北妖，我就是兵王叶凡，绰号【南狂】。 特殊长假回都市中，巧遇尤物老板娘，妩媚，且凶悍，嗯，有挑战！ 再遇绝色女总裁，为毛总是看不对眼，你是猴子派来和我撕逼的吗？ 一双铁拳，疯魔都市，一把军刀，傲视群雄，舍-我-其-谁！
+				</p>
 				<button id="b02" type="button">点击阅读</button>
 			</div>
 			<div id="myDiv">
@@ -178,8 +177,10 @@
 			$(".nav").css('display', 'block')
 			$(".fy").css('display', 'block')
 		});
-		$("a,button").click(function(){
-			$('html,body').animate({scrollTop:0},'slow');
+		$("a,button").click(function() {
+			$('html,body').animate({
+				scrollTop: 0
+			}, 'slow');
 		});
 		var i = 1;
 		$(".xyy").click(function() {
@@ -190,7 +191,7 @@
 					async: false
 				});
 				$(".xiaos").html(htmlobj.responseText);
-			} else if(i == 23||i == 105||i == 205||i == 305||i == 405) {
+			} else if(i == 23 || i == 105 || i == 205 || i == 305 || i == 405) {
 				alert("未完待续，敬请期待")
 			} else if(i >= 101) {
 				i++;
@@ -210,7 +211,7 @@
 			}
 		});
 		$(".syy").click(function() {
-			if(i <= 1||i==101||i==201||i==301||i==401) {
+			if(i <= 1 || i == 101 || i == 201 || i == 301 || i == 401) {
 				alert("前面没有了");
 			} else if(i >= 11 && i < 100) {
 				i--;
@@ -279,7 +280,7 @@
 			$(".nav").css('display', 'block')
 			$(".fy").css('display', 'block')
 			i = 401;
-		}); 
+		});
 	</script>
 
 </html>
