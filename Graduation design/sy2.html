@@ -177,6 +177,9 @@
 			$(".nav").css('display', 'block')
 			$(".fy").css('display', 'block')
 		});
+		$("a").click(function(){
+			$('html,body').animate({scrollTop:0},'slow');
+		});
 		var i = 1;
 		$(".xyy").click(function() {
 			if(i <= 8) {
