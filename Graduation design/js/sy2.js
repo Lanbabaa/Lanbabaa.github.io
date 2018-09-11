@@ -13,7 +13,7 @@ $("a,button").click(function() {
 					async: false
 				});
 				$(".xiaos").html(htmlobj.responseText);
-			} else if(i == 23 || i == 112 || i == 205 || i == 329 || i == 411) {
+			} else if(i == 23 || i == 137 || i == 205 || i == 329 || i == 411) {
 				alert("未完待续，敬请期待")
 			} else if(i >= 101) {
 				i++;
