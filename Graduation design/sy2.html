@@ -8,14 +8,16 @@
 		<link rel="icon" type="image/x-icon" href="img/sy2.ico" />
 	</head>
 	<style type="text/css">
-		body{
+		body {
 			padding: 0;
 			margin: 0;
 		}
-		a{
+		
+		a {
 			list-style: none;
 			text-decoration: none;
 		}
+		
 		.continued {
 			color: #f00;
 		}
@@ -24,7 +26,7 @@
 			color: #009F95;
 		}
 		
-		.continued span {
+		 span {
 			margin-left: 30px;
 		}
 		
@@ -47,10 +49,7 @@
 			padding: 10px;
 		}
 		
-		.tit img {
-			width: 110px;
-			float: left;
-		}
+
 		
 		#myDiv {
 			padding: 30px 20px;
@@ -96,16 +95,19 @@
 			cursor: pointer;
 			display: none;
 		}
-		.navfh{		
+		
+		.navfh {
 			width: 100%;
-			height: 80px;		
+			height: 80px;
 		}
-		.navfh .fh{
+		
+		.navfh .fh {
 			text-align: center;
 			color: #f00;
 			display: block;
-			margin:20px;
+			margin: 20px;
 		}
+		
 		.syy {
 			left: 20px;
 		}
@@ -115,23 +117,23 @@
 		}
 		
 		.nav a,
-		.fy {			
+		.fy {
 			color: #f00;
 		}
 		
-		.nav .dl,.fh,
+		.nav .dl,
+		.fh,
 		.fy {
 			border: 1px solid #f00;
 			padding: 10px 20px;
 		}
 		
 		.nav .dl:hover,
-		.fy:hover ,
-		.fh:hover{
+		.fy:hover,
+		.fh:hover {
 			box-shadow: 0 0 10px #FF6600;
 			text-shadow: 0 0 10px #FF6600;
 		}
-
 	</style>
 	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 
@@ -142,7 +144,7 @@
 			</div>
 			<div id="myDiv">
 				<h2><img src="img/01.jpg"/>《剑斩苍穹》</h2>
-				<p class="whole"> 全集 </p>
+				<p class="whole"> 全集   <span>共四百四十九章</span></p>
 				<p> 作者：天外之人</p>
 				<p> 简介：一代剑术天才因偷学至高禁术剑阵大典而被处死，转世重生来到天魄大陆，成为云家三公子云天恒。</p>
 				<button id="b01" type="button">点击阅读</button>
@@ -187,7 +189,6 @@
 
 	</body>
 	<script type="text/javascript">
-		
 		$("a,button").click(function() {
 			$('html,body').animate({
 				scrollTop: 0
@@ -237,8 +238,7 @@
 					url: "xiaoshuo/" + i + ".txt",
 					async: false
 				});
-				
-				
+
 				$(".xiaos").html(htmlobj.responseText);
 			} else {
 				i--;
