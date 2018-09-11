@@ -26,7 +26,7 @@
 			color: #009F95;
 		}
 		
-		 span {
+		span {
 			margin-left: 30px;
 		}
 		
@@ -48,8 +48,6 @@
 			text-align: center;
 			padding: 10px;
 		}
-		
-
 		
 		#myDiv {
 			padding: 30px 20px;
@@ -144,7 +142,7 @@
 			</div>
 			<div id="myDiv">
 				<h2><img src="img/01.jpg"/>《剑斩苍穹》</h2>
-				<p class="whole"> 全集   <span>共四百四十九章</span></p>
+				<p class="whole"> 全集 <span>共四百四十九章</span></p>
 				<p> 作者：天外之人</p>
 				<p> 简介：一代剑术天才因偷学至高禁术剑阵大典而被处死，转世重生来到天魄大陆，成为云家三公子云天恒。</p>
 				<button id="b01" type="button">点击阅读</button>
@@ -184,8 +182,8 @@
 		<div class="nav">
 			<a href="" class="dl">返回</a>
 		</div>
-		<a class="fy syy">上一页</a>
-		<a class="fy xyy">下一页</a>
+		<a class="fy syy" onclick="syy()">上一页</a>
+		<a class="fy xyy" onclick="xyy()">下一页</a>
 
 	</body>
 	<script type="text/javascript">
@@ -195,7 +193,8 @@
 			}, 'slow');
 		});
 		var i = 1;
-		$(".xyy").click(function() {
+
+		function xyy() {
 			if(i <= 8) {
 				i++;
 				htmlobj = $.ajax({
@@ -221,8 +220,9 @@
 				$(".xiaos").html(htmlobj.responseText);
 
 			}
-		});
-		$(".syy").click(function() {
+		}
+
+		function syy() {
 			if(i <= 1 || i == 101 || i == 201 || i == 301 || i == 401) {
 				alert("前面没有了");
 			} else if(i >= 11 && i < 100) {
@@ -249,7 +249,8 @@
 				$(".xiaos").html(htmlobj.responseText);
 
 			}
-		});
+		}
+		var j = 0;
 		$("#b01").click(function() {
 			htmlobj = $.ajax({
 				url: "xiaoshuo/001.txt",
