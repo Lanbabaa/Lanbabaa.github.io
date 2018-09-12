@@ -79,7 +79,7 @@
 					inputs[i].className = "a";
 				}
 			}
-			if(inputs[1].value!=""&&inputs[2].value!=""&&inputs[3].value!=""&&inputs[4].value!=""){
+			if($("input[type='checkbox']").is(':checked')==true&&$("#phone").val()!=""&&$("#pwd").val()!=""&&$("#user").val()!=""&&$("#yzmText").val()!=""){
 				window.location.href = "login.html";
 			}
 		}

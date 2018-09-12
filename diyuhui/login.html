@@ -41,10 +41,12 @@
 			for(var i = 0; i < inputs.length; i++) {
 				if(!inputs[i].value) {
 					inputs[i].className = "a";
-				} else if(inputs[1].value!=""&&inputs[2].value!=""){
+				}
+			}		
+			if($("#user").val()!=""&&$("#pwd").val()!=""){
 				window.location.href = "login.html";
 			}
-			}
 		}
+
 	</script>
 </html>
