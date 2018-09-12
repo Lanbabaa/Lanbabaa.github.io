@@ -1,7 +1,7 @@
-$("a,button").click(function() {
-			$('html,body').animate({
+		$("a,button").click(function() {
+				$('html,body').animate({
 				scrollTop: 0
-			}, 'slow');
+			}, 100);
 		});
 		var i = 1;
 
@@ -13,7 +13,7 @@ $("a,button").click(function() {
 					async: false
 				});
 				$(".xiaos").html(htmlobj.responseText);
-			} else if(i == 23 || i == 150 || i == 205 || i == 342 || i == 411) {
+			} else if(i == 23 || i == 600 || i == 205 || i == 342 || i == 411) {
 				alert("未完待续，敬请期待")
 			} else if(i >= 101) {
 				i++;
@@ -34,7 +34,7 @@ $("a,button").click(function() {
 		}
 
 		function syy() {
-			if(i <= 1 || i == 101 || i == 201 || i == 301 || i == 401) {
+			if(i <= 1 || i == 501 || i == 201 || i == 301 || i == 401) {
 				alert("前面没有了");
 			} else if(i >= 11 && i < 100) {
 				i--;
@@ -74,14 +74,14 @@ $("a,button").click(function() {
 		});
 		$("#b02").click(function() {
 			htmlobj = $.ajax({
-				url: "xiaoshuo/101.txt",
+				url: "xiaoshuo/501.txt",
 				async: false
 			});
 			$(".xiaos").html(htmlobj.responseText);
 			document.title = "《最强特种兵王》";
 			$(".nav").css('display', 'block')
 			$(".fy").css('display', 'block')
-			i = 101;
+			i = 501;
 		});
 		$("#b03").click(function() {
 			htmlobj = $.ajax({
