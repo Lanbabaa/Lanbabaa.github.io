@@ -21,7 +21,7 @@
 						<input type="text" name="" id="phone" onfocus="onfocu(this.id)" placeholder="请输入手机号" />
 						<input type="text" name="" id="yzmText" onfocus="onfocu(this.id)" placeholder="请输入验证码" /><input type="button" id="yzmBtn" value="点击发送验证码" onclick="sendCode(this)" />
 						<input type="text" name="" id="user" onfocus="onfocu(this.id)" placeholder="请输入昵称" />
-						<input type="text" name="" id="pwd" onfocus="onfocu(this.id)" placeholder="请输入密码" />
+						<input type="password" name="" id="pwd" onfocus="onfocu(this.id)" placeholder="请输入密码" />
 					</div>
 					<div class="loginBottom">
 						<input type="checkbox" id="agree" />
@@ -73,7 +73,7 @@
 		}
 
 		function register() {
-			var inputs = document.querySelectorAll("input[type=text]");
+			var inputs = document.querySelectorAll("input[type=text],input[type=password]");
 			for(var i = 0; i < inputs.length; i++) {
 				if(!inputs[i].value) {
 					inputs[i].className = "a";
