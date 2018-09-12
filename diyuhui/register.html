@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+	</head>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+
+	<body>
+		<div class="loginBox">
+			<div class="from">
+				<div class="box">
+					<div class="loginHead">
+						<span class="login">注册</span><span class="register">已有账号,去<a href="login.html"> 登录</a></span>
+					</div>
+					<div class="loginMain">
+						<input type="text" name="" id="phone" onfocus="onfocu(this.id)" placeholder="请输入手机号" />
+						<input type="text" name="" id="yzmText" onfocus="onfocu(this.id)" placeholder="请输入验证码" /><input type="button" id="yzmBtn" value="点击发送验证码" onclick="sendCode(this)" />
+						<input type="text" name="" id="user" onfocus="onfocu(this.id)" placeholder="请输入昵称" />
+						<input type="text" name="" id="pwd" onfocus="onfocu(this.id)" placeholder="请输入密码" />
+					</div>
+					<div class="loginBottom">
+						<input type="checkbox" id="agree" />
+						<label for="agree" style="font-size:12px"> 我已阅读并同意  <a href="#">服务条款</a></label>
+					</div>
+					<input type="button" id="register" onclick="register()" value="立即注册" />
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".loginBox").fadeIn("slow");
+		});
+
+		function onfocu(x) {
+			document.getElementById(x).className = "b";
+		}
+		var clock = '';
+		var nums = 60;
+		var btn;
+
+		function sendCode(thisBtn) {
+			var n = $('#phone').val();
+			if(n.length == 11 && n.length != "") {
+				btn = thisBtn;
+				btn.disabled = true;
+				btn.value = nums + '秒后可重新获取';
+				clock = setInterval(doLoop, 1000);
+			} else if(n.length == "") {
+				document.getElementById("phone").className = "a";
+			} else {
+				alert("请输入正确的手机号码")
+			}
+		}
+
+		function doLoop() {
+			nums--;
+			if(nums > 0) {
+				btn.value = nums + '秒后可重新获取';
+				$("#yzmBtn").css("cursor", "not-allowed")
+			} else {
+				clearInterval(clock);
+				btn.disabled = false;
+				btn.value = '点击发送验证码';
+				$("#yzmBtn").css("cursor", "pointer")
+				nums = 60;
+			}
+		}
+
+		function register() {
+			var inputs = document.querySelectorAll("input[type=text]");
+			for(var i = 0; i < inputs.length; i++) {
+				if(!inputs[i].value) {
+					inputs[i].className = "a";
+				} else {
+					window.location.href = "login.html";
+				}
+			}
+		}
+	</script>
+
+</html>

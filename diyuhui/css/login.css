@@ -1,0 +1,188 @@
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			background:#FFF url(/dituhui/img/banner.png) no-repeat fixed 50% 50%;
+		}
+		
+		@media screen and (min-width: 0px) {
+			
+		}				
+		@media screen and (min-width: 768px) {
+			a {
+				text-decoration: none;
+				list-style: none;
+				color: #108ee9;
+				font-size: 12px;
+			}
+			span {
+				font-size: 12px;
+				color: #757575;
+			}
+			label {
+				color: #108ee9;
+				cursor: pointer;
+			}
+			.login {
+				font-size: 18px;
+				position: relative;
+				font-size: 18px;
+				color: #484848;
+				margin-bottom: 10px;
+			}
+			.loginBox {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-top: -200px;
+				margin-left: -230px;
+				width: 460px;
+				height: 400px;
+				border-radius: 5px;
+				background: #fff;
+				display: none;
+				box-shadow: 5px 5px 15px rgba(25,172,158,.3)
+			}
+			.box {
+				position: absolute;
+				width: 292px;
+				height: 210px;
+				left: 50%;
+				top: 50%;
+				margin-left: -146px;
+				margin-top: -105px;
+			}
+			.loginHead {
+				width: 100%;
+				position: relative;
+			}
+			.loginHead .register {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+			}
+			.loginBottom {
+				position: relative;
+				width: 100%;
+				height: 30px;
+				text-align: left;
+			}
+			.loginBottom input[type="checkbox"] {
+				width: 12px;
+				height: 12px;
+				display: inline-block;
+				text-align: center;
+				vertical-align: middle;
+				line-height: 12px;
+				position: relative;
+			}
+			.loginBottom input[type="checkbox"]::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				background: #fff;
+				width: 100%;
+				height: 100%;
+				border: 1px solid #108ee9;
+			}
+			.loginBottom input[type="checkbox"]:checked::before {
+				content: "\2713";
+				background-color: #108ee9;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				border: 1px solid #108ee9;
+				color: #fff;
+				font-size: 12px;
+				font-weight: bold;
+			}
+			.loginBottom label{
+				vertical-align:middle;
+			}
+			.loginBottom a {
+				position: absolute;
+				right: 0;
+				top: 50%;
+				margin-top: -3px;
+			}
+			input {
+				width: 100%;
+				margin: 15px 0px;
+			}
+			input[type=text],
+			input[type=password] {
+				height: 28px;
+				border-top: 0;
+				border-left: 0;
+				border-right: 0;
+				border-radius: 0;
+				margin: 10px 0px;
+				box-shadow: none;
+				outline: none;
+				border-bottom-width: 1px;
+				border-bottom-color: #eee;
+				background-color: #fFF!important;
+				font-size: 14px;
+				font-weight: lighter;
+				transition: border-bottom-color .8s;
+				padding-left:5px ;
+			}
+			input[type=button] {
+				border-radius: 3px;
+				height: 30px;
+				padding: 0px 15px;
+				color: #fff;
+				background-color: #0e77ca;
+				border: 0px;
+				opacity: 0.9;
+				transition: opacity .2s;
+			}
+			input[type=button]:hover {
+				opacity: 0.8;
+				cursor: pointer;
+			}
+			input:focus {
+				border-bottom-color: #108ee9;
+			}
+			input:hover {
+				border-bottom-color: #108ee9;
+			}
+			input::-webkit-input-placeholder {
+				color: #666;
+			}
+			input:-moz-placeholder {
+				color: #666;
+			}
+			input::-moz-placeholder {
+				color: #666;
+			}
+			input:-ms-input-placeholder {
+				color: #666;
+			}
+			.a::-webkit-input-placeholder {
+				color: red;
+			}
+			.a:-moz-placeholder {
+				color: red;
+			}
+			.a::-moz-placeholder {
+				color: red;
+			}
+			.a:-ms-input-placeholder {
+				color: red;
+			}
+			.b::-webkit-input-placeholder {
+				color: #666;
+			}
+			.b:-moz-placeholder {
+				color: #666;
+			}
+			.b::-moz-placeholder {
+				color: #666;
+			}
+			.b:-ms-input-placeholder {
+				color: #666;
+			}
+		}
