@@ -164,8 +164,7 @@ input:hover {
 	display: block;
 }
 .unfilled2{
-	padding-left: 2px;
-	margin: -8px 5px;
+	margin: -8px 0px -8px 55px;
 	font-size: 10px;
 	color: #FF0000;
 	display: inline-block;
