@@ -8,7 +8,8 @@
 		<link rel="stylesheet" type="text/css" href="css/register.css"/>
 	</head>
 	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
-
+<style type="text/css">
+</style>
 	<body>
 		<div class="loginBox">
 			<div class="from">
@@ -17,10 +18,14 @@
 						<span class="login">注册</span><span class="register">已有账号,去<a href="login.html"> 登录</a></span>
 					</div>
 					<div class="loginMain">
-						<input type="text" name="" id="phone" onfocus="focused(this.id)" placeholder="请输入手机号" />
+						<input type="text" name="" id="phone"  maxlength="11" onfocus="focused(this.id)" placeholder="请输入手机号" />
+						<p id="phones">请输入正确的手机号</p>
 						<input type="text" name="" id="yzmText" onfocus="focused(this.id)" placeholder="请输入验证码" /><input type="button" id="yzmBtn" value="点击发送验证码" onclick="sendCode(this)" />
+						<p id="yzmTexts">验证码错误</p>
 						<input type="text" name="" id="user" onfocus="focused(this.id)" placeholder="请输入昵称" />
+						<p id="users">请输入昵称</p>
 						<input type="password" name="" id="pwd" onfocus="focused(this.id)" placeholder="请输入密码" />
+						<p id="pwds">必须为6-16个数字、字母组成</p>
 					</div>
 					<div class="loginBottom">
 						<input type="checkbox" id="agree" />
@@ -37,7 +42,7 @@
 		});
 
 		function focused(x) {
-			document.getElementById(x).className = "recovery";
+			document.getElementById(x+"s").className = "recovery";
 		}
 		var clock = '';
 		var nums = 60;
@@ -51,7 +56,7 @@
 				btn.value = nums + '秒后可重新获取';
 				clock = setInterval(doLoop, 1000);
 			} else if(n.length == "") {
-				document.getElementById("phone").className = "unfilled";
+				document.getElementById("phones").className = "unfilled";
 			} else {
 				alert("请输入正确的手机号码")
 			}
@@ -62,7 +67,8 @@
 			if(nums > 0) {
 				btn.value = nums + '秒后可重新获取';
 				$("#yzmBtn").css("cursor", "not-allowed")
-			} else {
+			} 
+			else {
 				clearInterval(clock);
 				btn.disabled = false;
 				btn.value = '点击发送验证码';
@@ -73,9 +79,10 @@
 
 		function register() {
 			var inputs = document.querySelectorAll("input[type=text],input[type=password]");
+			var ps=document.querySelectorAll("p")
 			for(var i = 0; i < inputs.length; i++) {
 				if(!inputs[i].value) {
-					inputs[i].className = "unfilled";
+					ps[i].className = "unfilled";
 				}
 			}
 			if($("input[type='checkbox']").is(':checked')==true&&$("#phone").val()!=""&&$("#pwd").val()!=""&&$("#user").val()!=""&&$("#yzmText").val()!=""){

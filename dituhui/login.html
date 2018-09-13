@@ -17,7 +17,9 @@
 					</div>
 					<div class="loginMain">
 						<input type="text" id="user" onfocus="onfocu(this.id)" placeholder="请输入手机号" />
+						<p id="users">手机号错误</p>
 						<input type="password" id="pwd" onfocus="onfocu(this.id)" placeholder="请输入密码" />
+						<p id="pwds">密码错误</p>
 					</div>
 					<div class="loginBottom">
 						<input type="checkbox" id="zd" title="自动登录" />
@@ -34,13 +36,14 @@
 		    $(".loginBox").fadeIn("slow");
 		});
 		function onfocu(x) {
-			document.getElementById(x).className = "recovery";
+			document.getElementById(x+"s").className = "recovery";
 		}
 		function login() {
 			var inputs = $("input[type=text],input[type=password]");	
+			var ps=document.querySelectorAll("p")
 			for(var i = 0; i < inputs.length; i++) {
 				if(!inputs[i].value) {
-					inputs[i].className = "unfilled";
+					ps[i].className = "unfilled";
 				}
 			}		
 			if($("#user").val()!=""&&$("#pwd").val()!=""){
