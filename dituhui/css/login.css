@@ -160,28 +160,28 @@
 			input:-ms-input-placeholder {
 				color: #666;
 			}
-			.a::-webkit-input-placeholder {
+			.unfilled::-webkit-input-placeholder {
 				color: red;
 			}
-			.a:-moz-placeholder {
+			.unfilled:-moz-placeholder {
 				color: red;
 			}
-			.a::-moz-placeholder {
+			.unfilled::-moz-placeholder {
 				color: red;
 			}
-			.a:-ms-input-placeholder {
+			.unfilled:-ms-input-placeholder {
 				color: red;
 			}
-			.b::-webkit-input-placeholder {
+			.recovery::-webkit-input-placeholder {
 				color: #666;
 			}
-			.b:-moz-placeholder {
+			.recovery:-moz-placeholder {
 				color: #666;
 			}
-			.b::-moz-placeholder {
+			.recovery::-moz-placeholder {
 				color: #666;
 			}
-			.b:-ms-input-placeholder {
+			.recovery:-ms-input-placeholder {
 				color: #666;
 			}
 		}

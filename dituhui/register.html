@@ -38,7 +38,7 @@
 		});
 
 		function onfocu(x) {
-			document.getElementById(x).className = "b";
+			document.getElementById(x).className = "recovery";
 		}
 		var clock = '';
 		var nums = 60;
@@ -52,7 +52,7 @@
 				btn.value = nums + '秒后可重新获取';
 				clock = setInterval(doLoop, 1000);
 			} else if(n.length == "") {
-				document.getElementById("phone").className = "a";
+				document.getElementById("phone").className = "unfilled";
 			} else {
 				alert("请输入正确的手机号码")
 			}
@@ -76,7 +76,7 @@
 			var inputs = document.querySelectorAll("input[type=text],input[type=password]");
 			for(var i = 0; i < inputs.length; i++) {
 				if(!inputs[i].value) {
-					inputs[i].className = "a";
+					inputs[i].className = "unfilled";
 				}
 			}
 			if($("input[type='checkbox']").is(':checked')==true&&$("#phone").val()!=""&&$("#pwd").val()!=""&&$("#user").val()!=""&&$("#yzmText").val()!=""){

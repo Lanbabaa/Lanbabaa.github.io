@@ -34,13 +34,13 @@
 		    $(".loginBox").fadeIn("slow");
 		});
 		function onfocu(x) {
-			document.getElementById(x).className = "b";
+			document.getElementById(x).className = "recovery";
 		}
 		function login() {
 			var inputs = $("input[type=text],input[type=password]");	
 			for(var i = 0; i < inputs.length; i++) {
 				if(!inputs[i].value) {
-					inputs[i].className = "a";
+					inputs[i].className = "unfilled";
 				}
 			}		
 			if($("#user").val()!=""&&$("#pwd").val()!=""){
