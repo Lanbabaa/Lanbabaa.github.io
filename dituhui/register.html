@@ -18,10 +18,10 @@
 						<span class="login">注册</span><span class="register">已有账号,去<a href="login.html"> 登录</a></span>
 					</div>
 					<div class="loginMain">
-						<input type="text" name="" id="phone" onfocus="onfocu(this.id)" placeholder="请输入手机号" />
-						<input type="text" name="" id="yzmText" onfocus="onfocu(this.id)" placeholder="请输入验证码" /><input type="button" id="yzmBtn" value="点击发送验证码" onclick="sendCode(this)" />
-						<input type="text" name="" id="user" onfocus="onfocu(this.id)" placeholder="请输入昵称" />
-						<input type="password" name="" id="pwd" onfocus="onfocu(this.id)" placeholder="请输入密码" />
+						<input type="text" name="" id="phone" onfocus="focused(this.id)" placeholder="请输入手机号" />
+						<input type="text" name="" id="yzmText" onfocus="focused(this.id)" placeholder="请输入验证码" /><input type="button" id="yzmBtn" value="点击发送验证码" onclick="sendCode(this)" />
+						<input type="text" name="" id="user" onfocus="focused(this.id)" placeholder="请输入昵称" />
+						<input type="password" name="" id="pwd" onfocus="focused(this.id)" placeholder="请输入密码" />
 					</div>
 					<div class="loginBottom">
 						<input type="checkbox" id="agree" />
@@ -37,7 +37,7 @@
 			$(".loginBox").fadeIn("slow");
 		});
 
-		function onfocu(x) {
+		function focused(x) {
 			document.getElementById(x).className = "recovery";
 		}
 		var clock = '';
