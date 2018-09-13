@@ -42,6 +42,10 @@ function xyy() {
 		$(".xiaos").html(htmlobj.responseText);
 
 	}
+	if(i>500){storage["b"]=i; storage["jxyd0"]=i}
+	if(i>200&&i<301){storage["c"]=i; storage["jxyd1"]=i}
+	if(i>300&&i<401){storage["d"]=i; storage["jxyd2"]=i}
+	if(i>400&&i<501){storage["e"]=i; storage["jxyd3"]=i}
 }
 
 function syy() {
@@ -71,6 +75,10 @@ function syy() {
 		$(".xiaos").html(htmlobj.responseText);
 
 	}
+	if(i>500){storage["b"]=i; storage["jxyd0"]=i}
+	if(i>200&&i<301){storage["c"]=i; storage["jxyd1"]=i}
+	if(i>300&&i<401){storage["d"]=i; storage["jxyd2"]=i}
+	if(i>400&&i<501){storage["e"]=i; storage["jxyd3"]=i}
 }
 //		$("#b01").click(function() {
 //			htmlobj = $.ajax({
