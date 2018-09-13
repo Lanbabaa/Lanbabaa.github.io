@@ -28,8 +28,8 @@
 						<p id="pwds">必须为6-16个数字、字母组成</p>
 					</div>
 					<div class="loginBottom">
-						<input type="checkbox" id="agree" />
-						<label for="agree" style="font-size:12px"> 我已阅读并同意  <a href="#">服务条款</a></label>
+						<input type="checkbox" id="agree" onclick="focused(this.id)"/>
+						<label for="agree" style="font-size:12px"> 我已阅读并同意  <a href="#">服务条款</a></label><p id="agrees">请同意服务条款</p>
 					</div>
 					<input type="submit" id="register" onclick="register()" value="立即注册" />
 				</div>
@@ -40,7 +40,6 @@
 		$(document).ready(function() {
 			$(".loginBox").fadeIn("slow");
 		});
-
 		function focused(x) {
 			document.getElementById(x+"s").className = "recovery";
 		}
@@ -55,11 +54,9 @@
 				btn.disabled = true;
 				btn.value = nums + '秒后可重新获取';
 				clock = setInterval(doLoop, 1000);
-			} else if(n.length == "") {
+			} else{
 				document.getElementById("phones").className = "unfilled";
-			} else {
-				alert("请输入正确的手机号码")
-			}
+			} 
 		}
 
 		function doLoop() {
@@ -83,11 +80,16 @@
 			for(var i = 0; i < inputs.length; i++) {
 				if(!inputs[i].value) {
 					ps[i].className = "unfilled";
-				}else if(inputs[3].value.length<6||inputs[3].length>16){
+				}
+				else if(inputs[0].value.length!=11){
+					ps[0].className = "unfilled";
+					if(inputs[3].value.length<6||inputs[3].value.length>16){
 					ps[3].className = "unfilled";
-				}else{
+				}
+				} 
+				else{
 					if ($("input[type='checkbox']").is(':checked')==false) {
-						alert("请阅读并同意服务条款");
+						document.getElementById("agrees").className = "unfilled2";
 						break;
 					} else{
 						window.location.href = "login.html";
