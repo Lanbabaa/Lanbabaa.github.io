@@ -170,7 +170,7 @@
 		}
 		
 		.unfilled {
-			padding: 0;
+			padding-left: 5px;
 			margin: -8px 0px;
 			font-size: 10px;
 			color: #FF0000;

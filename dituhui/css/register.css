@@ -155,8 +155,8 @@ input:hover {
 
 
 .unfilled{
-	padding: 0;
-	margin: -8px 0px;
+	padding-left: 2px;
+	margin: -8px 5px;
 	font-size: 10px;
 	color: #FF0000;
 	display: block;

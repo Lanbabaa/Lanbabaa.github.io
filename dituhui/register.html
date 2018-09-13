@@ -83,10 +83,16 @@
 			for(var i = 0; i < inputs.length; i++) {
 				if(!inputs[i].value) {
 					ps[i].className = "unfilled";
+				}else if(inputs[3].value.length<6||inputs[3].length>16){
+					ps[3].className = "unfilled";
+				}else{
+					if ($("input[type='checkbox']").is(':checked')==false) {
+						alert("请阅读并同意服务条款");
+						break;
+					} else{
+						window.location.href = "login.html";
+					}					
 				}
-			}
-			if($("input[type='checkbox']").is(':checked')==true&&$("#phone").val()!=""&&$("#pwd").val()!=""&&$("#user").val()!=""&&$("#yzmText").val()!=""){
-				window.location.href = "login.html";
 			}
 		}
 	</script>
