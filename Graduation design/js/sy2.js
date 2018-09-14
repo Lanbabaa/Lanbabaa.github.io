@@ -1,21 +1,29 @@
-var j=0;
-document.onkeydown = function(e) { 
-	var keyNum = window.event ? e.keyCode : e.which; 
-	if(keyNum == 37&&j!=0) {
+var j = 0;
+var i = 1;
+var t=0;
+document.onkeydown = function(e) {
+	var keyNum = window.event ? e.keyCode : e.which;
+	if(keyNum == 37 && j != 0) {
 		syy();
 	}
-	if(keyNum == 39&&j!=0) {
+	if(keyNum == 39 && j != 0) {
 		xyy();
 	}
-	if(keyNum == 174&&j!=0||keyNum == 40&&j!=0){
+	if(keyNum == 174 && j != 0 || keyNum == 40 && j != 0) {
 		var t = $(window).scrollTop();
-		$('body,html').animate({'scrollTop':t+200},500)
+		$('body,html').animate({
+			'scrollTop': t + 200
+		}, 500)
 	}
-	if(keyNum == 175&&j!=0||keyNum ==38&&j!=0){
+	if(keyNum == 175 && j != 0 || keyNum == 38 && j != 0) {
 		var t = $(window).scrollTop();
-		$('body,html').animate({'scrollTop':t-200},500)
+		$('body,html').animate({
+			'scrollTop': t - 200
+		}, 500)
 	}
 }
+
+window.onbeforeunload = fh();
 $("a,button").click(function() {
 	$('html,body').animate({
 		scrollTop: 0
@@ -25,9 +33,10 @@ $("button").click(function() {
 	$(".nav").css('display', 'block');
 	$(".fy").css('display', 'inline-block');
 	$(".xiaos").css("background", " rgba(204,153,0,.1)")
-	j=1;
+	j = -1;
+	
 });
-var i = 1;
+
 var storage = window.localStorage;
 for(var n = 0; n < 4; n++) {
 	if(storage["jxyd" + n + ""] !== undefined) {
@@ -37,6 +46,59 @@ for(var n = 0; n < 4; n++) {
 
 function ml() {
 	$(".catalog").fadeToggle(200);
+	for(var i = 1; i < 5; i++) {
+		if(i == j) {
+			alert(j)			
+			var m = 97 + i;	
+			alert(storage[String.fromCharCode(m)])
+			var t = $(".catalog").scrollTop();
+			if(storage[String.fromCharCode(m) + ""] > 500&&t==0) {
+				if(screen.width <= 768) {
+					$('.catalog').animate({
+						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 500) * 66 - 4 * 66
+					}, 500);
+				} else{
+					$('.catalog').animate({
+						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 500) * 66 - 5.2 * 66
+					}, 500);
+				}
+			}
+			if(300< storage[String.fromCharCode(m) + ""] <400&&t==0) {
+				if(screen.width <= 768) {
+					$('.catalog').animate({
+						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 4 * 66
+					}, 500);
+				} else{
+					$('.catalog').animate({
+						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 5.2 * 66
+					}, 500);
+				}
+			}
+			if(400< storage[String.fromCharCode(m) + ""] <500&&t==0) {
+				if(screen.width <= 768) {
+					$('.catalog').animate({
+						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 4 * 66
+					}, 500);
+				} else{
+					$('.catalog').animate({
+						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 5.2 * 66
+					}, 500);
+				}
+			}
+			if(200< storage[String.fromCharCode(m) + ""] <300&&t==0) {
+				if(screen.width <= 768) {
+					$('.catalog').animate({
+						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 4 * 66
+					}, 500);
+				} else{
+					$('.catalog').animate({
+						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 5.2 * 66
+					}, 500);
+				}
+			}
+			
+		}
+	}
 }
 
 function fh() {
@@ -56,7 +118,7 @@ function fh() {
 		storage["e"] = i;
 		storage["jxyd3"] = i
 	}
-	j=0;
+	j = 0;
 }
 
 function xyy() {
@@ -170,6 +232,7 @@ $("#b00").click(function() {
 		var bt = document.querySelector(".b" + ii);
 		bt.onclick = function() {
 			i = 500 + ii;
+			storage["b"] = i;
 			htmlobj = $.ajax({
 				url: "xiaoshuo/" + i + ".txt",
 				async: false
@@ -178,6 +241,7 @@ $("#b00").click(function() {
 			$(".catalog").fadeOut(100)
 		};
 	}
+	j = 1;
 });
 
 $("#b01").click(function() {
@@ -198,6 +262,7 @@ $("#b01").click(function() {
 		let ii = m;
 		var bt = document.querySelector(".b" + ii);
 		bt.onclick = function() {
+			storage["b"] = i;
 			i = 200 + ii
 			htmlobj = $.ajax({
 				url: "xiaoshuo/" + i + ".txt",
@@ -207,6 +272,7 @@ $("#b01").click(function() {
 			$(".catalog").fadeOut(100)
 		};
 	}
+	j = 2;
 });
 $("#b02").click(function() {
 	if(storage["d"] == undefined) {
@@ -227,6 +293,7 @@ $("#b02").click(function() {
 		var bt = document.querySelector(".b" + ii);
 		bt.onclick = function() {
 			i = 300 + ii
+			storage["b"] = i;
 			htmlobj = $.ajax({
 				url: "xiaoshuo/" + i + ".txt",
 				async: false
@@ -235,6 +302,7 @@ $("#b02").click(function() {
 			$(".catalog").fadeOut(100)
 		};
 	}
+	j = 3;
 });
 
 $("#b03").click(function() {
@@ -256,6 +324,7 @@ $("#b03").click(function() {
 		var bt = document.querySelector(".b" + ii);
 		bt.onclick = function() {
 			i = 400 + ii
+			storage["b"] = i;
 			htmlobj = $.ajax({
 				url: "xiaoshuo/" + i + ".txt",
 				async: false
@@ -264,4 +333,5 @@ $("#b03").click(function() {
 			$(".catalog").fadeOut(100)
 		};
 	}
+	j = 4;
 });
