@@ -57,44 +57,44 @@ function ml() {
 				if(screen.width <= 768) {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 500) * 66 - 4 * 66
-					},100);
+					},200);
 				} else {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 500) * 66 - 5.2 * 66
-					},100);
+					},200);
 				}
 			}
 			if(storage[String.fromCharCode(m) + ""] > 300 && storage[String.fromCharCode(m) + ""] < 400 && t == 0) {
 				if(screen.width <= 768) {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 4 * 66
-					},100);
+					},200);
 				} else {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 5.2 * 66
-					},100);
+					},200);
 				}
 			}
 			if(storage[String.fromCharCode(m) + ""] > 400 && storage[String.fromCharCode(m) + ""] < 500 && t == 0) {
 				if(screen.width <= 768) {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 4 * 66
-					},100);
+					},200);
 				} else {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 5.2 * 66
-					},100);
+					},200);
 				}
 			}
 			if(storage[String.fromCharCode(m) + ""] > 200 && storage[String.fromCharCode(m) + ""] < 300 && t == 0) {
 				if(screen.width <= 768) {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 4 * 66
-					},100);
+					},200);
 				} else {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 5.2 * 66
-					},100);
+					},200);
 				}
 			}
 		}
