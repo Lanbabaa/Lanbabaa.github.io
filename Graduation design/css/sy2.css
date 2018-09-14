@@ -218,7 +218,8 @@ button:hover {
 		color: #F2F2F2;
 	}
 	.fy {
-		width: calc(50% - 2px);
+		width: calc(40% - 4px);
+		margin-left: calc(27%/4);
 		padding: 20px 0;
 		cursor: pointer;
 		display: none;
