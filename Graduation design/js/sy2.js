@@ -5,7 +5,7 @@ $("a,button").click(function() {
 });
 $("button").click(function() {
 	$(".nav").css('display', 'block');
-	$(".fy").css('display', 'block');
+	$(".fy").css('display', 'inline-block');
 	$(".xiaos").css("background"," rgba(204,153,0,.1)")
 });
 var i = 1;
