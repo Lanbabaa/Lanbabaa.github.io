@@ -141,7 +141,7 @@ $("#b00").click(function() {
 	});
 	$(".xiaos").html(htmlobj.responseText);
 	document.title = "《最强特种兵王》";	
-	for(var m = 1; m < 101; m++) {
+	for(var m = 1; m <=100; m++) {
 		$(".catalog").append('<p class=b' + m + '>第' + m + '章</p>');
 		let ii = m; 
 		var bt = document.querySelector(".b" + ii);
@@ -169,12 +169,12 @@ $("#b01").click(function() {
 	});
 	$(".xiaos").html(htmlobj.responseText);
 	document.title = "《当个法师闹革命》";
-	for(var m = 1; m < 101; m++) {
+	for(var m = 1; m <= 5; m++) {
 		$(".catalog").append('<p class=b' + m + '>第' + m + '章</p>');
 		let ii = m; 
 		var bt = document.querySelector(".b" + ii);
 		bt.onclick = function() {
-			i = 500 + ii
+			i = 200 + ii
 			htmlobj = $.ajax({
 				url: "xiaoshuo/" + i + ".txt",
 				async: false
@@ -196,12 +196,12 @@ $("#b02").click(function() {
 	});
 	$(".xiaos").html(htmlobj.responseText);
 	document.title = "《斗破苍穹》";
-	for(var m = 1; m < 101; m++) {
+	for(var m = 1; m <= 42; m++) {
 		$(".catalog").append('<p class=b' + m + '>第' + m + '章</p>');
 		let ii = m; 
 		var bt = document.querySelector(".b" + ii);
 		bt.onclick = function() {
-			i = 500 + ii
+			i = 300 + ii
 			htmlobj = $.ajax({
 				url: "xiaoshuo/" + i + ".txt",
 				async: false
@@ -211,6 +211,7 @@ $("#b02").click(function() {
 		};
 	}
 });
+
 $("#b03").click(function() {
 	if(storage["e"] == undefined) {
 		i = 401;
@@ -221,13 +222,14 @@ $("#b03").click(function() {
 		url: "xiaoshuo/" + i + ".txt",
 		async: false
 	});
+	$(".xiaos").html(htmlobj.responseText);
 	document.title = "《大主宰》";
-		for(var m = 1; m < 101; m++) {
+	for(var m = 1; m <= 11; m++) {
 		$(".catalog").append('<p class=b' + m + '>第' + m + '章</p>');
 		let ii = m; 
 		var bt = document.querySelector(".b" + ii);
 		bt.onclick = function() {
-			i = 500 + ii
+			i = 400 + ii
 			htmlobj = $.ajax({
 				url: "xiaoshuo/" + i + ".txt",
 				async: false
