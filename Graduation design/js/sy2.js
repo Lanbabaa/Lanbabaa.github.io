@@ -1,6 +1,6 @@
 var j = 0;
 var i = 1;
-var t=0;
+var t = 0;
 document.onkeydown = function(e) {
 	var keyNum = window.event ? e.keyCode : e.which;
 	if(keyNum == 37 && j != 0) {
@@ -34,7 +34,7 @@ $("button").click(function() {
 	$(".fy").css('display', 'inline-block');
 	$(".xiaos").css("background", " rgba(204,153,0,.1)")
 	j = -1;
-	
+
 });
 
 var storage = window.localStorage;
@@ -48,55 +48,57 @@ function ml() {
 	$(".catalog").fadeToggle(200);
 	for(var i = 1; i < 5; i++) {
 		if(i == j) {
-			alert(j)			
-			var m = 97 + i;	
+			alert(j)
+			var m = 97 + i;
 			alert(storage[String.fromCharCode(m)])
 			var t = $(".catalog").scrollTop();
-			if(storage[String.fromCharCode(m) + ""] > 500&&t==0) {
+			if(storage[String.fromCharCode(m) + ""] > 500 && t == 0) {
 				if(screen.width <= 768) {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 500) * 66 - 4 * 66
 					}, 500);
-				} else{
+				} else {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 500) * 66 - 5.2 * 66
 					}, 500);
 				}
 			}
-			if(300< storage[String.fromCharCode(m) + ""] <400&&t==0) {
+			if(storage[String.fromCharCode(m) + ""] > 300 && storage[String.fromCharCode(m) + ""] < 400 && t == 0) {
 				if(screen.width <= 768) {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 4 * 66
 					}, 500);
-				} else{
+				} else {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 5.2 * 66
 					}, 500);
 				}
 			}
-			if(400< storage[String.fromCharCode(m) + ""] <500&&t==0) {
+			if(storage[String.fromCharCode(m) + ""] > 400 && storage[String.fromCharCode(m) + ""] < 500 && t == 0) {
 				if(screen.width <= 768) {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 4 * 66
 					}, 500);
-				} else{
+				} else {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 5.2 * 66
 					}, 500);
 				}
 			}
-			if(200< storage[String.fromCharCode(m) + ""] <300&&t==0) {
+			if(storage[String.fromCharCode(m) + ""] > 200 && storage[String.fromCharCode(m) + ""] < 300 && t == 0) {
 				if(screen.width <= 768) {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 4 * 66
 					}, 500);
-				} else{
+				} else {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 5.2 * 66
 					}, 500);
 				}
+			} else {
+
 			}
-			
+
 		}
 	}
 }
