@@ -1,3 +1,21 @@
+var j=0;
+document.onkeydown = function(e) { 
+	var keyNum = window.event ? e.keyCode : e.which; 
+	if(keyNum == 37&&j!=0) {
+		syy();
+	}
+	if(keyNum == 39&&j!=0) {
+		xyy();
+	}
+	if(keyNum == 174&&j!=0||keyNum == 40&&j!=0){
+		var t = $(window).scrollTop();
+		$('body,html').animate({'scrollTop':t+200},500)
+	}
+	if(keyNum == 175&&j!=0||keyNum ==38&&j!=0){
+		var t = $(window).scrollTop();
+		$('body,html').animate({'scrollTop':t-200},500)
+	}
+}
 $("a,button").click(function() {
 	$('html,body').animate({
 		scrollTop: 0
@@ -6,7 +24,8 @@ $("a,button").click(function() {
 $("button").click(function() {
 	$(".nav").css('display', 'block');
 	$(".fy").css('display', 'inline-block');
-	$(".xiaos").css("background"," rgba(204,153,0,.1)")
+	$(".xiaos").css("background", " rgba(204,153,0,.1)")
+	j=1;
 });
 var i = 1;
 var storage = window.localStorage;
@@ -15,8 +34,9 @@ for(var n = 0; n < 4; n++) {
 		document.getElementById("b0" + n + "").innerHTML = "继续阅读"
 	}
 }
-function ml(){
-	$(".catalog").fadeToggle(200);	
+
+function ml() {
+	$(".catalog").fadeToggle(200);
 }
 
 function fh() {
@@ -36,6 +56,7 @@ function fh() {
 		storage["e"] = i;
 		storage["jxyd3"] = i
 	}
+	j=0;
 }
 
 function xyy() {
@@ -46,7 +67,7 @@ function xyy() {
 			async: false
 		});
 		$(".xiaos").html(htmlobj.responseText);
-	} else if(i == 23 || i == 699 || i == 205 || i == 342 || i == 411) { 
+	} else if(i == 23 || i == 699 || i == 205 || i == 342 || i == 411) {
 		//更新文章时需要修改的代码
 		alert("未完待续，敬请期待")
 	} else if(i >= 101) {
@@ -141,14 +162,14 @@ $("#b00").click(function() {
 
 	});
 	$(".xiaos").html(htmlobj.responseText);
-	document.title = "《最强特种兵王》";	
-	for(var m = 1; m <=199; m++) { 
+	document.title = "《最强特种兵王》";
+	for(var m = 1; m <= 199; m++) {
 		//更新文章时需要修改的代码
 		$(".catalog").append('<p class=b' + m + '>第' + m + '章</p>');
-		let ii = m; 
+		let ii = m;
 		var bt = document.querySelector(".b" + ii);
 		bt.onclick = function() {
-			i = 500 + ii;		
+			i = 500 + ii;
 			htmlobj = $.ajax({
 				url: "xiaoshuo/" + i + ".txt",
 				async: false
@@ -171,10 +192,10 @@ $("#b01").click(function() {
 	});
 	$(".xiaos").html(htmlobj.responseText);
 	document.title = "《当个法师闹革命》";
-	for(var m = 1; m <= 5; m++) { 
+	for(var m = 1; m <= 5; m++) {
 		//更新文章时需要修改的代码
 		$(".catalog").append('<p class=b' + m + '>第' + m + '章</p>');
-		let ii = m; 
+		let ii = m;
 		var bt = document.querySelector(".b" + ii);
 		bt.onclick = function() {
 			i = 200 + ii
@@ -199,10 +220,10 @@ $("#b02").click(function() {
 	});
 	$(".xiaos").html(htmlobj.responseText);
 	document.title = "《斗破苍穹》";
-	for(var m = 1; m <= 42; m++) { 
+	for(var m = 1; m <= 42; m++) {
 		//更新文章时需要修改的代码
 		$(".catalog").append('<p class=b' + m + '>第' + m + '章</p>');
-		let ii = m; 
+		let ii = m;
 		var bt = document.querySelector(".b" + ii);
 		bt.onclick = function() {
 			i = 300 + ii
@@ -228,10 +249,10 @@ $("#b03").click(function() {
 	});
 	$(".xiaos").html(htmlobj.responseText);
 	document.title = "《大主宰》";
-	for(var m = 1; m <= 11; m++) { 
+	for(var m = 1; m <= 11; m++) {
 		//更新文章时需要修改的代码
 		$(".catalog").append('<p class=b' + m + '>第' + m + '章</p>');
-		let ii = m; 
+		let ii = m;
 		var bt = document.querySelector(".b" + ii);
 		bt.onclick = function() {
 			i = 400 + ii
