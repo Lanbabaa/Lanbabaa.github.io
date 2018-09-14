@@ -135,22 +135,20 @@ button:hover {
 		padding: 10px 20px;
 	}
 	.catalog {
-		width: 350px;
+		width: 345px;
 		height: 500px;
 		overflow: auto;
 		position: fixed;
-		top: 130px;
-		right: 20px;
+		top: 135px;
+		right: 30px;
 		display: none;
 		text-align: center;
-		background-color: #EFEFDA;
+		background-color: rgba(	0,191,255);
 	}
 	.catalog p{
 		font-size: 20px;
 		padding: 10px 80px;
-		cursor: pointer;
-		border-bottom-width: 2px;
-		border-bottom-color: #eee;
+		color: #F2F2F2;
 	}
 }
 
@@ -189,12 +187,12 @@ button:hover {
 		right: 50px;
 		display: none;
 		text-align: center;
-		border: 1px solid #000;
-		background-color: #fff;
+		border: 0px solid #000;
+		background-color: rgba(	0,191,255,.8);
 	}
 	.catalog p{
 		padding: 10px 80px;
 		cursor: pointer;
-
+		color: #F2F2F2;
 	}
 }
