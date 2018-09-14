@@ -45,7 +45,10 @@ for(var n = 0; n < 4; n++) {
 }
 
 function ml() {
-	$(".catalog").fadeToggle(200);
+	$(".catalog").fadeToggle(0);
+	if( $(".catalog").scrollTop()!=0){
+		$(".catalog").scrollTop(0);
+	}
 	for(var i = 1; i < 5; i++) {
 		if(i == j) {
 			var m = 97 + i;
@@ -54,44 +57,44 @@ function ml() {
 				if(screen.width <= 768) {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 500) * 66 - 4 * 66
-					}, 500);
+					},100);
 				} else {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 500) * 66 - 5.2 * 66
-					}, 500);
+					},100);
 				}
 			}
 			if(storage[String.fromCharCode(m) + ""] > 300 && storage[String.fromCharCode(m) + ""] < 400 && t == 0) {
 				if(screen.width <= 768) {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 4 * 66
-					}, 500);
+					},100);
 				} else {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 5.2 * 66
-					}, 500);
+					},100);
 				}
 			}
 			if(storage[String.fromCharCode(m) + ""] > 400 && storage[String.fromCharCode(m) + ""] < 500 && t == 0) {
 				if(screen.width <= 768) {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 4 * 66
-					}, 500);
+					},100);
 				} else {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 5.2 * 66
-					}, 500);
+					},100);
 				}
 			}
 			if(storage[String.fromCharCode(m) + ""] > 200 && storage[String.fromCharCode(m) + ""] < 300 && t == 0) {
 				if(screen.width <= 768) {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 4 * 66
-					}, 500);
+					},100);
 				} else {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 5.2 * 66
-					}, 500);
+					},100);
 				}
 			}
 		}
