@@ -48,9 +48,7 @@ function ml() {
 	$(".catalog").fadeToggle(200);
 	for(var i = 1; i < 5; i++) {
 		if(i == j) {
-			alert(j)
 			var m = 97 + i;
-			alert(storage[String.fromCharCode(m)])
 			var t = $(".catalog").scrollTop();
 			if(storage[String.fromCharCode(m) + ""] > 500 && t == 0) {
 				if(screen.width <= 768) {
@@ -95,10 +93,7 @@ function ml() {
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 5.2 * 66
 					}, 500);
 				}
-			} else {
-
 			}
-
 		}
 	}
 }
