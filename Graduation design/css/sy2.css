@@ -19,6 +19,10 @@ a {
 span {
 	margin-left: 30px;
 }
+.xiaos {
+	margin: auto;
+	z-index: -1;
+}
 
 .xiaos img {
 	width: 110px;
@@ -33,9 +37,6 @@ span {
 	padding: 10px;
 }
 
-.xiaos {
-	padding: 30px 20px;
-}
 
 #b00,
 #b01,
@@ -106,7 +107,8 @@ button:hover {
 		margin-top: 80px;
 	}
 	.xiaos {
-		width: 450px;
+		width: 350px;
+		padding: 25px;
 		margin: auto;
 		line-height: 35px;
 	}
@@ -129,23 +131,41 @@ button:hover {
 	}
 	.nav .dl {
 		color: #fff;
-		border: 1px solid #fff;	
+		border: 1px solid #fff;
 		padding: 10px 20px;
+	}
+	.catalog {
+		width: 350px;
+		height: 500px;
+		overflow: auto;
+		position: fixed;
+		top: 130px;
+		right: 20px;
+		display: none;
+		text-align: center;
+		background-color: #EFEFDA;
+	}
+	.catalog p{
+		font-size: 20px;
+		padding: 10px 80px;
+		cursor: pointer;
+		border-bottom-width: 2px;
+		border-bottom-color: #eee;
 	}
 }
 
-@media screen and (min-width: 768px) {
-	.xiaos {
+@media screen and (min-width: 768px) {	
+	.xiaos{
 		width: 850px;
 		margin: auto;
 		line-height: 35px;
 	}
 	.nav {
-		width: 150px;
+		width: 200px;
 		height: 80px;
 		z-index: 999;
 		position: fixed;
-		background-color: rgba(0,0,0,0);
+		background-color: rgba(0, 0, 0, 0);
 		top: 30px;
 		right: 30px;
 		display: none;
@@ -157,7 +177,24 @@ button:hover {
 	}
 	.nav .dl {
 		color: #f00;
-		border: 1px solid #f00;	
+		border: 1px solid #f00;
 		padding: 10px 20px;
+	}
+	.catalog{
+		width: 300px;
+		height: 700px;	
+		overflow: auto;
+		position: fixed;
+		top: 120px;
+		right: 50px;
+		display: none;
+		text-align: center;
+		border: 1px solid #000;
+		background-color: #fff;
+	}
+	.catalog p{
+		padding: 10px 80px;
+		cursor: pointer;
+
 	}
 }
