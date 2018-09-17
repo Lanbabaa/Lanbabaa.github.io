@@ -25,6 +25,9 @@ document.onkeydown = function(e) {
 $(".xiaos").dblclick(function() {
 	if(j != 0) {
 		xyy();
+		$('html,body').animate({
+			scrollTop: 0
+		}, 100);
 	}
 });
 window.onbeforeunload = fh();
