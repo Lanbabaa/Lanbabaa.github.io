@@ -50,7 +50,6 @@ function register() {
 	}
 	if(inputs != "") {
 		if($("input[type='checkbox']").is(':checked') == false) {
-			document.getElementById("agrees").className = "unfilled2";
 		} else {
 			window.location.href = "login.html";
 		}
