@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<title></title>
+		<title>登录</title>
 		<link rel="stylesheet" type="text/css" href="css/login.css"/>
 	</head>
 	
@@ -31,25 +31,5 @@
 			</div>
 		</div>
 	</body>
-	<script type="text/javascript">
-		$(document).ready(function(){
-		    $(".loginBox").fadeIn("slow");
-		});
-		function onfocu(x) {
-			document.getElementById(x+"s").className = "recovery";
-		}
-		function login() {
-			var inputs = $("input[type=text],input[type=password]");	
-			var ps=document.querySelectorAll("p")
-			for(var i = 0; i < inputs.length; i++) {
-				if(!inputs[i].value) {
-					ps[i].className = "unfilled";
-				}
-			}		
-			if($("#user").val()!=""&&$("#pwd").val()!=""){
-				window.location.href = "login.html";
-			}
-		}
-
-	</script>
+<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
 </html>
