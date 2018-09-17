@@ -22,12 +22,11 @@ document.onkeydown = function(e) {
 		}, 500)
 	}
 }
-$(".xiaos").dblclick(function(){
-	if(j!=0){
+$(".xiaos").dblclick(function() {
+	if(j != 0) {
 		xyy();
 	}
 });
-	
 
 window.onbeforeunload = fh();
 $("a,button").click(function() {
@@ -52,7 +51,7 @@ for(var n = 0; n < 4; n++) {
 
 function ml() {
 	$(".catalog").fadeToggle(0);
-	if( $(".catalog").scrollTop()!=0){
+	if($(".catalog").scrollTop() != 0) {
 		$(".catalog").scrollTop(0);
 	}
 	for(var i = 1; i < 5; i++) {
@@ -63,44 +62,44 @@ function ml() {
 				if(screen.width <= 768) {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 500) * 66 - 4 * 45
-					},200);
+					}, 200);
 				} else {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 500) * 66 - 5.2 * 66
-					},200);
+					}, 200);
 				}
 			}
 			if(storage[String.fromCharCode(m) + ""] > 300 && storage[String.fromCharCode(m) + ""] < 400 && t == 0) {
 				if(screen.width <= 768) {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 4 * 66
-					},200);
+					}, 200);
 				} else {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 5.2 * 66
-					},200);
+					}, 200);
 				}
 			}
 			if(storage[String.fromCharCode(m) + ""] > 400 && storage[String.fromCharCode(m) + ""] < 500 && t == 0) {
 				if(screen.width <= 768) {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 4 * 66
-					},200);
+					}, 200);
 				} else {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 5.2 * 66
-					},200);
+					}, 200);
 				}
 			}
 			if(storage[String.fromCharCode(m) + ""] > 200 && storage[String.fromCharCode(m) + ""] < 300 && t == 0) {
 				if(screen.width <= 768) {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 4 * 66
-					},200);
+					}, 200);
 				} else {
 					$('.catalog').animate({
 						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 5.2 * 66
-					},200);
+					}, 200);
 				}
 			}
 		}
