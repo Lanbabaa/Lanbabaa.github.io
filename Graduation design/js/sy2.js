@@ -25,11 +25,10 @@ document.onkeydown = function(e) {
 $(".xiaos").dblclick(function() {
 	if(j != 0) {
 		xyy();
-		$("a,button").click(function() {
 		$('html,body').animate({
 			scrollTop: 0
 		}, 100);
-	}
+
 });
 
 window.onbeforeunload = fh();
