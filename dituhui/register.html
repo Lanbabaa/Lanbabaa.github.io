@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<title>注册</title>
-		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<link rel="stylesheet" type="text/css" href="css/register.css" />
 	</head>
 	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
-<style type="text/css">
-</style>
+	<style type="text/css">
+
+	</style>
+
 	<body>
 		<div class="loginBox">
 			<div class="from">
@@ -17,7 +20,7 @@
 						<span class="login">注册</span><span class="register">已有账号,去<a href="login.html"> 登录</a></span>
 					</div>
 					<div class="loginMain">
-						<input type="text" name="" id="phone"  maxlength="11" onfocus="focused(this.id)" placeholder="请输入手机号" />
+						<input type="text" name="" id="phone" maxlength="11" onfocus="focused(this.id)" placeholder="请输入手机号" />
 						<p id="phones">请输入正确的手机号</p>
 						<input type="text" name="" id="yzmText" onfocus="focused(this.id)" placeholder="请输入验证码" /><input type="button" id="yzmBtn" value="点击发送验证码" onclick="sendCode(this)" />
 						<p id="yzmTexts">验证码错误</p>
@@ -27,13 +30,15 @@
 						<p id="pwds">必须为6-16个数字、字母组成</p>
 					</div>
 					<div class="loginBottom">
-						<input type="checkbox" id="agree" onclick="focused(this.id)"/>
-						<label for="agree" style="font-size:12px"> 我已阅读并同意  <a href="#">服务条款</a></label><p id="agrees">请同意服务条款</p>
+						<input type="checkbox" id="agree" onclick="focused(this.id)" />
+						<label for="agree" style="font-size:12px"> 我已阅读并同意  <a href="#">服务条款</a></label>
+						<p id="agrees">请同意服务条款</p>
 					</div>
 					<input type="submit" id="register" onclick="register()" value="立即注册" />
 				</div>
 			</div>
 		</div>
 	</body>
-<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+
 </html>
