@@ -28,9 +28,8 @@ $(".xiaos").dblclick(function() {
 		$('html,body').animate({
 			scrollTop: 0
 		}, 100);
-
+	}
 });
-
 window.onbeforeunload = fh();
 $("a,button").click(function() {
 	$('html,body').animate({
@@ -100,7 +99,7 @@ function ml() {
 			if(storage[String.fromCharCode(m) + ""] > 200 && storage[String.fromCharCode(m) + ""] < 300 && t == 0) {
 				if(screen.width <= 768) {
 					$('.catalog').animate({
-						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 2 * 66
+						'scrollTop': t + (storage[String.fromCharCode(m) + ""] - 300) * 66 - 4 * 66
 					}, 200);
 				} else {
 					$('.catalog').animate({
