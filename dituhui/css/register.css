@@ -11,9 +11,11 @@ a {
 	color: #108ee9;
 	font-size: 12px;
 }
-p{
+
+p {
 	display: none;
 }
+
 span {
 	font-size: 12px;
 	color: #757575;
@@ -102,9 +104,11 @@ label {
 .loginBottom label {
 	vertical-align: middle;
 }
-.loginBottom span{
+
+.loginBottom span {
 	display: none;
 }
+
 input {
 	width: 100%;
 	margin: 15px 0px;
@@ -155,21 +159,22 @@ input:hover {
 	border-bottom-color: #108ee9;
 }
 
-
-.unfilled{
+.unfilled {
 	padding-left: 2px;
 	margin: -8px 5px;
 	font-size: 10px;
 	color: #FF0000;
 	display: block;
 }
-.unfilled2{
+
+.unfilled2 {
 	margin: -8px 0px -8px 55px;
 	font-size: 10px;
 	color: #FF0000;
 	display: inline-block;
 }
-.recovery{
+
+.recovery {
 	display: none;
 }
 
