@@ -41,10 +41,12 @@ function register() {
 	for(var i = 0; i < inputs.length; i++) {
 		if(!inputs[i].value) {
 			ps[i].className = "unfilled";
-		} 
-	}if(inputs[0].value.length!=11){
+		}
+	}
+	if(inputs[0].value.length != 11) {
 		ps[0].className = "unfilled";
-	}if(inputs[3].value.length<6||inputs[3].value.length>16){
+	}
+	if(inputs[3].value.length < 6 || inputs[3].value.length > 16) {
 		ps[3].className = "unfilled";
 	}
 
