@@ -49,9 +49,10 @@ function register() {
 		}
 	}
 	if(inputs != "") {
-		if($("input[type='checkbox']").is(':checked') == false) {
-		} else {
+		if($("input[type='checkbox']").is(':checked') == true) {
 			window.location.href = "login.html";
+		} else {
+			
 		}
 	}
 }
