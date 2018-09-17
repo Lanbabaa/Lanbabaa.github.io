@@ -22,7 +22,11 @@ document.onkeydown = function(e) {
 		}, 500)
 	}
 }
-
+document.querySelector(".xiaos").ondblclick=function(){
+	if(j!=0){
+		xyy();
+	}
+}
 window.onbeforeunload = fh();
 $("a,button").click(function() {
 	$('html,body').animate({
