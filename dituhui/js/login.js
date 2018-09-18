@@ -15,6 +15,6 @@ function login() {
 		}
 	}
 	if($("#user").val() != "" && $("#pwd").val() != "") {
-		window.location.href = "login.html";
+		window.location.href = "home.html";
 	}
 }
