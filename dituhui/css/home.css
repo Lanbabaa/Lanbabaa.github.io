@@ -408,7 +408,7 @@
 		color: #bae6e2;
 	}
 	
-	.uppicture .layui-card-body .picture .coordinate::-webkit-scrollbar,
+	.coordinate::-webkit-scrollbar,
 	.material::-webkit-scrollbar {
 		/*滚动条整体样式*/
 		width: 4px;
