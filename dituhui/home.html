@@ -103,10 +103,10 @@
 				<div class="layui-card-body">
 					<ul class="layer">
 						<li><i class="layui-icon layui-icon-template-1"></i>
-							<a>所有图层</a><span>(500)</span><i class="layui-icon layui-icon-add-1" title="添加图层" onclick="addLayer()"></i><i class="fa fa-eye" id="eye1" onclick="a(this)"></i></li>
+							<a>所有图层</a><span>(500)</span><i class="layui-icon layui-icon-add-1" title="添加图层" onclick="addLayer()"></i><i class="fa fa-eye" id="eye1" onclick="eye(this)"></i></li>
 						<hr />
 						<li><i class="layui-icon layui-icon-location"></i>
-							<a>点图层</a><span>(500)</span><i class="fa fa-eye" id="eye2" onclick="a(this)"></i></li>
+							<a>点图层</a><span>(500)</span><i class="fa fa-eye" id="eye2" onclick="eye(this)"></i></li>
 					</ul>
 				</div>
 			</div>
@@ -121,7 +121,7 @@
 					</div>
 					<div class="sort">
 						<span>排序方式：</span>
-						<span id="time">时间排序</span><span id="letter">字母排序</span>
+						<a id="time">时间排序</a><a id="letter">字母排序</a>
 					</div>
 					<div class="coordinate">
 						<li><i class="layui-icon layui-icon-location"></i><span>123</span></li>
@@ -160,7 +160,7 @@
 				</div>
 				<hr />
 				<div class="attribute">
-					<i class="layui-icon layui-icon-close" title="关闭"></i>
+					<i class="layui-icon layui-icon-picture" title="上传图片"></i><i class="layui-icon layui-icon-close" title="关闭"></i>
 					<div class="title">
 					</div>
 					<div class="layui-carousel" id="test1">
@@ -170,18 +170,19 @@
 						</div>
 					</div>
 					<div class="material">
-						<li><span>描述</span><span class="value">1</span></li>
-						<li><span>img</span><span class="value">2</span></li>
-						<li><span>creator</span><span class="value">3</span></li>
-						<li><span>描述</span><span class="value">1</span></li>
-						<li><span>img</span><span class="value">2</span></li>
-						<li><span>creator</span><span class="value">3</span></li>
-						<li><span>描述</span><span class="value">1</span></li>
-						<li><span>img</span><span class="value">2</span></li>
-						<li><span>creator</span><span class="value">3</span></li>
-						<li><span>描述</span><span class="value">1</span></li>
-						<li><span>img</span><span class="value">2</span></li>
-						<li><span>creator</span><span class="value">3</span></li>
+						<li><span class="means">描述：</span><span class="value">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</span></li>
+						<li><span class="means">img：</span><span class="value">2</span></li>
+						<li><span class="means">creator：</span><span class="value">3</span></li>
+						<li><span class="means">icon：</span><span class="value">1</span></li>
+						<li><span class="means">rating：</span><span class="value">2</span></li>
+						<li><span class="means">creator：</span><span class="value">3</span></li>
+						<li><span class="means">created_at：</span><span class="value">1</span></li>
+						<li><span class="means">bdxy：</span><span class="value">2</span></li>
+						<li><span class="means">zans：</span><span class="value">3</span></li>
+						<li><span class="means">x：</span><span class="value">1</span></li>
+						<li><span class="means">creator_id：</span><span class="value">2</span></li>
+						<li><span class="means">y：</span><span class="value">3</span></li>
+						<li><span class="means">attributes：</span><span class="value">3</span></li>
 					</div>
 				</div>
 			</div>
@@ -192,11 +193,39 @@
 		<div class="Show" onclick="Show()">
 			<i class="layui-icon layui-icon-right"></i>
 		</div>
+		<div class="mask"></div>
+
+		<div class="layui-card uppicture">
+			<div class="layui-card-header"><span style="font-size: 16px;">图集</span><strong><i class="layui-icon layui-icon-close" title="关闭"></i></strong></div>
+			<div class="layui-card-body">
+				<div class="Up">
+					<div class="picture">
+						<div class="">
+							<i class="layui-icon layui-icon-add-1"></i>
+							<p>点击添加图片</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 	</body>
 	<script src="js/layui.all.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
+		layui.use('upload', function(){
+		  var upload = layui.upload;
+		  var uploadInst = upload.render({
+		    elem: '.picture' //绑定元素
+		    ,url: '/upload/' //上传接口
+		    ,done: function(res){
+		      //上传完毕回调
+		    }
+		    ,error: function(){
+		      //请求异常回调
+		    }
+		  });
+		});
 		layui.use('carousel', function() {
 			var carousel = layui.carousel;
 			carousel.render({
@@ -207,8 +236,8 @@
 				indicator: "none"
 			});
 		});
-
-		function a(e) {
+		
+		function eye(e) {
 			var eye = e.className
 			if(eye == "fa fa-eye") {
 				e.className = "fa fa-eye-slash"
@@ -218,7 +247,7 @@
 		}
 
 		function addLayer() {
-			$(".layer").append("<li><i class='layui-icon layui-icon-location'></i><a>点图层</a><span>(500)</span><i class='fa fa-eye' id='eye2' onclick='a(this)'></i></li>")
+			$(".layer").append("<li><i class='layui-icon layui-icon-location'></i><a>点图层</a><span>(500)</span><i class='fa fa-eye' id='eye2' onclick='eye(this)'></i></li>")
 		}
 
 		function TakeUp() {
@@ -254,6 +283,14 @@
 		$(".attribute .layui-icon-close").click(function() {
 			$(".coordinate").css("height", "700px");
 			$(".attribute").css("display", "none");
+		})
+		$(".attribute .layui-icon-picture").click(function(){
+			$(".mask").css("display", "block");
+			$(".uppicture").fadeIn();
+		})
+		$(".uppicture .layui-icon-close").click(function(){
+			$(".mask").css("display", "none");
+			$(".uppicture").css("display", "none");
 		})
 	</script>
 
