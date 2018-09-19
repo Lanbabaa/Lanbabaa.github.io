@@ -1,0 +1,262 @@
+	.layui-nav i {
+		margin-right: 10px;
+	}
+	
+	.user {
+		width: 45px;
+		height: 100px;
+		position: relative;
+		cursor: pointer;
+	}
+	
+	.user .takeUp {
+		width: 50px;
+		height: 100px;
+		position: absolute;
+		background-color: #000;
+	}
+	
+	.user .teamHead {
+		width: 70px;
+		background-color: #fff;
+		position: absolute;
+		left: 80px;
+		top: 35%;
+	}
+	
+	.user i {
+		font-size: 25px;
+		color: #0E77CA;
+		position: absolute;
+		top: 35%;
+		left: 20%;
+	}
+	
+	.user img {
+		width: 100%;
+	}
+	
+	.content {
+		width: 300px;
+		height: 100%;
+		position: absolute;
+		left: 200px;
+		background: #fff;
+	}
+	
+	.content .layui-card .layui-card-header span {
+		cursor: pointer;
+		margin-right: 10px;
+	}
+	
+	.content .layui-card .layui-card-header #all {
+		font-size: 20px;
+	}
+	
+	.content .layui-card i {
+		color: #ddd;
+		padding: 15px;
+		cursor: pointer;
+	}
+	
+	.content .layui-card .layui-card-body li {
+		margin: 15px 0px;
+	}
+	
+	.content .layui-card .layui-card-body span {
+		color: #ddd;
+		padding: 15px;
+	}
+	
+	.content .layui-card .layui-card-body a {
+		cursor: pointer;
+	}
+	
+	.content .layui-card .layui-card-body .layui-icon-add-1 {
+		color: #0E77CA;
+		border: 1px solid #0E77CA;
+		padding: 0px;
+		border-radius: 15px;
+	}
+	
+	.content .layui-card .layui-card-body .layui-icon-add-1:hover {
+		color: #fff;
+		background-color: #0E77CA;
+	}
+	
+	.content .layui-card .layui-card-body .fa {
+		color: #aaa;
+		font-size: 25px;
+		padding: 0;
+		float: right;
+	}
+	
+	.main {
+		position: absolute;
+		left: 500px;
+	}
+	
+	iframe {
+		border: 0px solid #000;
+	}
+	
+	.Show {
+		width: 40px;
+		height: 80px;
+		background-color: #0E77CA;
+		line-height: 80px;
+		text-align: center;
+		position: fixed;
+		top: calc(50% - 50px);
+		border-radius: 0 100px 100px 0;
+		z-index: 999;
+		display: none;
+		cursor: pointer;
+	}
+	
+	.Show i {
+		font-size: 30px;
+		color: #fff;
+	}
+	
+	.pointsLayer {
+		display: none;
+	}
+	
+	.pointsLayer i {
+		margin-right: 5px;
+	}
+	
+	.pointsLayer a {
+		color: #108EE9;
+	}
+	
+	.pointsLayer .pointsLayerReturn {
+		height: 40px;
+		line-height: 40px;
+	}
+	
+	.pointsLayer .pointsLayerReturn i {
+		cursor: pointer;
+		position: absolute;
+		right: 15px;
+	}
+	
+	.pointsLayer .pointsLayerMain {}
+	
+	.pointsLayer .pointsLayerMain .caption {
+		height: 35px;
+		line-height: 35px;
+		border-radius: 3px;
+		background-color: #233046;
+		color: #fff;
+	}
+	
+	.pointsLayer .pointsLayerReturn,
+	.pointsLayer .pointsLayerMain .sort,
+	.pointsLayer .pointsLayerMain .caption,
+	.pointsLayer .pointsLayerMain .coordinate,
+	.pointsLayer .pointsLayerBottom {
+		padding: 10px;
+	}
+	
+	.pointsLayer .pointsLayerMain .sort #time,
+	.pointsLayer .pointsLayerMain .sort #letter {
+		background-color: #108EE9;
+		cursor: pointer;
+		color: #fff;
+		margin: 0px 5px;
+		padding: 3px 6px;
+		border-radius: 4px;
+	}
+	
+	.pointsLayer .pointsLayerMain .coordinate {
+		height: 700px;
+		overflow: auto;
+	}
+	
+	.pointsLayer .pointsLayerMain .coordinate li {
+		padding: 0px 20px;
+		height: 35px;
+		line-height: 35px;
+		cursor: pointer;
+	}
+	
+	.pointsLayer .pointsLayerMain .coordinate li:hover {
+		background-color: #8CCBE2;
+		color: #fff;
+	}
+	
+	.pointsLayer .pointsLayerMain .coordinate i {
+		color: #FF0000;
+	}
+	
+	.pointsLayer .pointsLayerBottom .import {
+		position: absolute;
+		right: 10px;
+	}
+	
+	.pointsLayer .attribute {
+		margin-top: 20px;
+		height: 350px;
+		display: none;
+		position: relative;
+	}
+	
+	.pointsLayer .attribute .layui-icon-close {
+		color: #fff;
+		cursor: pointer;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+	
+	.pointsLayer .attribute .title {
+		border-radius:3px ;
+		padding: 10px;
+		font-size: 16px;
+		background-color: #233046;
+		margin-bottom: 10px;
+		color: #fff;
+	}
+	.pointsLayer .attribute #test1{
+		margin: auto;
+	}
+	.pointsLayer .attribute .material{
+		height: 150px;
+		overflow: auto;
+		position: relative;
+	}
+	.pointsLayer .attribute .material .value{
+		position: absolute;
+		left: 110px;
+		color: #757575;
+	}
+	.pointsLayer .attribute li {
+		margin: 20px 0;
+		padding: 0px 10px;
+	}
+	
+	.coordinate::-webkit-scrollbar,
+	.material::-webkit-scrollbar {
+		/*滚动条整体样式*/
+		width: 4px;
+		/*高宽分别对应横竖滚动条的尺寸*/
+		height: 4px;
+	}
+	
+	.coordinate::-webkit-scrollbar-thumb,
+	.material::-webkit-scrollbar-thumb {
+		/*滚动条里面小方块*/
+		border-radius: 5px;
+		-webkit-box-shadow: inset 0 0 5px rgba(30, 144, 255, .5);
+		background: rgba(30, 144, 255, .5)
+	}
+	
+	.coordinate::-webkit-scrollbar-track,
+	.material::-webkit-scrollbar-track {
+		/*滚动条里面轨道*/
+		-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0);
+		border-radius: 0;
+		background: rgba(0, 0, 0, 0);
+	}
