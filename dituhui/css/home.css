@@ -39,7 +39,7 @@
 	
 	.user i {
 		font-size: 25px;
-		color: #0E77CA;
+		color: #108ee9;
 		position: absolute;
 		top: 35%;
 		left: 20%;
@@ -86,15 +86,16 @@
 	}
 	
 	.content .layui-card .layui-card-body .layui-icon-add-1 {
-		color: #0E77CA;
-		border: 1px solid #0E77CA;
+		font-size: 14px;
+		color: #108ee9;
+		border: 1px solid #108ee9;
 		padding: 0px;
 		border-radius: 15px;
 	}
 	
 	.content .layui-card .layui-card-body .layui-icon-add-1:hover {
 		color: #fff;
-		background-color: #0E77CA;
+		background-color: #108ee9;
 	}
 	
 	.content .layui-card .layui-card-body .fa {
@@ -116,7 +117,7 @@
 	.Show {
 		width: 40px;
 		height: 80px;
-		background-color: #0E77CA;
+		background-color: #108ee9;
 		line-height: 80px;
 		text-align: center;
 		position: fixed;
