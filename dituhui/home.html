@@ -119,7 +119,7 @@
 					</div>
 					<div class="sort">
 						<span>排序方式：</span>
-						<a id="time">时间排序</a>
+						<a id="time" class="active">时间排序</a>
 						<a id="letter">字母排序</a>
 					</div>
 					<div class="coordinate">
@@ -340,6 +340,10 @@
 			$("iframe").css("width", "1420px");
 			$(".Show").fadeOut()
 		}
+		$(".sort a").click(function(){
+			$(this).addClass("active");
+			$(this).siblings().removeClass("active")
+		})
 		$(".layui-card-body a").eq(1).click(function() {
 			$(".content .layui-card").css("display", "none");
 			$(".pointsLayer").css("display", "block");

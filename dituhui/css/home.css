@@ -176,14 +176,15 @@
 	
 	.pointsLayer .pointsLayerMain .sort #time,
 	.pointsLayer .pointsLayerMain .sort #letter {
-		background-color: #108EE9;
 		cursor: pointer;
-		color: #fff;
 		margin: 0px 5px;
 		padding: 3px 6px;
 		border-radius: 4px;
 	}
-	
+	.pointsLayer .pointsLayerMain .sort .active{
+		background-color: #108EE9;
+		color: #fff;
+	}
 	.pointsLayer .pointsLayerMain .coordinate {
 		height: 700px;
 		overflow: auto;
