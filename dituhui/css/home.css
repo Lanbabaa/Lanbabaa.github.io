@@ -226,6 +226,7 @@
 	}
 	.pointsLayer .attribute #test1 img{
 		width: 100%;
+		height: 100%;
 	}
 	.pointsLayer .attribute .layui-icon-picture {
 		position: absolute;
@@ -310,36 +311,58 @@
 		cursor: pointer;
 	}
 	
-	.uppicture .layui-card-body .Up {
+	.uppicture .layui-card-body .Up,
+	.uppicture .layui-card-body .alreadyUp {
 		width: 120px;
 		height: 120px;
 		border: 1px solid #ddd;
 		border-radius: 5px;
 		padding: 10px;
+		float: left;
+		margin-right: 10px;
 	}
 	
-	.uppicture .layui-card-body .picture {
+	.uppicture .layui-card-body .Up .picture
+	{
 		width: 100%;
 		height: 100%;
 		border: 1px dashed #ddd;
 		border-radius: 5px;
 		cursor: pointer;
 	}
-	
-	.uppicture .layui-card-body .picture:hover {
+	.uppicture .layui-card-body .alreadyUp .picture{
+		width: 100%;
+		height: 100%;
+		border-radius: 5px;
+	}
+	.uppicture .layui-card-body .Up .picture:hover{
 		border: 1px dashed #108EE9;
 	}
 	
-	.uppicture .layui-card-body .picture div {
+	.uppicture .layui-card-body .Up .picture div
+	{
+		width: 122px;
+		height: 122px;
 		margin: auto;
 		margin-top: 30px;
 		text-align: center;
 	}
-	
-	.uppicture .layui-card-body .picture div i {
+	.uppicture .layui-card-body .alreadyUp .picture div{
+		width: 122px;
+		height: 122px;
+		line-height: 122px;
+		margin: auto;
+		text-align: center;
+		overflow: hidden;
+	}
+	.uppicture .layui-card-body .alreadyUp .picture div img{
+		width: 100%;
+	}
+	.uppicture .layui-card-body .Up .picture div i {
 		font-size: 25px;
 		color: #bae6e2;
 	}
+
 	
 	.uploading {
 		width: 570px;
@@ -353,7 +376,6 @@
 		top: calc(50% - 175px);
 		top: -moz-calc(50% - 175px);
 		top: -webkit-calc(50% - 175px);
-		;
 		border-radius: 5px;
 		display: none;
 	}
@@ -370,7 +392,12 @@
 		text-align: left;
 		margin-top: 50px;
 	}
-	
+	.uploading .layui-card-body .ps p{
+		color: #c1c1c1;
+	}
+	.uploading .layui-card-body .ps span{
+		color: #666;
+	}
 	.uploading .layui-card-body .ps a {
 		color: #108EE9;
 		padding-right: 10px;
@@ -404,6 +431,72 @@
 	}
 	
 	.uploading .layui-card-body .network div i {
+		font-size: 25px;
+		color: #bae6e2;
+	}
+	.updateData {
+		width: 570px;
+		height: 350px;
+		background-color: #fff;
+		z-index: 999;
+		position: absolute;
+		left: calc(50% - 285px);
+		left: -moz-calc(50% - 285px);
+		left: -webkit-calc(50% - 285px);
+		top: calc(50% - 175px);
+		top: -moz-calc(50% - 175px);
+		top: -webkit-calc(50% - 175px);
+		border-radius: 5px;
+		display: none;
+	}
+	
+	.updateData .layui-card-header i {
+		position: absolute;
+		right: 20px;
+		cursor: pointer;
+	}
+	
+	.updateData .layui-card-body .ps {
+		width: 80%;
+		font-size: 10px;
+		text-align: left;
+		margin-top: 30px;
+	}
+	.updateData .layui-card-body .ps p{
+		color: #c1c1c1;
+	}
+	.updateData .layui-card-body .ps span{
+		color: #666;
+	}
+	
+	.updateData .layui-card-body .Up {
+		width: 120px;
+		height: 120px;
+		margin: auto;
+		border: 1px solid #ddd;
+		border-radius: 5px;
+		padding: 10px;
+	}
+	
+	.updateData .layui-card-body .data {
+		width: 100%;
+		height: 100%;
+		border: 1px dashed #ddd;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+	
+	.updateData .layui-card-body .data:hover {
+		border: 1px dashed #108EE9;
+	}
+	
+	.updateData .layui-card-body .data div {
+		margin: auto;
+		margin-top: 30px;
+		text-align: center;
+	}
+	
+	.updateData .layui-card-body .data div i {
 		font-size: 25px;
 		color: #bae6e2;
 	}

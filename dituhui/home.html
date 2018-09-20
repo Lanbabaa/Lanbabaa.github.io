@@ -157,7 +157,7 @@
 				</div>
 				<div class="pointsLayerBottom">
 					<a class="import"><i class="layui-icon layui-icon-component"></i>批量导入网点</a>
-					<a href="" class="updata"><i class="layui-icon layui-icon-upload-circle"></i>更新数据</a>
+					<a class="update"><i class="layui-icon layui-icon-upload-circle"></i>更新数据</a>
 				</div>
 				<hr />
 				<div class="attribute">
@@ -184,6 +184,10 @@
 						<li><span class="means">creator_id：</span><span class="value">2</span></li>
 						<li><span class="means">y：</span><span class="value">3</span></li>
 						<li><span class="means">attributes：</span><span class="value">3</span></li>
+						<li><span class="means">地址：</span><span class="value">3</span></li>
+						<li><span class="means">id：</span><span class="value">3</span></li>
+						<li><span class="means">区域编码：</span><span class="value">3</span></li>
+						<li><span class="means">绑定区域：</span><span class="value">3</span></li>
 					</div>
 				</div>
 			</div>
@@ -207,6 +211,20 @@
 						</div>
 					</div>
 				</div>
+				<div class="alreadyUp">
+					<div class="picture">
+						<div>
+							<img src="img/banner.png"/>
+						</div>
+					</div>
+				</div>
+				<div class="alreadyUp">
+					<div class="picture">
+						<div>
+							<img src="img/getFile.png"/>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="layui-card uploading">
@@ -221,9 +239,9 @@
 					</div>
 				</div>
 				<div class="ps">
-					<p>格式说明： 支持常见的.xls .xlsx .csv格式</p>
-					<p>必填字段：数据中至少包含地址或者经纬度字段</p>
-					<p>最大限制：每次上传不超过10000行，只支持50列，文件大小不超过3M</p>
+					<p>格式说明：<span>支持常见的.xls .xlsx .csv格式</span> </p>
+					<p>必填字段：<span>数据中至少包含地址或者经纬度字段</span></p>
+					<p>最大限制：<span>每次上传不超过10000行，只支持50列，文件大小不超过3M</span></p>
 					<p>下载标准样式：
 						<a href="Template/dituhui-points2.xls" download="points2.xls">示例数据——地址版</a>
 						<a href="Template/dituhui-points3.xls" download="points3.xls">示例数据——经纬度版</a>
@@ -231,7 +249,26 @@
 				</div>
 			</div>
 		</div>
-
+		<div class="layui-card updateData">
+			<div class="layui-card-header"><span style="font-size: 16px;">更新数据</span><strong><i class="layui-icon layui-icon-close" title="关闭"></i></strong></div>
+			<div class="layui-card-body">
+				<div class="Up">
+					<div class="data">
+						<div>
+							<i class="layui-icon layui-icon-add-1"></i>
+							<p>点击更新数据</p>
+						</div>
+					</div>
+				</div>
+				<div class="ps">
+					<p>格式说明： <span>支持常见的.xls .xlsx .csv格式</span></p>
+					<p>必填字段：<span>数据中至少包含地址或者经纬度字段</span></p>
+					<p>最大限制：<span>每次上传不超过10000行，只支持50列，文件大小不超过3M</span></p>
+					<p>更新方式：<span>覆盖更新，重复数据被覆盖</span></p>
+					<p>更新文件：<span>更新文件里需要包含和原数据相匹配的字段</span></p>
+				</div>
+			</div>
+		</div>
 	</body>
 	<script src="js/layui.all.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
@@ -239,7 +276,7 @@
 		layui.use('upload', function() {
 			var upload = layui.upload;
 			var uploadInst = upload.render({
-				elem: '.picture' //绑定元素
+				elem: '.Up' //绑定元素
 					,
 				url: '/upload/' //上传接口
 					,
@@ -332,6 +369,10 @@
 			$(".mask").css("display", "block");
 			$(".uploading").fadeIn();
 		})
+		$(".pointsLayerBottom .update").click(function() {
+			$(".mask").css("display", "block");
+			$(".updateData").fadeIn();
+		})
 		$(".uppicture .layui-icon-close").click(function() {
 			$(".mask").css("display", "none");
 			$(".uppicture").css("display", "none");
@@ -339,6 +380,10 @@
 		$(".uploading .layui-icon-close").click(function() {
 			$(".mask").css("display", "none");
 			$(".uploading").css("display", "none");
+		})
+		$(".updateData .layui-icon-close").click(function() {
+			$(".mask").css("display", "none");
+			$(".updateData").css("display", "none");
 		})
 	</script>
 
