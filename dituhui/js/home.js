@@ -2,7 +2,7 @@ var j = 0;
 layui.use('upload', function() {
 	var upload = layui.upload;
 	var uploadInst = upload.render({
-		elem: '.Up' //绑定元素
+		elem: '.Up .picture' //绑定元素
 			,
 		url: '/upload/' //上传接口
 			,
@@ -17,7 +17,22 @@ layui.use('upload', function() {
 layui.use('upload', function() {
 	var upload = layui.upload;
 	var uploadInst = upload.render({
-		elem: '.network' //绑定元素
+		elem: '.Up .data' //绑定元素
+			,
+		url: '/upload/' //上传接口
+			,
+		done: function(res) {
+			//上传完毕回调
+		},
+		error: function() {
+			//请求异常回调
+		}
+	});
+});
+layui.use('upload', function() {
+	var upload = layui.upload;
+	var uploadInst = upload.render({
+		elem: '.Up .network' //绑定元素
 			,
 		url: '/upload/' //上传接口
 			,

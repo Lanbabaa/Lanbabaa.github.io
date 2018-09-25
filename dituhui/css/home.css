@@ -254,11 +254,13 @@
 	
 	.pointsLayer .attribute .title {
 		border-radius: 3px;
-		padding: 10px;
+		height: 40px;
+		line-height: 40px;
 		font-size: 16px;
 		background-color: #233046;
 		margin-bottom: 10px;
 		color: #fff;
+		padding-left: 10px;
 	}
 	
 	.pointsLayer .attribute #test1 {
