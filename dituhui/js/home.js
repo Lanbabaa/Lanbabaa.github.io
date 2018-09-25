@@ -112,9 +112,9 @@ function TakeUp() {
 
 function Show() {
 	$(".layui-nav-side,.content").fadeIn();
-	$(".main").css("left", "500px");
-	$(".main").css("width", "1420px");
-	$("iframe").css("width", "1420px");
+	$(".main").css("left", "27%");
+	$(".main").css("width", "73%");
+	$("iframe").css("width", "100%");
 	$(".Show").fadeOut()
 }
 $(".sort a").click(function() {
