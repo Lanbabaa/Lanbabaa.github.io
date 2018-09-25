@@ -95,7 +95,9 @@ function eye(e) {
 		e.className = "fa fa-eye"
 	}
 }
-
+function daily(){
+	$("iframe").attr("src","new_file.html")
+}
 function addLayer() {
 	$(".layer").append("<li><i class='layui-icon layui-icon-location'></i><a>点图层</a><span>(500)</span><i class='fa fa-eye' id='eye2' onclick='eye(this)'></i></li>")
 }

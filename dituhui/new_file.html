@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/layui.css"/>
+	</head>
+
+	<body>
+		<table id="demo" lay-filter="test"></table>
+	</body>
+	<script src="js/layui.all.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		
+		layui.use('table', function() {
+			var table = layui.table;
+
+			//第一个实例
+			table.render({
+				elem: '#demo',
+				height: 700,
+				url: '/demo/table/user/' //数据接口
+					,
+				page: true //开启分页
+					,
+				cols: [
+					[ //表头
+						{
+							field: 'user',
+							title: '昵称',
+							width: 180,
+							sort: true,
+							fixed: 'left'
+						}, {
+							field: 'phone',
+							title: '手机号',
+							width: 250
+						}, {
+							field: 'city',
+							title: '角色',
+							width: 180
+						}, {
+							field: 'sign',
+							title: '操作内容',
+							width: 200
+						}, {
+							field: 'experience',
+							title: '描述',
+							width: 400,
+						}, {
+							field: 'score',
+							title: '时间',
+							width: 180,
+							sort: true
+						}
+					]
+				]
+			});
+
+		});
+	</script>
+	
+</html>
