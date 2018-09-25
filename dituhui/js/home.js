@@ -1,3 +1,4 @@
+var j = 0;
 layui.use('upload', function() {
 	var upload = layui.upload;
 	var uploadInst = upload.render({
@@ -39,6 +40,38 @@ layui.use('carousel', function() {
 	});
 });
 
+function sortarr() {
+	var arr = [];
+	var list = "";
+	if(j == 0) {
+		$(".coordinate li").each(function() {
+			ele = $(this).text();
+			arr.push(ele)
+		})
+		arr = arr.sort();
+		$(".coordinate").empty();
+		for(var i = 0; i < arr.length; i++) {
+			list += "<li><i class='layui-icon layui-icon-location'></i><span>" + arr[i] + "</span></li>"
+		}
+		$(".coordinate").append(list);
+		j++;
+	} else {
+
+		$(".coordinate li").each(function() {
+			ele = $(this).text();
+			arr.push(ele)
+		})
+		arr = arr.sort();
+		$(".coordinate").empty();
+		for(var i = arr.length - 1; i >= 0; i--) {
+			list += "<li><i class='layui-icon layui-icon-location'></i><span>" + arr[i] + "</span></li>"
+
+		}
+		$(".coordinate").append(list);
+		j--;
+	}
+}
+
 function eye(e) {
 	var eye = e.className
 	if(eye == "fa fa-eye") {
@@ -71,21 +104,24 @@ $(".sort a").click(function() {
 	$(this).addClass("active");
 	$(this).siblings().removeClass("active")
 })
+
 $(".layui-card-body a").eq(1).click(function() {
 	$(".content .layui-card").css("display", "none");
 	$(".pointsLayer").css("display", "block");
+	j = 0;
+	sortarr();
 })
 $(".pointsLayerReturn a").click(function() {
 	$(".content .layui-card").css("display", "block");
 	$(".pointsLayer").css("display", "none");
 })
-$(".coordinate li").click(function(e) {
+$('.coordinate').delegate('li', 'click', function() {
 	$(".coordinate").css("height", "370px");
 	$(".attribute").css("display", "block");
-	var title = $(e.target).text();
-	$(".title").text(title)
+	var title = $(this).text();
+	$(".title").text(title);
+});
 
-})
 $(".attribute .layui-icon-close").click(function() {
 	$(".coordinate").css("height", "700px");
 	$(".attribute").css("display", "none");
