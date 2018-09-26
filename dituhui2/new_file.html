@@ -7,13 +7,15 @@
 		<link rel="stylesheet" type="text/css" href="css/layui.css" />
 	</head>
 	<style type="text/css">
-		.caption{
+		.caption {
 			height: 50px;
 			margin-top: 7px;
 		}
-		.caption .layui-elem-quote{
+		
+		.caption .layui-elem-quote {
 			font-size: 18px;
 		}
+		
 		div::-webkit-scrollbar,
 		ul::-webkit-scrollbar {
 			/*滚动条整体样式*/
@@ -49,17 +51,17 @@
 	<script type="text/javascript">
 		layui.use('table', function() {
 			var table = layui.table;
-
 			//第一个实例
 			table.render({
 				elem: '#demo',
-				limits:	[10,30,60,90],
 				height: 890,
 				width: 1720,
 				url: '123.txt' //数据接口
 					,
 				page: true //开启分页
 					,
+				limits: [10, 30, 60, 90],
+				limit: 10,
 				cols: [
 					[ //表头
 						{
