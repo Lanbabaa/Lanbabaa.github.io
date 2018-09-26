@@ -35,8 +35,8 @@
 	
 	.content .layui-card .layui-card-header #all {
 		font-size: 20px;
-		padding-left: 10px;
-		border-left:6px solid #108EE9;
+		padding-left: 8px;
+		border-left:5px solid #108EE9;
 	}
 	
 	.content .layui-card i {
