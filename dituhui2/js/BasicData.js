@@ -156,7 +156,10 @@ $('.coordinate').delegate('li', 'click', function() {
 	var title = $(this).text();
 	$(".title").text(title);
 });
-
+$('.coordinate').delegate('li', 'click', function() {
+	$(this).addClass("hover").siblings().removeClass("hover");
+});
+	
 $(".attribute .layui-icon-close").click(function() {
 	$(".coordinate").css("height", "700px");
 })
