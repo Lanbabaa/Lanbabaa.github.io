@@ -7,94 +7,9 @@
 	</head>
 	<link rel="stylesheet" type="text/css" href="css/layui.css" />
 	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/home.css" />
+	<link rel="stylesheet" type="text/css" href="css/BasicData.css" />
 
 	<body>
-		<ul class="layui-nav layui-nav-tree layui-nav-side">
-			<div class="user">
-				<div class="takeUp" title="点击收起">
-					<i class="layui-icon layui-icon-shrink-right"></i>
-				</div>
-				<div class="teamHead">
-					<img src="img/banner.png" />
-				</div>
-
-			</div>
-			<li class="layui-nav-item layui-this">
-				<a href=""><i class="layui-icon layui-icon-home"></i> 基础数据</a>
-			</li>
-			<li class="layui-nav-item">
-				<a href="javascript:;"><i class="layui-icon layui-icon-chart"></i> 数据分析</a>
-				<dl class="layui-nav-child">
-					<dd>
-						<a href="javascript:;">点面互查</a>
-					</dd>
-					<dd>
-						<a href="javascript:;">缓冲区分析</a>
-					</dd>
-					<dd>
-						<a href="">高级筛选</a>
-					</dd>
-				</dl>
-			</li>
-			<li class="layui-nav-item">
-				<a href=""><i class="layui-icon layui-icon-fire"></i> 智能预警</a>
-			</li>
-			<li class="layui-nav-item">
-				<a href="javascript:;"><i class="layui-icon layui-icon-location"></i> 位置监控</a>
-				<dl class="layui-nav-child">
-					<dd>
-						<a href="">人员监控</a>
-					</dd>
-					<dd>
-						<a href="">车辆监控</a>
-					</dd>
-				</dl>
-			</li>
-			<li class="layui-nav-item">
-				<a href=""><i class="layui-icon layui-icon-util	"></i> 线路规划</a>
-			</li>
-			<li class="layui-nav-item">
-				<a href="javascript:;"><i class="layui-icon layui-icon-templeate-1"></i> 智能分单</a>
-				<dl class="layui-nav-child">
-					<dd>
-						<a href="">单条分单</a>
-					</dd>
-					<dd>
-						<a href="">批量分单</a>
-					</dd>
-					<dd>
-						<a href="">订单状态统计</a>
-					</dd>
-					<dd>
-						<a href="">按图层订单统计</a>
-					</dd>
-					<dd>
-						<a href="">全部订单统计</a>
-					</dd>
-				</dl>
-			</li>
-			<li class="layui-nav-item">
-				<a href=""><i class="layui-icon layui-icon-share"></i> 分享链接</a>
-			</li>
-			<li class="layui-nav-item">
-				<a href=""><i class="layui-icon layui-icon-senior"></i> 业务流</a>
-			</li>
-			<li class="layui-nav-item">
-				<a onclick="daily()"><i class="layui-icon layui-icon-form"></i> 操作日志</a>
-			</li>
-			<li class="layui-nav-item">
-				<a href="javascript:;"><i class="layui-icon layui-icon-user"></i> 协作/权限</a>
-				<dl class="layui-nav-child">
-					<dd>
-						<a href="">协作成员</a>
-					</dd>
-					<dd>
-						<a href="">监控人员</a>
-					</dd>
-				</dl>
-			</li>
-		</ul>
 		<div class="content">
 			<div class="layui-card">
 				<div class="layui-card-header"><span id="all">全部数据</span> <span id="">
@@ -103,7 +18,7 @@
 				<div class="layui-card-body">
 					<ul class="layer">
 						<li><i class="layui-icon layui-icon-template-1"></i>
-							<a>所有图层</a><span>(500)</span><i class="layui-icon layui-icon-add-1" title="添加图层" onclick="addLayer()"></i><i class="fa fa-eye" id="eye1" onclick="eye(this)"></i></li>
+							<a>所有图层</a><span>(500)</span><i class="layui-icon layui-icon-add-1" title="添加图层" onclick="show('addLayer')"></i><i class="fa fa-eye" id="eye1" onclick="eye(this)"></i></li>
 						<hr />
 						<li><i class="layui-icon layui-icon-location"></i>
 							<a>点图层</a><span>(500)</span><i class="fa fa-eye" id="eye2" onclick="eye(this)"></i></li>
@@ -156,12 +71,12 @@
 					</div>
 				</div>
 				<div class="pointsLayerBottom">
-					<a class="import"><i class="layui-icon layui-icon-component"></i>批量导入网点</a>
-					<a class="update"><i class="layui-icon layui-icon-upload-circle"></i>更新数据</a>
+					<a class="import" onclick="show('uploading')"><i class="layui-icon layui-icon-component"></i>批量导入网点</a>
+					<a onclick="show('updateData')"><i class="layui-icon layui-icon-upload-circle"></i>更新数据</a>
 				</div>
 				<hr />
 				<div class="attribute">
-					<i class="layui-icon layui-icon-picture" title="上传图片"></i><i class="layui-icon layui-icon-close" title="关闭"></i>
+					<i class="layui-icon layui-icon-picture" title="上传图片" onclick="show('uppicture')"></i><i class="layui-icon layui-icon-close" onclick="Close('attribute')" title="关闭"></i>
 					<div class="title">
 					</div>
 					<div class="layui-carousel" id="test1">
@@ -192,16 +107,31 @@
 				</div>
 			</div>
 		</div>
-		<div class="main">
-			<iframe src="https://www.amap.com/" width="100%" height="99%" frameborder="0"></iframe>
+		<div class="map">
+			<iframe src="https://www.amap.com/" frameborder="0"></iframe>
 		</div>
+
 		<div class="Show" onclick="Show()">
 			<i class="layui-icon layui-icon-right"></i>
 		</div>
 		<div class="mask"></div>
+		<div class="layui-card addLayer">
+			<div class="layui-card-header"><span style="font-size: 16px;">添加新图层</span><strong><i class="layui-icon layui-icon-close" title="关闭" onclick="Close('addLayer')"></i></strong></div>
+			<div class="layui-card-body">
+				<div class="box">
+					<div class="rename">
+						<input type="text" class="layui-input"  id="Name" placeholder="请输入图层名"/>
+					</div>
+					<div class="btn">
+						<input type="submit" class="layui-btn" onclick="Determine()"  value="确定" />
+						<input type="button" class="layui-btn" onclick="Close('addLayer')"  value="取消" />
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<div class="layui-card uppicture">
-			<div class="layui-card-header"><span style="font-size: 16px;">图集</span><strong><i class="layui-icon layui-icon-close" title="关闭"></i></strong></div>
+			<div class="layui-card-header"><span style="font-size: 16px;">图集</span><strong><i class="layui-icon layui-icon-close" onclick="Close('uppicture')" title="关闭"></i></strong></div>
 			<div class="layui-card-body">
 				<div class="Up">
 					<div class="picture">
@@ -228,7 +158,7 @@
 			</div>
 		</div>
 		<div class="layui-card uploading">
-			<div class="layui-card-header"><span style="font-size: 16px;">批量导入网点</span><strong><i class="layui-icon layui-icon-close" title="关闭"></i></strong></div>
+			<div class="layui-card-header"><span style="font-size: 16px;">批量导入网点</span><strong><i class="layui-icon layui-icon-close" onclick="Close('uploading')" title="关闭"></i></strong></div>
 			<div class="layui-card-body">
 				<div class="Up">
 					<div class="network">
@@ -250,7 +180,7 @@
 			</div>
 		</div>
 		<div class="layui-card updateData">
-			<div class="layui-card-header"><span style="font-size: 16px;">更新数据</span><strong><i class="layui-icon layui-icon-close" title="关闭"></i></strong></div>
+			<div class="layui-card-header"><span style="font-size: 16px;">更新数据</span><strong><i class="layui-icon layui-icon-close" onclick="Close('updateData')" title="关闭"></i></strong></div>
 			<div class="layui-card-body">
 				<div class="Up">
 					<div class="data">
@@ -272,6 +202,6 @@
 	</body>
 	<script src="js/layui.all.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/home.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/BasicData.js" type="text/javascript" charset="utf-8"></script>
 
 </html>

@@ -95,25 +95,37 @@ function eye(e) {
 		e.className = "fa fa-eye"
 	}
 }
-function daily(){
-	$("iframe").attr("src","new_file.html")
+function show(e){
+	$("."+e).fadeIn();
+	$(".mask").css("display","block")
 }
-function addLayer() {
-	$(".layer").append("<li><i class='layui-icon layui-icon-location'></i><a>点图层</a><span>(500)</span><i class='fa fa-eye' id='eye2' onclick='eye(this)'></i></li>")
+function Close(e){
+	$("."+e).css("display","none");
+	$(".mask").css("display","none")
+}
+function Determine(){
+	var name=$(".rename #Name").val();
+	if (name!=""&&name!=undefined) {
+		addLayer(name);
+		Close("addLayer");
+	} else{
+		alert("图层名不能为空")
+	}
+}
+function addLayer(e) {
+	$(".layer").append("<li><i class='layui-icon layui-icon-location'></i><a>"+e+"</a><span>(500)</span><i class='fa fa-eye' id='eye2' onclick='eye(this)'></i></li>")
 }
 
 function TakeUp() {
 	$(".layui-nav-side,.content").fadeOut();
-	$(".main").css("left", "0px");
-	$(".main").css("width", "100%");
+	$(".map").css("left", "0px");
 	$("iframe").css("width", "100%");
 	$(".Show").fadeIn()
 }
 
 function Show() {
 	$(".layui-nav-side,.content").fadeIn();
-	$(".main").css("left", "27%");
-	$(".main").css("width", "73%");
+	$(".map").css("left", "280px");
 	$("iframe").css("width", "100%");
 	$(".Show").fadeOut()
 }
@@ -141,29 +153,8 @@ $('.coordinate').delegate('li', 'click', function() {
 
 $(".attribute .layui-icon-close").click(function() {
 	$(".coordinate").css("height", "700px");
-	$(".attribute").css("display", "none");
 })
-$(".attribute .layui-icon-picture").click(function() {
-	$(".mask").css("display", "block");
-	$(".uppicture").fadeIn();
-})
-$(".pointsLayerBottom .import").click(function() {
-	$(".mask").css("display", "block");
-	$(".uploading").fadeIn();
-})
-$(".pointsLayerBottom .update").click(function() {
-	$(".mask").css("display", "block");
-	$(".updateData").fadeIn();
-})
-$(".uppicture .layui-icon-close").click(function() {
-	$(".mask").css("display", "none");
-	$(".uppicture").css("display", "none");
-})
-$(".uploading .layui-icon-close").click(function() {
-	$(".mask").css("display", "none");
-	$(".uploading").css("display", "none");
-})
-$(".updateData .layui-icon-close").click(function() {
-	$(".mask").css("display", "none");
-	$(".updateData").css("display", "none");
-})
+
+
+
+
