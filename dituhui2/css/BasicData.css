@@ -5,7 +5,9 @@
 	a {
 		cursor: pointer;
 	}
-	
+	hr{
+		opacity: 0.5;
+	}
 	.select {
 		color: #000;
 		background: #fff;

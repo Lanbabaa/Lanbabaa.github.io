@@ -4,23 +4,52 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/layui.css"/>
+		<link rel="stylesheet" type="text/css" href="css/layui.css" />
 	</head>
+	<style type="text/css">
+		body {
+			padding-top: 150px;
+		}
+		
+		div::-webkit-scrollbar,
+		ul::-webkit-scrollbar {
+			/*滚动条整体样式*/
+			width: 4px;
+			/*高宽分别对应横竖滚动条的尺寸*/
+			height: 4px;
+		}
+		
+		div::-webkit-scrollbar-thumb,
+		ul::-webkit-scrollbar-thumb {
+			/*滚动条里面小方块*/
+			border-radius: 5px;
+			-webkit-box-shadow: inset 0 0 5px rgba(30, 144, 255, .5);
+			background: rgba(30, 144, 255, .5)
+		}
+		
+		div::-webkit-scrollbar-track,
+		ul::-webkit-scrollbar-track {
+			/*滚动条里面轨道*/
+			-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0);
+			border-radius: 0;
+			background: rgba(0, 0, 0, 0);
+		}
+	</style>
 
 	<body>
 		<table id="demo" lay-filter="test"></table>
 	</body>
 	<script src="js/layui.all.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
-		
 		layui.use('table', function() {
 			var table = layui.table;
 
 			//第一个实例
 			table.render({
 				elem: '#demo',
-				height: 700,
-				url: '/demo/table/user/' //数据接口
+				height: 790,
+				width: 1720,
+				url: '123.txt' //数据接口
 					,
 				page: true //开启分页
 					,
@@ -29,29 +58,29 @@
 						{
 							field: 'user',
 							title: '昵称',
-							width: 180,
+							width: 200,
 							sort: true,
 							fixed: 'left'
 						}, {
 							field: 'phone',
 							title: '手机号',
-							width: 250
+							width: 300
 						}, {
 							field: 'city',
 							title: '角色',
-							width: 180
+							width: 250
 						}, {
 							field: 'sign',
 							title: '操作内容',
-							width: 200
+							width: 300
 						}, {
 							field: 'experience',
 							title: '描述',
-							width: 400,
+							width: 450,
 						}, {
 							field: 'score',
 							title: '时间',
-							width: 180,
+							width: 207,
 							sort: true
 						}
 					]
@@ -60,5 +89,5 @@
 
 		});
 	</script>
-	
+
 </html>

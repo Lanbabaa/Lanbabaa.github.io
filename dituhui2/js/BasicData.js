@@ -95,30 +95,35 @@ function eye(e) {
 		e.className = "fa fa-eye"
 	}
 }
-function show(e){
-	$("."+e).fadeIn();
-	$(".mask").css("display","block")
+
+function show(e) {
+	$("." + e).fadeIn();
+	$(".mask").css("display", "block")
 }
-function Close(e){
-	$("."+e).css("display","none");
-	$(".mask").css("display","none")
+
+function Close(e) {
+	$("." + e).css("display", "none");
+	$(".mask").css("display", "none")
 }
-function Determine(){
-	var name=$(".rename #Name").val();
-	if (name!=""&&name!=undefined) {
+
+function Determine() {
+	var name = $(".rename #Name").val();
+	if(name != "" && name != undefined) {
 		addLayer(name);
 		Close("addLayer");
-	} else{
+	} else {
 		alert("图层名不能为空")
 	}
 }
+
 function addLayer(e) {
-	$(".layer").append("<li><i class='layui-icon layui-icon-location'></i><a>"+e+"</a><span>(500)</span><i class='fa fa-eye' id='eye2' onclick='eye(this)'></i></li>")
+	$(".layer").append("<li><i class='layui-icon layui-icon-location'></i> <a>" + e + "</a><span>(500)</span><i class='fa fa-eye' id='eye2' onclick='eye(this)'></i></li>")
 }
 
 function TakeUp() {
 	$(".layui-nav-side,.content").fadeOut();
 	$(".map").css("left", "0px");
+	$(".map").css("width", "100%");
 	$("iframe").css("width", "100%");
 	$(".Show").fadeIn()
 }
@@ -126,6 +131,7 @@ function TakeUp() {
 function Show() {
 	$(".layui-nav-side,.content").fadeIn();
 	$(".map").css("left", "280px");
+	$(".map").css("width", "calc(100% - 280px)");
 	$("iframe").css("width", "100%");
 	$(".Show").fadeOut()
 }
@@ -154,7 +160,3 @@ $('.coordinate').delegate('li', 'click', function() {
 $(".attribute .layui-icon-close").click(function() {
 	$(".coordinate").css("height", "700px");
 })
-
-
-
-
