@@ -139,7 +139,6 @@ $(".sort a").click(function() {
 	$(this).addClass("active");
 	$(this).siblings().removeClass("active")
 })
-
 $(".layui-card-body a").eq(1).click(function() {
 	$(".content .layui-card").css("display", "none");
 	$(".pointsLayer").css("display", "block");

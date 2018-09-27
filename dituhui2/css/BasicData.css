@@ -357,12 +357,12 @@
 		border: 1px dashed #108EE9;
 	}
 	
-	.uppicture .layui-card-body .Up .picture div
-	{
-		width: 122px;
-		height: 122px;
-		margin: auto;
+	.uppicture .layui-card-body .Up .picture div i{
+		display: block;
 		margin-top: 30px;
+		text-align: center;
+	}
+	.uppicture .layui-card-body .Up .picture div p{
 		text-align: center;
 	}
 	.uppicture .layui-card-body .alreadyUp .picture div{
