@@ -211,7 +211,9 @@
 		right: 10px;
 		top: 10px;
 	}
-	
+	.pointsLayer .attribute .icon i{
+		margin-left: 2px;
+	}
 	.pointsLayer .attribute .title {
 		border-radius: 3px;
 		height: 40px;
