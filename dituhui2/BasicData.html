@@ -8,8 +8,16 @@
 	<link rel="stylesheet" type="text/css" href="css/layui.css" />
 	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/BasicData.css" />
-
 	<body>
+		<div class="Editlayer" id="Editlayer">
+			<ul>
+				<li><span>设为默认图层</span></li>
+				<li><span>重命名</span></li>
+				<li><span>删除图层</span></li>
+				<li><span>清空图层</span></li>
+				<li><span>导出</span></li>
+			</ul>
+		</div>
 		<div class="content">
 			<div class="layui-card">
 				<div class="layui-card-header"><span id="all">所有数据</span> <span id="">
@@ -21,18 +29,20 @@
 							<a>所有图层</a><span>(500)</span><i class="layui-icon layui-icon-add-1" title="添加图层" onclick="show('addLayer')"></i><i class="fa fa-eye" id="eye1" onclick="eye(this)"></i></li>
 						<hr />
 						<li><i class="layui-icon layui-icon-location"></i>
-							<a>点图层</a><span>(500)</span><i class="fa fa-eye" id="eye2" onclick="eye(this)"></i></li>
+							<a>点图层</a><span>(500)</span><i class="fa fa-eye" id="eye2" onclick="eye(this)"></i>							
+						</li>
 					</ul>
 				</div>
 			</div>
 			<div class="pointsLayer">
 				<div class="pointsLayerReturn">
-					<a href="javascript:;">
+					<a href="javascript:">
 						<返回</a><i class="layui-icon layui-icon-shrink-right" style="color: #108EE9;margin-left: 40px;" title="点击全部收起" onclick="TakeUp()"></i>
 				</div>
 				<div class="pointsLayerMain">
 					<div class="caption">
 						<i class="layui-icon layui-icon-location"></i><span>点图层1 <span>(500)</span></span>
+						<i class="layui-icon layui-icon-more" id="more" style="float: right; cursor: pointer;" title="更多" onclick="more('Editlayer')"></i>
 					</div>
 					<div class="sort">
 						<span>排序方式：</span>
@@ -77,7 +87,7 @@
 				<hr class="layui-bg-blue"/>
 				<div class="attribute">
 					<div class="icon">
-						<i class="layui-icon layui-icon-edit" title="编辑" ></i>
+						<i class="layui-icon layui-icon-edit" title="编辑" onclick="edit()"></i>
 						<i class="layui-icon layui-icon-picture" title="上传图片" onclick="show('uppicture')"></i>
 						<i class="layui-icon layui-icon-close" onclick="Close('attribute')" title="关闭"></i>
 					</div>
@@ -90,7 +100,7 @@
 						</div>
 					</div>
 					<div class="material">
-						<li><span class="means">描述：</span><span class="value">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</span></li>
+						<li><span class="means">描述：</span><span class="value"> 描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</span></li>
 						<li><span class="means">img：</span><span class="value">2</span></li>
 						<li><span class="means">creator：</span><span class="value">3</span></li>
 						<li><span class="means">icon：</span><span class="value">1</span></li>
@@ -107,6 +117,7 @@
 						<li><span class="means">id：</span><span class="value">3</span></li>
 						<li><span class="means">区域编码：</span><span class="value">3</span></li>
 						<li><span class="means">绑定区域：</span><span class="value">3</span></li>
+						<button class="layui-btn layui-btn-normal" style="float: right; margin-right: 10px; display: none;" onclick="determine()">确定</button>
 					</div>
 				</div>
 			</div>
@@ -168,7 +179,7 @@
 					<div class="network">
 						
 						<div>
-							<i class="layui-icon layui-icon-add-1"></i>
+							<i class="layui-icon layui-icon-upload-drag"></i>
 							<p>点击上传数据</p>
 						</div>
 					</div>
@@ -190,7 +201,7 @@
 				<div class="Up">
 					<div class="data">
 						<div>
-							<i class="layui-icon layui-icon-add-1"></i>
+							<i class="layui-icon layui-icon-upload-drag"></i>
 							<p>点击更新数据</p>
 						</div>
 					</div>

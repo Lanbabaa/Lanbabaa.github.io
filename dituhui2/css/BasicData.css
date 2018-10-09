@@ -1,22 +1,54 @@
-	body{
+	body {
 		width: 100%;
 		height: 100%;
 	}
+	
 	a {
 		cursor: pointer;
 	}
-	hr{
+	
+	hr {
 		opacity: 0.5;
 	}
-	.hover{
-		background-color:#8CCBE2;
+	
+	.hover {
+		background-color: #8CCBE2;
 		color: #fff;
 	}
+	
 	.select {
 		color: #000;
 		background: #fff;
 	}
 	
+	.Editlayer{
+		width: 100px;
+		height: 200px;
+		z-index: 999;
+		background-color: #fff;
+		position: absolute;
+		left: 240px;
+		top: 100px;
+		box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+		border-radius: 5px;
+		display: none;
+	}
+	.Editlayer li{
+		color: rgba(0,0,0,.65);
+
+		font-size: 12px;
+		text-align: left;
+		line-height: 40px;
+		width: 100%;
+		height: 40px;
+	}
+	.Editlayer li span{
+		padding-left:15px ;
+	}
+	.Editlayer li:hover{
+		cursor: pointer;
+		background-color: rgba(30,144,255,.1);
+	}
 	.content {
 		width: 280px;
 		height: 100%;
@@ -24,7 +56,8 @@
 		position: absolute;
 		background: #fff;
 	}
-	.content .layui-card{
+	
+	.content .layui-card {
 		height: 100%;
 		margin: 0;
 	}
@@ -36,7 +69,7 @@
 	.content .layui-card .layui-card-header #all {
 		font-size: 20px;
 		padding-left: 8px;
-		border-left:5px solid #108EE9;
+		border-left: 5px solid #108EE9;
 	}
 	
 	.content .layui-card i {
@@ -77,12 +110,14 @@
 		padding: 0;
 		float: right;
 	}
-	.map{
+	
+	.map {
 		width: calc(100% - 280px);
 		height: calc(100% - 3px);
 		position: absolute;
 		left: 280px;
 	}
+	
 	iframe {
 		width: 100%;
 		height: 100%;
@@ -131,7 +166,6 @@
 		right: 15px;
 	}
 	
-	
 	.pointsLayer .pointsLayerMain .caption {
 		height: 35px;
 		line-height: 35px;
@@ -155,10 +189,12 @@
 		padding: 3px 6px;
 		border-radius: 4px;
 	}
-	.pointsLayer .pointsLayerMain .sort .active{
+	
+	.pointsLayer .pointsLayerMain .sort .active {
 		background-color: #108EE9;
 		color: #fff;
 	}
+	
 	.pointsLayer .pointsLayerMain .coordinate {
 		height: 700px;
 		overflow: auto;
@@ -201,19 +237,23 @@
 		margin: 20px 0;
 		padding: 0px 10px;
 	}
-	.pointsLayer .attribute #test1 img{
+	
+	.pointsLayer .attribute #test1 img {
 		width: 100%;
 		height: 100%;
 	}
+	
 	.pointsLayer .attribute .icon {
 		position: absolute;
 		color: #fff;
 		right: 10px;
 		top: 10px;
 	}
-	.pointsLayer .attribute .icon i{
+	
+	.pointsLayer .attribute .icon i {
 		margin-left: 2px;
 	}
+	
 	.pointsLayer .attribute .title {
 		border-radius: 3px;
 		height: 40px;
@@ -261,7 +301,8 @@
 		z-index: 998;
 		display: none;
 	}
-	.addLayer{
+	
+	.addLayer {
 		width: 570px;
 		height: 350px;
 		background-color: #fff;
@@ -276,31 +317,35 @@
 		border-radius: 5px;
 		display: none;
 	}
+	
 	.addLayer .layui-card-header i {
 		position: absolute;
 		right: 20px;
 		cursor: pointer;
-		
 	}
-	.addLayer .layui-card-body .box{
+	
+	.addLayer .layui-card-body .box {
 		width: 400px;
 		height: 200px;
 		margin: auto;
 		margin-top: 80px;
 		position: relative;
 	}
-	.addLayer .layui-card-body .rename{
+	
+	.addLayer .layui-card-body .rename {
 		margin: auto;
 	}
-
-	.addLayer .layui-card-body .btn{
+	
+	.addLayer .layui-card-body .btn {
 		position: absolute;
 		bottom: 10px;
 		right: 0px;
 	}
-	.addLayer .layui-card-body .btn input{
+	
+	.addLayer .layui-card-body .btn input {
 		width: 100px;
 	}
+	
 	.uppicture {
 		width: 570px;
 		height: 350px;
@@ -334,32 +379,35 @@
 		margin-right: 10px;
 	}
 	
-	.uppicture .layui-card-body .Up .picture
-	{
+	.uppicture .layui-card-body .Up .picture {
 		width: 100%;
 		height: 100%;
 		border: 1px dashed #ddd;
 		border-radius: 5px;
 		cursor: pointer;
 	}
-	.uppicture .layui-card-body .alreadyUp .picture{
+	
+	.uppicture .layui-card-body .alreadyUp .picture {
 		width: 100%;
 		height: 100%;
 		border-radius: 5px;
 	}
-	.uppicture .layui-card-body .Up .picture:hover{
+	
+	.uppicture .layui-card-body .Up .picture:hover {
 		border: 1px dashed #108EE9;
 	}
 	
-	.uppicture .layui-card-body .Up .picture div i{
+	.uppicture .layui-card-body .Up .picture div i {
 		display: block;
 		margin-top: 30px;
 		text-align: center;
 	}
-	.uppicture .layui-card-body .Up .picture div p{
+	
+	.uppicture .layui-card-body .Up .picture div p {
 		text-align: center;
 	}
-	.uppicture .layui-card-body .alreadyUp .picture div{
+	
+	.uppicture .layui-card-body .alreadyUp .picture div {
 		width: 122px;
 		height: 122px;
 		line-height: 122px;
@@ -367,14 +415,15 @@
 		text-align: center;
 		overflow: hidden;
 	}
-	.uppicture .layui-card-body .alreadyUp .picture div img{
+	
+	.uppicture .layui-card-body .alreadyUp .picture div img {
 		width: 100%;
 	}
+	
 	.uppicture .layui-card-body .Up .picture div i {
 		font-size: 25px;
 		color: #bae6e2;
 	}
-
 	
 	.uploading {
 		width: 570px;
@@ -404,12 +453,15 @@
 		text-align: left;
 		margin-top: 50px;
 	}
-	.uploading .layui-card-body .ps p{
+	
+	.uploading .layui-card-body .ps p {
 		color: #c1c1c1;
 	}
-	.uploading .layui-card-body .ps span{
+	
+	.uploading .layui-card-body .ps span {
 		color: #666;
 	}
+	
 	.uploading .layui-card-body .ps a {
 		color: #108EE9;
 		padding-right: 10px;
@@ -446,6 +498,7 @@
 		font-size: 25px;
 		color: #bae6e2;
 	}
+	
 	.updateData {
 		width: 570px;
 		height: 350px;
@@ -474,10 +527,12 @@
 		text-align: left;
 		margin-top: 30px;
 	}
-	.updateData .layui-card-body .ps p{
+	
+	.updateData .layui-card-body .ps p {
 		color: #c1c1c1;
 	}
-	.updateData .layui-card-body .ps span{
+	
+	.updateData .layui-card-body .ps span {
 		color: #666;
 	}
 	
