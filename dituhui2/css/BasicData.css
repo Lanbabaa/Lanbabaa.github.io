@@ -332,10 +332,12 @@
 		position: relative;
 	}
 	
-	.addLayer .layui-card-body .rename {
-		margin: auto;
+	.addLayer .box .layui-input-inline{
+		width: 400px;
 	}
-	
+	.addLayer .box .layui-input-inline input{
+		padding-left: 15px;
+	}
 	.addLayer .layui-card-body .btn {
 		position: absolute;
 		bottom: 10px;

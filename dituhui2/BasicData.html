@@ -134,9 +134,10 @@
 			<div class="layui-card-header"><span style="font-size: 16px;">添加新图层</span><strong><i class="layui-icon layui-icon-close" title="关闭" onclick="Close('addLayer')"></i></strong></div>
 			<div class="layui-card-body">
 				<div class="box">
-					<div class="rename">
-						<input type="text" class="layui-input"  id="Name" placeholder="请输入图层名"/>
-					</div>
+					<div class="layui-input-inline">
+	                    <input type="text" name="keyword"  id="Name" class="layui-input" placeholder="图层名"/>
+	                    <i class="layui-icon layui-icon-close" style="position: absolute;top:8px;right:8px; cursor: pointer;" title="清空"></i>
+              		</div>
 					<div class="btn">
 						<input type="submit" class="layui-btn layui-btn-normal" onclick="Determine()"  value="确定" />
 						<input type="button" class="layui-btn layui-btn-primary" onclick="Close('addLayer')"  value="取消" />

@@ -177,3 +177,6 @@ $('.coordinate').delegate('li', 'click', function() {
 $(".attribute .layui-icon-close").click(function() {
 	$(".coordinate").css("height", "700px");
 })
+$(".box i").click(function(){
+	$(".box input[type=text]").val("");
+})
