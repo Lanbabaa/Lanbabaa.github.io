@@ -124,8 +124,8 @@ function Close(e) {
 }
 
 function Determine() {
-	var name = $(".rename #Name").val();
-	if(name != "" && name != undefined) {
+	var name = $("#Name").val();
+	if(name != "") {
 		addLayer(name);
 		Close("addLayer");
 	} else {
