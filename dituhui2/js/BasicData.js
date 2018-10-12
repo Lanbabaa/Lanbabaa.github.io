@@ -134,7 +134,7 @@ function Determine() {
 }
 
 function addLayer(e) {
-	$(".layer").append("<li><i class='layui-icon layui-icon-location'></i> <a>" + e + "</a><span>(500)</span><i class='fa fa-eye' id='eye2' onclick='eye(this)'></i></li>")
+	$(".layer").append("<li><i class='layui-icon layui-icon-location'></i> <a>" + e + "</a><span>(0)</span><i class='fa fa-eye' id='eye2' onclick='eye(this)'></i></li>")
 }
 
 function TakeUp() {
