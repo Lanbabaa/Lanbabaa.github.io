@@ -148,7 +148,7 @@ function Show() {
 	$(".layui-nav-side,.content").fadeIn();
 	$(".map").css({"left":"280px","width":"calc(100% - 280px)"});
 	$("iframe").css("width", "100%");
-	$(".Show").fadeOut()
+	$(".Show").fadeOut(0);
 }
 $(".sort a").click(function() {
 	$(this).addClass("active");

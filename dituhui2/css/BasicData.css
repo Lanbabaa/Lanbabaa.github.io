@@ -196,7 +196,7 @@
 	}
 	
 	.pointsLayer .pointsLayerMain .coordinate {
-		height: 700px;
+		height: 60%;
 		overflow: auto;
 	}
 	
@@ -224,7 +224,7 @@
 	
 	.pointsLayer .attribute {
 		margin-top: 20px;
-		height: 350px;
+		height: 20%;
 		display: none;
 		position: relative;
 	}
