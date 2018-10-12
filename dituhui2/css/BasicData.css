@@ -61,7 +61,9 @@
 		height: 100%;
 		margin: 0;
 	}
-	
+	.content .layui-card .layui-card-header{
+		padding-right: 0;
+	}
 	.content .layui-card .layui-card-header span {
 		cursor: pointer;
 	}
