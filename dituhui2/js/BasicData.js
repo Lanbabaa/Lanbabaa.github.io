@@ -128,6 +128,7 @@ function Determine() {
 	if(name != "") {
 		addLayer(name);
 		Close("addLayer");
+		$("#Name").val("");
 	} else {
 		alert("图层名不能为空")
 	}
