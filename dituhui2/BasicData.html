@@ -5,9 +5,10 @@
 		<meta charset="UTF-8">
 		<title>首页</title>
 	</head>
-	<link rel="stylesheet" type="text/css" href="layui/css/layui.css"/>
+	<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
 	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/BasicData.css" />
+
 	<body>
 		<div class="Editlayer" id="Editlayer">
 			<ul>
@@ -29,15 +30,15 @@
 							<a>所有图层</a><span>(500)</span><i class="layui-icon layui-icon-add-1" title="添加图层" onclick="show('addLayer')"></i><i class="fa fa-eye" id="eye1" onclick="eye(this)"></i></li>
 						<hr />
 						<li><i class="layui-icon layui-icon-location"></i>
-							<a>点图层</a><span>(500)</span><i class="fa fa-eye" id="eye2" onclick="eye(this)"></i>							
+							<a>点图层</a><span>(500)</span><i class="fa fa-eye" id="eye2" onclick="eye(this)"></i>
 						</li>
 					</ul>
 				</div>
 			</div>
 			<div class="pointsLayer">
 				<div class="pointsLayerReturn">
-					<a href="javascript:">
-						<返回</a><i class="layui-icon layui-icon-shrink-right" style="color: #108EE9;margin-left: 30px;" title="点击全部收起" onclick="TakeUp()"></i>
+					<a href="javascript:"><返回</a>
+					<i class="layui-icon layui-icon-shrink-right" style="color: #108EE9;margin-left: 30px;" title="点击全部收起" onclick="TakeUp()"></i>
 				</div>
 				<div class="pointsLayerMain">
 					<div class="caption">
@@ -84,7 +85,7 @@
 					<a class="import" onclick="show('uploading')"><i class="layui-icon layui-icon-component"></i>批量导入网点</a>
 					<a onclick="show('updateData')"><i class="layui-icon layui-icon-upload-circle"></i>更新数据</a>
 				</div>
-				<hr class="layui-bg-blue"/>
+				<hr class="layui-bg-blue" />
 				<div class="attribute">
 					<div class="icon">
 						<i class="layui-icon layui-icon-picture" title="上传图片" onclick="show('uppicture')"></i>
@@ -133,12 +134,12 @@
 			<div class="layui-card-body">
 				<div class="box">
 					<div class="layui-input-inline">
-	                    <input type="text"  id="Name" class="layui-input" placeholder="图层名"/>
-	                    <i class="layui-icon layui-icon-close" style="position: absolute;top:8px;right:8px; cursor: pointer;" title="清空"></i>
-              		</div>
+						<input type="text" id="Name" class="layui-input" placeholder="图层名" />
+						<i class="layui-icon layui-icon-close" style="position: absolute;top:8px;right:8px; cursor: pointer;" title="清空"></i>
+					</div>
 					<div class="btn">
-						<input type="submit" class="layui-btn layui-btn-normal" onclick="Determine()"  value="确定" />
-						<input type="button" class="layui-btn layui-btn-primary" onclick="Close('addLayer')"  value="取消" />
+						<input type="submit" class="layui-btn layui-btn-normal" onclick="Determine()" value="确定" />
+						<input type="button" class="layui-btn layui-btn-primary" onclick="Close('addLayer')" value="取消" />
 					</div>
 				</div>
 			</div>
@@ -176,7 +177,7 @@
 			<div class="layui-card-body">
 				<div class="Up">
 					<div class="network">
-						
+
 						<div>
 							<i class="layui-icon layui-icon-upload-drag"></i>
 							<p>点击上传数据</p>
@@ -218,4 +219,5 @@
 	<script src="layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/BasicData.js" type="text/javascript" charset="utf-8"></script>
+
 </html>
