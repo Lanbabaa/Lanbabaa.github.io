@@ -6,112 +6,12 @@
 		<title>仿地图慧</title>
 		<link rel="stylesheet" type="text/css" href="layui/css/layui.css"/>
 		<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 	</head>
-	<style type="text/css">
-		.layui-nav-side {
-			border-radius: 0;
-			z-index: 889;
-		}
-		
-		.layui-nav-side .user {
-			width: 200px;
-			height: 120px;
-		}
-		
-		.layui-nav-side li {
-			cursor: pointer;
-		}
-		
-		.layui-nav-side .user .takeUp {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 50px;
-			height: 120px;
-			background: rgba(0, 0, 0, .3);
-		}
-		
-		.layui-nav-side .user .takeUp i {
-			font-size: 16px;
-			text-align: center;
-			position: absolute;
-			top: 52px;
-			left: 17px;
-			cursor: pointer;
-		}
-		
-		.layui-nav-side .user .teamHead {
-			position: absolute;
-			top: 0;
-			left: 50px;
-			width: 150px;
-			height: 120px;
-			overflow: hidden;
-			background-color: rgba(0, 0, 0, .1);
-		}
-		
-		.layui-nav-side .user .teamHead img {
-			width: 60px;
-			height: 60px;
-			border-radius: 30px;
-			position: absolute;
-			top: 35px;
-			left: 40px;
-			background: #fff;
-			cursor: pointer;
-		}
-		
-		.layui-nav-side .user .takeUp,
-		.layui-nav-side .user .teamHead {
-			display: inline-block;
-		}
-		
-		iframe {
-			width: calc(100% - 200px);
-			height: 100%;
-			position: absolute;
-			left: 200px;
-			top: 0;
-			border: 0px;
-		}
-		
-		.open {
-			width: calc(100% - 50px);
-			left: 50px;
-		}
-		
-		.visibilityHidden {
-			visibility: hidden;
-		}
-		
-		.visibilityVisible {
-			visibility: visible;
-		}
-		
-		div::-webkit-scrollbar,
-		ul::-webkit-scrollbar {
-			width: 4px;
-			height: 4px;
-		}
-		
-		div::-webkit-scrollbar-thumb,
-		ul::-webkit-scrollbar-thumb {
-			border-radius: 5px;
-			-webkit-box-shadow: inset 0 0 5px rgba(30, 144, 255, .5);
-			background: rgba(30, 144, 255, .5)
-		}
-		
-		div::-webkit-scrollbar-track,
-		ul::-webkit-scrollbar-track {
-			-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0);
-			border-radius: 0;
-			background: rgba(0, 0, 0, 0);
-		}
-	</style>
 
 	<body>
 		<ul class="layui-nav layui-nav-tree layui-nav-side">
-			<div class="user">
+			<div class="head">
 				<div class="takeUp" title="点击收起">
 					<i class="layui-icon layui-icon-shrink-right"></i>
 				</div>
@@ -193,6 +93,19 @@
 					</dd>
 				</dl>
 			</li>
+			<div class="Bottom">
+				<div class="MapList">
+					<div class="btn">
+						<i class="layui-icon layui-icon-website"></i>
+						<span>layui-icon-websitelayui-icon-websitelayui-icon-websitelayui-icon-websitelayui-icon-websitelayui-icon-website</span>
+					</div>
+					<i class="layui-icon layui-icon-down"></i>		
+				</div>
+				<hr />
+				<div class="User">
+					<img src="img/banner.png"/><span>用户名</span>
+				</div>
+			</div>
 		</ul>
 		<iframe src="BasicData.html"></iframe>
 	</body>
