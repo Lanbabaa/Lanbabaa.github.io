@@ -25,5 +25,5 @@ function Jump(e) {
 			}
 		});
 		$(".MapList").click(function(){
-			
+	
 		})
