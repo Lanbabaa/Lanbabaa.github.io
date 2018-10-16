@@ -82,6 +82,9 @@
 		.Bottom .MapList  *{
 			color: rgba(255,255,255,.9);
 		}
+		.Bottom .MapList i{
+			font-size: 10px;
+		}
 		.Bottom .MapList .btn i{
 			font-size: 18px;	
 		}
