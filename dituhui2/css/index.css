@@ -62,12 +62,12 @@
 			margin-top: 235px;
 		}
 		.Bottom .MapList{
-			width: 180px;
-			height: 30px;
+			width: 160px;
+			height: 25px;
+			padding-top: 6px;
 			margin-left: 10px;
 			margin-bottom: 20px;
 			background-color:#009688;
-			padding-top: 10px;
 			border-radius: 20px;
 			cursor: pointer;
 		}
