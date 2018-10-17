@@ -3,6 +3,7 @@ function Jump(e) {
 		}
 		var n = 0;
 		$(".takeUp i").click(function() {
+			
 			if(n == 0) {
 				$("a").addClass("visibilityHidden");
 				$("a i").addClass("visibilityVisible");
@@ -23,7 +24,8 @@ function Jump(e) {
 				$("iframe").removeClass("open");
 				n--;
 			}
+			$(".Bottom").toggle();
 		});
 		$(".MapList").click(function(){
-	
+			
 		})
