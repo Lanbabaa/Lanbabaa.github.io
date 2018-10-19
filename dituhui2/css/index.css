@@ -1,3 +1,6 @@
+		hr{
+			opacity: .6;
+		}
 		.layui-nav-side {
 			border-radius: 0;
 			z-index: 889;
