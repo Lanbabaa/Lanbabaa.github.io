@@ -27,5 +27,5 @@ function Jump(e) {
 			$(".Bottom").toggle();
 		});
 		$(".MapList").click(function(){
-			
+			$(".MapList .layui-icon-down").toggleClass("layui-icon-up")
 		})

@@ -89,6 +89,7 @@
 		}
 		.Bottom .MapList  *{
 			color: rgba(255,255,255,.7);
+			vertical-align:middle;
 		}
 		.Bottom .MapList i{
 			font-size: 10px;

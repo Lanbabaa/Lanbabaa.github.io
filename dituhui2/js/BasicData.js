@@ -86,38 +86,37 @@ function sortarr() {
 		j--;
 	}
 }
-$("body").click(function(e){
-	var id=e.target.id;
-	if(id!='more'){
+$("body").click(function(e) {
+	var id = e.target.id;
+	if(id != 'more') {
 		$("#Editlayer").fadeOut()
 	}
 })
-function eye(e) {
-	var eye = e.className
-	if(eye == "fa fa-eye") {
-		e.className = "fa fa-eye-slash"
-	} else {
-		e.className = "fa fa-eye"
-	}
-}
-$(".material .value").dblclick(function(){
-	
-	$(".value").attr("contenteditable","false");
-	$(this).attr("contenteditable","true");
+$(".fa-eye").click(function() {
+	$(this).toggleClass("fa-eye-slash")
+})
+
+$(".material .value").dblclick(function() {
+
+	$(".value").attr("contenteditable", "false");
+	$(this).attr("contenteditable", "true");
 	$(this).focus();
 });
 
-function determine(){
-	$(".value").attr("contenteditable","false");
-	$(".material button").css("display","none");
+function determine() {
+	$(".value").attr("contenteditable", "false");
+	$(".material button").css("display", "none");
 }
+
 function show(e) {
 	$("." + e).fadeIn();
 	$(".mask").css("display", "block")
 }
-function more(e){
+
+function more(e) {
 	$("." + e).fadeToggle();
 }
+
 function Close(e) {
 	$("." + e).css("display", "none");
 	$(".mask").css("display", "none")
@@ -140,14 +139,20 @@ function addLayer(e) {
 
 function TakeUp() {
 	$(".layui-nav-side,.content").fadeOut();
-	$(".map").css({"left":"0px","width":"100%"});
+	$(".map").css({
+		"left": "0px",
+		"width": "100%"
+	});
 	$("iframe").css("width", "100%");
 	$(".Show").fadeIn()
 }
 
 function Show() {
 	$(".layui-nav-side,.content").fadeIn();
-	$(".map").css({"left":"280px","width":"calc(100% - 280px)"});
+	$(".map").css({
+		"left": "280px",
+		"width": "calc(100% - 280px)"
+	});
 	$("iframe").css("width", "100%");
 	$(".Show").fadeOut(0);
 }
@@ -174,10 +179,10 @@ $('.coordinate').delegate('li', 'click', function() {
 $('.coordinate').delegate('li', 'click', function() {
 	$(this).addClass("hover").siblings().removeClass("hover");
 });
-	
+
 $(".attribute .layui-icon-close").click(function() {
 	$(".coordinate").css("height", "700px");
 })
-$(".box i").click(function(){
+$(".box i").click(function() {
 	$(".box input[type=text]").val("");
 })
