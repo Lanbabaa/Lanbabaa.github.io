@@ -27,5 +27,13 @@ function Jump(e) {
 			$(".Bottom").toggle();
 		});
 		$(".MapList").click(function(){
-			$(".MapList .layui-icon-down").toggleClass("layui-icon-up")
+			$(".MapList .layui-icon-down").toggleClass("layui-icon-up");
+			$(".List").toggle(100);
+		})
+		$("html").click(function(e) {
+			var id = e.target.id;
+			if(id != 'MapList'&&id != 'List') {
+				$(".List").hide(100);
+				$(".MapList .layui-icon-down").removeClass("layui-icon-up");
+			}
 		})

@@ -35,7 +35,6 @@
 	}
 	.Editlayer li{
 		color: rgba(0,0,0,.65);
-
 		font-size: 12px;
 		text-align: left;
 		line-height: 40px;
@@ -91,11 +90,6 @@
 		color: #ddd;
 		padding: 15px;
 	}
-	
-	.content .layui-card .layui-card-body a {
-		cursor: pointer;
-	}
-	
 	.content .layui-card .layui-card-body .layui-icon-add-1 {
 		font-size: 14px;
 		color: #108ee9;
