@@ -31,8 +31,8 @@ function Jump(e) {
 			$(".List").toggle(100);
 		})
 		$("html").click(function(e) {
-			var id = e.target.id;
-			if(id != 'MapList'&&id != 'List') {
+			var Class= $(e.target).attr("class");
+			if(Class != 'MapList' && Class != 'List' && Class != 'header' && Class != 'content' && Class != 'estavlish' && Class != 'default') {
 				$(".List").hide(100);
 				$(".MapList .layui-icon-down").removeClass("layui-icon-up");
 			}
