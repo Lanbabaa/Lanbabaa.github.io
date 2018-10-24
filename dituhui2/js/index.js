@@ -30,10 +30,10 @@ function Jump(e) {
 			$(".MapList .layui-icon-down").toggleClass("layui-icon-up");
 			$(".List").toggle(100);
 		})
-		$("html").click(function(e) {
-			var Class= $(e.target).attr("class");
-			if(Class != 'MapList' && Class != 'List' && Class != 'header' && Class != 'content' && Class != 'estavlish' && Class != 'default') {
-				$(".List").hide(100);
-				$(".MapList .layui-icon-down").removeClass("layui-icon-up");
-			}
-		})
+		$(document).click(function(){
+		    $(".List").hide(100);
+		    $(".MapList .layui-icon-down").removeClass("layui-icon-up");
+		});
+		$(".List,.MapList").click(function(event){
+		    event.stopPropagation();
+		});
