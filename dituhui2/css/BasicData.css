@@ -195,7 +195,7 @@
 	}
 	
 	.pointsLayer .pointsLayerMain .coordinate {
-		height: 60%;
+		height: 700px;
 		overflow: auto;
 	}
 	
