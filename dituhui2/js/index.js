@@ -37,3 +37,7 @@ function Jump(e) {
 		$(".List,.MapList").click(function(event){
 		    event.stopPropagation();
 		});
+		$(".content li").mousemove(function(){
+			 
+		})
+		
