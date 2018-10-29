@@ -450,7 +450,7 @@
 	
 	.uploading .layui-card-body .ps {
 		width: 80%;
-		font-size: 10px;
+		font-size: 12px;
 		text-align: left;
 		margin-top: 50px;
 	}
@@ -522,9 +522,9 @@
 		cursor: pointer;
 	}
 	
-	.updateData .layui-card-body .ps {
+	.updateData .layui-card-body .ps{
 		width: 80%;
-		font-size: 10px;
+		font-size: 12px;
 		text-align: left;
 		margin-top: 30px;
 	}
