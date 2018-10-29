@@ -12,7 +12,7 @@
 	}
 	
 	.hover {
-		background-color: rgba(16,142,233,.4);
+		background-color: rgba(16, 142, 233, .4);
 		color: #fff;
 	}
 	
@@ -21,7 +21,7 @@
 		background: #fff;
 	}
 	
-	.Editlayer{
+	.Editlayer {
 		width: 100px;
 		height: 200px;
 		z-index: 999;
@@ -33,21 +33,25 @@
 		border-radius: 5px;
 		display: none;
 	}
-	.Editlayer li{
-		color: rgba(0,0,0,.65);
+	
+	.Editlayer li {
+		color: rgba(0, 0, 0, .65);
 		font-size: 12px;
 		text-align: left;
 		line-height: 40px;
 		width: 100%;
 		height: 40px;
 	}
-	.Editlayer li span{
-		padding-left:15px ;
+	
+	.Editlayer li span {
+		padding-left: 15px;
 	}
-	.Editlayer li:hover{
+	
+	.Editlayer li:hover {
 		cursor: pointer;
-		background-color: rgba(30,144,255,.1);
+		background-color: rgba(30, 144, 255, .1);
 	}
+	
 	.content {
 		width: 280px;
 		height: 100%;
@@ -60,16 +64,20 @@
 		height: 100%;
 		margin: 0;
 	}
-	.content .layui-card .layui-card-header{
+	
+	.content .layui-card .layui-card-header {
 		padding-right: 0;
 	}
+	
 	.content .layui-card .layui-card-header span {
 		cursor: pointer;
 	}
-	.content .layui-card .layui-card-header i{
+	
+	.content .layui-card .layui-card-header i {
 		color: #108EE9;
 		margin-left: 40px;
 	}
+	
 	.content .layui-card .layui-card-header #all {
 		font-size: 20px;
 		padding-left: 8px;
@@ -90,6 +98,7 @@
 		color: #ddd;
 		padding: 15px;
 	}
+	
 	.content .layui-card .layui-card-body .layui-icon-add-1 {
 		font-size: 14px;
 		color: #108ee9;
@@ -208,7 +217,7 @@
 	}
 	
 	.pointsLayer .pointsLayerMain .coordinate li:hover {
-		background-color: rgba(16,142,233,.4);
+		background-color: rgba(16, 142, 233, .4);
 		color: #fff;
 	}
 	
@@ -331,11 +340,25 @@
 		position: relative;
 	}
 	
-	.addLayer .box .layui-input-inline{
+	.addLayer .box .layui-input-inline {
 		width: 400px;
 	}
-	.addLayer .box .layui-input-inline input{
+	
+	.addLayer .box .layui-input-inline input {
 		padding-left: 15px;
+	}
+	
+	.addLayer .box .layui-input-inline i{
+		position: absolute;
+		top: 8px;
+		right: 8px;
+		font-size: 24px;
+		color: #ddd;
+		cursor: pointer;
+		transition: color .2s;
+	}
+	.addLayer .box .layui-input-inline i:hover{
+		color: #aaa;
 	}
 	.addLayer .layui-card-body .btn {
 		position: absolute;
@@ -522,7 +545,7 @@
 		cursor: pointer;
 	}
 	
-	.updateData .layui-card-body .ps{
+	.updateData .layui-card-body .ps {
 		width: 80%;
 		font-size: 12px;
 		text-align: left;
