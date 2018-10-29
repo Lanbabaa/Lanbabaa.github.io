@@ -32,8 +32,12 @@ function Jump(e) {
 		})
 		$(document).click(function(){
 		    $(".List").hide(100);
-		    $(".MapList .layui-icon-down").removeClass("layui-icon-up");
+		    $(".MapList .layui-icon-down").removeClass("layui-icon-up");   
 		});
+		document.getElementById('my-iframe').contentDocument.onclick = function () {
+		    $(".List").hide(100);
+		    $(".MapList .layui-icon-down").removeClass("layui-icon-up");  
+		};
 		$(".List,.MapList").click(function(event){
 		    event.stopPropagation();
 		});
