@@ -216,6 +216,9 @@
 			top: 12px;
 			left: 155px;
 		}
+		.Bottom{
+			background-color: #393D49;
+		}
 		.Bottom .User{
 			line-height: 50px;
 		}
@@ -275,5 +278,13 @@
 		.Bottom{
 			position: relative;
 			bottom: 0px;
+			
+			}
+		
+		}
+		@media screen and (max-height: 820px){
+			.layui-nav-side .layui-nav-content{
+			height: 450px;
+			overflow: auto;
 			}
 		}

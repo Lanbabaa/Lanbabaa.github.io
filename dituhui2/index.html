@@ -10,7 +10,7 @@
 	</head>
 
 	<body>
-		<ul class="layui-nav layui-nav-tree layui-nav-side">
+		<ul class="layui-nav layui-nav-tree layui-nav-side" lay-shrink="all">
 			<div class="head">
 				<div class="takeUp" title="点击收起">
 					<i class="layui-icon layui-icon-shrink-right"></i>
@@ -19,80 +19,82 @@
 					<img src="img/banner.png" />
 				</div>
 			</div>
-			<li class="layui-nav-item layui-this" title="基础数据">
-				<a onclick="Jump('BasicData.html')"><i class="layui-icon layui-icon-home" onclick="Jump('BasicData.html')"></i> 基础数据</a>
-			</li>
-			<li class="layui-nav-item" title="数据分析">
-				<a href="javascript:;"><i class="layui-icon layui-icon-chart"></i> 数据分析</a>
-				<dl class="layui-nav-child">
-					<dd>
-						<a href="javascript:;">点面互查</a>
-					</dd>
-					<dd>
-						<a href="javascript:;">缓冲区分析</a>
-					</dd>
-					<dd>
-						<a href="javascript:;">高级筛选</a>
-					</dd>
-				</dl>
-			</li>
-			<li class="layui-nav-item" title="智能预警">
-				<a href="javascript:;"><i class="layui-icon layui-icon-fire"></i> 智能预警</a>
-			</li>
-			<li class="layui-nav-item" title="位置监控">
-				<a href="javascript:;"><i class="layui-icon layui-icon-location"></i> 位置监控</a>
-				<dl class="layui-nav-child">
-					<dd>
-						<a href="">人员监控</a>
-					</dd>
-					<dd>
-						<a href="">车辆监控</a>
-					</dd>
-				</dl>
-			</li>
-			<li class="layui-nav-item" title="线路规划">
-				<a href="javascript:;"><i class="layui-icon layui-icon-util	"></i> 线路规划</a>
-			</li>
-			<li class="layui-nav-item" title="智能分单">
-				<a href="javascript:;"><i class="layui-icon layui-icon-templeate-1"></i> 智能分单</a>
-				<dl class="layui-nav-child">
-					<dd>
-						<a href="">单条分单</a>
-					</dd>
-					<dd>
-						<a href="">批量分单</a>
-					</dd>
-					<dd>
-						<a href="">订单状态统计</a>
-					</dd>
-					<dd>
-						<a href="">按图层订单统计</a>
-					</dd>
-					<dd>
-						<a href="">全部订单统计</a>
-					</dd>
-				</dl>
-			</li>
-			<li class="layui-nav-item" title="分享链接">
-				<a href="javascript:;"><i class="layui-icon layui-icon-share"></i> 分享链接</a>
-			</li>
-			<li class="layui-nav-item" title="业务流">
-				<a href="javascript:;"><i class="layui-icon layui-icon-senior"></i> 业务流</a>
-			</li>
-			<li class="layui-nav-item" title="操作日志">
-				<a onclick="Jump('new_file.html')"><i class="layui-icon layui-icon-form"></i> 操作日志</a>
-			</li>
-			<li class="layui-nav-item" title="协作/权限">
-				<a href="javascript:;"><i class="layui-icon layui-icon-user"></i> 协作/权限</a>
-				<dl class="layui-nav-child">
-					<dd>
-						<a href="">协作成员</a>
-					</dd>
-					<dd>
-						<a href="">监控人员</a>
-					</dd>
-				</dl>
-			</li>
+			<div class="layui-nav-content">
+				<li class="layui-nav-item layui-this" title="基础数据">
+					<a onclick="Jump('BasicData.html')"><i class="layui-icon layui-icon-home" onclick="Jump('BasicData.html')"></i> 基础数据</a>
+				</li>
+				<li class="layui-nav-item" title="数据分析">
+					<a href="javascript:;"><i class="layui-icon layui-icon-chart"></i> 数据分析</a>
+					<dl class="layui-nav-child">
+						<dd>
+							<a href="javascript:;">点面互查</a>
+						</dd>
+						<dd>
+							<a href="javascript:;">缓冲区分析</a>
+						</dd>
+						<dd>
+							<a href="javascript:;">高级筛选</a>
+						</dd>
+					</dl>
+				</li>
+				<li class="layui-nav-item" title="智能预警">
+					<a href="javascript:;"><i class="layui-icon layui-icon-fire"></i> 智能预警</a>
+				</li>
+				<li class="layui-nav-item" title="位置监控">
+					<a href="javascript:;"><i class="layui-icon layui-icon-location"></i> 位置监控</a>
+					<dl class="layui-nav-child">
+						<dd>
+							<a href="">人员监控</a>
+						</dd>
+						<dd>
+							<a href="">车辆监控</a>
+						</dd>
+					</dl>
+				</li>
+				<li class="layui-nav-item" title="线路规划">
+					<a href="javascript:;"><i class="layui-icon layui-icon-util	"></i> 线路规划</a>
+				</li>
+				<li class="layui-nav-item" title="智能分单">
+					<a href="javascript:;"><i class="layui-icon layui-icon-templeate-1"></i> 智能分单</a>
+					<dl class="layui-nav-child">
+						<dd>
+							<a href="">单条分单</a>
+						</dd>
+						<dd>
+							<a href="">批量分单</a>
+						</dd>
+						<dd>
+							<a href="">订单状态统计</a>
+						</dd>
+						<dd>
+							<a href="">按图层订单统计</a>
+						</dd>
+						<dd>
+							<a href="">全部订单统计</a>
+						</dd>
+					</dl>
+				</li>
+				<li class="layui-nav-item" title="分享链接">
+					<a href="javascript:;"><i class="layui-icon layui-icon-share"></i> 分享链接</a>
+				</li>
+				<li class="layui-nav-item" title="业务流">
+					<a href="javascript:;"><i class="layui-icon layui-icon-senior"></i> 业务流</a>
+				</li>
+				<li class="layui-nav-item" title="操作日志">
+					<a onclick="Jump('new_file.html')"><i class="layui-icon layui-icon-form"></i> 操作日志</a>
+				</li>
+				<li class="layui-nav-item" title="协作/权限">
+					<a href="javascript:;"><i class="layui-icon layui-icon-user"></i> 协作/权限</a>
+					<dl class="layui-nav-child">
+						<dd>
+							<a href="">协作成员</a>
+						</dd>
+						<dd>
+							<a href="">监控人员</a>
+						</dd>
+					</dl>
+				</li>
+			</div>
 			<div class="Bottom">
 				<div class="MapList">
 					<div class="btn">
