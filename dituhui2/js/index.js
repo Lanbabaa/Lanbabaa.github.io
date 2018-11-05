@@ -28,6 +28,7 @@ $(".takeUp i").click(function() {
 $(".MapList").click(function() {
 	$(".MapList .layui-icon-down").toggleClass("layui-icon-up");
 	$(".List").toggle(100);
+	$(".user-content").hide(100);
 })
 $(document).click(function() {
 	$(".List").hide(100);
@@ -41,6 +42,7 @@ document.getElementById('my-iframe').contentDocument.onclick = function() {
 };
 $(".User").click(function(){
 	$(".user-content").toggle(100);
+	$(".List").hide(100);
 })
 $(".List,.MapList,.User").click(function(event) {
 	event.stopPropagation();
