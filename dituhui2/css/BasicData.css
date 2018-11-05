@@ -111,7 +111,6 @@
 		color: #fff;
 		background-color: #108ee9;
 	}
-	
 	.content .layui-card .layui-card-body .fa {
 		color: #aaa;
 		font-size: 25px;
@@ -599,7 +598,10 @@
 		/*高宽分别对应横竖滚动条的尺寸*/
 		height: 4px;
 	}
-	
+	.content::-webkit-scrollbar {
+			width: 0px;
+			height: 0px;
+		}
 	div::-webkit-scrollbar-thumb,
 	ul::-webkit-scrollbar-thumb {
 		/*滚动条里面小方块*/

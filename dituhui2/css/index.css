@@ -1,6 +1,7 @@
-		hr{
+		hr {
 			opacity: .6;
 		}
+		
 		.layui-nav-side {
 			border-radius: 0;
 			z-index: 889;
@@ -59,25 +60,28 @@
 		.layui-nav-side .head .teamHead {
 			display: inline-block;
 		}
-		.Bottom{
-			width: 100%; 
-			height: 100px; 
+		
+		.Bottom {
+			width: 100%;
+			height: 100px;
 			text-align: center;
 			position: absolute;
 			bottom: 50px;
 		}
 		
-		.Bottom .MapList{
+		.Bottom .MapList {
 			width: 160px;
 			height: 25px;
 			padding-top: 6px;
 			margin-left: 10px;
 			margin-bottom: 20px;
-			background-color:rgba(33,50,79,.3);;
+			background-color: rgba(33, 50, 79, .3);
+			;
 			border-radius: 20px;
 			cursor: pointer;
 		}
-		.Bottom .MapList .btn{
+		
+		.Bottom .MapList .btn {
 			width: 100px;
 			overflow: hidden;
 			text-overflow: ellipsis;
@@ -85,79 +89,94 @@
 			width: 8em;
 			display: inline-block;
 		}
-		.Bottom .MapList  *{
-			color: rgba(255,255,255,.7);
-			vertical-align:middle;
+		
+		.Bottom .MapList * {
+			color: rgba(255, 255, 255, .7);
+			vertical-align: middle;
 		}
-		.Bottom .MapList i{
+		
+		.Bottom .MapList i {
 			font-size: 10px;
 		}
-		.Bottom .MapList .btn i{
-			font-size: 18px;	
+		
+		.Bottom .MapList .btn i {
+			font-size: 18px;
 		}
-		.List{
+		
+		.List {
 			width: 312px;
 			height: 312px;
 			position: absolute;
 			left: 210px;
 			bottom: 120px;
-			border-radius:5px ;
+			border-radius: 5px;
 			z-index: 999;
 			background-color: #fff;
 			display: none;
-			box-shadow: 0px  2px  10px rgba(51,51,51,.2);
+			box-shadow: 0px 2px 10px rgba(51, 51, 51, .2);
 		}
-		.List .header{
+		
+		.List .header {
 			height: 40px;
 			line-height: 40px;
 			border-radius: 5px 5px 0px 0px;
 			background-color: #1890FF;
 			text-align: center;
 		}
+		
 		.List .header span,
-		.List .header i{
+		.List .header i {
 			color: #fff;
 			font-size: 18px;
 		}
-		.List .header i{
+		
+		.List .header i {
 			position: absolute;
 			right: 10px;
 			cursor: pointer;
 		}
-		.List .content{
+		
+		.List .content {
 			overflow: auto;
 		}
-		.List .content li{
+		
+		.List .content li {
 			width: 260px;
 			height: 50px;
 			padding: 10px 14px;
 			font-size: 14px;
 			position: relative;
-			border-bottom: 1px solid rgba(55,55,55,.1);
+			border-bottom: 1px solid rgba(55, 55, 55, .1);
 			cursor: pointer;
 		}
-		.List .content li .img{
+		
+		.List .content li .img {
 			width: 48px;
 			height: 48px;
 			border-radius: 24px;
 			overflow: hidden;
 		}
-		.List .content li .img img{
+		
+		.List .content li .img img {
 			width: 100%;
 		}
-		.List .content li .list-name{
+		
+		.List .content li .list-name {
 			width: 180px;
 			margin-left: 20px;
 			position: absolute;
 			top: 10px;
 		}
-		.List .content li .list-name .default-list-i{
+		
+		.List .content li .list-name .default-list-i {
 			background-color: #2496FF;
 		}
-		.List .content li .list-name .default-list-p{
+		
+		.List .content li .list-name .default-list-p {
 			color: #2496FF;
 		}
-		.List .content li .list-text .me{
+		
+		.List .content li .list-text .me {
 			display: inline-block;
 			width: 60px;
 			overflow: hidden;
@@ -165,7 +184,8 @@
 			white-space: nowrap;
 			width: 6em;
 		}
-		.List .content li .list-name p i{
+		
+		.List .content li .list-name p i {
 			display: inline-block;
 			padding: 1px;
 			margin-left: 5px;
@@ -175,64 +195,77 @@
 			transform: scale(0.7);
 			font-size: 12px;
 		}
-		.List .content li .list-name .list-text{
-			width:210px;
+		
+		.List .content li .list-name .list-text {
+			width: 210px;
 			position: absolute;
 			top: 30px;
 			color: #C1C1C1;
 		}
-		.List .content li .list-name .list-text .time{
+		
+		.List .content li .list-name .list-text .time {
 			margin-left: 10px;
 		}
-		.List .content li div{
+		
+		.List .content li div {
 			display: inline-block;
 		}
-		.List .content{
+		
+		.List .content {
 			height: 228px;
 			overflow: auto;
 		}
-		.List .footer{
+		
+		.List .footer {
 			height: 44px;
 			line-height: 44px;
-			text-align: center;			
-			box-shadow: 0 0 5px 0 rgba(72,72,72,.1);
+			text-align: center;
+			box-shadow: 0 0 5px 0 rgba(72, 72, 72, .1);
 			position: relative;
-			}
-		.List .footer .box div{	
+		}
+		
+		.List .footer .box div {
 			width: 150px;
 			display: inline-block;
 			cursor: pointer;
 		}
-		.List .footer .box div a{
+		
+		.List .footer .box div a {
 			color: #1890FF;
 		}
-		.List .footer .box .establish:after{
+		
+		.List .footer .box .establish:after {
 			content: '';
-		    width: 2px;
-		    height: 20px;
-		    background: #C1C1C1;
+			width: 2px;
+			height: 20px;
+			background: #C1C1C1;
 			display: inline-block;
 			position: absolute;
 			top: 12px;
 			left: 155px;
 		}
-		.Bottom{
+		
+		.Bottom {
 			background-color: #393D49;
 		}
-		.Bottom .User{
+		
+		.Bottom .User {
 			line-height: 50px;
 		}
-		.Bottom .User img{
+		
+		.Bottom .User img {
 			background-color: #fff;
 			width: 40px;
 			height: 40px;
 			border-radius: 40px;
 		}
-		.Bottom .User span{
+		
+		.Bottom .User span {
 			padding-left: 10px;
 			font-size: 16px;
-			color: rgba(255,255,255,.7);
+			color: rgba(255, 255, 255, .7);
 		}
+		
 		iframe {
 			width: calc(100% - 200px);
 			height: 100%;
@@ -246,7 +279,41 @@
 			width: calc(100% - 50px);
 			left: 50px;
 		}
-		
+		.user-content{
+			width: 282px;
+			height: 292px;
+			background-color: #fff;
+			position: absolute;
+			box-shadow: 0 2px 10px rgba(51,51,51,.2);
+			border-radius: 4px;
+			z-index: 99999;
+		}
+		.user-content li{
+			height: 45px;
+			line-height: 45px;
+			font-size: 16px;
+			padding-left: 10px;
+			border-bottom: 1px solid #EDEDED;
+			transition: padding-left .2s; 
+		}
+		.user-content li:nth-child(1){
+			border-radius: 4px 4px 0 0;
+		}
+		.user-content li:nth-child(5){
+			border-radius: 0 0 4px 4px;
+		}
+		.user-content :not(:nth-child(4)):hover{
+			padding-left: 20px;
+			background: rgba(0,191,255,.2)
+		}
+		.user-content li:nth-child(4){
+			height: 77px;
+			padding:15px 20px;
+		}
+		.user-content li i{
+			font-size: 16px;
+			padding-right: 10px;
+		}
 		.visibilityHidden {
 			visibility: hidden;
 		}
@@ -259,6 +326,11 @@
 		ul::-webkit-scrollbar {
 			width: 4px;
 			height: 4px;
+		}
+		
+		.layui-nav-side::-webkit-scrollbar{
+			width: 0px;
+			height: 0px;
 		}
 		
 		div::-webkit-scrollbar-thumb,
@@ -274,17 +346,17 @@
 			border-radius: 0;
 			background: rgba(0, 0, 0, 0);
 		}
-		@media screen and (max-height: 720px) { 
-		.Bottom{
-			position: relative;
-			bottom: 0px;
-			
-			}
 		
+		@media screen and (max-height: 720px) {
+			.Bottom {
+				position: relative;
+				bottom: 0px;
+			}
 		}
-		@media screen and (max-height: 820px){
-			.layui-nav-side .layui-nav-content{
-			height: 450px;
-			overflow: auto;
+		
+		@media screen and (max-height: 820px) {
+			.layui-nav-side .layui-nav-content {
+				height: 450px;
+				overflow: auto;
 			}
 		}
