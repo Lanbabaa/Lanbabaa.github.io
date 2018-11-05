@@ -251,6 +251,7 @@
 		
 		.Bottom .User {
 			line-height: 50px;
+			cursor: pointer;
 		}
 		
 		.Bottom .User img {
@@ -290,6 +291,7 @@
 			border-radius: 4px;
 			cursor: pointer;
 			z-index: 99999;
+			display: none;
 		}
 		.user-content li{
 			height: 45px;
