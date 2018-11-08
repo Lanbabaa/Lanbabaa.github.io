@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/layui.css" />
+	<style type="text/css">
+		.workzone {
+			width: 279px;
+			height: 100%;
+			background: #fff;
+			position: absolute;
+			border-right: 1px solid #ddd;
+		}
+		
+		.workzone .caption {
+			width: 100%;
+			height: 40px;
+			line-height: 40px;
+			font-size: 15px;
+			border-bottom: 1px solid #ddd;
+		}
+		
+		.workzone .caption p {
+			margin-left: 10%;
+		}
+		
+		.workzone .content {
+			padding-left: 10%;
+		}
+		
+		.workzone .content .part .title {
+			width: 100%;
+			height: 45px;
+			color: #666;
+			line-height: 45px;
+		}
+		.workzone .content .part .dome{
+			height: 45px;
+			line-height: 45px;
+		}
+		.workzone .content .part .add {
+			color: #999;
+			text-align: center;
+			width: 80%;
+			height: 45px;
+			line-height: 45px;
+			font-size: 15px;
+			border-radius: 4px;
+			border: 1px dashed #C1C1C1;
+			vertical-align: middle;
+			cursor: pointer;
+		}
+		
+		.workzone .content .part .add:hover {
+			color: #108ee9;
+			border: 1px dashed #108ee9;
+		}
+		
+		.workzone .content .part .add i {
+			font-size: 24px;
+			margin-right: 5px;
+		}
+		
+		.workzone .content .part .add i,
+		.workzone .content .part .add span {
+			vertical-align: middle;
+		}
+		.workzone .condition{
+			width: 100%;
+			padding-left: 10% ;
+			height: 620px;
+			padding: 20px 0;
+			border-bottom: 1px solid #ddd;
+		}
+		.layui-btn{
+			width: 80%;
+			margin: 10% 0 0 10%;
+		}
+	</style>
+
+	<body>
+		<div class="workzone">
+			<div class="caption">
+				<p>高级筛选</p>
+			</div>
+			<div class="content">
+				<div class="part">
+					<div class="title">
+						请选择筛选方式：
+					</div>
+					<div class="dome layui-form">
+						<input type="radio" name="sex" value="" title="全部满足" checked>
+						<input type="radio" name="sex" value="" title="任一满足">
+					</div>
+				</div>
+				<div class="part">
+					<div class="title">
+						请添加筛选条件：
+					</div>
+					<div class="add">
+						<i class="layui-icon layui-icon-add-circle"></i><span>添加筛选条件</span>
+					</div>
+				</div>
+			</div>
+			<div class="condition">
+					
+			</div>
+			<div class="layui-btn">搜索</div>
+	</body>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
+	<script src="layui/layui.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

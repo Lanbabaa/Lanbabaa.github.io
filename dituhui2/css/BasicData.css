@@ -53,11 +53,12 @@
 	}
 	
 	.content {
-		width: 280px;
+		width: 279px;
 		height: 100%;
 		overflow: auto;
 		position: absolute;
 		background: #fff;
+		border-right:1px solid #ddd;
 	}
 	
 	.content .layui-card {

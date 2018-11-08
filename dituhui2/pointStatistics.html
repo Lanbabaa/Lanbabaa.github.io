@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/layui.css" />
+	<style type="text/css">
+		.workzone {
+			width: 279px;
+			height: 100%;
+			background: #fff;
+			position: absolute;
+			border-right: 1px solid #ddd;
+		}
+		
+		.workzone .title .name {
+			width: 100%;
+			height: 50px;
+			line-height: 50px;
+			font-size: 18px;
+		}
+		
+		.workzone .title .name .layui-icon-template-1 {
+			color: #212121;
+			font-size: 18px;
+			margin: 0 5px 0 10px;
+		}
+		
+		.workzone .title .name .layui-icon-tips {
+			font-size: 14px;
+			margin: 0 5px;
+			color: #19ac9e;
+			border-radius: 14px;
+		}
+		
+		.workzone .content .part {
+			width: 100%;
+			text-align: left;
+			padding-left: 10%;
+		}
+		
+		.workzone .content .part .title {
+			width: 100%;
+			height: 45px;
+			color: #666;
+			line-height: 45px;
+		}
+		
+		.workzone .content .part .layui-form {
+			width: 80%;
+		}
+		
+		.workzone .content .part .layui-form .select {
+			border-radius: 15px;
+		}
+		.workzone .planning{
+			width: 100%;
+			height: 90px;
+			line-height: 90px;
+			text-align: center;
+		}.workzone .planning .layui-btn{
+			width: 120px;
+		}
+	</style>
+
+	<body>
+		<div class="workzone">
+			<div class="title">
+				<div class="name">
+					<i class="layui-icon layui-icon-template-1"></i>点面互查<i class="layui-icon layui-icon-tips"></i>
+				</div>
+			</div>
+			<div class="content">
+				<div class="part">
+					<div class="title">
+						选择面图层
+					</div>
+					<form class="layui-form" action="">
+						<select name="city" lay-verify="">
+							<option value=""></option>
+							<option value="1">面图层1</option>
+							<option value="2">区划图层2</option>
+						</select>
+					</form>
+				</div>
+				<div class="part">
+					<div class="title">
+						选择需要统计的点图层
+					</div>
+					<form class="layui-form" action="">
+						<select name="city" lay-verify="">
+							<option value=""></option>
+							<option value="1">点图层1</option>
+						</select>
+					</form>
+				</div>
+				<div class="part">
+					<div class="title">
+						选择统计方式
+					</div>
+					<form class="layui-form" action="">
+						<select name="city" lay-verify="" disabled="disabled">
+							<option value="">点量求和</option>
+						</select>
+					</form>
+				</div>
+			</div>
+			<div class="planning">
+				<div class="layui-btn">
+					开始统计
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
+	<script src="layui/layui.js" type="text/javascript" charset="utf-8"></script>
+</html>
