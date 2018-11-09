@@ -181,7 +181,9 @@
 		background-color: #233046;
 		color: #fff;
 	}
-	
+	.pointsLayer .pointsLayerMain .sort{
+		border-bottom: 1px solid #ddd;
+	}
 	.pointsLayer .pointsLayerReturn,
 	.pointsLayer .pointsLayerMain .sort,
 	.pointsLayer .pointsLayerMain .caption,

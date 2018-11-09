@@ -73,10 +73,9 @@
 			width: 160px;
 			height: 25px;
 			padding-top: 6px;
-			margin-left: 10px;
+			margin:auto;
 			margin-bottom: 20px;
 			background-color: rgba(33, 50, 79, .3);
-			;
 			border-radius: 20px;
 			cursor: pointer;
 		}
