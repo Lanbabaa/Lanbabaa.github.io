@@ -109,6 +109,7 @@
 			top: -webkit-calc(50% - 250px);
 			border-radius: 5px;
 			display: none;
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 		}
 		
 		.add-condition .layui-card-header {
@@ -334,7 +335,7 @@
 						</div>
 					</div>
 					<div class="footer-container layui-form">
-						<input type="checkbox" name="" title="添加后保留窗口，可连续添加" lay-skin="primary"> <input type="button" name="" id="" value="确 定" class="layui-btn" />
+						<input type="checkbox" name="" title="添加后保留窗口，可连续添加" lay-skin="primary"> <input type="button" name="" id="" value="确 定" class="layui-btn" onclick="showorclose()"/>
 					</div>
 				</div>
 			</div>
@@ -367,8 +368,8 @@
 			});
 		});
 		function showorclose() {
-			$(".add-condition").toggle(100);
-			$(".mask").toggle(100);
+			$(".add-condition").fadeToggle(200);
+			$(".mask").toggle();
 		}
 
 	</script>
