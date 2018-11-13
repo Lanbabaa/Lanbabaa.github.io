@@ -91,7 +91,6 @@
 	var infoWindow2 = new BMap.InfoWindow(aaa, opts); // 创建信息窗口对象
 	mak.addEventListener("click", function() {
 		map.openInfoWindow(infoWindow, point);
-		circle.hide();
 		var circle = new BMap.Circle(point, 500);
 		map.addOverlay(circle); //开启信息窗口
 	});

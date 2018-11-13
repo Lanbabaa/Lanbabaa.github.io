@@ -95,7 +95,7 @@
 							<i class="layui-icon layui-icon-location"></i> 点图层1 ( <span class="num">608</span> )
 						</div>
 						<div class="layer_com">
-							<input type="checkbox" name="" id="" value="" /><i class="fa  fa-eye-slash"></i>
+							<input type="checkbox" name="" id="" value=""/><i class="fa  fa-eye-slash"></i>
 						</div>
 					</div>
 				</div>
@@ -105,7 +105,7 @@
 							<i class="layui-icon layui-icon-location"></i> 区划图层2 ( <span class="num">0</span> )
 						</div>
 						<div class="layer_com">
-							<input type="checkbox" name="" id="" value="" /><i class="fa  fa-eye-slash"></i>
+							<input type="checkbox" name="" id="" value=""/><i class="fa  fa-eye-slash"></i>
 						</div>
 					</div>
 				</div>
@@ -115,7 +115,7 @@
 							<i class="layui-icon layui-icon-location"></i> 面图层1 ( <span class="num">0</span> )
 						</div>
 						<div class="layer_com">
-							<input type="checkbox" name="" id="" value="" /><i class="fa  fa-eye-slash"></i>
+							<input type="checkbox" name="" id="" value=""/><i class="fa fa-eye-slash"></i>
 						</div>
 					</div>
 				</div>
@@ -125,7 +125,7 @@
 							<i class="layui-icon layui-icon-chart"></i> 线图层1 ( <span class="num">0</span> )
 						</div>
 						<div class="layer_com">
-							<input type="checkbox" name="" id="" value="" /><i class="fa  fa-eye-slash"></i>
+							<input type="checkbox" name="" id="" value=""/><i class="fa fa-eye-slash"></i>
 						</div>
 					</div>
 				</div>
@@ -139,5 +139,10 @@
 	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 	<script src="layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
 	<script src="layui/layui.js" type="text/javascript" charset="utf-8"></script>
-
+	<script type="text/javascript">
+		$(".fa-eye-slash").click(function() {
+			$(this).toggleClass("fa-eye-slash")
+			$(this).toggleClass("fa-eye")
+		})
+	</script>
 </html>
