@@ -97,6 +97,18 @@
 		.lal{
 			display: none;
 		}
+		.map {
+			width: calc(100% - 280px);
+			height: calc(100% - 3px);
+			position: absolute;
+			left: 280px;
+		}
+		
+		iframe {
+			width: 100%;
+			height: 100%;
+			border: 0px;
+		}
 	</style>
 
 	<body>
@@ -117,6 +129,9 @@
 				<input type="text" name="" id="" value="" class="layui-input" placeholder="请输入经度,纬度"/><span><i class="layui-icon layui-icon-search"></i></span>
 				<p class="hint">如：116.507637,39.984912</p>
 			</div>
+		</div>
+		<div class="map">
+			<iframe src="test.html" frameborder="0"></iframe>
 		</div>
 	</body>
 	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
