@@ -52,6 +52,43 @@
 			background: #4E586A !important;
    			color: #fff !important;
 		}
+		.workzone .search-area{
+			padding:0 10%;
+		}
+		.workzone .search-area input{
+			width: 80%;
+			height: 30px;
+			display: inline-block;
+			border-right: 0px;
+			border-radius: 4px 0px 0px 4px;
+			margin: 20px 0 10px 0;
+		}
+		.workzone .search-area span{
+			display: inline-block;
+			width: 18%;
+			height: 30px;
+			background-color: #19AC9E;
+			line-height: 30px;
+			text-align: center;
+			vertical-align: top;
+			border-radius: 0 4px 4px 0;
+			cursor: pointer;
+			margin:  20px 0 10px 0;
+		}
+		.workzone .search-area span i{
+			font-size: 18px;
+			color: #fff;
+		}
+		.workzone .search-area .hint{
+			display: block;
+			font-size: 12px;
+			color: #ccc;
+			height: 30px;
+   			line-height: 30px;
+		}
+		.lal{
+			display: none;
+		}
 	</style>
 
 	<body>
@@ -64,8 +101,13 @@
 				<span class="fendan-btn active">地址</span>
 				<span class="fendan-btn">经纬度</span>
 			</div>
-			<div class="search-area layui-form">
-				<input type="text" name="" id="" value="" class="layui-input"/><span>123</span>
+			<div class="search-area layui-form address">
+				<input type="text" name="" id="" value="" class="layui-input" placeholder="请输入订单地址"/><span><i class="layui-icon layui-icon-search"></i></span>
+				<p class="hint">如：北京市朝阳区酒仙桥北路甲10号院</p>
+			</div>
+			<div class="search-area layui-form lal">
+				<input type="text" name="" id="" value="" class="layui-input" placeholder="请输入经度,纬度"/><span><i class="layui-icon layui-icon-search"></i></span>
+				<p class="hint">如：116.507637,39.984912</p>
 			</div>
 		</div>
 	</body>
