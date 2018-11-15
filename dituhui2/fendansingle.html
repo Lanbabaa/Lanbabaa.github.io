@@ -7,16 +7,68 @@
 	</head>
 	<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
 	<style type="text/css">
-
+		.workzone {
+			width: 279px;
+			height: 100%;
+			background: #fff;
+			position: absolute;
+			border-right: 1px solid #ddd;
+			overflow: hidden;
+		}
+		
+		.workzone .title {
+			height: 40px;
+			line-height: 40px;
+			font-size: 16px;
+			border-bottom: 1px solid #ddd;
+			padding-left: 10%;
+		}
+		
+		.workzone .fendan-title {
+			height: 35px;
+			padding: 0 10%;
+			margin: 5px 0;
+			line-height: 35px;
+			background: #FBFAFA;
+			font-size: 14px;
+		}
+		.workzone .fendan-title .text{
+			margin-right: 20px;
+		}
+		.workzone .fendan-title .fendan-btn{
+			display: inline-block;
+			font-size: 12px;
+			padding: 0 10px;
+			height: 22px;
+			line-height: 22px;
+			border-radius: 20px;
+			color: #999;
+			cursor: pointer;
+		}
+		.workzone .fendan-title .fendan-btn:hover{
+			background-color: #ddd;
+		}
+		.workzone .fendan-title .active{
+			background: #4E586A !important;
+   			color: #fff !important;
+		}
 	</style>
 
 	<body>
-
-
+		<div class="workzone">
+			<div class="title">
+				单条分单
+			</div>
+			<div class="fendan-title">
+				<span class="text">分单方式</span>
+				<span class="fendan-btn active">地址</span>
+				<span class="fendan-btn">经纬度</span>
+			</div>
+			<div class="search-area layui-form">
+			</div>
+		</div>
 	</body>
 	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 	<script src="layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript">
-	</script>
 
 </html>
