@@ -102,12 +102,12 @@
 	<body>
 		<div class="workzone">
 			<div class="title">
-				单条分单<i class="layui-icon layui-icon-list"></i><i class="layui-icon layui-icon-share"></i>
+				单条分单<i class="layui-icon layui-icon-list" title="列表"></i><i class="layui-icon layui-icon-share" title="分享"></i>
 			</div>
 			<div class="fendan-title">
 				<span class="text">分单方式</span>
-				<span class="fendan-btn active">地址</span>
-				<span class="fendan-btn">经纬度</span>
+				<span class="fendan-btn Address active">地址</span>
+				<span class="fendan-btn LaL">经纬度</span>
 			</div>
 			<div class="search-area layui-form address">
 				<input type="text" name="" id="" value="" class="layui-input" placeholder="请输入订单地址"/><span><i class="layui-icon layui-icon-search"></i></span>
@@ -121,5 +121,17 @@
 	</body>
 	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 	<script src="layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
-
+	<script type="text/javascript">
+		$(".fendan-title .fendan-btn").click(function(){
+			$(this).addClass("active");
+			$(this).siblings().removeClass("active");
+			if ($(".Address").hasClass("active")) {
+				$(".lal").css("display","none")
+				$(".address").css("display","block")
+			} else{
+				$(".lal").css("display","block")
+				$(".address").css("display","none")
+			}
+		})
+	</script>
 </html>
