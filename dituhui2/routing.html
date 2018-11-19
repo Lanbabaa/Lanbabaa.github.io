@@ -25,10 +25,11 @@
 		
 		.StartAndEnd {
 			width: 250px;
-			height: 300px;
 			border: 2px solid #e5e5e5;
 			margin: auto;
 			margin-top: 20px;
+			text-align: center;
+			padding-bottom: 20px;
 		}
 		
 		.StartAndEnd .ant-tabs-nav-scroll {
@@ -66,6 +67,103 @@
 			width: 100%;
 			height: 20px;
 		}
+		
+		.StartAndEnd .Start .content {
+			width: 90%;
+			margin: auto;
+			margin-bottom: 15px;
+		}
+		
+		.StartAndEnd .Start .content .icon {
+			margin-top: 15px;
+			padding-left: 10px;
+			width: calc(100% - 10px) height: 25px;
+			line-height: 25px;
+			border-radius: 15px;
+			color: #fff;
+			font-size: 12px;
+			text-align: left;
+		}
+		
+		.StartAndEnd .Start .content .icon1 {
+			background-color: #2fc82d;
+			background-image: linear-gradient(90deg, #2fc82d 17%, #d8fbd9 100%);
+		}
+		
+		.StartAndEnd .Start .content .icon2 {
+			background-color: #d41b3c;
+			background-image: linear-gradient(90deg, #d41b3c 17%, #ebacb2 100%);
+		}
+		
+		.workzone .content input {
+			width: 80%;
+			height: 33px;
+			display: inline-block;
+			border-right: 0px;
+			border-radius: 4px 0px 0px 4px;
+			margin: 20px 0 10px 0;
+		}
+		
+		.workzone .content span {
+			display: inline-block;
+			padding: 0 5px;
+			width: calc(20% - 10px);
+			height: 33px;
+			background-color: #40A9FF;
+			text-align: center;
+			vertical-align: top;
+			border-radius: 0 4px 4px 0;
+			cursor: pointer;
+			margin: 20px 0 10px 0;
+			font-size: 12px;
+			color: #fff;
+		}
+		
+		.layui-input-block {
+			margin: -15px 0 10px 0;
+			text-align: center;
+		}
+		
+		.layui-form-radio * {
+			font-size: 12px;
+		}
+		
+		.layui-form-radio>i {
+			font-size: 15px;
+		}
+		
+		.StartAndEnd .layui-btn[type="submit"] {
+			width: 70%;
+			height: 30px;
+			line-height: 30px;
+			background-color: #1890FF;
+			border-radius: 4px;
+		}
+		
+		.number {
+			margin: 15px 0;
+			display: none;
+		}
+		
+		.number input {
+			display: inline-block;
+			width: 60%;
+			height: 30px;
+			font-size: 12px;
+		}
+		
+		.map {
+			width: calc(100% - 280px);
+			height: calc(100% - 3px);
+			position: absolute;
+			left: 280px;
+		}
+		
+		iframe {
+			width: 100%;
+			height: 100%;
+			border: 0px;
+		}
 	</style>
 
 	<body>
@@ -73,7 +171,7 @@
 			<div class="title">
 				全部路线
 			</div>
-			<div class="StartAndEnd">
+			<div class="StartAndEnd layui-form">
 				<div class="ant-tabs-nav-scroll">
 					<div class="ant-tabs-nav">
 						<div class="car">
@@ -84,13 +182,53 @@
 						</div>
 					</div>
 				</div>
+				<div class="Start">
+					<div class="content">
+						<div class="icon icon1">
+							<i class="layui-icon layui-icon-location"></i> 起点
+						</div>
+						<input type="text" class="layui-input" placeholder="请搜索起点/地图上点选" /><span>地图点选</span>
+					</div>
+					<div class="content">
+						<div class="icon icon2">
+							<i class="layui-icon layui-icon-location"></i> 终点
+						</div>
+						<input type="text" class="layui-input" placeholder="搜索网点/图层/订单" /><span>批量导入</span>
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" name="route" value="单路线规划" title="单路线规划" checked lay-filter="aaa">
+						<input type="radio" name="route" value="多路线规划" title="多路线规划" lay-filter="aaa">
+						<div class="number">
+							<input type="text" class="layui-input" name="" id="" value="" placeholder="请输入需要规划路线数" style="" /> 条
+						</div>
+					</div>
+					<input type="submit" name="" id="" value="开始规划" class="layui-btn" />
+				</div>
+
 			</div>
 		</div>
+		<div class="map">
+			<iframe src="test.html" frameborder="0"></iframe>
+		</div </body>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".ant-tabs-nav div").click(function(){
+				$(this).removeClass("carorbike")
+				$(this).siblings().addClass("carorbike");
+			})
+			layui.use('form', function() {
+				var form = layui.form;
+				form.on('radio(aaa)', function(data) {
 
-	</body>
-	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
-	<script src="layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript">
-	</script>
+					if($('.layui-input-block input[name="route"]:checked ').val() == "多路线规划") {
+						$(".number").css("display", "block");
+					} else {
+						$(".number").css("display", "none");
+					}
+					form.render();
+				});
+			});
+		</script>
 
 </html>

@@ -35,12 +35,17 @@
 		.workzone .caption span {
 			margin-left: calc(10% + 15px);
 		}
-		
-		.workzone .content {
-			padding-left: 10%;
+		.workzone .content .layui-form input[type="text"]{
+			width: 90%;
+			margin: auto;
+			margin-top: 25px;
+			background:no-repeat;
+			background-image: url(img/search.png);	
+			background-size:20px;
+			background-position:calc(100% - 10px);
+			border-radius: 20px;
+			padding: 0 40px 0 15px;
 		}
-		
-		
 		
 	</style>
 
@@ -49,8 +54,10 @@
 			<div class="caption">
 				<div class="name"></div><span>人员监控</span>
 			</div>
-			<div class="content">
-				
+			<div class="content ">
+				<div class="layui-form">
+					<input type="text" placeholder="请输入关键字" class="layui-input" />	
+				</div>		
 			</div>
 			<div class="condition">
 
