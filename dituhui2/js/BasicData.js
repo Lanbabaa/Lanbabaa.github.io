@@ -113,13 +113,13 @@ function show(e) {
 	$(".mask").css("display", "block")
 }
 
-function more(e) {
-	$("." + e).fadeToggle();
-}
-
 function Close(e) {
 	$("." + e).css("display", "none");
 	$(".mask").css("display", "none")
+}
+
+function more(e) {
+	$("." + e).fadeToggle();
 }
 
 function Determine() {
