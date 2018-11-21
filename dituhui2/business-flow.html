@@ -508,6 +508,10 @@
       		n++;
       		a();
 		});
+		$("tbody").on('click', '.delete',function(){
+		    $(this).parents('tr').remove();
+		    a();
+		});
 		function a(){
 			if ($("tbody").find("tr").length == 0) {
 				$(".nothing").css("display","block");
