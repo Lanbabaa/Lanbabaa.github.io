@@ -151,9 +151,16 @@
 			height: 20px;
 			line-height: 20px;
 			padding: 5px 20px;
-			background: #1B94FF;
-			color: #fff;
+			background: #fff;
+			color: #1B94FF;
+			border: 1px solid #1B94FF;
 			border-radius: 15px;
+			font-size: 12px;
+			cursor: pointer;
+		}
+		.templet .business-phase .phase  .active{
+			background-color: #1B94FF !important;
+			color: #fff !important;
 		}
 		
 		.templet .business-phase .phase .add-list {
@@ -162,7 +169,8 @@
 			line-height: 20px;
 			padding: 5px 5px !important;
 			text-align: center;
-			cursor: pointer;
+			background-color: #1B94FF;
+			color: #fff;
 		}
 		
 		.templet .content-phase {
@@ -250,7 +258,7 @@
 			background: #fff;
 			position: absolute;
 			top: 20%;
-			left: 40%;
+			left: 30%;
 			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 			border-radius: 4px;
 			z-index: 999;
@@ -358,10 +366,13 @@
 			display: none;
 		}
 		.header .edit-title input{
+			width: 150px;height: 30px; border-radius: 4px;
 			display: inline-block;
 			font-size: 14px;
 		}
 		.header .edit-title input[type=button]{
+			width: 50px;
+			padding: 0;
 			height: 30px;
 			line-height: 30px;
 		}
@@ -398,14 +409,16 @@
 						<span class="name" id="content-name">模板1</span><i class="layui-icon layui-icon-edit" onclick="changeContent()"></i>
 					</div>
 					<div class="edit-title">
-						<input type="text" id="edit-name" class="layui-input" style="width: 150px;height: 30px; border-radius: 4px;"/>
-						<input type="button"  value="确定" class="layui-btn" onclick="confirmName()"/>
+						<input type="text" id="edit-name" class="layui-input"/>
+						<input type="button"  value="确定" class="layui-btn layui-btn-normal" onclick="confirmName()"/>
 					</div>
 				</div>
 				<div class="business-phase">
 					<p class="title">业务阶段</p>
 					<div class="phase">
-						<li class="list">阶段1</li>
+						<div id="lists">
+							<li class="list active">阶段1</li>
+						</div>		
 						<li class="add-list"><i class="layui-icon layui-icon-add-1"></i></li>
 					</div>
 				</div>
@@ -502,8 +515,16 @@
 			form.on("select", function(data) {
 				value = data.value // 获取选中的值
 			});
-
 		});
+		$(".business-phase .phase .add-list").click(function(){
+			n++;
+			if (n<11) {
+				$(".business-phase .phase #lists").append('<li class="list">阶段'+n+'</li>');
+			} else{
+				alert("业务阶段不能超过10个")
+			}
+			
+		})
 		$(".footer .layui-btn").click(function() {
 			name = $(".content-list #name").val();
 			var tr = '<tr>' +
@@ -516,14 +537,16 @@
 				alert("名称不能为空");
 			} else {
 				$(".content-list tbody").append(tr);
+				n++;
 			}
 			$(".content-list #name").val("");
 			if($(".footer input[type='checkbox']").is(':checked')) {
 
-			} else {
+			} else if(name == ""){
+				
+			}else{
 				rfont();
 			}
-			n++;
 			a();
 		});
 		$("tbody").on('click', '.delete', function() {
