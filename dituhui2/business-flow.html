@@ -145,12 +145,21 @@
 			padding: 5px;
 		}
 		
-		.templet .business-phase .phase li {
+		.templet .business-phase .phase #lists li i {
+			display: none;
+		}
+		
+		.templet .business-phase .phase #lists li:hover i {
+			display: inline-block;
+		}
+		
+		.templet .business-phase .phase #lists li {
 			float: left;
 			margin-right: 10px;
 			height: 20px;
+			min-width: 52px;
 			line-height: 20px;
-			padding: 5px 20px;
+			padding: 5px 0px 5px 20px;
 			background: #fff;
 			color: #1B94FF;
 			border: 1px solid #1B94FF;
@@ -158,19 +167,23 @@
 			font-size: 12px;
 			cursor: pointer;
 		}
-		.templet .business-phase .phase  .active{
+		
+		.templet .business-phase .phase .active {
 			background-color: #1B94FF !important;
 			color: #fff !important;
 		}
 		
 		.templet .business-phase .phase .add-list {
-			width: 20px;
-			height: 20px;
+			float: left;
+			width: 20px !important;
+			height: 20px !important;
 			line-height: 20px;
+			border-radius: 15px;
 			padding: 5px 5px !important;
 			text-align: center;
 			background-color: #1B94FF;
 			color: #fff;
+			cursor: pointer;
 		}
 		
 		.templet .content-phase {
@@ -362,15 +375,20 @@
 			z-index: 998;
 			display: none;
 		}
-		.header .edit-title{
+		
+		.header .edit-title {
 			display: none;
 		}
-		.header .edit-title input{
-			width: 150px;height: 30px; border-radius: 4px;
+		
+		.header .edit-title input {
+			width: 150px;
+			height: 30px;
+			border-radius: 4px;
 			display: inline-block;
 			font-size: 14px;
 		}
-		.header .edit-title input[type=button]{
+		
+		.header .edit-title input[type=button] {
 			width: 50px;
 			padding: 0;
 			height: 30px;
@@ -409,16 +427,16 @@
 						<span class="name" id="content-name">模板1</span><i class="layui-icon layui-icon-edit" onclick="changeContent()"></i>
 					</div>
 					<div class="edit-title">
-						<input type="text" id="edit-name" class="layui-input"/>
-						<input type="button"  value="确定" class="layui-btn layui-btn-normal" onclick="confirmName()"/>
+						<input type="text" id="edit-name" class="layui-input" />
+						<input type="button" value="确定" class="layui-btn layui-btn-normal" onclick="confirmName()" />
 					</div>
 				</div>
 				<div class="business-phase">
 					<p class="title">业务阶段</p>
 					<div class="phase">
 						<div id="lists">
-							<li class="list active">阶段1</li>
-						</div>		
+							<li class="list active">阶段1 <i class="layui-icon layui-icon-close-fill"></i></li>
+						</div>
 						<li class="add-list"><i class="layui-icon layui-icon-add-1"></i></li>
 					</div>
 				</div>
@@ -516,15 +534,26 @@
 				value = data.value // 获取选中的值
 			});
 		});
-		$(".business-phase .phase .add-list").click(function(){
-			n++;
-			if (n<11) {
-				$(".business-phase .phase #lists").append('<li class="list">阶段'+n+'</li>');
-			} else{
+		$(".business-phase .phase .add-list").click(function() {
+			
+			if(n < 10) {
+				n++;
+				$(".business-phase .phase #lists").append('<li class="list">阶段' + n + ' <i class="layui-icon layui-icon-close-fill"></i></li>');
+			} else {
 				alert("业务阶段不能超过10个")
 			}
-			
+
 		})
+		$(".business-phase .phase #lists").on('click', 'i', function() {
+			if($(".business-phase .phase #lists li").length == 1) {
+				alert("不能少于一个阶段")
+			} else {
+				$(this).parent().remove();
+				n--;
+			}
+
+		});
+
 		$(".footer .layui-btn").click(function() {
 			name = $(".content-list #name").val();
 			var tr = '<tr>' +
@@ -542,9 +571,9 @@
 			$(".content-list #name").val("");
 			if($(".footer input[type='checkbox']").is(':checked')) {
 
-			} else if(name == ""){
-				
-			}else{
+			} else if(name == "") {
+
+			} else {
 				rfont();
 			}
 			a();
@@ -553,16 +582,19 @@
 			$(this).parents('tr').remove();
 			a();
 		});
-		function changeContent(){
+
+		function changeContent() {
 			$(".header .title").hide();
 			$(".header .edit-title").show();
 			$(".header .edit-title input[type=text]").val($(".header .title span").text())
 		}
-		function confirmName(){
+
+		function confirmName() {
 			$(".header .title").show();
 			$(".header .edit-title").hide();
 			$(".header .title span").text($(".header .edit-title input[type=text]").val())
 		}
+
 		function a() {
 			if($("tbody").find("tr").length == 0) {
 				$(".nothing").css("display", "block");
