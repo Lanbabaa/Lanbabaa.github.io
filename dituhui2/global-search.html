@@ -96,6 +96,94 @@
 			height: 100%;
 			border: 0px;
 		}
+		.add-condition {
+			width: 420px;
+			height: 260px;
+			background: #fff;
+			position: absolute;
+			top: 20%;
+			left: 30%;
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+			border-radius: 4px;
+			z-index: 999;
+			display: none;
+		}
+		
+		.add-condition .title {
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+		}
+		
+		.add-condition .title span {
+			display: inline-block;
+			font-size: 16px;
+			margin-top: 10px;
+		}
+		
+		.add-condition .title i {
+			position: absolute;
+			right: 15px;
+			top: 5px;
+			cursor: pointer;
+		}
+		
+		.add-condition .content {
+			width: 300px;
+			padding: 20px 0 0 0;
+			margin: auto;
+		}
+		
+		.add-condition .content .content-list {
+			margin-bottom: 10px;
+			height: 30px;
+			line-height: 30px;
+			font-size: 12px;
+		}
+		
+		.add-condition .content .content-list .name {
+			margin-right: 16px;
+			color: #030303;
+			display: inline-block;
+			width: 60px;
+			text-align-last: justify;
+		}
+		
+		.add-condition .content .content-list input[type=text] {
+			width: 210px;
+			height: 28px;
+			display: inline-block;
+			border-radius: 4px;
+		}
+		
+		.add-condition .content .content-list .layui-form-select {
+			width: 210px;
+			display: inline-block;
+		}
+		
+		.add-condition .footer {
+			height: 49px;
+			line-height: 49px;
+			border-top: 1px solid #ededed;
+			text-align: center;
+		}
+		.add-condition .footer .layui-btn {
+			width: 90px;
+			height: 32px;
+			line-height: 32px;
+			margin: 0;
+		}
+		.add-condition .footer .layui-form-checkbox[lay-skin=primary] span{
+			font-size: 12px;
+		}
+		.mask {
+			width: 100%;
+			height: 100%;
+			background-color: rgba(55, 55, 55, 0.6);
+			position: fixed;
+			z-index: 998;
+			display: none;
+		}
 	</style>
 
 	<body>
@@ -130,9 +218,63 @@
 		<div class="map">
 			<iframe src="test.html" frameborder="0"></iframe>
 		</div>
+		<div class="mask"></div>
+		<div class="add-condition">
+			<div class="title">
+				<span>添加筛选条件</span>
+				<i class="layui-icon layui-icon-close" title="关闭" onclick="Close()"></i>
+			</div>
+			<div class="content layui-form">
+				<div class="content-list">
+					<span class="name">选择图层</span>
+					<select id="city" lay-verify="required">
+						<option value="">请选择图层</option>
+						<option value="数值型">点图层1</option>
+						<option value="日期型">区划图层2</option>
+						<option value="日期+时间型">面图层1</option>
+						<option value="链接型">线图层1</option>
+
+					</select>
+				</div>
+				<div class="content-list">
+					<span class="name">选择字段</span>
+					<select id="city" lay-verify="required">
+						<option value="">请选择字段</option>
+						<option value="无匹配结果" disabled="disabled">无匹配结果</option>
+					</select>
+				</div>
+				<div class="content-list">
+					<span class="name">约束条件</span>
+					<select id="city" lay-verify="required">
+						<option value="">请选择条件</option>
+						<option value="无匹配结果" disabled="disabled">无匹配结果</option>
+					</select>
+				</div>
+				<div class="content-list">
+					<span class="name">约束值</span>
+					<input type="text" name="" id="" value="" placeholder="请输入约束值" class="layui-input"/>
+				</div>
+			</div>
+			<div class="footer layui-form">
+				<input type="checkbox" name="" title="添加后保留窗口，连续添加" lay-skin="primary">
+				<input type="button" id="" value="确定" class="layui-btn layui-btn-normal" onclick="sub()"/>
+			</div>
+		</div>
 	</body>
 	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 	<script src="layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
 	<script src="layui/layui.js" type="text/javascript" charset="utf-8"></script>
-
+<script type="text/javascript">
+	$(".workzone .content .part .add").click(function(){
+		$(".add-condition").fadeIn();
+		$(".mask").fadeIn();
+	})
+	function sub(){
+		Close();
+	}
+	function Close(){
+		$(".mask").fadeOut();
+		$(".add-condition").fadeOut()
+	}
+</script>
 </html>
