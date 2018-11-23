@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/nav.css"/>
+	<link rel="stylesheet" type="text/css" href="css/BasicData.css"/>
+	<style type="text/css">
+		
+	</style>
+
+	<body>
+		<div class="layui-side layui-bg-black">
+			<div class="layui-side-scroll">
+				<div class="header-box">
+					<div title="菜单缩放" class="kit-side-fold"><i class="layui-icon layui-icon-shrink-right" aria-hidden="true"></i></div>
+				</div>
+				<!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+				<ul class="layui-nav layui-nav-tree " lay-filter="test" lay-shrink="all">
+					<li class="layui-nav-item layui-this" title="基础数据">
+						<a href="javascript:;"><i class="layui-icon layui-icon-home"></i> <span>基础数据</span></a>
+					</li>
+					<li class="layui-nav-item" title="数据分析">
+						<a href="javascript:;"><i class="fa fa-line-chart fa-lg"></i> <span>数据分析</span></a>
+						<dl class="layui-nav-child">
+							<dd title="点面互查">
+								<a href="javascript:;"><i class="fa fa-map fa-lg"></i> <span>点面互查</span></a>
+							</dd>
+							<dd title="缓冲区分析">
+								<a href="javascript:;"><i class="fa fa-map-o fa-lg"></i> <span>缓冲区分析</span></a>
+							</dd>
+							<dd title="高级筛选">
+								<a href="javascript:;"><i class="fa fa-filter fa-lg"></i> <span>高级筛选</span></a>
+							</dd>
+						</dl>
+					</li>
+					<li class="layui-nav-item" title="智能预警">
+						<a href="javascript:;"><i class="fa fa-exclamation-circle fa-lg"></i> <span>智能预警</span></a>
+					</li>
+					<li class="layui-nav-item" title="位置监控">
+						<a href="javascript:;"><i class="fa fa-map-marker fa-lg"></i> <span>位置监控</span></a>
+						<dl class="layui-nav-child">
+							<dd title="人员监控">
+								<a href="javascript:;"><i class="fa fa-window-restore fa-lg"></i> <span>人员监控</span></a>
+							</dd>
+							<dd title="车辆监控">
+								<a href="javascript:;"><i class="fa fa-car fa-lg"></i> <span>车辆监控</span></a>
+							</dd>
+						</dl>
+					</li>
+					<li class="layui-nav-item" title="路线规划">
+						<a href="javascript:;"><i class="fa fa-random fa-lg"></i> <span>路线规划</span></a>
+					</li>
+					<li class="layui-nav-item" title="智能分单">
+						<a href="javascript:;"><i class="layui-icon layui-icon-templeate-1"></i> <span>智能分单</span></a>
+						<dl class="layui-nav-child">
+							<dd title="单条分单">
+								<a href="javascript:;"><i class="fa fa-file-text fa-lg"></i> <span>单条分单</span></a>
+							</dd>
+							<dd title="批量分单">
+								<a href="javascript:;"><i class="fa fa-clipboard fa-lg"></i> <span>批量分单</span></a>
+							</dd>
+							<dd title="订单状态统计">
+								<a href="javascript:;"><i class="fa fa-th-large fa-lg"></i> <span>订单状态统计</span></a>
+							</dd>
+							<dd title="按图层订单统计">
+								<a href="javascript:;"><i class="fa fa-object-group fa-lg"></i> <span>按图层订单统计</span></a>
+							</dd>
+							<dd title="全部订单统计">
+								<a href="javascript:;"><i class="fa fa-list-alt fa-lg"></i> <span>全部订单统计</span></a>
+							</dd>
+						</dl>
+					</li>
+					<li class="layui-nav-item" title="分享链接">
+						<a href="javascript:;"><i class="layui-icon layui-icon-share"></i> <span>分享链接</span></a>
+					</li>
+					<li class="layui-nav-item" title="业务流">
+						<a href="javascript:;"><i class="layui-icon layui-icon-senior"></i> <span>业务流</span></a>
+					</li>
+					<li class="layui-nav-item" title="操作日志">
+						<a href="javascript:;"><i class="layui-icon layui-icon-form"></i> <span>操作日志</span></a>
+					</li>
+					<li class="layui-nav-item" title="协作/权限">
+						<a href="javascript:;"><i class="layui-icon layui-icon-user"></i> <span>协作/权限</span></a>
+						<dl class="layui-nav-child">
+							<dd title="协作成员">
+								<a href="javascript:;"><i class="fa fa-users fa-lg"></i><span>协作成员</span></a>
+							</dd>
+							<dd title="监控人员">
+								<a href="javascript:;"><i class="fa fa-user-circle fa-lg"></i><span>监控人员</span></a>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+				<div class="Bottom">
+					<div class="MapList">
+						<div class="btn">
+							<i class="layui-icon layui-icon-website"></i>
+							<span>智能预警智能预警智能预警智能预警智能预警智能预警</span>
+						</div>
+						<i class="layui-icon layui-icon-down"></i>
+					</div>
+					<hr />
+					<div class="User">
+						<img src="img/banner.png" /><span>用户名</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="List">
+			<div class="header">
+				<span>地图列表</span>
+				<i class="layui-icon layui-icon-add-1" title="创建地图"></i>
+			</div>
+			<div class="content">
+				<li title="温州管网图定位">
+					<div class="img"><img src="img/getFile.png" /></div>
+					<div class="list-name">
+						<p>温州管网图定位<i class="layui-icon layui-icon-rate-solid"></i></p>
+						<div class="list-text">
+							<span class="me"><i class="layui-icon layui-icon-username"></i> LIAOSIJUN</span>
+							<span class="time"><i class="layui-icon layui-icon-log"></i> 2018-08-31</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="img"><img src="img/getFile.png" /></div>
+					<div class="list-name">
+						<p class="default-list-p">龙湾产品发布图<i class="layui-icon layui-icon-rate-solid default-list-i"></i></p>
+						<div class="list-text">
+							<span class="me"><i class="layui-icon layui-icon-username"></i> LIAOSIJUN</span>
+							<span class="time"><i class="layui-icon layui-icon-log"></i> 2018-08-31</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="img"><img src="img/getFile.png" /></div>
+					<div class="list-name">
+						<p>杭州城北机械表<i class="layui-icon layui-icon-rate-solid"></i></p>
+						<div class="list-text">
+							<span class="me"><i class="layui-icon layui-icon-username"></i> LIAOSIJUN</span>
+							<span class="time"><i class="layui-icon layui-icon-log"></i> 2018-08-31</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="img"><img src="img/getFile.png" /></div>
+					<div class="list-name">
+						<p>温州管网图定位<i class="layui-icon layui-icon-rate-solid"></i></p>
+						<div class="list-text">
+							<span class="me"><i class="layui-icon layui-icon-username"></i> LIAOSIJUN</span>
+							<span class="time"><i class="layui-icon layui-icon-log"></i> 2018-08-31</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="img"><img src="img/getFile.png" /></div>
+					<div class="list-name">
+						<p>温州管网图定位<i class="layui-icon layui-icon-rate-solid"></i></p>
+						<div class="list-text">
+							<span class="me"><i class="layui-icon layui-icon-username"></i> LIAOSIJUN</span>
+							<span class="time"><i class="layui-icon layui-icon-log"></i> 2018-08-31</span>
+						</div>
+					</div>
+				</li>
+			</div>
+			<div class="footer">
+				<div class="box">
+					<div class="establish">
+						<a>删除地图</a>
+					</div>
+					<div class="default">
+						<a>设置默认地图</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="user-content">
+			<li><i class="layui-icon layui-icon-return"></i>进入企业后台</li>
+			<li><i class="layui-icon layui-icon-username"></i>个人中心</li>
+			<li><i class="layui-icon layui-icon-star"></i>我的地图</li>
+			<li>
+				<p><i class="layui-icon layui-icon-help"></i>帮助</p>
+				<p><i class="layui-icon layui-icon-refresh-3"></i>更新</p>
+				<p><i class="layui-icon layui-icon-reply-fill"></i>反馈</p>
+				<p><i class="layui-icon layui-icon-file-b"></i>案例</p>
+			</li>
+			<li><i class="layui-icon layui-icon-unlink"></i>退出登录</li>
+		</div>
+		<div class="Editlayer" id="Editlayer">
+			<ul>
+				<li><span>设为默认图层</span></li>
+				<li><span>重命名</span></li>
+				<li><span>删除图层</span></li>
+				<li><span>清空图层</span></li>
+				<li><span>导出</span></li>
+			</ul>
+		</div>
+		<div class="workzone">
+			<div class="layui-card">
+				<div class="layui-card-header"><span id="all">所有数据</span> <span id="">
+					记录数  ××条
+				</span><i class="layui-icon layui-icon-shrink-right" title="点击收起" onclick="TakeUp()"></i></div>
+				<div class="layui-card-body">
+					<ul class="layer">
+						<li><i class="layui-icon layui-icon-template-1"></i>
+							<a style="cursor: default;">所有图层</a><span>(500)</span><i class="layui-icon layui-icon-add-1" title="添加图层" onclick="show('addLayer')"></i><i class="fa fa-eye" id="eye1" onclick="eye()"></i></li>
+						<hr />
+						<li><i class="layui-icon layui-icon-location"></i>
+							<a>点图层</a>
+							<span>(500)</span><i class="fa fa-eye" id="eye2" onclick="eye()"></i>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="pointsLayer">
+				<div class="pointsLayerReturn">
+					<a href="javascript:" title="返回全部数据"><返回</a>
+					<i class="layui-icon layui-icon-shrink-right" style="color: #108EE9;margin-left: 30px;" title="点击全部收起" onclick="TakeUp()"></i>
+				</div>
+				<div class="pointsLayerMain">
+					<div class="caption">
+						<i class="layui-icon layui-icon-location"></i><span>点图层1 <span>(500)</span></span>
+						<i class="layui-icon layui-icon-more" id="more" style="float: right; cursor: pointer;" title="更多" onclick="more('Editlayer')"></i>
+					</div>
+					<div class="sort">
+						<span>排序方式：</span>
+						<a id="letter" class="active" onclick="sortarr()">字母排序</a>
+						<a id="time">时间排序</a>
+					</div>
+					<div class="coordinate">
+						<li><i class="layui-icon layui-icon-location"></i><span>123</span></li>
+						<li><i class="layui-icon layui-icon-location"></i><span>1455</span></li>
+						<li><i class="layui-icon layui-icon-location"></i><span>b3131</span></li>
+						<li><i class="layui-icon layui-icon-location"></i><span>f1231312</span></li>
+						<li><i class="layui-icon layui-icon-location"></i><span>c1231312</span></li>
+						<li><i class="layui-icon layui-icon-location"></i><span>a1231312</span></li>
+						<li><i class="layui-icon layui-icon-location"></i><span>5231231312</span></li>
+						<li><i class="layui-icon layui-icon-location"></i><span>啊231231312</span></li>
+						<li><i class="layui-icon layui-icon-location"></i><span>吧231231312</span></li>
+						<li><i class="layui-icon layui-icon-location"></i><span>吃231231312</span></li>
+						<li><i class="layui-icon layui-icon-location"></i><span>啊231231312</span></li>
+						<li><i class="layui-icon layui-icon-location"></i><span>aaaa</span></li>
+						<li><i class="layui-icon layui-icon-location"></i><span>t231231312</span></li>
+						<li><i class="layui-icon layui-icon-location"></i><span>avcsa1312</span></li>
+						<li><i class="layui-icon layui-icon-location"></i><span>abc12</span></li>
+						<li><i class="layui-icon layui-icon-location"></i><span>1ad231312</span></li>
+						<li><i class="layui-icon layui-icon-location"></i><span>da1312</span></li>
+						<li><i class="layui-icon layui-icon-location"></i><span>1231231312</span></li>
+						<li><i class="layui-icon layui-icon-location"></i><span>1ac31231312</span></li>
+						<li><i class="layui-icon layui-icon-location"></i><span>1as31231312</span></li>
+						<li><i class="layui-icon layui-icon-location"></i><span>acd231231312</span></li>
+						<li><i class="layui-icon layui-icon-location"></i><span>123cc1312</span></li>
+						<li><i class="layui-icon layui-icon-location"></i><span>123gg31312</span></li>
+						<li><i class="layui-icon layui-icon-location"></i><span>123a31312</span></li>
+						<li><i class="layui-icon layui-icon-location"></i><span>1231231312</span></li>
+						<li><i class="layui-icon layui-icon-location"></i><span>12r1231312</span></li>
+						<li><i class="layui-icon layui-icon-location"></i><span>12ss231312</span></li>
+						<li><i class="layui-icon layui-icon-location"></i><span>123y12</span></li>
+					</div>
+				</div>
+				<div class="pointsLayerBottom">
+					<a class="import" onclick="show('uploading')"><i class="layui-icon layui-icon-component"></i>批量导入网点</a>
+					<a onclick="show('updateData')"><i class="layui-icon layui-icon-upload-circle"></i>更新数据</a>
+				</div>
+				<hr class="layui-bg-blue" />
+				<div class="attribute">
+					<div class="icon">
+						<i class="layui-icon layui-icon-picture" title="上传图片" onclick="show('uppicture')"></i>
+						<i class="layui-icon layui-icon-close" onclick="Close('attribute')" title="关闭"></i>
+					</div>
+					<div class="title">
+					</div>
+					<div class="layui-carousel" id="test1">
+						<div carousel-item>
+							<div><img src="img/getFile.png" /></div>
+							<div><img src="img/banner.png" /></div>
+						</div>
+					</div>
+					<div class="material">
+						<li><span class="means">描述：</span><span class="value"> 描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</span></li>
+						<li><span class="means">img：</span><span class="value">2</span></li>
+						<li><span class="means">creator：</span><span class="value">3</span></li>
+						<li><span class="means">icon：</span><span class="value">1</span></li>
+						<li><span class="means">rating：</span><span class="value">2</span></li>
+						<li><span class="means">creator：</span><span class="value">3</span></li>
+						<li><span class="means">created_at：</span><span class="value">1</span></li>
+						<li><span class="means">bdxy：</span><span class="value">2</span></li>
+						<li><span class="means">zans：</span><span class="value">3</span></li>
+						<li><span class="means">x：</span><span class="value">1</span></li>
+						<li><span class="means">creator_id：</span><span class="value">2</span></li>
+						<li><span class="means">y：</span><span class="value">3</span></li>
+						<li><span class="means">attributes：</span><span class="value">3</span></li>
+						<li><span class="means">地址：</span><span class="value">3</span></li>
+						<li><span class="means">id：</span><span class="value">3</span></li>
+						<li><span class="means">区域编码：</span><span class="value">3</span></li>
+						<li><span class="means">绑定区域：</span><span class="value">3</span></li>
+						<button class="layui-btn layui-btn-normal" style="float: right; margin-right: 10px; display: none;" onclick="determine()">确定</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="map">
+			<iframe src="test.html" frameborder="0"></iframe>
+		</div>
+		<div class="Show" onclick="Show()">
+			<i class="layui-icon layui-icon-right"></i>
+		</div>
+		<div class="mask"></div>
+		<div class="layui-card addLayer">
+			<div class="layui-card-header"><span style="font-size: 16px;">添加新图层</span><strong><i class="layui-icon layui-icon-close" title="关闭" onclick="Close('addLayer')"></i></strong></div>
+			<div class="layui-card-body">
+				<div class="box">
+					<div class="layui-input-inline">
+						<input type="text" id="Name" class="layui-input" placeholder="图层名" />
+						<i class="layui-icon layui-icon-close-fill"  title="清空"></i>
+					</div>
+					<div class="btn">
+						<input type="submit" class="layui-btn layui-btn-normal" onclick="Determine()" value="确定" />
+						<input type="button" class="layui-btn layui-btn-primary" onclick="Close('addLayer')" value="取消" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="layui-card uppicture">
+			<div class="layui-card-header"><span style="font-size: 16px;">图集</span><strong><i class="layui-icon layui-icon-close" onclick="Close('uppicture')" title="关闭"></i></strong></div>
+			<div class="layui-card-body">
+				<div class="Up">
+					<div class="picture">
+						<div>
+							<i class="layui-icon layui-icon-add-1"></i>
+							<p>点击添加图片</p>
+						</div>
+					</div>
+				</div>
+				<div class="alreadyUp">
+					<div class="picture">
+						<div>
+							<img src="img/banner.png" />
+						</div>
+					</div>
+				</div>
+				<div class="alreadyUp">
+					<div class="picture">
+						<div>
+							<img src="img/getFile.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="layui-card uploading">
+			<div class="layui-card-header"><span style="font-size: 16px;">批量导入网点</span><strong><i class="layui-icon layui-icon-close" onclick="Close('uploading')" title="关闭"></i></strong></div>
+			<div class="layui-card-body">
+				<div class="Up">
+					<div class="network">
+
+						<div>
+							<i class="layui-icon layui-icon-upload-drag"></i>
+							<p>点击上传数据</p>
+						</div>
+					</div>
+				</div>
+				<div class="ps">
+					<p>格式说明：<span>支持常见的.xls .xlsx .csv格式</span> </p>
+					<p>必填字段：<span>数据中至少包含地址或者经纬度字段</span></p>
+					<p>最大限制：<span>每次上传不超过10000行，只支持50列，文件大小不超过3M</span></p>
+					<p>下载标准样式：
+						<a href="TemplateFile/dituhui-points2 (2).xls" download="示例数据—地址版">示例数据——地址版</a>
+						<a href="TemplateFile/dituhui-points3 (1).xls" download="示例数据—经纬度版">示例数据——经纬度版</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="layui-card updateData">
+			<div class="layui-card-header"><span style="font-size: 16px;">更新数据</span><strong><i class="layui-icon layui-icon-close" onclick="Close('updateData')" title="关闭"></i></strong></div>
+			<div class="layui-card-body">
+				<div class="Up">
+					<div class="data">
+						<div>
+							<i class="layui-icon layui-icon-upload-drag"></i>
+							<p>点击更新数据</p>
+						</div>
+					</div>
+				</div>
+				<div class="ps">
+					<p>格式说明： <span>支持常见的.xls .xlsx .csv格式</span></p>
+					<p>必填字段：<span>数据中至少包含地址或者经纬度字段</span></p>
+					<p>最大限制：<span>每次上传不超过10000行，只支持50列，文件大小不超过3M</span></p>
+					<p>更新方式：<span>覆盖更新，重复数据被覆盖</span></p>
+					<p>更新文件：<span>更新文件里需要包含和原数据相匹配的字段</span></p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/BasicData.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//JavaScript代码区域
+		layui.use('element', function() {
+			var element = layui.element;
+		});
+		var isShow = true; //定义一个标志位
+		$('.kit-side-fold').click(function() {
+			//选择出所有的span，并判断是不是hidden
+			$('.layui-nav-item span').each(function() {
+				if($(this).is(':hidden')) {
+					$(this).show();
+				} else {
+					$(this).hide();
+				}
+			});
+			$(".kit-side-fold i").toggleClass("layui-icon-spread-left")
+			$('.kit-side-fold').toggleClass('zoom');
+			$('.MapList').toggleClass('MapList-zoom');
+			$('.User').toggleClass('User-zoom');
+			$('.List').toggleClass('List-zoom');
+			$('.user-content').toggleClass('user-content-zoom');
+			//判断isshow的状态
+			if(isShow) {
+				$('.layui-side.layui-bg-black').width(60); //设置宽度
+				//将footer和body的宽度修改
+				$('.layui-body').css('left', 60 + 'px');
+				$('.layui-footer').css('left', 60 + 'px');
+				//将二级导航栏隐藏
+				$('dd span').each(function() {
+					$(this).hide();
+				});
+				//修改标志位
+				isShow = false;
+			} else {
+				$('.layui-side.layui-bg-black').width(200);
+				$('.layui-body').css('left', 200 + 'px');
+				$('.layui-footer').css('left', 200 + 'px');
+				$('dd span').each(function() {
+					$(this).show();
+				});
+				isShow = true;
+			}
+		});
+		$(".MapList").click(function() {
+			$(".MapList .layui-icon-down").toggleClass("layui-icon-up");
+			$(".List").toggle(100);
+			$(".user-content").hide(100);
+		})
+//		$(document).click(function() {
+//			$(".List").hide(100);
+//			$(".user-content").hide(100);
+//			$(".MapList .layui-icon-down").removeClass("layui-icon-up");
+//		});
+//		document.getElementById('my-iframe').contentDocument.onclick = function() {
+//			$(".List").hide(100);
+//			$(".user-content").hide(100);
+//			$(".MapList .layui-icon-down").removeClass("layui-icon-up");
+//		};
+		$(".User").click(function() {
+			$(".user-content").toggle(100);
+			$(".List").hide(100);
+		})
+		$(".List,.MapList,.User").click(function(event) {
+			event.stopPropagation();
+		});
+	</script>
+
+</html>

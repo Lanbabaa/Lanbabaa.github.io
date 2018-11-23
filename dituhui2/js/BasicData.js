@@ -138,7 +138,7 @@ function addLayer(e) {
 }
 
 function TakeUp() {
-	$(".layui-nav-side,.content").fadeOut();
+	$(".layui-nav-side,.workzone").fadeOut();
 	$(".map").css({
 		"left": "0px",
 		"width": "100%"
@@ -148,10 +148,10 @@ function TakeUp() {
 }
 
 function Show() {
-	$(".layui-nav-side,.content").fadeIn();
+	$(".layui-nav-side,.workzone").fadeIn();
 	$(".map").css({
-		"left": "280px",
-		"width": "calc(100% - 280px)"
+		"left": "480px",
+		"width": "calc(100% - 480px)"
 	});
 	$("iframe").css("width", "100%");
 	$(".Show").fadeOut(0);
@@ -161,13 +161,13 @@ $(".sort a").click(function() {
 	$(this).siblings().removeClass("active")
 })
 $(".layui-card-body a").eq(1).click(function() {
-	$(".content .layui-card").css("display", "none");
+	$(".workzone .layui-card").css("display", "none");
 	$(".pointsLayer").css("display", "block");
 	j = 0;
 	sortarr();
 })
 $(".pointsLayerReturn a").click(function() {
-	$(".content .layui-card").css("display", "block");
+	$(".workzone .layui-card").css("display", "block");
 	$(".pointsLayer").css("display", "none");
 })
 $('.coordinate').delegate('li', 'click', function() {
