@@ -26,9 +26,13 @@ ul::-webkit-scrollbar-track {
 	border-radius: 0;
 	background: rgba(0, 0, 0, 0);
 }
-hr{
-    margin-bottom: 0px;
+.layui-icon-close{
+	cursor: pointer;	
 }
+hr {
+	margin-bottom: 0px;
+}
+
 .all-hide {
 	position: absolute;
 	top: calc(50% - 22px);
@@ -44,20 +48,29 @@ hr{
 	border-radius: 0px 30px 30px 0;
 	cursor: pointer;
 }
-.all-hide-zoom{
+
+.all-hide-zoom {
 	left: 340px;
 }
-.layui-bg-black{
+
+.layui-bg-black {
 	z-index: 996;
 	background-color: #293B5A !important;
 }
-.layui-nav{
-	background-color:#293B5A !important ;
+
+.layui-nav {
+	background-color: #293B5A !important;
 }
-.layui-nav-itemed>.layui-nav-child{
-	background-color:rgb(39, 54, 79) !important ;
+
+.layui-nav-itemed>.layui-nav-child {
+	background-color: rgb(39, 54, 79) !important;
 }
-.layui-nav-tree .layui-nav-child dd.layui-this, .layui-nav-tree .layui-nav-child dd.layui-this a, .layui-nav-tree .layui-this, .layui-nav-tree .layui-this>a, .layui-nav-tree .layui-this>a:hover{
+
+.layui-nav-tree .layui-nav-child dd.layui-this,
+.layui-nav-tree .layui-nav-child dd.layui-this a,
+.layui-nav-tree .layui-this,
+.layui-nav-tree .layui-this>a,
+.layui-nav-tree .layui-this>a:hover {
 	background-color: #108ee9!important;
 }
 
@@ -92,6 +105,7 @@ hr{
 	color: rgb(123, 150, 196);
 	cursor: pointer;
 }
+
 .layui-side .layui-side-scroll div {
 	background: rgb(33, 50, 79);
 }
@@ -256,9 +270,11 @@ hr{
 	bottom: 0;
 	background-color: #293B5A !important;
 }
-.layui-side .layui-side-scroll .Bottom .MapList *{
+
+.layui-side .layui-side-scroll .Bottom .MapList * {
 	color: rgb(123, 150, 196) !important;
 }
+
 @media screen and (max-height: 654px) {
 	.layui-side .layui-side-scroll .Bottom {
 		position: relative;
@@ -300,9 +316,11 @@ hr{
 	display: inline-block;
 	background-color: rgba(0, 0, 0, 0);
 }
-.layui-side .layui-side-scroll .Bottom .MapList i{
+
+.layui-side .layui-side-scroll .Bottom .MapList i {
 	font-size: 12px !important;
 }
+
 .layui-side .layui-side-scroll .Bottom .MapList .btn img {
 	padding-right: 10px;
 }
@@ -420,10 +438,12 @@ hr{
 	left: 480px;
 	z-index: 990;
 }
-.map-max{
+
+.map-max {
 	width: 100% !important;
 	left: 0 !important;
 }
+
 iframe {
 	width: 100%;
 	height: 100%;
@@ -433,4 +453,13 @@ iframe {
 .map-zoom {
 	width: calc(100% - 340px) !important;
 	left: 340px !important;
+}
+
+.mask{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(55, 55, 55, 0.6);
+	position: fixed;
+	z-index: 998;
+	display: none;
 }
