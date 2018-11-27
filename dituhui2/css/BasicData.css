@@ -75,10 +75,6 @@
 		cursor: pointer;
 	}
 	
-	.workzone .layui-card .layui-card-header i {
-		color: #108EE9;
-		margin-left: 40px;
-	}
 	
 	.workzone .layui-card .layui-card-header #all {
 		font-size: 20px;

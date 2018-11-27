@@ -136,26 +136,6 @@ function Determine() {
 function addLayer(e) {
 	$(".layer").append("<li><i class='layui-icon layui-icon-location'></i> <a>" + e + "</a><span>(0)</span><i class='fa fa-eye' id='eye2' onclick='eye(this)'></i></li>")
 }
-
-function TakeUp() {
-	$(".layui-nav-side,.workzone").fadeOut();
-	$(".map").css({
-		"left": "0px",
-		"width": "100%"
-	});
-	$("iframe").css("width", "100%");
-	$(".Show").fadeIn()
-}
-
-function Show() {
-	$(".layui-nav-side,.workzone").fadeIn();
-	$(".map").css({
-		"left": "480px",
-		"width": "calc(100% - 480px)"
-	});
-	$("iframe").css("width", "100%");
-	$(".Show").fadeOut(0);
-}
 $(".sort a").click(function() {
 	$(this).addClass("active");
 	$(this).siblings().removeClass("active")

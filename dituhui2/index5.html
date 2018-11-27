@@ -3,21 +3,21 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>地图慧</title>
 	</head>
 	<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
 	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/nav.css"/>
-	<link rel="stylesheet" type="text/css" href="css/BasicData.css"/>
-	<style type="text/css">
-		
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/nav.css" />
+	<link rel="stylesheet" type="text/css" href="css/BasicData.css" />
 
 	<body>
+		<div class="all-hide" title="收起左侧面板">
+			<i class="fa fa-chevron-left"></i>
+		</div>
 		<div class="layui-side layui-bg-black">
 			<div class="layui-side-scroll">
 				<div class="header-box">
-					<div title="菜单缩放" class="kit-side-fold"><i class="layui-icon layui-icon-shrink-right" aria-hidden="true"></i></div>
+					<div title="菜单缩放" class="kit-side-fold" style="display: inline-block;"><i class="layui-icon layui-icon-shrink-right" aria-hidden="true"></i></div>
 				</div>
 				<!-- 左侧导航区域（可配合layui已有的垂直导航） -->
 				<ul class="layui-nav layui-nav-tree " lay-filter="test" lay-shrink="all">
@@ -28,70 +28,70 @@
 						<a href="javascript:;"><i class="fa fa-line-chart fa-lg"></i> <span>数据分析</span></a>
 						<dl class="layui-nav-child">
 							<dd title="点面互查">
-								<a href="javascript:;"><i class="fa fa-map fa-lg"></i> <span>点面互查</span></a>
+								<a href="pointStatistics.html"><i class="fa fa-map fa-lg"></i> <span>点面互查</span></a>
 							</dd>
 							<dd title="缓冲区分析">
-								<a href="javascript:;"><i class="fa fa-map-o fa-lg"></i> <span>缓冲区分析</span></a>
+								<a href="bufferarea.html"><i class="fa fa-map-o fa-lg"></i> <span>缓冲区分析</span></a>
 							</dd>
 							<dd title="高级筛选">
-								<a href="javascript:;"><i class="fa fa-filter fa-lg"></i> <span>高级筛选</span></a>
+								<a href="global-search.html"><i class="fa fa-filter fa-lg"></i> <span>高级筛选</span></a>
 							</dd>
 						</dl>
 					</li>
 					<li class="layui-nav-item" title="智能预警">
-						<a href="javascript:;"><i class="fa fa-exclamation-circle fa-lg"></i> <span>智能预警</span></a>
+						<a href="intelligent-warning.html"><i class="fa fa-exclamation-circle fa-lg"></i> <span>智能预警</span></a>
 					</li>
 					<li class="layui-nav-item" title="位置监控">
 						<a href="javascript:;"><i class="fa fa-map-marker fa-lg"></i> <span>位置监控</span></a>
 						<dl class="layui-nav-child">
 							<dd title="人员监控">
-								<a href="javascript:;"><i class="fa fa-window-restore fa-lg"></i> <span>人员监控</span></a>
+								<a href="personnel-monitoring.html"><i class="fa fa-window-restore fa-lg"></i> <span>人员监控</span></a>
 							</dd>
 							<dd title="车辆监控">
-								<a href="javascript:;"><i class="fa fa-car fa-lg"></i> <span>车辆监控</span></a>
+								<a href="car.html"><i class="fa fa-car fa-lg"></i> <span>车辆监控</span></a>
 							</dd>
 						</dl>
 					</li>
 					<li class="layui-nav-item" title="路线规划">
-						<a href="javascript:;"><i class="fa fa-random fa-lg"></i> <span>路线规划</span></a>
+						<a href="routing.html"><i class="fa fa-random fa-lg"></i> <span>路线规划</span></a>
 					</li>
 					<li class="layui-nav-item" title="智能分单">
 						<a href="javascript:;"><i class="layui-icon layui-icon-templeate-1"></i> <span>智能分单</span></a>
 						<dl class="layui-nav-child">
 							<dd title="单条分单">
-								<a href="javascript:;"><i class="fa fa-file-text fa-lg"></i> <span>单条分单</span></a>
+								<a href="fendansingle.html"><i class="fa fa-file-text fa-lg"></i> <span>单条分单</span></a>
 							</dd>
 							<dd title="批量分单">
-								<a href="javascript:;"><i class="fa fa-clipboard fa-lg"></i> <span>批量分单</span></a>
+								<a href="fendanbatch.html"><i class="fa fa-clipboard fa-lg"></i> <span>批量分单</span></a>
 							</dd>
 							<dd title="订单状态统计">
-								<a href="javascript:;"><i class="fa fa-th-large fa-lg"></i> <span>订单状态统计</span></a>
+								<a href="status-statistics.html"><i class="fa fa-th-large fa-lg"></i> <span>订单状态统计</span></a>
 							</dd>
 							<dd title="按图层订单统计">
-								<a href="javascript:;"><i class="fa fa-object-group fa-lg"></i> <span>按图层订单统计</span></a>
+								<a href="orderstats-layer.html"><i class="fa fa-object-group fa-lg"></i> <span>按图层订单统计</span></a>
 							</dd>
 							<dd title="全部订单统计">
-								<a href="javascript:;"><i class="fa fa-list-alt fa-lg"></i> <span>全部订单统计</span></a>
+								<a href="orderstats.html"><i class="fa fa-list-alt fa-lg"></i> <span>全部订单统计</span></a>
 							</dd>
 						</dl>
 					</li>
 					<li class="layui-nav-item" title="分享链接">
-						<a href="javascript:;"><i class="layui-icon layui-icon-share"></i> <span>分享链接</span></a>
+						<a href="shareMap.html"><i class="layui-icon layui-icon-share"></i> <span>分享链接</span></a>
 					</li>
 					<li class="layui-nav-item" title="业务流">
-						<a href="javascript:;"><i class="layui-icon layui-icon-senior"></i> <span>业务流</span></a>
+						<a href="business-flow.html"><i class="layui-icon layui-icon-senior"></i> <span>业务流</span></a>
 					</li>
 					<li class="layui-nav-item" title="操作日志">
-						<a href="javascript:;"><i class="layui-icon layui-icon-form"></i> <span>操作日志</span></a>
+						<a href="logs.html"><i class="layui-icon layui-icon-form"></i> <span>操作日志</span></a>
 					</li>
 					<li class="layui-nav-item" title="协作/权限">
 						<a href="javascript:;"><i class="layui-icon layui-icon-user"></i> <span>协作/权限</span></a>
 						<dl class="layui-nav-child">
 							<dd title="协作成员">
-								<a href="javascript:;"><i class="fa fa-users fa-lg"></i><span>协作成员</span></a>
+								<a href="cooperation-personnel.html"><i class="fa fa-users fa-lg"></i><span>协作成员</span></a>
 							</dd>
 							<dd title="监控人员">
-								<a href="javascript:;"><i class="fa fa-user-circle fa-lg"></i><span>监控人员</span></a>
+								<a href="monitoring-members.html"><i class="fa fa-user-circle fa-lg"></i><span>监控人员</span></a>
 							</dd>
 						</dl>
 					</li>
@@ -99,7 +99,7 @@
 				<div class="Bottom">
 					<div class="MapList">
 						<div class="btn">
-							<i class="layui-icon layui-icon-website"></i>
+							<img src="img/side-bar-icon9.png"/>
 							<span>智能预警智能预警智能预警智能预警智能预警智能预警</span>
 						</div>
 						<i class="layui-icon layui-icon-down"></i>
@@ -202,9 +202,10 @@
 		</div>
 		<div class="workzone">
 			<div class="layui-card">
-				<div class="layui-card-header"><span id="all">所有数据</span> <span id="">
-					记录数  ××条
-				</span><i class="layui-icon layui-icon-shrink-right" title="点击收起" onclick="TakeUp()"></i></div>
+				<div class="layui-card-header">
+					<span id="all">所有数据</span>
+					<span id="">记录数  ××条</span>
+				</div>
 				<div class="layui-card-body">
 					<ul class="layer">
 						<li><i class="layui-icon layui-icon-template-1"></i>
@@ -219,8 +220,9 @@
 			</div>
 			<div class="pointsLayer">
 				<div class="pointsLayerReturn">
-					<a href="javascript:" title="返回全部数据"><返回</a>
-					<i class="layui-icon layui-icon-shrink-right" style="color: #108EE9;margin-left: 30px;" title="点击全部收起" onclick="TakeUp()"></i>
+					<a href="javascript:" title="返回全部数据">
+						<返回
+					</a>
 				</div>
 				<div class="pointsLayerMain">
 					<div class="caption">
@@ -307,9 +309,6 @@
 		<div class="map">
 			<iframe src="test.html" frameborder="0"></iframe>
 		</div>
-		<div class="Show" onclick="Show()">
-			<i class="layui-icon layui-icon-right"></i>
-		</div>
 		<div class="mask"></div>
 		<div class="layui-card addLayer">
 			<div class="layui-card-header"><span style="font-size: 16px;">添加新图层</span><strong><i class="layui-icon layui-icon-close" title="关闭" onclick="Close('addLayer')"></i></strong></div>
@@ -317,7 +316,7 @@
 				<div class="box">
 					<div class="layui-input-inline">
 						<input type="text" id="Name" class="layui-input" placeholder="图层名" />
-						<i class="layui-icon layui-icon-close-fill"  title="清空"></i>
+						<i class="layui-icon layui-icon-close-fill" title="清空"></i>
 					</div>
 					<div class="btn">
 						<input type="submit" class="layui-btn layui-btn-normal" onclick="Determine()" value="确定" />
@@ -400,71 +399,6 @@
 	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 	<script src="layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/BasicData.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript">
-		//JavaScript代码区域
-		layui.use('element', function() {
-			var element = layui.element;
-		});
-		var isShow = true; //定义一个标志位
-		$('.kit-side-fold').click(function() {
-			//选择出所有的span，并判断是不是hidden
-			$('.layui-nav-item span').each(function() {
-				if($(this).is(':hidden')) {
-					$(this).show();
-				} else {
-					$(this).hide();
-				}
-			});
-			$(".kit-side-fold i").toggleClass("layui-icon-spread-left")
-			$('.kit-side-fold').toggleClass('zoom');
-			$('.MapList').toggleClass('MapList-zoom');
-			$('.User').toggleClass('User-zoom');
-			$('.List').toggleClass('List-zoom');
-			$('.user-content').toggleClass('user-content-zoom');
-			//判断isshow的状态
-			if(isShow) {
-				$('.layui-side.layui-bg-black').width(60); //设置宽度
-				//将footer和body的宽度修改
-				$('.layui-body').css('left', 60 + 'px');
-				$('.layui-footer').css('left', 60 + 'px');
-				//将二级导航栏隐藏
-				$('dd span').each(function() {
-					$(this).hide();
-				});
-				//修改标志位
-				isShow = false;
-			} else {
-				$('.layui-side.layui-bg-black').width(200);
-				$('.layui-body').css('left', 200 + 'px');
-				$('.layui-footer').css('left', 200 + 'px');
-				$('dd span').each(function() {
-					$(this).show();
-				});
-				isShow = true;
-			}
-		});
-		$(".MapList").click(function() {
-			$(".MapList .layui-icon-down").toggleClass("layui-icon-up");
-			$(".List").toggle(100);
-			$(".user-content").hide(100);
-		})
-//		$(document).click(function() {
-//			$(".List").hide(100);
-//			$(".user-content").hide(100);
-//			$(".MapList .layui-icon-down").removeClass("layui-icon-up");
-//		});
-//		document.getElementById('my-iframe').contentDocument.onclick = function() {
-//			$(".List").hide(100);
-//			$(".user-content").hide(100);
-//			$(".MapList .layui-icon-down").removeClass("layui-icon-up");
-//		};
-		$(".User").click(function() {
-			$(".user-content").toggle(100);
-			$(".List").hide(100);
-		})
-		$(".List,.MapList,.User").click(function(event) {
-			event.stopPropagation();
-		});
-	</script>
+	<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
 
 </html>
