@@ -8,328 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
 	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/nav.css" />
-	<style type="text/css">
-		.workzone {
-			position: absolute;
-			left: 200px;
-			width: calc(100% - 200px);
-			height: 100%;
-			background-color: #fafafa;
-		}
-		
-		.workzone .MapCooperation {
-			width: calc(100% - 80px);
-			padding-left: 80px;
-			height: 100%;
-		}
-		
-		.workzone .MapCooperation .CooperationCom {
-			width: 100%;
-			height: 100%;
-			overflow: auto;
-		}
-		
-		.workzone .MapCooperation .CooperationCom .title {
-			height: 58px;
-			width: calc(100% - 80px);
-			min-width: 900px;
-			padding-top: 12px;
-			padding-right: 80px;
-		}
-		
-		.workzone .MapCooperation .CooperationCom .title .layui-input {
-			width: 300px;
-			height: 36px;
-			border-radius: 4px;
-			float: left;
-			padding: 2px 30px 2px 10px;
-			font-size: 12px;
-			transition: all .3s;
-		}
-		
-		.workzone .MapCooperation .CooperationCom .title .layui-input:hover,
-		.addmember .searchmembers .layui-input-inline .layui-input:hover {
-			border-color: #49a9ee !important;
-		}
-		
-		.workzone .MapCooperation .CooperationCom .title .layui-input:focus,
-		.addmember .searchmembers .layui-input-inline .layui-input:focus {
-			border-color: #49a9ee !important;
-			outline: 0;
-			box-shadow: 0 0 0 2px rgba(16, 142, 233, 0.2);
-		}
-		
-		.workzone .MapCooperation .CooperationCom .title .layui-input-inline i {
-			position: absolute;
-			top: calc(50% - 8px);
-			right: 10px;
-			cursor: pointer;
-			transition: all .3s;
-		}
-		
-		.workzone .MapCooperation .CooperationCom .title .layui-input-inline i:hover,
-		.addmember .searchmembers .layui-input-inline i:hover {
-			color: #108EE9;
-		}
-		
-		.workzone .MapCooperation .CooperationCom .title .layui-btn {
-			height: 36px;
-			float: right;
-			border-radius: 4px;
-			font-size: 12px;
-		}
-		
-		.workzone .MapCooperation .CooperationCom .Cooperation {
-			padding-right: 80px;
-			height: calc(100% - 70px);
-		}
-		
-		.workzone .MapCooperation .CooperationCom .Cooperation .part {
-			min-width: 900px;
-			margin-bottom: 20px;
-			background: #FAFBFC;
-			border: 1px solid #EDEDED;
-			padding: 0 20px;
-		}
-		
-		.workzone .MapCooperation .CooperationCom .Cooperation .part .title {
-			padding: 15px 0;
-			height: 28px;
-		}
-		
-		.workzone .MapCooperation .CooperationCom .Cooperation .part .title .num {
-			margin-left: 10px;
-			color: #C1C1C1;
-		}
-		
-		.workzone .MapCooperation .CooperationCom .Cooperation .part .people {
-			position: relative;
-		}
-		
-		.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users {
-			position: relative;
-		}
-		
-		.CooperationCom .Cooperation .part .people .Users .min {
-			height: 84px;
-		}
-		
-		.CooperationCom .Cooperation .part .people .Users .all {
-			position: absolute;
-			right: 0;
-			top: -40px;
-			color: #C1C1C1;
-			cursor: pointer;
-		}
-		
-		.CooperationCom .Cooperation .part .people .Users .all i {
-			font-size: 20px;
-		}
-		
-		.CooperationCom .Cooperation .part .people .role {
-			position: absolute;
-			top: 20px;
-			right: 0;
-			color: #40A9FF;
-			cursor: pointer;
-		}
-		
-		.CooperationCom .Cooperation .part .people .Users .user-list {
-			width: calc(100% - 80px);
-			overflow: hidden;
-			min-height: 64px;
-		}
-		
-		.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User {
-			width: 80px;
-			height: 60px;
-			float: left;
-			margin: 12px 12px 12px 0;
-		}
-		
-		.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .add {
-			margin-left: 20px;
-			color: #c3c3c3;
-			border: 1px solid #c3c3c3;
-			width: 40px;
-			text-align: center;
-			line-height: 40px;
-			height: 40px;
-			font: normal normal normal 14px/40px 'microsoft yahei';
-			border-radius: 50%;
-			transition: .75s;
-		}
-		
-		.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .add:hover {
-			background: #40a9ff;
-			border: 1px solid #40a9ff;
-			color: #fff;
-		}
-		
-		.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .block {
-			margin-left: 20px;
-			width: 40px;
-			text-align: center;
-			line-height: 40px;
-			height: 40px;
-			border-radius: 50%;
-			color: #fff;
-			overflow: hidden;
-			cursor: pointer;
-		}
-		
-		.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .block img {
-			width: 40px;
-			height: 40px;
-		}
-		
-		.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .userName {
-			color: #aaa;
-			text-align: center;
-			text-overflow: ellipsis;
-			overflow: hidden;
-			white-space: nowrap;
-			width: 100%;
-		}
-		
-		.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .layui-form .layui-form-item {
-			width: 120px !important;
-		}
-		.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .layui-form .layui-form-item .layui-input{
-			height: 30px;
-			border-radius: 4px;
-			font-size: 12px;
-		}
-		.addmember {
-			position: absolute;
-			top: 15%;
-			left: calc(50% - 319px);
-			z-index: 999;
-			display: none;
-		}
-		
-		.addmember .invitedmembers {
-			width: 480px;
-			height: 385px;
-			background-color: #fff;
-			box-shadow: 0 0 0 3px rgba(0, 0, 0, .05);
-			border-radius: 5px;
-			float: left;
-		}
-		
-		.addmember .invitedmembers .title {
-			text-align: center;
-			width: 100%;
-			height: 60px;
-			line-height: 60px;
-			position: relative;
-			font-size: 18px;
-		}
-		
-		.addmember .invitedmembers .title i {
-			position: absolute;
-			top: 0;
-			right: 25px;
-			font-size: 16px;
-		}
-		
-		.addmember .invitedmembers .con {
-			padding: 0 45px;
-			height: calc(100% - 130px);
-		}
-		
-		.addmember .invitedmembers .con .tel {}
-		
-		.addmember .invitedmembers .con .tel .phonenumber {
-			width: 100%;
-			height: 20px;
-			border: none;
-			border-bottom: 2px solid #91d5ff;
-			padding: 4px 0px;
-		}
-		
-		.addmember .invitedmembers .con .tel .tips {
-			height: 28px;
-			margin-top: 2px;
-			text-align: right;
-			font-size: 12px;
-		}
-		
-		.addmember .invitedmembers .con .tel .tips .mes {
-			display: none;
-		}
-		
-		.addmember .invitedmembers .con .ToBeUsers {
-			height: calc(100% - 60px);
-		}
-		
-		.addmember .invitedmembers .con .ToBeUsers .noData {
-			text-align: center;
-			padding-top: 80px;
-			color: #757575;
-			font-size: 12px;
-		}
-		
-		.addmember .invitedmembers .footer {
-			margin: 10px 40px;
-			text-align: right;
-		}
-		
-		.addmember .invitedmembers .footer .invite-links {
-			color: #108ee9;
-			float: left;
-		}
-		
-		.addmember .invitedmembers .footer .invite-links div {
-			display: inline-block;
-			height: 28px;
-			line-height: 28px;
-			font-size: 12px;
-			cursor: pointer;
-		}
-		
-		.addmember .invitedmembers .footer .invite-links .email {
-			margin-left: 10px;
-		}
-		
-		.addmember .invitedmembers .footer input[type=button] {
-			height: 28px;
-			line-height: 28px;
-			border-radius: 4px;
-		}
-		
-		.addmember .searchmembers {
-			float: right;
-			width: 126px;
-			margin-left: 8px;
-			height: 361px;
-			background: #fff;
-			border-radius: 5px;
-			box-shadow: 0 0 0 3px rgba(0, 0, 0, .05);
-			padding: 12px;
-		}
-		
-		.addmember .searchmembers .layui-input-inline .layui-input {
-			height: 28px;
-			padding: 4px 20px 4px 7px;
-			font-size: 12px;
-			border-radius: 4px;
-			transition: all .3s;
-		}
-		
-		.addmember .searchmembers .layui-input-inline i {
-			position: absolute;
-			top: calc(50% - 8px);
-			right: 5px;
-			cursor: pointer;
-			transition: all .3s;
-		}
-		
-		.addmember .searchmembers .teamUsers {
-			width: 100%;
-			height: calc(100% - 28px);
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/cooperation-personnel.css" />
 
 	<body>
 		<div class="layui-side layui-bg-black">
@@ -882,6 +561,36 @@
 				</ul>
 			</div>
 		</div>
+		<div class="create-roles">
+			<div class="title">
+				<div class="name">
+					邀请成员
+				</div>
+				<i class="layui-icon layui-icon-close"></i>
+			</div>
+			<div class="role-list">
+				<div class="role-item item-0">
+					<span>
+						地图角色
+					</span>
+				</div>
+				<div class="role-item item-1">
+					<span>
+						图层角色
+					</span>
+				</div>
+				<div class="role-item item-2">
+					<span>
+						子图层角色
+					</span>
+				</div>
+				<div class="role-item item-3">
+					<span>
+						业务流角色
+					</span>
+				</div>
+			</div>
+		</div>
 	</body>
 	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 	<script src="layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
@@ -898,25 +607,34 @@
 				$(this).find('span').text('展开');
 			}
 		})
-		$(".CooperationCom .Cooperation .part .people .Users .user-list .User .add").click(function() {
+		$('.CooperationCom .Cooperation .part .people .Users .user-list .User .add').click(function() {
 			$(".addmember").fadeIn();
 			$(".mask").fadeIn();
 		})
-		$(".addmember .invitedmembers .title i").click(function() {
+		$('.addmember .invitedmembers .title i').click(function() {
 			$(".addmember").fadeOut();
+			$(".mask").fadeOut();
+		})
+		$('.workzone .MapCooperation .CooperationCom .title .layui-btn').click(function() {
+			$(".create-roles").fadeIn();
+			$(".mask").fadeIn();
+		})
+		$('.create-roles .title i').click(function() {
+			$(".create-roles").fadeOut();
 			$(".mask").fadeOut();
 		})
 		$(function() {
 			num();
 		})
-		function num(){
+
+		function num() {
 			var num;
-			num = $(".CooperationCom .Cooperation .part .people .Users .user-list").map(function() {
+			num = $('.CooperationCom .Cooperation .part .people .Users .user-list').map(function() {
 				return $(this).find(".User").length - 1;
 			}).get().join(',');
 			var arr = num.split(',');
 			for(var i in arr) {
-				$(".workzone .MapCooperation .CooperationCom .Cooperation .part .title .num:eq("+i+")").text("( "+arr[i]+" )")
+				$('.workzone .MapCooperation .CooperationCom .Cooperation .part .title .num:eq(' + i + ')').text('(  ' + arr[i] + ' )')
 			}
 		}
 	</script>
