@@ -1,8 +1,14 @@
+.layui-anim-upbit{
+	font-size: 12px;
+	color: rgba(0, 0, 0, 0.65);
+	border-radius: 4px !important;
+}
 .workzone {
 	position: absolute;
 	left: 200px;
 	width: calc(100% - 200px);
 	height: 100%;
+	overflow: hidden;
 	background-color: #fafafa;
 }
 
@@ -36,18 +42,6 @@
 	transition: all .3s;
 }
 
-.workzone .MapCooperation .CooperationCom .title .layui-input:hover,
-.addmember .searchmembers .layui-input-inline .layui-input:hover {
-	border-color: #49a9ee !important;
-}
-
-.workzone .MapCooperation .CooperationCom .title .layui-input:focus,
-.addmember .searchmembers .layui-input-inline .layui-input:focus {
-	border-color: #49a9ee !important;
-	outline: 0;
-	box-shadow: 0 0 0 2px rgba(16, 142, 233, 0.2);
-}
-
 .workzone .MapCooperation .CooperationCom .title .layui-input-inline i {
 	position: absolute;
 	top: calc(50% - 8px);
@@ -56,8 +50,7 @@
 	transition: all .3s;
 }
 
-.workzone .MapCooperation .CooperationCom .title .layui-input-inline i:hover,
-.addmember .searchmembers .layui-input-inline i:hover {
+.layui-input-inline i:hover {
 	color: #108EE9;
 }
 
@@ -408,3 +401,66 @@
 .create-roles .role-list .item-3:hover {
 	background-image: url(../img/business_h.png);
 }
+.workzone .New-role{
+	padding: 14px 80px;
+    height: 100%;
+    overflow-y: auto;
+    color: #484848;
+    font-size: 14px;
+    display: none;
+}
+.workzone .New-role .header input[type=button]{
+	font-size: 12px ;
+	height: 28px !important;
+	line-height: 28px !important;
+}
+.workzone .New-role .role-name{
+	margin: 24px 0;
+	
+}
+.workzone .New-role .role-name input[type=text]{
+	width: 140px;
+	height: 30px;
+	font-size: 12px;
+	border-radius: 4px;
+	display: inline-block;
+	margin-left: 5px;
+}
+.workzone .New-role .authorization-content{
+	min-height: 340px;
+    margin-top: 16px;
+}
+.workzone .New-role .authorization-content .authorization-list-container{
+    position: relative;
+    padding: 16px;
+    background: #fff;
+    margin-top: 16px;
+    border: 1px solid #ededed;
+}
+.workzone .New-role .authorization-content .authorization-list-container .fun-list .layui-form-checkbox{
+	width: 19%;
+	margin-top: 25px;
+}
+.workzone .New-role .authorization-content .authorization-list-container .title{
+	margin: 12px 0;
+}
+.workzone .New-role .authorization-content .authorization-list-container .layui-form-select{
+	width: 125px;
+	height: 30px;
+	font-size: 12px;
+	position: relative;
+}
+.workzone .New-role .authorization-content .authorization-list-container .layui-form-select .layui-input{
+	height: 30px;
+	border-radius: 4px;
+}
+.workzone .New-role .footer{
+	margin-top: 50px;
+	text-align: right;
+}
+.workzone .New-role .footer input{
+	width: 88px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 4px;
+	}
