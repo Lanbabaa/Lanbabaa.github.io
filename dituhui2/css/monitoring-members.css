@@ -77,3 +77,158 @@
 	text-align: center;
 	margin-top: 100px;
 }
+.addmember {
+	position: absolute;
+	top: 15%;
+	left: calc(50% - 319px);
+	z-index: 999;
+/*	display: none;*/
+}
+
+.addmember .invitedmembers {
+	width: 480px;
+	height: 385px;
+	background-color: #fff;
+	box-shadow: 0 0 0 3px rgba(0, 0, 0, .05);
+	border-radius: 5px;
+	float: left;
+}
+
+.addmember .invitedmembers .title {
+	text-align: center;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	position: relative;
+	font-size: 18px;
+}
+
+.addmember .invitedmembers .title i {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 16px;
+}
+
+.addmember .invitedmembers .con {
+	padding: 0 45px;
+	height: calc(100% - 130px);
+}
+
+.addmember .invitedmembers .con .tel {}
+
+.addmember .invitedmembers .con .tel .phonenumber {
+	width: 100%;
+	height: 20px;
+	border: none;
+	border-bottom: 2px solid #91d5ff;
+	padding: 4px 10px;
+}
+
+.addmember .invitedmembers .con .tel .tips {
+	height: 28px;
+	margin-top: 2px;
+	text-align: right;
+	font-size: 12px;
+}
+
+.addmember .invitedmembers .con .tel .tips .mes {
+	display: none;
+}
+
+.addmember .invitedmembers .con .ToBeUsers {
+	height: calc(100% - 60px);
+}
+
+.addmember .invitedmembers .con .ToBeUsers .noData {
+	text-align: center;
+	padding-top: 80px;
+	color: #757575;
+	font-size: 12px;
+}
+
+.addmember .invitedmembers .footer {
+	margin: 10px 40px;
+	text-align: right;
+}
+
+.addmember .invitedmembers .footer .invite-links {
+	color: #108ee9;
+	float: left;
+}
+
+.addmember .invitedmembers .footer .invite-links div {
+	display: inline-block;
+	height: 28px;
+	line-height: 28px;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.addmember .invitedmembers .footer .invite-links .email {
+	margin-left: 10px;
+}
+
+.addmember .invitedmembers .footer input[type=button] {
+	height: 28px;
+	line-height: 28px;
+	border-radius: 4px;
+}
+
+.addmember .searchmembers {
+	float: right;
+	width: 126px;
+	margin-left: 8px;
+	height: 361px;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 0 3px rgba(0, 0, 0, .05);
+	padding: 12px;
+}
+
+.addmember .searchmembers .layui-input-inline .layui-input {
+	height: 28px;
+	padding: 4px 20px 4px 7px;
+	font-size: 12px;
+	border-radius: 4px;
+	transition:.3s;
+}
+
+.addmember .searchmembers .layui-input-inline i {
+	position: absolute;
+	top: calc(50% - 8px);
+	right: 5px;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.addmember .searchmembers .teamUsers {
+	width: 100%;
+	height: calc(100% - 28px);
+	overflow: auto;
+}
+.addmember .searchmembers .teamUsers .User{
+	margin-top: 16px;
+	height: 40px;
+	line-height: 40px;
+}
+.addmember .searchmembers .teamUsers .User .logo{
+	float: left;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.addmember .searchmembers .teamUsers .User .name{
+	padding-left: 10px;
+    float: left;
+    color: #757575;
+    width: 70px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
