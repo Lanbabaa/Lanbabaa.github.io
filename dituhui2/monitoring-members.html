@@ -213,7 +213,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="mask" style="display: block;"></div>
+		<div class="mask"></div>
 		<div class="addmember">
 			<div class="invitedmembers">
 				<div class="title">
@@ -263,7 +263,31 @@
 				<ul class="teamUsers scrollbar">
 					<div class="User" title="名称提示">
 						<div class="logo">
-							<img src="img/DefaultHead.png"/>
+							<img src="img/tx.jpg"/>
+						</div>
+						<div class="name">
+							用户昵称
+						</div>
+					</div>
+					<div class="User" title="名称提示">
+						<div class="logo">
+							<img src="img/tx.jpg"/>
+						</div>
+						<div class="name">
+							123456789
+						</div>
+					</div>
+					<div class="User" title="名称提示">
+						<div class="logo">
+							<img src="img/tx.jpg"/>
+						</div>
+						<div class="name">
+							来一个不一样的用户名称
+						</div>
+					</div>
+					<div class="User" title="名称提示">
+						<div class="logo">
+							<img src="img/tx.jpg"/>
 						</div>
 						<div class="name">
 							123456789
@@ -279,7 +303,7 @@
 					</div>
 					<div class="User" title="名称提示">
 						<div class="logo">
-							<img src="img/DefaultHead.png"/>
+							<img src="img/tx.jpg"/>
 						</div>
 						<div class="name">
 							123456789
@@ -295,7 +319,7 @@
 					</div>
 					<div class="User" title="名称提示">
 						<div class="logo">
-							<img src="img/DefaultHead.png"/>
+							<img src="img/tx.jpg"/>
 						</div>
 						<div class="name">
 							123456789
@@ -304,6 +328,14 @@
 					<div class="User" title="名称提示">
 						<div class="logo">
 							<img src="img/DefaultHead.png"/>
+						</div>
+						<div class="name">
+							123456789
+						</div>
+					</div>
+					<div class="User" title="名称提示">
+						<div class="logo">
+							<img src="img/tx.jpg"/>
 						</div>
 						<div class="name">
 							123456789
@@ -316,5 +348,14 @@
 	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 	<script src="layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
-
+	<script type="text/javascript">
+		$('.workzone .monitoring-content .add-box').click(function() {
+			$(".addmember").fadeIn();
+			$(".mask").fadeIn();
+		})
+		$('.addmember .invitedmembers .title i').click(function() {
+			$(".addmember").fadeOut(100);
+			$(".mask").fadeOut(100);
+		})
+	</script>
 </html>
