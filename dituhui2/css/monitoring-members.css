@@ -1,0 +1,79 @@
+.workzone {
+	width: calc(100% - 200px);
+	height: 100%;
+	position: absolute;
+	left: 200px;
+}
+
+.workzone .header {
+	min-width: 1000px;
+	padding: 24px 70px;
+}
+
+.workzone .header .layui-input-inline .layui-input {
+	width: 300px;
+	height: 30px;
+	padding-right: 26px;
+}
+
+.workzone .header .layui-input-inline i {
+	position: absolute;
+	top: calc(50% - 8px);
+	right: 10px;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+.workzone .header .layui-input-inline i:hover {
+	color: #108EE9;
+}
+
+.workzone .monitoring-content {
+	min-width: 1000px;
+	height: calc(100% - 130px);
+	position: relative;
+	padding: 22px 120px 26px 70px;
+	border-top: 4px solid #E1ECFF;
+}
+
+.workzone .monitoring-content .add-box {
+	position: absolute;
+	right: 25px;
+	top: -35px;
+	cursor: pointer;
+}
+
+.workzone .monitoring-content .content-header .people-num {
+	display: inline-block;
+	height: 32px;
+	line-height: 32px;
+	color: #C1C1C1;
+}
+
+.workzone .monitoring-content .content-header .btn-group {
+	float: right;
+}
+
+.workzone .monitoring-content .content-header .btn-group .layui-btn {
+	height: 32px;
+	line-height: 32px;
+	background: #66B7F0;
+	margin-left: 16px;
+}
+
+.workzone .monitoring-content .content-header .btn-group .off {
+	background: #F69BA6 !important;
+}
+
+.workzone .monitoring-content .user-container {
+	height: calc(100% - 42px);
+	min-height: 400px;
+	overflow: auto;
+	margin-top: 10px;
+	color: #484848;
+}
+
+.workzone .monitoring-content .user-container .no-members {
+	text-align: center;
+	margin-top: 100px;
+}
