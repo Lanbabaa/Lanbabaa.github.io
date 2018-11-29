@@ -179,7 +179,9 @@
 .workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .layui-form .layui-form-item {
 	width: 120px !important;
 }
-
+.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .layui-form .layui-form-item .layui-form-select .layui-edge{
+	display: none;
+}
 .workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .layui-form .layui-form-item .layui-input {
 	height: 30px;
 	border-radius: 4px;
