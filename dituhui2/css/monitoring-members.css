@@ -12,7 +12,9 @@ input::-webkit-input-placeholder {
 	position: absolute;
 	left: 200px;
 }
-
+.workzone-zoom{
+	width: calc(100% - 60px) !important;
+}
 .workzone .header {
 	min-width: 1000px;
 	padding: 24px 70px;

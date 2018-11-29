@@ -80,7 +80,7 @@
 		.StartAndEnd .Start .content .icon {
 			margin-top: 15px;
 			padding-left: 10px;
-			width: calc(100% - 10px) height: 25px;
+			width: calc(100% - 10px);
 			line-height: 25px;
 			border-radius: 15px;
 			color: #fff;
@@ -97,20 +97,26 @@
 			background-color: #d41b3c;
 			background-image: linear-gradient(90deg, #d41b3c 17%, #ebacb2 100%);
 		}
-		
-		.workzone .content input {
-			width: 80%;
+		.workzone .content .searchBox{
+			width: 100%;
+			margin: 10px 0;
+			position: relative;
+		}
+		.workzone .content .searchBox input {
 			height: 33px;
 			display: inline-block;
+			padding-right: 50px;
 			border-right: 0px;
 			border-radius: 4px 0px 0px 4px;
 			margin: 20px 0 10px 0;
+			font-size: 12px;
 		}
-		
-		.workzone .content span {
-			display: inline-block;
+		.workzone .content .searchBox span {
+			width: 100%;
+			position: absolute;
+			right: 0px;
 			padding: 0 5px;
-			width: calc(20% - 10px);
+			width: 30px;
 			height: 33px;
 			background-color: #40A9FF;
 			text-align: center;
@@ -357,13 +363,19 @@
 						<div class="icon icon1">
 							<i class="layui-icon layui-icon-location"></i> 起点
 						</div>
-						<input type="text" class="layui-input" placeholder="请搜索起点/地图上点选" /><span>地图点选</span>
+						<div class="searchBox">
+							<input type="text" class="layui-input" placeholder="请搜索起点/地图上点选" /><span>地图点选</span>
+						</div>
+						
 					</div>
 					<div class="content">
 						<div class="icon icon2">
 							<i class="layui-icon layui-icon-location"></i> 终点
 						</div>
-						<input type="text" class="layui-input" placeholder="搜索网点/图层/订单" /><span>批量导入</span>
+						<div class="searchBox">
+							<input type="text" class="layui-input" placeholder="搜索网点/图层/订单" /><span>批量导入</span>
+						</div>
+						
 					</div>
 					<div class="layui-input-block">
 						<input type="radio" name="route" value="单路线规划" title="单路线规划" checked lay-filter="aaa">

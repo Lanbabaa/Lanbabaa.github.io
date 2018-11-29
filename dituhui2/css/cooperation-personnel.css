@@ -11,7 +11,9 @@
 	overflow: hidden;
 	background-color: #fafafa;
 }
-
+.workzone-zoom{
+	width: calc(100% - 60px) !important;
+}
 .workzone .MapCooperation {
 	width: calc(100% - 80px);
 	padding-left: 80px;
@@ -21,7 +23,6 @@
 .workzone .MapCooperation .CooperationCom {
 	width: 100%;
 	height: 100%;
-	overflow: auto;
 }
 
 .workzone .MapCooperation .CooperationCom .title {
@@ -64,6 +65,7 @@
 .workzone .MapCooperation .CooperationCom .Cooperation {
 	padding-right: 80px;
 	height: calc(100% - 70px);
+	overflow: auto;
 }
 
 .workzone .MapCooperation .CooperationCom .Cooperation .part {
