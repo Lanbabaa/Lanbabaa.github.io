@@ -4,163 +4,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="css/nav.css" />
+		<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/routing.css" />
 	</head>
-	<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
-	<link rel="stylesheet" type="text/css" href="css/nav.css" />
-	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css" />
-	<style type="text/css">
-		.workzone {
-			width: 279px;
-			height: 100%;
-			background: #fff;
-			position: absolute;
-			left: 200px;
-			border-right: 1px solid #ddd;
-		}
-		
-		.title {
-			width: 100%;
-			height: 40px;
-			line-height: 40px;
-			font-size: 16px;
-			padding-left: 15px;
-		}
-		
-		.StartAndEnd {
-			width: 250px;
-			border: 2px solid #e5e5e5;
-			margin: auto;
-			margin-top: 20px;
-			text-align: center;
-			padding-bottom: 20px;
-		}
-		
-		.StartAndEnd .ant-tabs-nav-scroll {
-			width: 80%;
-			margin: auto;
-			border-bottom: 2px solid #e5e5e5;
-		}
-		
-		.StartAndEnd .ant-tabs-nav-scroll .ant-tabs-nav {
-			width: 60%;
-			height: 45px;
-			text-align: center;
-			margin: auto;
-		}
-		
-		.StartAndEnd .ant-tabs-nav-scroll .ant-tabs-nav div {
-			display: inline-block;
-			width: 20px;
-			height: 20px;
-			padding: 10px 15px;
-			cursor: pointer;
-			position: relative;
-			border-bottom: 2px solid #108ee9;
-		}
-		
-		.carorbike img {
-			filter: contrast(10%);
-		}
-		
-		.carorbike {
-			border-bottom: 0px solid #108ee9 !important;
-		}
-		
-		.StartAndEnd .ant-tabs-nav-scroll .ant-tabs-nav img {
-			width: 100%;
-			height: 20px;
-		}
-		
-		.StartAndEnd .Start .content {
-			width: 90%;
-			margin: auto;
-			margin-bottom: 15px;
-		}
-		
-		.StartAndEnd .Start .content .icon {
-			margin-top: 15px;
-			padding-left: 10px;
-			width: calc(100% - 10px);
-			line-height: 25px;
-			border-radius: 15px;
-			color: #fff;
-			font-size: 12px;
-			text-align: left;
-		}
-		
-		.StartAndEnd .Start .content .icon1 {
-			background-color: #2fc82d;
-			background-image: linear-gradient(90deg, #2fc82d 17%, #d8fbd9 100%);
-		}
-		
-		.StartAndEnd .Start .content .icon2 {
-			background-color: #d41b3c;
-			background-image: linear-gradient(90deg, #d41b3c 17%, #ebacb2 100%);
-		}
-		.workzone .content .searchBox{
-			width: 100%;
-			margin: 10px 0;
-			position: relative;
-		}
-		.workzone .content .searchBox input {
-			height: 33px;
-			display: inline-block;
-			padding-right: 50px;
-			border-right: 0px;
-			border-radius: 4px 0px 0px 4px;
-			margin: 20px 0 10px 0;
-			font-size: 12px;
-		}
-		.workzone .content .searchBox span {
-			width: 100%;
-			position: absolute;
-			right: 0px;
-			padding: 0 5px;
-			width: 30px;
-			height: 33px;
-			background-color: #40A9FF;
-			text-align: center;
-			vertical-align: top;
-			border-radius: 0 4px 4px 0;
-			cursor: pointer;
-			margin: 20px 0 10px 0;
-			font-size: 12px;
-			color: #fff;
-		}
-		
-		.layui-input-block {
-			margin: -15px 0 10px 0;
-			text-align: center;
-		}
-		
-		.layui-form-radio * {
-			font-size: 12px;
-		}
-		
-		.layui-form-radio>i {
-			font-size: 15px;
-		}
-		
-		.StartAndEnd .layui-btn[type="submit"] {
-			width: 70%;
-			height: 30px;
-			line-height: 30px;
-			background-color: #1890FF;
-			border-radius: 4px;
-		}
-		
-		.number {
-			margin: 15px 0;
-			display: none;
-		}
-		
-		.number input {
-			display: inline-block;
-			width: 60%;
-			height: 30px;
-			font-size: 12px;
-		}
-	</style>
 
 	<body>
 		<div class="all-hide" title="收起左侧面板">
@@ -251,7 +99,7 @@
 				<div class="Bottom">
 					<div class="MapList">
 						<div class="btn">
-							<img src="img/side-bar-icon9.png"/>
+							<img src="img/side-bar-icon9.png" />
 							<span>智能预警智能预警智能预警智能预警智能预警智能预警</span>
 						</div>
 						<i class="layui-icon layui-icon-down"></i>
@@ -345,7 +193,7 @@
 		</div>
 		<div class="workzone">
 			<div class="title">
-				<img src="img/Icon3.png"/> 全部路线
+				<img src="img/Icon3.png" /> 全部路线
 			</div>
 			<div class="StartAndEnd layui-form">
 				<div class="ant-tabs-nav-scroll">
@@ -366,7 +214,7 @@
 						<div class="searchBox">
 							<input type="text" class="layui-input" placeholder="请搜索起点/地图上点选" /><span>地图点选</span>
 						</div>
-						
+
 					</div>
 					<div class="content">
 						<div class="icon icon2">
@@ -375,7 +223,7 @@
 						<div class="searchBox">
 							<input type="text" class="layui-input" placeholder="搜索网点/图层/订单" /><span>批量导入</span>
 						</div>
-						
+
 					</div>
 					<div class="layui-input-block">
 						<input type="radio" name="route" value="单路线规划" title="单路线规划" checked lay-filter="aaa">
@@ -391,27 +239,11 @@
 		</div>
 		<div class="map">
 			<iframe src="test.html" frameborder="0"></iframe>
-		</div </body>
+		</div>
 		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 		<script src="layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
-		<script type="text/javascript">
-			$(".ant-tabs-nav div").click(function() {
-				$(this).removeClass("carorbike")
-				$(this).siblings().addClass("carorbike");
-			})
-			layui.use('form', function() {
-				var form = layui.form;
-				form.on('radio(aaa)', function(data) {
-
-					if($('.layui-input-block input[name="route"]:checked ').val() == "多路线规划") {
-						$(".number").css("display", "block");
-					} else {
-						$(".number").css("display", "none");
-					}
-					form.render();
-				});
-			});
-		</script>
+		<script src="js/routing.js" type="text/javascript" charset="utf-8"></script>
+	</body>
 
 </html>

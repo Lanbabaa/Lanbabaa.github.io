@@ -4,11 +4,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/nav.css" />
+		<link rel="stylesheet" type="text/css" href="css/cooperation-personnel.css" />
 	</head>
-	<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
-	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/nav.css" />
-	<link rel="stylesheet" type="text/css" href="css/cooperation-personnel.css" />
 
 	<body>
 		<div class="layui-side layui-bg-black">
@@ -961,7 +961,7 @@
 					</div>
 				</div>
 				<div class="footer">
-					<input type="button" name="" id="" value="完成创建" class="layui-btn layui-btn-normal"/>
+					<input type="button" name="" id="" value="完成创建" class="layui-btn layui-btn-normal" />
 				</div>
 			</div>
 			<div class="Layer-role New-role">
@@ -994,7 +994,7 @@
 					</div>
 				</div>
 				<div class="footer">
-					<input type="button" name="" id="" value="完成创建" class="layui-btn layui-btn-normal"/>
+					<input type="button" name="" id="" value="完成创建" class="layui-btn layui-btn-normal" />
 				</div>
 			</div>
 			<div class="Sublayer-role New-role">
@@ -1023,7 +1023,7 @@
 					</div>
 				</div>
 				<div class="footer">
-					<input type="button" name="" id="" value="完成创建" class="layui-btn layui-btn-normal"/>
+					<input type="button" name="" id="" value="完成创建" class="layui-btn layui-btn-normal" />
 				</div>
 			</div>
 			<div class="Business-flow-role New-role">
@@ -1046,7 +1046,7 @@
 					</div>
 				</div>
 				<div class="footer">
-					<input type="button" name="" id="" value="完成创建" class="layui-btn layui-btn-normal"/>
+					<input type="button" name="" id="" value="完成创建" class="layui-btn layui-btn-normal" />
 				</div>
 			</div>
 		</div>
@@ -1131,72 +1131,10 @@
 				</div>
 			</div>
 		</div>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cooperation-personnel.js" type="text/javascript" charset="utf-8"></script>
 	</body>
-	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
-	<script src="layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript">
-		$('.CooperationCom .Cooperation .part .people .Users .all').click(function() {
-			if($(this).siblings(".user-list").hasClass('min')) {
-				$(this).siblings(".user-list").removeClass('min');
-				$(this).find('i').addClass('fa-caret-up');
-				$(this).find('span').text('收起');
-			} else {
-				$(this).siblings(".user-list").addClass('min');
-				$(this).find('i').removeClass('fa-caret-up');
-				$(this).find('span').text('展开');
-			}
-		})
-		$('.CooperationCom .Cooperation .part .people .Users .user-list .User .add').click(function() {
-			$(".addmember").fadeIn();
-			$(".mask").fadeIn();
-		})
-		$('.addmember .invitedmembers .title i').click(function() {
-			$(".addmember").fadeOut(100);
-			$(".mask").fadeOut(100);
-		})
-		$('.workzone .MapCooperation .CooperationCom .title .layui-btn').click(function() {
-			$(".create-roles").fadeIn();
-			$(".mask").fadeIn();
-		})
-		$('.create-roles .title i').click(function() {
-			$(".create-roles").fadeOut(100);
-			$(".mask").fadeOut(100);
-		})
-		$(function() {
-			num();
-		})
-
-		function num() {
-			var num;
-			num = $('.CooperationCom .Cooperation .part .people .Users .user-list').map(function() {
-				return $(this).find(".User").length - 1;
-			}).get().join(',');
-			var arr = num.split(',');
-			for(var i in arr) {
-				$('.workzone .MapCooperation .CooperationCom .Cooperation .part .title .num:eq(' + i + ')').text('(  ' + arr[i] + ' )')
-			}
-		}
-		$('.create-roles .role-list .role-item').click(function() {
-			$('.create-roles').css('display', 'none');
-			$('.mask').css('display', 'none');
-		})
-		$('.create-roles .role-list .item-0').click(function() {
-			$('.workzone .Map-role').css('display', 'block').siblings().css('display', 'none');
-		})
-		$('.create-roles .role-list .item-1').click(function() {
-			$('.workzone .Layer-role').css('display', 'block').siblings().css('display', 'none');
-		})
-		$('.create-roles .role-list .item-2').click(function() {
-			$('.workzone .Sublayer-role').css('display', 'block').siblings().css('display', 'none');
-		})
-		$('.create-roles .role-list .item-3').click(function() {
-			$('.workzone .Business-flow-role').css('display', 'block').siblings().css('display', 'none');
-		})
-		$('.workzone .New-role .header input[type=button]').click(function() {
-			$('.New-role').css('display', 'none').siblings().css('display', 'block');
-		})
-
-	</script>
 
 </html>

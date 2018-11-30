@@ -1,0 +1,89 @@
+.workzone {
+			width: 279px;
+			height: 100%;
+			background: #fff;
+			position: absolute;
+			left: 200px;
+			border-right: 1px solid #ddd;
+		}
+		
+		.workzone .title .tips {
+			position: absolute;
+			top: 5px;
+			left: 130px;
+			height: 35px;
+			line-height: 35px;
+			background-color: #fff;
+			box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+			border-radius: 4px;
+			z-index: 991;
+			padding: 0 8px;
+			font-size: 12px;
+			color: rgba(0, 0, 0, 0.65);
+			white-space: nowrap;
+			display: none;
+		}
+		
+		.workzone .title .tips .triangle {
+			border: 8px solid;
+			border-color: transparent #fff transparent transparent;
+			position: absolute;
+			left: -14px;
+			top: calc(50% - 10px);
+		}
+		
+		.workzone .title .name i:hover+.tips {
+			display: block;
+		}
+		
+		.workzone .title .name {
+			width: 100%;
+			height: 50px;
+			line-height: 50px;
+			font-size: 16px;
+		}
+		
+		.workzone .title .name img {
+			color: #212121;
+			font-size: 18px;
+			margin: 0 5px 0 10px;
+		}
+		
+		.workzone .title .name .fa-info-circle {
+			font-size: 14px;
+			margin: 0 5px;
+			color: #19ac9e;
+			border-radius: 14px;
+		}
+		
+		.workzone .content .part {
+			width: 100%;
+			text-align: left;
+			padding-left: 10%;
+		}
+		
+		.workzone .content .part .title {
+			width: 100%;
+			height: 45px;
+			color: #666;
+			line-height: 45px;
+		}
+		
+		.workzone .content .part .layui-form {
+			width: 80%;
+		}
+		
+		.workzone .content .part .layui-form .select {
+			border-radius: 15px;
+		}
+		
+		.workzone .planning {
+			width: 100%;
+			height: 90px;
+			line-height: 90px;
+			text-align: center;
+		}
+		
+		.workzone .planning .layui-btn {
+			width: 120px;
+		}

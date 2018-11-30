@@ -1,0 +1,390 @@
+a {
+	color: #108EE9;
+	cursor: pointer;
+}
+
+.workzone {
+	width: 279px;
+	height: 100%;
+	background: #fff;
+	position: absolute;
+	left: 200px;
+	border-right: 1px solid #ddd;
+}
+
+.workzone .caption {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	border-bottom: 1px solid #ddd;
+}
+
+.workzone .caption .name {
+	display: inline-block;
+	margin-left: 10%;
+	height: 20px;
+	position: absolute;
+	top: 10px;
+	border-left: 5px solid #108EE9;
+}
+
+.workzone .caption span {
+	margin-left: calc(10% + 15px);
+}
+
+.workzone .content {
+	padding-left: 10%;
+}
+
+.workzone .content .add {
+	margin-top: 20px;
+	color: #999;
+	text-align: center;
+	width: 80%;
+	height: 45px;
+	line-height: 45px;
+	font-size: 15px;
+	border-radius: 4px;
+	border: 1px dashed #C1C1C1;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.workzone .content .add:hover {
+	color: #108ee9;
+	border: 1px dashed #108ee9;
+}
+
+.workzone .content .add i {
+	font-size: 24px;
+	margin-right: 5px;
+}
+
+.workzone .content .add i,
+.workzone .content .add span {
+	vertical-align: middle;
+}
+
+.workzone .condition {
+	width: 100%;
+	padding-left: 10%;
+	height: 620px;
+	padding: 20px 0;
+}
+
+.content-container {
+	width: calc(100% - 480px);
+	min-width: 700px;
+	height: 100%;
+	position: absolute;
+	left: 480px;
+	background: #fafafa;
+	text-align: center;
+}
+
+.content-container-zoom {
+	width: calc(100% - 320px);
+	left: 320px;
+}
+
+.content-container .empty-container {
+	width: 265px;
+	position: absolute;
+	left: calc(50% - 132px);
+	top: calc(50% - 135px);
+}
+
+.content-container .empty-container a {
+	color: #1890FF;
+}
+
+.content-container .templet {
+	width: 94%;
+	height: 94%;
+	margin: auto;
+	margin-top: 3%;
+	text-align: left;
+	display: none;
+}
+
+.content-container .templet .header {
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+}
+
+.content-container .templet .header .title i {
+	font-size: 18px;
+	margin-left: 5px;
+	cursor: pointer;
+	border-bottom: 1px solid rgba(0, 0, 0, .6);
+}
+
+.templet .business-phase {
+	height: 80px;
+	background: #fff;
+	border: 1px solid #ededed;
+	border-radius: 4px;
+	margin-top: 15px;
+	padding: 10px 15px;
+}
+
+.templet .business-phase .title {
+	color: #c1c1c1;
+	font-size: 14px;
+}
+
+.templet .business-phase .phase {
+	height: 40px;
+	line-height: 40px;
+	margin-top: 10px;
+	padding: 5px;
+}
+
+.templet .business-phase .phase #lists li i {
+	float: right;
+	display: none;
+}
+
+.templet .business-phase .phase #lists li:hover i {
+	display: inline-block;
+	padding-right: 4px;
+}
+
+.templet .business-phase .phase #lists li {
+	float: left;
+	margin-right: 10px;
+	height: 30px;
+	min-width: 60px;
+	text-align: center;
+	line-height: 30px;
+	background: #fff;
+	color: #1B94FF;
+	border: 1px solid #1B94FF;
+	border-radius: 15px;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.templet .business-phase .phase #lists li:hover {
+	padding-left: 10px;
+}
+
+.templet .business-phase .phase .active {
+	background-color: #1B94FF !important;
+	color: #fff !important;
+}
+
+.templet .business-phase .phase .add-list {
+	float: left;
+	width: 20px !important;
+	height: 20px !important;
+	line-height: 20px;
+	border-radius: 15px;
+	padding: 5px 5px !important;
+	text-align: center;
+	background-color: #1B94FF;
+	color: #fff;
+	cursor: pointer;
+}
+
+.templet .content-phase {
+	padding-bottom: 10px;
+	width: 100%;
+	margin-top: 15px;
+	background: #fff;
+	border: 1px solid #ededed;
+	border-radius: 4px;
+}
+
+.templet .content-phase .title {
+	height: 40px;
+	padding-left: 15px;
+	line-height: 40px;
+	color: #c1c1c1;
+	font-size: 14px;
+	border-bottom: 1px solid #ededed;
+	box-sizing: border-box;
+}
+
+.templet .content-phase .content-list {
+	padding: 10px 20px;
+	margin-top: 15px;
+}
+
+.templet .content-phase .content-list .name {
+	margin-right: 16px;
+	color: #030303;
+}
+
+.templet .content-phase .content-list input[type=text] {
+	width: 220px;
+	height: 30px;
+	display: inline-block;
+}
+
+.templet .content-phase .content-list .layui-form-radio {
+	margin-top: 0;
+}
+
+.templet .content-phase .content-list .layui-form-radio>i {
+	font-size: 18px;
+	color: #108ee9;
+}
+
+.templet .content-phase .content-list .layui-btn {
+	width: 80px;
+	height: 28px;
+	line-height: 28px;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid #108ee9;
+	color: #108ee9;
+	border-color: #108ee9;
+	padding: 0;
+	font-size: 12px;
+	border-radius: 4px;
+}
+
+.templet .content-phase .content-list .nothing {
+	text-align: center;
+	padding: 20px 0;
+	border-bottom: 1px solid #e9e9e9;
+	color: rgba(0, 0, 0, 0.43);
+}
+
+.layui-table {
+	color: #000;
+}
+
+.templet .btn {
+	position: absolute;
+	right: 3%;
+}
+
+.templet .btn .layui-btn {
+	padding: 0 30px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.add-font-setting {
+	width: 420px;
+	height: 260px;
+	background: #fff;
+	position: absolute;
+	top: 20%;
+	left: 30%;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	z-index: 999;
+	display: none;
+}
+
+.add-font-setting .title {
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.add-font-setting .title span {
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.add-font-setting .title i {
+	position: absolute;
+	right: 15px;
+	top: 5px;
+	cursor: pointer;
+}
+
+.add-font-setting .content {
+	width: 300px;
+	padding: 20px 0 0 0;
+	margin: auto;
+}
+
+.add-font-setting .content .content-list {
+	margin-bottom: 10px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.add-font-setting .content .content-list .name {
+	margin-right: 16px;
+	color: #030303;
+	display: inline-block;
+	width: 60px;
+	text-align-last: justify;
+}
+
+.add-font-setting .content .content-list input[type=text] {
+	width: 210px;
+	display: inline-block;
+	border-radius: 4px;
+}
+
+.add-font-setting .content .content-list .layui-form-select {
+	width: 210px;
+	display: inline-block;
+}
+
+.add-font-setting .content .content-list .layui-form-radio * {
+	font-size: 14px;
+}
+
+.add-font-setting .content .content-list .layui-form-radio {
+	margin: 0;
+}
+
+.add-font-setting .content .content-list .layui-form-radio .layui-icon {
+	font-size: 18px;
+}
+
+.add-font-setting .footer {
+	height: 59px;
+	line-height: 59px;
+	border-top: 1px solid #ededed;
+	text-align: center;
+}
+
+.add-font-setting .footer .layui-form-checkbox[lay-skin=primary] i {
+	width: 14px;
+	height: 14px;
+	font-size: 12px;
+}
+
+.add-font-setting .footer .layui-form-checkbox[lay-skin=primary] span {
+	font-size: 12px;
+}
+
+.add-font-setting .footer .layui-btn {
+	width: 90px;
+	height: 32px;
+	line-height: 32px;
+}
+
+tbody .edit {
+	margin-right: 15px;
+}
+
+.header .edit-title {
+	display: none;
+}
+
+.header .edit-title input {
+	width: 150px;
+	height: 30px;
+	border-radius: 4px;
+	display: inline-block;
+	font-size: 14px;
+}
+
+.header .edit-title input[type=button] {
+	width: 50px;
+	padding: 0;
+	height: 30px;
+	line-height: 30px;
+}

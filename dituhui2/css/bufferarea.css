@@ -1,0 +1,53 @@
+.workzone {
+	width: 279px;
+	height: 100%;
+	background: #fff;
+	position: absolute;
+	left: 200px;
+	border-right: 1px solid #ddd;
+}
+
+.workzone .title .name {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+}
+
+.workzone .title .name .layui-icon-template-1 {
+	color: #212121;
+	font-size: 18px;
+	margin: 0 5px 0 10px;
+}
+
+.workzone .content .part {
+	width: 100%;
+	text-align: left;
+	padding-left: 10%;
+}
+
+.workzone .content .part .title {
+	width: 100%;
+	height: 45px;
+	color: #666;
+	line-height: 45px;
+}
+
+.workzone .content .part .layui-form {
+	width: 80%;
+}
+
+.workzone .content .part .layui-form .select {
+	border-radius: 15px;
+}
+
+.workzone .generate {
+	width: 100%;
+	height: 90px;
+	line-height: 90px;
+	text-align: center;
+}
+
+.workzone .generate .layui-btn {
+	width: 120px;
+}

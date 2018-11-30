@@ -4,101 +4,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="css/nav.css" />
+		<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css" />
 	</head>
-	<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
-	<link rel="stylesheet" type="text/css" href="css/nav.css" />
-	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css" />
-	<style type="text/css">
-		.workzone {
-			width: 279px;
-			height: 100%;
-			background: #fff;
-			position: absolute;
-			left: 200px;
-			border-right: 1px solid #ddd;
-		}
-		
-		.workzone .title .tips {
-			position: absolute;
-			top: 5px;
-			left: 130px;
-			height: 35px;
-			line-height: 35px;
-			background-color: #fff;
-			box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
-			border-radius: 4px;
-			z-index: 991;
-			padding: 0 8px;
-			font-size: 12px;
-			color: rgba(0, 0, 0, 0.65);
-			white-space: nowrap;
-			display: none;
-		}
-		
-		.workzone .title .tips .triangle {
-			border: 8px solid;
-			border-color: transparent #fff transparent transparent;
-			position: absolute;
-			left: -14px;
-			top: calc(50% - 10px);
-		}
-		
-		.workzone .title .name i:hover+.tips {
-			display: block;
-		}
-		
-		.workzone .title .name {
-			width: 100%;
-			height: 50px;
-			line-height: 50px;
-			font-size: 16px;
-		}
-		
-		.workzone .title .name img {
-			color: #212121;
-			font-size: 18px;
-			margin: 0 5px 0 10px;
-		}
-		
-		.workzone .title .name .fa-info-circle {
-			font-size: 14px;
-			margin: 0 5px;
-			color: #19ac9e;
-			border-radius: 14px;
-		}
-		
-		.workzone .content .part {
-			width: 100%;
-			text-align: left;
-			padding-left: 10%;
-		}
-		
-		.workzone .content .part .title {
-			width: 100%;
-			height: 45px;
-			color: #666;
-			line-height: 45px;
-		}
-		
-		.workzone .content .part .layui-form {
-			width: 80%;
-		}
-		
-		.workzone .content .part .layui-form .select {
-			border-radius: 15px;
-		}
-		
-		.workzone .planning {
-			width: 100%;
-			height: 90px;
-			line-height: 90px;
-			text-align: center;
-		}
-		
-		.workzone .planning .layui-btn {
-			width: 120px;
-		}
-	</style>
 
 	<body>
 		<div class="all-hide" title="收起左侧面板">
@@ -189,7 +98,7 @@
 				<div class="Bottom">
 					<div class="MapList">
 						<div class="btn">
-							<img src="img/side-bar-icon9.png"/>
+							<img src="img/side-bar-icon9.png" />
 							<span>智能预警智能预警智能预警智能预警智能预警智能预警</span>
 						</div>
 						<i class="layui-icon layui-icon-down"></i>
@@ -338,29 +247,11 @@
 		<div class="map">
 			<iframe src="test.html" frameborder="0"></iframe>
 		</div>
-
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/pointStatistics.js" type="text/javascript" charset="utf-8"></script>
 	</body>
-	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
-	<script src="layui/layui.js" type="text/javascript" charset="utf-8"></script>
-	<script src="layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			var form = layui.form,
-				layer = layui.layer;
-			var value = "";
-			// select下拉框选中触发事件
-			form.on("select(diantuceng)", function(data) {
-				value = data.value // 获取选中的值
-				if(value != "") {
-					$("select[name='city1']").attr('disabled', false);
-					form.render("select");
-				} else {
-					$("select[name='city1']").attr('disabled', true);
-					form.render("select");
-				}
-			});
-		});
-	</script>
 
 </html>
