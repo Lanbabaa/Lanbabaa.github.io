@@ -10,6 +10,7 @@
 	height: 100%;
 	overflow: hidden;
 	background-color: #fafafa;
+	border: 0px !important;
 }
 .workzone-zoom{
 	width: calc(100% - 60px) !important;

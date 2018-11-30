@@ -11,6 +11,7 @@ input::-webkit-input-placeholder {
 	height: 100%;
 	position: absolute;
 	left: 200px;
+	border: 0px !important;
 }
 .workzone-zoom{
 	width: calc(100% - 60px) !important;
