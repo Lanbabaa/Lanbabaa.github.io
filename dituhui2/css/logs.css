@@ -1,7 +1,9 @@
 .workzone {
-	min-width: 1000px;
+	width: calc(100% - 200px) !important;
+	min-width: 1000px !important;
 	position: absolute;
 	left: 200px;
+	border: 0px solid #000 !important;
 }
 
 .workzone .head {

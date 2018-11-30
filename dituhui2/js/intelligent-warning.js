@@ -23,6 +23,10 @@ layui.use('colorpicker', function() {
 });
 
 function showorclose() {
-	$(".add-condition").fadeToggle(200);
-	$(".mask").toggle();
+	if ($('.add-condition').css("display")=="none") {
+		$(".add-condition").fadeToggle(200);
+	} else{
+		$(".add-condition").fadeToggle(0);
+	}
+	$(".mask").toggle(0);
 }

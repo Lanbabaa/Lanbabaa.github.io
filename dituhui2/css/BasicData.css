@@ -52,15 +52,6 @@
 		background-color: rgba(30, 144, 255, .1);
 	}
 	
-	.workzone {
-		width: 279px;
-		height: 100%;
-		overflow: auto;
-		position: absolute;
-		left: 200px;
-		background: #fff;
-		border-right:1px solid #ddd;
-	}
 	
 	.workzone .layui-card {
 		height: 100%;
@@ -122,13 +113,6 @@
 		position: absolute;
 		left: 480px;
 	}
-	
-	iframe {
-		width: 100%;
-		height: 100%;
-		border: 0px;
-	}
-	
 	.Show {
 		width: 40px;
 		height: 80px;
@@ -318,9 +302,7 @@
 		left: calc(50% - 285px);
 		left: -moz-calc(50% - 285px);
 		left: -webkit-calc(50% - 285px);
-		top: calc(50% - 175px);
-		top: -moz-calc(50% - 175px);
-		top: -webkit-calc(50% - 175px);
+		top: 20%;
 		border-radius: 5px;
 		display: none;
 	}
@@ -368,7 +350,9 @@
 	.addLayer .layui-card-body .btn input {
 		width: 100px;
 	}
-	
+	.layui-btn-primary:hover{
+		border-color: #1E9FFF;
+	}
 	.uppicture {
 		width: 570px;
 		height: 350px;
@@ -378,9 +362,7 @@
 		left: calc(50% - 285px);
 		left: -moz-calc(50% - 285px);
 		left: -webkit-calc(50% - 285px);
-		top: calc(50% - 175px);
-		top: -moz-calc(50% - 175px);
-		top: -webkit-calc(50% - 175px);
+		top: 20%;
 		border-radius: 5px;
 		display: none;
 	}
@@ -457,9 +439,7 @@
 		left: calc(50% - 285px);
 		left: -moz-calc(50% - 285px);
 		left: -webkit-calc(50% - 285px);
-		top: calc(50% - 175px);
-		top: -moz-calc(50% - 175px);
-		top: -webkit-calc(50% - 175px);
+		top: 20%;
 		border-radius: 5px;
 		display: none;
 	}
@@ -531,9 +511,7 @@
 		left: calc(50% - 285px);
 		left: -moz-calc(50% - 285px);
 		left: -webkit-calc(50% - 285px);
-		top: calc(50% - 175px);
-		top: -moz-calc(50% - 175px);
-		top: -webkit-calc(50% - 175px);
+		top:20%;
 		border-radius: 5px;
 		display: none;
 	}

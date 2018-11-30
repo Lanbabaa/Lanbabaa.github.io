@@ -26,19 +26,24 @@ ul::-webkit-scrollbar-track {
 	border-radius: 0;
 	background: rgba(0, 0, 0, 0);
 }
-.layui-icon-close{
-	cursor: pointer;	
+
+.layui-icon-close {
+	cursor: pointer;
 }
+
 hr {
 	margin-bottom: 0px;
 }
-.layui-input{	
+
+.layui-input {
 	border-radius: 4px;
 }
-.layui-btn{
+
+.layui-btn {
 	border-radius: 4px;
 	background-color: #1E9FFF;
 }
+
 .layui-input:hover {
 	border-color: #49a9ee !important;
 }
@@ -443,6 +448,16 @@ hr {
 	padding-right: 10px;
 }
 
+.workzone {
+	width: 279px;
+	height: 100%;
+	overflow: auto;
+	position: absolute;
+	left: 200px;
+	background: #fff;
+	border-right: 1px solid #ddd;
+}
+
 .workzone-zoom {
 	left: 60px !important;
 }
@@ -471,7 +486,7 @@ iframe {
 	left: 340px !important;
 }
 
-.mask{
+.mask {
 	width: 100%;
 	height: 100%;
 	background-color: rgba(55, 55, 55, 0.6);
