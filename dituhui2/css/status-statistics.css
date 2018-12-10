@@ -1,0 +1,8 @@
+.workzone{
+	width: calc(100% - 200px);
+	height: 100%;
+	border: 0px;
+}
+.workzone-zoom{
+	width: calc(100% - 60px) !important;
+}

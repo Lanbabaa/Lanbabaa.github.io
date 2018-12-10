@@ -1915,7 +1915,7 @@ hr {
 }
 
 .layui-btn-radius {
-	border-radius: 100px
+	border-radius: 100px !important;
 }
 
 .layui-btn .layui-icon {
@@ -1945,7 +1945,7 @@ hr {
 }
 
 .layui-btn-danger {
-	background-color: #FF5722
+	background-color: #FF5722 !important;
 }
 
 .layui-btn-disabled,

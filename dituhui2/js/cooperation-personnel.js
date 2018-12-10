@@ -39,6 +39,9 @@ function num() {
 		$('.workzone .MapCooperation .CooperationCom .Cooperation .part .title .num:eq(' + i + ')').text('(  ' + arr[i] + ' )')
 	}
 }
+$('.addmember .invitedmembers .footer input[type=button]').click(function() {
+	num();
+})
 $('.create-roles .role-list .role-item').click(function() {
 	$('.create-roles').css('display', 'none');
 	$('.mask').css('display', 'none');
@@ -58,3 +61,78 @@ $('.create-roles .role-list .item-3').click(function() {
 $('.workzone .New-role .header input[type=button]').click(function() {
 	$('.New-role').css('display', 'none').siblings().css('display', 'block');
 })
+$(function() {
+	//hover()方法
+	var i = 0;
+	$('.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User').hover(function() {
+		var height = $(this).offset().top;
+		if($(this).find('.add').length == 0) {
+			if(height <= 650) {
+				$(this).append('<div class="user-detail">' +
+					'<div class="triangle"></div>' +
+					'<div class="header">' +
+					'<div class="user-photo"></div>' +
+
+					'<div class="picText">' +
+					'<div class="I">' + name + '</div>' +
+					'</div>' +
+					'</div>' +
+					'	<div class="item">' +
+					'<div class="I">' +
+					'	<span>角色</span>' +
+					'</div>' +
+					'</div>' +
+					'<div class="item">' +
+					'	<div class="I">' +
+					'	<span>性别</span>' +
+					'	</div>' +
+					'</div>' +
+					'<div class="item">' +
+					'<div class="I">' +
+					'	<span>电话</span>' +
+					'</div>' +
+					'</div>' +
+					'	<div class="item">' +
+					'<div class="I">' +
+					'<span>日期</span>' +
+					'</div>' +
+					'	</div>' +
+					'</div>')
+			} else {
+				$(this).append('<div class="user-detail user-detail2">' +
+					'<div class="triangle triangle2"></div>' +
+					'<div class="header">' +
+					'<div class="user-photo"></div>' +
+
+					'<div class="picText">' +
+					'<div class="I">' + name + '</div>' +
+					'</div>' +
+					'</div>' +
+					'	<div class="item">' +
+					'<div class="I">' +
+					'	<span>角色</span>' +
+					'</div>' +
+					'</div>' +
+					'<div class="item">' +
+					'	<div class="I">' +
+					'	<span>性别</span>' +
+					'	</div>' +
+					'</div>' +
+					'<div class="item">' +
+					'<div class="I">' +
+					'	<span>电话</span>' +
+					'</div>' +
+					'</div>' +
+					'	<div class="item">' +
+					'<div class="I">' +
+					'<span>日期</span>' +
+					'</div>' +
+					'	</div>' +
+					'</div>')
+			}
+		}
+
+	}, function() {
+		$('.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail').remove();
+	});
+});

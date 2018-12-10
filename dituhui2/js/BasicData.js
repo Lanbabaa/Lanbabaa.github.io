@@ -89,7 +89,7 @@ function sortarr() {
 $("body").click(function(e) {
 	var id = e.target.id;
 	if(id != 'more') {
-		$("#Editlayer").fadeOut()
+		$("#Editlayer").fadeOut(100)
 	}
 })
 $(".fa-eye").click(function() {

@@ -68,13 +68,11 @@ function changeContent() {
 	$(".header .edit-title").show();
 	$(".header .edit-title input[type=text]").val($(".header .title span").text())
 }
-
-function confirmName() {
-	$(".header .title").show();
+ $(".header .edit-title input").blur(function(){
+    $(".header .title").show();
 	$(".header .edit-title").hide();
 	$(".header .title span").text($(".header .edit-title input[type=text]").val())
-}
-
+});
 function a() {
 	if($("tbody").find("tr").length == 0) {
 		$(".nothing").css("display", "block");

@@ -2,17 +2,199 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>地图慧</title>
 		<link rel="stylesheet" type="text/css" href="layui/css/layui.css"/>
 		<link rel="stylesheet" type="text/css" href="css/nav.css"/>
 		<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/status-statistics.css"/>
 	</head>
 	<body>
-		订单状态统计
-		<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
+		<div class="layui-side layui-bg-black">
+			<div class="layui-side-scroll">
+				<div class="header-box">
+					<div title="菜单缩放" class="kit-side-fold" style="display: inline-block;"><i class="layui-icon layui-icon-shrink-right" aria-hidden="true"></i></div>
+					<div class="animhead">
+						<img src="img/tx.jpg" alt="" class="logo"/>
+					</div>
+				</div>
+				<!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+				<ul class="layui-nav layui-nav-tree " lay-filter="test" lay-shrink="all">
+					<li class="layui-nav-item" title="基础数据">
+						<a href="index5.html"><i class="layui-icon layui-icon-home"></i> <span>基础数据</span></a>
+					</li>
+					<li class="layui-nav-item" title="数据分析">
+						<a href="javascript:;"><i class="fa fa-line-chart fa-lg"></i> <span>数据分析</span></a>
+						<dl class="layui-nav-child">
+							<dd title="点面互查">
+								<a href="pointStatistics.html"><i class="fa fa-map fa-lg"></i> <span>点面互查</span></a>
+							</dd>
+							<dd title="缓冲区分析">
+								<a href="bufferarea.html"><i class="fa fa-map-o fa-lg"></i> <span>缓冲区分析</span></a>
+							</dd>
+							<dd title="高级筛选">
+								<a href="global-search.html"><i class="fa fa-filter fa-lg"></i> <span>高级筛选</span></a>
+							</dd>
+						</dl>
+					</li>
+					<li class="layui-nav-item" title="智能预警">
+						<a href="intelligent-warning.html"><i class="fa fa-exclamation-circle fa-lg"></i> <span>智能预警</span></a>
+					</li>
+					<li class="layui-nav-item" title="位置监控">
+						<a href="javascript:;"><i class="fa fa-map-marker fa-lg"></i> <span>位置监控</span></a>
+						<dl class="layui-nav-child">
+							<dd title="人员监控">
+								<a href="personnel-monitoring.html"><i class="fa fa-window-restore fa-lg"></i> <span>人员监控</span></a>
+							</dd>
+							<dd title="车辆监控">
+								<a href="car.html"><i class="fa fa-car fa-lg"></i> <span>车辆监控</span></a>
+							</dd>
+						</dl>
+					</li>
+					<li class="layui-nav-item" title="路线规划">
+						<a href="routing.html"><i class="fa fa-random fa-lg"></i> <span>路线规划</span></a>
+					</li>
+					<li class="layui-nav-item layui-nav-itemed" title="智能分单">
+						<a href="javascript:;"><i class="fa fa-clone"></i> <span>智能分单</span></a>
+						<dl class="layui-nav-child">
+							<dd title="单条分单">
+								<a href="javascript:;"><i class="fa fa-file-text fa-lg"></i> <span>单条分单</span></a>
+							</dd>
+							<dd title="批量分单">
+								<a href="fendanbatch.html"><i class="fa fa-clipboard fa-lg"></i> <span>批量分单</span></a>
+							</dd>
+							<dd title="订单状态统计" class="layui-this">
+								<a href="status-statistics.html"><i class="fa fa-pie-chart"></i> <span>订单状态统计</span></a>
+							</dd>
+							<dd title="按图层订单统计">
+								<a href="orderstats-layer.html"><i class="fa fa-object-ungroup"></i> <span>按图层订单统计</span></a>
+							</dd>
+							<dd title="全部订单统计">
+								<a href="orderstats.html"><i class="fa fa-list-alt fa-lg"></i> <span>全部订单统计</span></a>
+							</dd>
+						</dl>
+					</li>
+					<li class="layui-nav-item" title="分享链接">
+						<a href="shareMap.html"><i class="layui-icon layui-icon-share"></i> <span>分享链接</span></a>
+					</li>
+					<li class="layui-nav-item" title="业务流">
+						<a href="business-flow.html"><i class="layui-icon layui-icon-senior"></i> <span>业务流</span></a>
+					</li>
+					<li class="layui-nav-item" title="操作日志">
+						<a href="logs.html"><i class="layui-icon layui-icon-form"></i> <span>操作日志</span></a>
+					</li>
+					<li class="layui-nav-item" title="协作/权限">
+						<a href="javascript:;"><i class="layui-icon layui-icon-user"></i> <span>协作/权限</span></a>
+						<dl class="layui-nav-child">
+							<dd title="协作成员">
+								<a href="cooperation-personnel.html"><i class="fa fa-users fa-lg"></i><span>协作成员</span></a>
+							</dd>
+							<dd title="监控人员">
+								<a href="monitoring-members.html"><i class="fa fa-user-circle fa-lg"></i><span>监控人员</span></a>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+				<div class="Bottom">
+					<div class="MapList">
+						<div class="btn">
+							<img src="img/side-bar-icon9.png" />
+							<span>智能预警智能预警智能预警智能预警智能预警智能预警</span>
+						</div>
+						<i class="layui-icon layui-icon-down"></i>
+					</div>
+					<hr />
+					<div class="User">
+						<img src="img/banner.png" /><span>用户名</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="List">
+			<div class="header">
+				<span>地图列表</span>
+				<i class="layui-icon layui-icon-add-1" title="创建地图"></i>
+			</div>
+			<div class="content">
+				<li title="温州管网图定位">
+					<div class="img"><img src="img/getFile.png" /></div>
+					<div class="list-name">
+						<p>温州管网图定位<i class="layui-icon layui-icon-rate-solid"></i></p>
+						<div class="list-text">
+							<span class="me"><i class="layui-icon layui-icon-username"></i> LIAOSIJUN</span>
+							<span class="time"><i class="layui-icon layui-icon-log"></i> 2018-08-31</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="img"><img src="img/getFile.png" /></div>
+					<div class="list-name">
+						<p class="default-list-p">龙湾产品发布图<i class="layui-icon layui-icon-rate-solid default-list-i"></i></p>
+						<div class="list-text">
+							<span class="me"><i class="layui-icon layui-icon-username"></i> LIAOSIJUN</span>
+							<span class="time"><i class="layui-icon layui-icon-log"></i> 2018-08-31</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="img"><img src="img/getFile.png" /></div>
+					<div class="list-name">
+						<p>杭州城北机械表<i class="layui-icon layui-icon-rate-solid"></i></p>
+						<div class="list-text">
+							<span class="me"><i class="layui-icon layui-icon-username"></i> LIAOSIJUN</span>
+							<span class="time"><i class="layui-icon layui-icon-log"></i> 2018-08-31</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="img"><img src="img/getFile.png" /></div>
+					<div class="list-name">
+						<p>温州管网图定位<i class="layui-icon layui-icon-rate-solid"></i></p>
+						<div class="list-text">
+							<span class="me"><i class="layui-icon layui-icon-username"></i> LIAOSIJUN</span>
+							<span class="time"><i class="layui-icon layui-icon-log"></i> 2018-08-31</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="img"><img src="img/getFile.png" /></div>
+					<div class="list-name">
+						<p>温州管网图定位<i class="layui-icon layui-icon-rate-solid"></i></p>
+						<div class="list-text">
+							<span class="me"><i class="layui-icon layui-icon-username"></i> LIAOSIJUN</span>
+							<span class="time"><i class="layui-icon layui-icon-log"></i> 2018-08-31</span>
+						</div>
+					</div>
+				</li>
+			</div>
+			<div class="footer">
+				<div class="box">
+					<div class="establish">
+						<a>删除地图</a>
+					</div>
+					<div class="default">
+						<a>设置默认地图</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="user-content">
+			<li><i class="layui-icon layui-icon-return"></i>进入企业后台</li>
+			<li><i class="layui-icon layui-icon-username"></i>个人中心</li>
+			<li><i class="layui-icon layui-icon-star"></i>我的地图</li>
+			<li>
+				<p><i class="layui-icon layui-icon-help"></i>帮助</p>
+				<p><i class="layui-icon layui-icon-refresh-3"></i>更新</p>
+				<p><i class="layui-icon layui-icon-reply-fill"></i>反馈</p>
+				<p><i class="layui-icon layui-icon-file-b"></i>案例</p>
+			</li>
+			<li><i class="layui-icon layui-icon-unlink"></i>退出登录</li>
+		</div>
+		<div class="workzone">
+			
+		</div>
 		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 		<script src="layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/status-statistics.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>

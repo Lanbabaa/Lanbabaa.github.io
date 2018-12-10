@@ -6,3 +6,7 @@ $('.addmember .invitedmembers .title i').click(function() {
 	$(".addmember").fadeOut(100);
 	$(".mask").fadeOut(100);
 })
+$('.addmember .searchmembers .teamUsers .User').mouseover(function(){
+	var title=$(this).text();
+  	$(this).attr('title',title);
+});

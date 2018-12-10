@@ -58,7 +58,7 @@ hr {
 	position: absolute;
 	top: calc(50% - 22px);
 	left: 480px;
-	background-color: #393D49;
+	background-color:  rgb(33, 50, 79);;
 	z-index: 991;
 	font-size: 22px;
 	color: #fff;
@@ -82,7 +82,15 @@ hr {
 .layui-nav {
 	background-color: #293B5A !important;
 }
-
+.layui-nav-tree .layui-nav-item a{
+	    color: rgba(255, 255, 255, .6);
+}
+.layui-nav-tree .layui-nav-item dd a{
+	color: rgb(123, 150, 196);
+}
+.layui-nav-tree .layui-nav-item dd a:hover{
+	color: #55E4D4!important;
+}
 .layui-nav-itemed>.layui-nav-child {
 	background-color: rgb(39, 54, 79) !important;
 }
@@ -93,6 +101,7 @@ hr {
 .layui-nav-tree .layui-this>a,
 .layui-nav-tree .layui-this>a:hover {
 	background-color: #108ee9!important;
+	color: #fff !important;
 }
 
 .layui-nav-item .fa,
@@ -116,8 +125,8 @@ hr {
 .layui-side .layui-side-scroll {
 	width: 200px;
 }
-
 .layui-side .layui-side-scroll .kit-side-fold {
+	display: inline-block;
 	width: 40px;
 	height: 80px;
 	line-height: 80px;
@@ -126,7 +135,18 @@ hr {
 	color: rgb(123, 150, 196);
 	cursor: pointer;
 }
-
+.layui-side .layui-side-scroll .header-box .animhead{
+	display: inline-block;
+	width: calc(100% - 60px);
+	height: 70px;
+	padding: 5px 10px;
+	float: right;
+	text-align: center;
+	overflow: hidden;
+}
+.layui-side .layui-side-scroll .header-box .animhead img{
+	height: 100%;
+}
 .layui-side .layui-side-scroll div {
 	background: rgb(33, 50, 79);
 }
@@ -371,6 +391,12 @@ hr {
 }
 
 .layui-side .layui-side-scroll .Bottom .User span {
+	display: inline-block;
+	height: 40px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width: 6em;
 	padding-left: 10px;
 	font-size: 16px;
 	color: rgb(123, 150, 196);
@@ -429,6 +455,8 @@ hr {
 	height: 73px;
 	margin: 5px 10px;
 	text-align: center;
+	color: #aaa;
+	transition: all .2s; 
 }
 
 .user-content li:nth-child(4) p i {
@@ -441,6 +469,14 @@ hr {
 	border: 1px solid #108ee9;
 	border-radius: 36px;
 	padding: 0;
+	transition: all .2s; 
+}
+.user-content li:nth-child(4) p:hover{
+	color: #000;
+}
+.user-content li:nth-child(4) p:hover i{
+	background: #108ee9;
+	color: #fff;
 }
 
 .user-content li i {

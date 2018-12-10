@@ -153,7 +153,15 @@ iframe {
 .add-condition .layui-card-body .main-container .list .layui-form-item .box input {
 	height: 30px;
 }
-
+.add-condition .layui-card-body .main-container .list .layui-form-item .box #test-form-input:hover{
+	border: 1px solid #D2D2D2 !important;
+}
+.add-condition .layui-card-body .main-container .list .layui-form-item .layui-input-inline{
+	width: 120px;
+}
+.add-condition .layui-card-body .main-container .list .layui-form-item .layui-inline{
+	left:-5px;
+}
 .add-condition .layui-card-body .main-container .list .range .box {
 	width: 87px;
 	margin-right: 2px;

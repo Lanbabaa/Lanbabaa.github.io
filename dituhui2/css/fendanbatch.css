@@ -49,13 +49,10 @@ iframe {
 	z-index: 999;
 	position: absolute;
 	left: calc(50% - 285px);
-	left: -moz-calc(50% - 285px);
-	left: -webkit-calc(50% - 285px);
-	top: calc(50% - 175px);
-	top: -moz-calc(50% - 175px);
-	top: -webkit-calc(50% - 175px);
+	top: 20%;
 	border-radius: 5px;
 	display: none;
+	    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .uploading .layui-card-header i {

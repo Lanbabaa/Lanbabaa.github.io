@@ -75,6 +75,7 @@
 	background: #FAFBFC;
 	border: 1px solid #EDEDED;
 	padding: 0 20px;
+	position: relative;
 }
 
 .workzone .MapCooperation .CooperationCom .Cooperation .part .title {
@@ -176,6 +177,88 @@
 	white-space: nowrap;
 	width: 100%;
 }
+.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail .triangle{
+	border: 8px solid;
+    border-color:  transparent transparent #fff transparent;
+    position: absolute;
+    left: 30px;
+    top: -16px;
+}
+.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail{
+	width: 254px;
+	height: 228px;
+	background-color: #fff;
+	box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2);
+	position: absolute;
+	z-index: 990;
+	border-radius: 4px;
+	color: #484848;
+	padding: 30px 50px;
+	font-weight: lighter;
+	font-size: 14px;
+}
+.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail .triangle2{
+	border: 8px solid;
+    border-color: #fff  transparent transparent  transparent ;
+    position: absolute;
+    left: 30px;
+    top: 288px;
+    z-index: 999;
+    
+}
+.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail2{
+	width: 254px;
+	height: 228px;
+	background-color: #fff;
+	box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2);
+	position: absolute;
+	top:-300px;
+	z-index: 990;
+	border-radius: 4px;
+	color: #484848;
+	padding: 30px 50px;
+	font-weight: lighter;
+	font-size: 14px;
+}
+.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail .header{
+	height: 48px;
+}
+.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail .user-photo{
+	width: 48px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 50%;
+    text-align: center;
+    background-image: url(../img/tx.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    overflow: hidden;
+    float: left;
+}
+.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail .picText{
+	width: 190px;
+	height: 48px;
+	line-height: 48px;
+	margin-left: 16px;
+    display: inline-block;
+    vertical-align: middle;
+	float: left;
+}
+.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail .picText .I{
+	width: 190px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail .item {
+	margin-top: 24px;
+}
+.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail .item .I{
+	margin-right: 35px;
+    color: #757575;
+    display: inline-block;
+}    
 
 .workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .layui-form .layui-form-item {
 	width: 120px !important;
