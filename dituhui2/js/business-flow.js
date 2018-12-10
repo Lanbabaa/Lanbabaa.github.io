@@ -4,6 +4,7 @@ var form = layui.form,
 var value = "文本型";
 var name = "";
 var n = 1;
+var t = 0;
 $(document).ready(function() {
 	// select下拉框选中触发事件
 	form.on("select", function(data) {
@@ -15,13 +16,23 @@ $(".business-phase .phase .add-list").click(function() {
 		n++;
 		$(".business-phase .phase #lists").append('<li class="list">阶段' + n + ' <i class="layui-icon layui-icon-close-fill"></i></li>');
 	} else {
-		alert("业务阶段不能超过10个")
+		tips(1)
 	}
 
 })
+function tips(e){
+	if (e == 1) {
+			$(".Tips1").fadeIn();
+			setTimeout("$('.Tips1').fadeOut()",4000);
+	} else{
+		$(".Tips0").fadeIn();
+		setTimeout("$('.Tips0').fadeOut()",4000);
+	}
+	
+}
 $(".business-phase .phase #lists").on('click', 'i', function() {
 	if($(".business-phase .phase #lists li").length == 1) {
-		alert("不能少于一个阶段")
+		tips(0);
 	} else {
 		$(this).parent().remove();
 		n--;
@@ -60,6 +71,7 @@ $(".footer .layui-btn").click(function() {
 });
 $("tbody").on('click', '.delete', function() {
 	$(this).parents('tr').remove();
+	n--;
 	a();
 });
 
