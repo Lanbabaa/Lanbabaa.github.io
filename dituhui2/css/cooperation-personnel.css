@@ -552,3 +552,33 @@
 	line-height: 30px;
 	border-radius: 4px;
 	}
+.modal-content{
+	position: absolute;
+	left: calc(50% - 400px);
+	top: 20%;
+	width: 800px;
+	height: 440px;
+	background-color: #fff;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	z-index: 999;
+	display: none;
+}
+.modal-content .Dips{
+	padding: 20px;
+	width: calc(100% - 40px);
+	height: calc(100% - 40px);
+}
+.modal-content .Dips .title{
+	height: 30px;
+	text-align: right;
+}
+.modal-content .Dips .com{
+	width: calc(100% - 30px);
+	height: 320px;
+	padding: 25px 0 25px 30px;
+}
+.modal-content .Dips .com .layui-form-checkbox[lay-skin=primary]{
+	width: 32%;
+	margin: 15px 0;
+}

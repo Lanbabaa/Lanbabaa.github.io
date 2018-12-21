@@ -205,8 +205,8 @@
 				<div class="content-header">
 					<p class="people-num">总人数0人，在线人数0人，离线人数0人，未监控人数0人</p>
 					<div class="btn-group">
-						<input type="button" id="" value="开启监控" class="layui-btn on" />
-						<input type="button" id="" value="关闭监控" class="layui-btn off" />
+						<input type="button" id="" value="开启监控" class="layui-btn on" onclick="tips(0)"/>
+						<input type="button" id="" value="关闭监控" class="layui-btn off" onclick="tips(1)"/>
 					</div>
 				</div>
 				<div class="user-container">
@@ -346,6 +346,12 @@
 					</div>
 				</ul>
 			</div>
+		</div>
+		<div class="Tips Tips0">
+			<i class="fa fa-check-circle"></i> 成功开启监控，请到位置监控-人员监控中查看 已经关闭成功
+		</div>
+		<div class="Tips Tips1">
+			<i class="fa fa-check-circle"></i> 已经关闭成功
 		</div>
 		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 		<script src="layui/layui.all.js" type="text/javascript" charset="utf-8"></script>

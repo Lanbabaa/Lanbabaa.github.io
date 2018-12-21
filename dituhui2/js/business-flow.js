@@ -20,15 +20,12 @@ $(".business-phase .phase .add-list").click(function() {
 	}
 
 })
-function tips(e){
-	if (e == 1) {
-			$(".Tips1").fadeIn();
-			setTimeout("$('.Tips1').fadeOut()",4000);
-	} else{
-		$(".Tips0").fadeIn();
-		setTimeout("$('.Tips0').fadeOut()",4000);
-	}
-	
+
+function tips(e) {
+	$(".Tips" + e).fadeIn();
+	setTimeout("$('.Tips" + e + "').fadeOut()", 4000);
+	var width = $('.Tips' + e).width() / 2 + 20;
+	$(".Tips" + e).css('left', '50%').css('left', '-=' + width + 'px');
 }
 $(".business-phase .phase #lists").on('click', 'i', function() {
 	if($(".business-phase .phase #lists li").length == 1) {
@@ -48,13 +45,13 @@ $(".business-phase .phase #lists").on('click', 'li', function() {
 $(".footer .layui-btn").click(function() {
 	name = $(".content-list #name").val();
 	var tr = '<tr>' +
-		' <td>' + n + '</td>' +
-		' <td>' + name + '</td>' +
-		' <td>' + value + '</td>' +
+		' <td id="ids">' + n + '</td>' +
+		' <td id="names">' + name + '</td>' +
+		' <td id="types">' + value + '</td>' +
 		'<td><a class="edit">编辑</a><a class="delete">删除</a></td>' +
-		'</tr>'
+	'</tr>'
 	if(name == "") {
-		alert("名称不能为空");
+		tips(3)
 	} else {
 		$(".content-list tbody").append(tr);
 		n++;
@@ -63,7 +60,7 @@ $(".footer .layui-btn").click(function() {
 	if($(".footer input[type='checkbox']").is(':checked')) {
 
 	} else if(name == "") {
-
+	
 	} else {
 		rfont();
 	}
@@ -74,17 +71,35 @@ $("tbody").on('click', '.delete', function() {
 	n--;
 	a();
 });
+//$("tbody").on('click', '.edit', function() {
+//	name = $(this).parent().siblings('#names').text();
+//	$('.edit-font-setting .content .content-list #name').val(name);
+//	$(".mask").fadeIn(100);
+//	$('.edit-font-setting').fadeIn(800);
+//	$(this).parents('tr').remove();
+//});
+
+function edit() {
+	var tr = '<tr>' +
+		' <td id="ids">' + n + '</td>' +
+		' <td id="names">' + name + '</td>' +
+		' <td id="types">' + value + '</td>' +
+		'<td><a class="edit">编辑</a><a class="delete">删除</a></td>' +
+	'</tr>'
+	$(".content-list tbody").append(tr);
+}
 
 function changeContent() {
 	$(".header .title").hide();
 	$(".header .edit-title").show();
 	$(".header .edit-title input[type=text]").val($(".header .title span").text())
 }
- $(".header .edit-title input").blur(function(){
-    $(".header .title").show();
+$(".header .edit-title input").blur(function() {
+	$(".header .title").show();
 	$(".header .edit-title").hide();
 	$(".header .title span").text($(".header .edit-title input[type=text]").val())
 });
+
 function a() {
 	if($("tbody").find("tr").length == 0) {
 		$(".nothing").css("display", "block");
@@ -94,8 +109,12 @@ function a() {
 }
 
 function establish() {
+	if($(".templet").css("display") == "block") {
+		tips(2);
+	}
 	$(".templet").css("display", "block");
 	$(".empty-container").css("display", "none");
+
 }
 
 function cancel() {
@@ -110,5 +129,5 @@ function addfont() {
 
 function rfont() {
 	$(".mask").css("display", "none");
-	$(".add-font-setting").css("display", "none");
+	$(".font-set").css("display", "none");
 }

@@ -15,6 +15,13 @@ function login() {
 		}
 	}
 	if($("#user").val() != "" && $("#pwd").val() != "") {
-		window.location.href = "index.html";
+		localStorage.setItem("lastname", $("#user").val());
+		window.location.href = "index5.html";
 	}
 }
+$(document).ready(function() {
+	var a=localStorage.getItem("lastname");
+	if (a != "") {
+		$("#user").val(a);
+	}
+});

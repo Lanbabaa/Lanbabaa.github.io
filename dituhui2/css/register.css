@@ -2,7 +2,8 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	background: #FFF url(/dituhui2/img/banner.png) no-repeat fixed 50% 50%;
+	background: #FFF url(/dituhui2/img/bg.png) no-repeat fixed;
+	background-size: 100%;
 }
 
 a {

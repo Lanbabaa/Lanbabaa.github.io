@@ -348,22 +348,29 @@ hr {
 	text-align: center;
 }
 
-.layui-side .layui-side-scroll .Bottom .MapList .btn {
-	width: 90px;
+.layui-side .layui-side-scroll .Bottom .MapList .btn{
+	width: 126px;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0);
+	position: relative;
+}
+.layui-side .layui-side-scroll .Bottom .MapList .btn span{
+	display: inline-block;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	width: 9em;
-	display: inline-block;
-	background-color: rgba(0, 0, 0, 0);
+	width: 90px;
+	margin: auto;
+	margin-left: 20px;
 }
-
 .layui-side .layui-side-scroll .Bottom .MapList i {
 	font-size: 12px !important;
 }
 
 .layui-side .layui-side-scroll .Bottom .MapList .btn img {
-	padding-right: 10px;
+	position: absolute;
+	left: 5px;
+	top: 5px;
 }
 
 .layui-side .layui-side-scroll .Bottom .MapList * {

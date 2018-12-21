@@ -136,3 +136,11 @@ $(function() {
 		$('.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail').remove();
 	});
 });
+$('.modal-content .Dips .title .layui-icon-close').click(function(){
+	$('.modal-content').fadeOut(100);
+	$('.mask').fadeOut(100);
+})
+$('.CooperationCom .Cooperation .part .people .role').click(function(){
+	$('.modal-content').fadeIn();
+	$('.mask').fadeIn();
+})

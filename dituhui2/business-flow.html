@@ -11,12 +11,7 @@
 	</head>
 
 	<body>
-		<div class="Tips Tips1">
-			<i class="fa fa-exclamation-circle"></i> 业务阶段不能超过10个
-		</div>
-		<div class="Tips Tips0">
-			<i class="fa fa-exclamation-circle"></i> 业务阶段不能少于1个
-		</div>
+		
 		<div class="layui-side layui-bg-black">
 			<div class="layui-side-scroll">
 				<div class="header-box">
@@ -246,7 +241,11 @@
 						<input type="text" name="" id="" value="阶段1" placeholder="请输入阶段名称" class="layui-input" />
 					</div>
 					<div class="content-list layui-form">
-						<span class="name">流转方式</span><input type="radio" name="mode" value="审核流转" title="审核流转" checked><input type="radio" name="mode" value="自动流转" title="自动流转"><input type="radio" name="mode" value="审核流转" title="审核流转（指定阶段）"><input type="radio" name="mode" value="指定阶段" title="指定阶段">
+						<span class="name">流转方式</span>
+						<input type="radio" name="mode" value="审核流转" title="审核流转" checked>
+						<input type="radio" name="mode" value="自动流转" title="自动流转">
+						<input type="radio" name="mode" value="审核流转" title="审核流转（指定阶段）">
+						<input type="radio" name="mode" value="指定阶段" title="指定阶段">
 					</div>
 					<div class="content-list">
 						<span class="name">字体设置</span>
@@ -280,7 +279,7 @@
 			</div>
 		</div>
 		<div class="mask"></div>
-		<div class="add-font-setting">
+		<div class="add-font-setting font-set">
 			<div class="title">
 				<span>创建字段</span>
 				<i class="layui-icon layui-icon-close" title="关闭" onclick="rfont()"></i>
@@ -297,7 +296,7 @@
 						<option value="数值型">数值型</option>
 						<option value="日期型">日期型</option>
 						<option value="日期+时间型">日期+时间型</option>
-						<option value="4链接型">链接型</option>
+						<option value="链接型">链接型</option>
 						<option value="电话型">电话型</option>
 						<option value="下拉型">下拉型</option>
 						<option value="多选型">多选型</option>
@@ -307,14 +306,61 @@
 				</div>
 				<div class="content-list">
 					<span class="name">流转方式</span>
-					<input type="radio" name="mode" value="审核流转" title="审核流转" checked>
-					<input type="radio" name="mode" value="自动流转" title="自动流转">
+					<input type="radio" name="mode2" value="选填" title="选填" checked>
+					<input type="radio" name="mode2" value="必填" title="必填">
 				</div>
 			</div>
 			<div class="footer layui-form">
 				<input type="checkbox" name="" title="添加后保留窗口，连续添加" lay-skin="primary">
 				<input type="button" id="" value="确定" class="layui-btn layui-btn-normal" />
 			</div>
+		</div>
+		<div class="font-set edit-font-setting">
+			<div class="title">
+				<span>编辑字段</span>
+				<i class="layui-icon layui-icon-close" title="关闭" onclick="rfont()"></i>
+			</div>
+			<div class="content layui-form">
+				<div class="content-list">
+					<span class="name">名称</span>
+					<input type="text" id="name" placeholder="请输入字段名称" class="layui-input" />
+				</div>
+				<div class="content-list">
+					<span class="name">类型</span>
+					<select id="city" lay-verify="required">
+						<option value="文本型">文本型</option>
+						<option value="数值型">数值型</option>
+						<option value="日期型">日期型</option>
+						<option value="日期+时间型">日期+时间型</option>
+						<option value="链接型">链接型</option>
+						<option value="电话型">电话型</option>
+						<option value="下拉型">下拉型</option>
+						<option value="多选型">多选型</option>
+						<option value="ID">ID</option>
+						<option value="地址型">地址型</option>
+					</select>
+				</div>
+				<div class="content-list">
+					<span class="name">流转方式</span>
+					<input type="radio" name="mode2" value="选填" title="选填" checked>
+					<input type="radio" name="mode2" value="必填" title="必填">
+				</div>
+				<div class="footer layui-form">
+					<input type="button" id="" value="确定" class="layui-btn layui-btn-normal" onclick="edit()"/>
+				</div>
+			</div>
+		</div>
+		<div class="Tips Tips3">
+			<i class="fa fa-exclamation-circle"></i> 名称不能为空！
+		</div>
+		<div class="Tips Tips2">
+			<i class="fa fa-exclamation-circle"></i> 已有模板在编辑中！
+		</div>
+		<div class="Tips Tips1">
+			<i class="fa fa-exclamation-circle"></i> 业务阶段不能超过10个！
+		</div>
+		<div class="Tips Tips0">
+			<i class="fa fa-exclamation-circle"></i> 业务阶段不能少于1个！
 		</div>
 		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 		<script src="layui/layui.all.js" type="text/javascript" charset="utf-8"></script>

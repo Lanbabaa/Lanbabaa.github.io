@@ -59,6 +59,7 @@ function sortarr() {
 	var arr = [];
 	var list = "";
 	if(j == 0) {
+		$('.pointsLayer .pointsLayerMain .sort a i').removeClass('fa-sort-alpha-desc');
 		$(".coordinate li").each(function() {
 			ele = $(this).text();
 			arr.push(ele)
@@ -71,7 +72,7 @@ function sortarr() {
 		$(".coordinate").append(list);
 		j++;
 	} else {
-
+		$('.pointsLayer .pointsLayerMain .sort a i').toggleClass('fa-sort-alpha-desc');
 		$(".coordinate li").each(function() {
 			ele = $(this).text();
 			arr.push(ele)
@@ -166,3 +167,8 @@ $(".attribute .layui-icon-close").click(function() {
 $(".box i").click(function() {
 	$(".box input[type=text]").val("");
 })
+$(document).ready(function() {
+	var num = $('.pointsLayer .pointsLayerMain .coordinate li').length;
+	$('.items #num').html("(" + num + ")");
+	$('#snum').html("(" + num + ")");
+});

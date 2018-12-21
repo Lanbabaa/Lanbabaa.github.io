@@ -5,6 +5,26 @@ input::-webkit-input-placeholder {
 	/* placeholder字体大小  */
 	font-size: 12px;
 }
+.Tips {
+	position: fixed;
+	left: calc(50% - 90px);
+	top: 15px;
+	font-size: 12px;
+	color: rgba(0, 0, 0, 0.65);
+	padding: 0 20px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	z-index: 998;
+	display: none;
+}
+
+.Tips i {
+	color: #00a854;
+	font-size: 14px;
+}
 
 .workzone {
 	width: calc(100% - 200px);

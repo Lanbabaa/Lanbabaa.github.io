@@ -19,7 +19,7 @@
 				<div class="header-box">
 					<div title="菜单缩放" class="kit-side-fold" style="display: inline-block;"><i class="layui-icon layui-icon-shrink-right" aria-hidden="true"></i></div>
 					<div class="animhead">
-						<img src="img/tx.jpg" alt="" class="logo"/>
+						<img src="img/tx.jpg" alt="" class="logo" />
 					</div>
 				</div>
 				<!-- 左侧导航区域（可配合layui已有的垂直导航） -->
@@ -103,7 +103,7 @@
 					<div class="MapList">
 						<div class="btn">
 							<img src="img/side-bar-icon9.png" />
-							<span>智能预警智能预警智能预警智能预警智能预警智能预警</span>
+							<span>智能预</span>
 						</div>
 						<i class="layui-icon layui-icon-down"></i>
 					</div>
@@ -212,12 +212,16 @@
 				<div class="layui-card-body">
 					<ul class="layer">
 						<li><i class="layui-icon layui-icon-template-1"></i>
-							<a style="cursor: default;">所有图层</a><span>(500)</span><i class="layui-icon layui-icon-add-1" title="添加图层" onclick="show('addLayer')"></i><i class="fa fa-eye" id="eye1" onclick="eye()"></i></li>
+							<a style="cursor: default;">所有图层</a><span id="nums">(0)</span><i class="layui-icon layui-icon-add-1" title="添加图层" onclick="show('addLayer')"></i><i class="fa fa-eye" id="eye1" onclick="eye()"></i></li>
 						<hr />
-						<li><i class="layui-icon layui-icon-location"></i>
+						<li class="items"><i class="layui-icon layui-icon-location"></i>
 							<a>点图层</a>
-							<span>(500)</span><i class="fa fa-eye" id="eye2" onclick="eye()"></i>
+							<span id="num">(0)</span><i class="fa fa-eye" id="eye2" onclick="eye()"></i>
 						</li>
+						<!--<li class="items"><i class="layui-icon layui-icon-location"></i>
+							<a>点图层</a>
+							<span id="num">(0)</span><i class="fa fa-eye" id="eye2" onclick="eye()"></i>
+						</li>-->
 					</ul>
 				</div>
 			</div>
@@ -228,12 +232,12 @@
 				</div>
 				<div class="pointsLayerMain">
 					<div class="caption">
-						<i class="layui-icon layui-icon-location"></i><span>点图层1 <span>(500)</span></span>
+						<i class="layui-icon layui-icon-location"></i><span>点图层1 <span id="snum">(0)</span></span>
 						<i class="layui-icon layui-icon-more" id="more" style="float: right; cursor: pointer;" title="更多" onclick="more('Editlayer')"></i>
 					</div>
 					<div class="sort">
 						<span>排序方式：</span>
-						<a id="letter" class="active" onclick="sortarr()">字母排序</a>
+						<a id="letter" class="active" onclick="sortarr()">字母排序<i class="fa fa-sort-alpha-asc"></i></a>
 						<a id="time">时间排序</a>
 					</div>
 					<div class="coordinate">
@@ -342,6 +346,13 @@
 					<div class="picture">
 						<div>
 							<img src="img/banner.png" />
+							<div class="img-edit">
+							<ul>
+								<li><i class="fa fa-eye"></i>浏览</li>
+								<li><i class="fa fa-pencil"></i>编辑</li>
+								<li><i class="fa fa-trash-o"></i>删除</li>
+							</ul>
+						</div>
 						</div>
 					</div>
 				</div>
@@ -349,6 +360,13 @@
 					<div class="picture">
 						<div>
 							<img src="img/getFile.png" />
+							<div class="img-edit">
+							<ul>
+								<li><i class="fa fa-eye"></i>浏览</li>
+								<li><i class="fa fa-pencil"></i>编辑</li>
+								<li><i class="fa fa-trash-o"></i>删除</li>
+							</ul>
+						</div>
 						</div>
 					</div>
 				</div>

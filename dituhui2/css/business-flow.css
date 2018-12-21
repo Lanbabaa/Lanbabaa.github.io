@@ -21,6 +21,7 @@ a {
 
 .Tips i {
 	color: #FFB800;
+	font-size: 14px;
 }
 
 .workzone .caption {
@@ -95,8 +96,8 @@ a {
 }
 
 .content-container-zoom {
-	width: calc(100% - 320px);
-	left: 320px;
+	width: calc(100% - 340px);
+	left: 340px;
 }
 
 .content-container .empty-container {
@@ -236,15 +237,14 @@ a {
 	display: inline-block;
 }
 
-.templet .content-phase .content-list .layui-form-radio {
+ .layui-form-radio {
 	margin-top: 0;
 }
 
-.templet .content-phase .content-list .layui-form-radio>i {
+ .layui-form-radio>i {
 	font-size: 18px;
 	color: #108ee9;
 }
-
 .templet .content-phase .content-list .layui-btn {
 	width: 80px;
 	height: 28px;
@@ -281,7 +281,7 @@ a {
 	line-height: 30px;
 }
 
-.add-font-setting {
+.font-set {
 	width: 420px;
 	height: 260px;
 	background: #fff;
@@ -294,38 +294,38 @@ a {
 	display: none;
 }
 
-.add-font-setting .title {
+.font-set .title {
 	height: 30px;
 	line-height: 30px;
 	text-align: center;
 }
 
-.add-font-setting .title span {
+.font-set .title span {
 	display: inline-block;
 	font-size: 16px;
 	margin-top: 10px;
 }
 
-.add-font-setting .title i {
+.font-set .title i {
 	position: absolute;
 	right: 15px;
 	top: 5px;
 	cursor: pointer;
 }
 
-.add-font-setting .content {
+.font-set .content {
 	width: 300px;
 	padding: 20px 0 0 0;
 	margin: auto;
 }
 
-.add-font-setting .content .content-list {
+.font-set .content .content-list {
 	margin-bottom: 10px;
 	height: 40px;
 	line-height: 40px;
 }
 
-.add-font-setting .content .content-list .name {
+.font-set .content .content-list .name {
 	margin-right: 16px;
 	color: #030303;
 	display: inline-block;
@@ -333,47 +333,47 @@ a {
 	text-align-last: justify;
 }
 
-.add-font-setting .content .content-list input[type=text] {
+.font-set .content .content-list input[type=text] {
 	width: 210px;
 	display: inline-block;
 	border-radius: 4px;
 }
 
-.add-font-setting .content .content-list .layui-form-select {
+.font-set .content .content-list .layui-form-select {
 	width: 210px;
 	display: inline-block;
 }
 
-.add-font-setting .content .content-list .layui-form-radio * {
+.font-set .content .content-list .layui-form-radio * {
 	font-size: 14px;
 }
 
-.add-font-setting .content .content-list .layui-form-radio {
+.font-set .content .content-list .layui-form-radio {
 	margin: 0;
 }
 
-.add-font-setting .content .content-list .layui-form-radio .layui-icon {
+.font-set .content .content-list .layui-form-radio .layui-icon {
 	font-size: 18px;
 }
 
-.add-font-setting .footer {
+.font-set .footer {
 	height: 59px;
 	line-height: 59px;
 	border-top: 1px solid #ededed;
 	text-align: center;
 }
 
-.add-font-setting .footer .layui-form-checkbox[lay-skin=primary] i {
+.font-set .footer .layui-form-checkbox[lay-skin=primary] i {
 	width: 14px;
 	height: 14px;
 	font-size: 12px;
 }
 
-.add-font-setting .footer .layui-form-checkbox[lay-skin=primary] span {
+.font-set .footer .layui-form-checkbox[lay-skin=primary] span {
 	font-size: 12px;
 }
 
-.add-font-setting .footer .layui-btn {
+.font-set .footer .layui-btn {
 	width: 90px;
 	height: 32px;
 	line-height: 32px;

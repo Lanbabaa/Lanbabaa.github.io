@@ -2382,13 +2382,13 @@ hr {
 }
 
 .layui-form-checkbox[lay-skin=primary]:hover i {
-	border-color: #5FB878;
+	border-color: #108ee9;
 	color: #fff
 }
 
 .layui-form-checked[lay-skin=primary] i {
-	border-color: #5FB878;
-	background-color: #5FB878;
+	border-color: #108ee9;
+	background-color: #108ee9;
 	color: #fff
 }
 
@@ -2504,7 +2504,7 @@ hr {
 
 .layui-form-radio>i:hover,
 .layui-form-radioed>i {
-	color: #5FB878
+	color: #108ee9
 }
 
 .layui-radio-disbaled>i {
@@ -4813,7 +4813,7 @@ body .layui-util-face .layui-layer-content {
 .layui-colorpicker-main-input input.layui-input {
 	width: 150px;
 	height: 30px;
-	color: #666
+	color: #666;
 }
 
 .layui-slider {
