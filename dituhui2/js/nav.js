@@ -72,9 +72,11 @@ $(".all-hide").click(function() {
 	}
 })
 function allhideleft() {
+	var width=$('body').width();
 	var left=$('.layui-bg-black').outerWidth(true)  + $('.workzone').outerWidth(true);
 	$('.all-hide').css('left',left+'px');
 	$('.map').css('left',left+'px');
+	$('.map').css('width',width - left +'px')
 }
 $(".layui-side .layui-side-scroll .Bottom .User").click(function() {
 	$(".user-content").toggle(100);
