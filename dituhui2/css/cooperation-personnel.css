@@ -1,8 +1,9 @@
-.layui-anim-upbit{
+.layui-anim-upbit {
 	font-size: 12px;
 	color: rgba(0, 0, 0, 0.65);
 	border-radius: 4px !important;
 }
+
 .workzone {
 	position: absolute;
 	left: 200px;
@@ -12,9 +13,11 @@
 	background-color: #fafafa;
 	border: 0px !important;
 }
-.workzone-zoom{
+
+.workzone-zoom {
 	width: calc(100% - 60px) !important;
 }
+
 .workzone .MapCooperation {
 	width: calc(100% - 80px);
 	padding-left: 80px;
@@ -177,14 +180,16 @@
 	white-space: nowrap;
 	width: 100%;
 }
-.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail .triangle{
+
+.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail .triangle {
 	border: 8px solid;
-    border-color:  transparent transparent #fff transparent;
-    position: absolute;
-    left: 30px;
-    top: -16px;
+	border-color: transparent transparent #fff transparent;
+	position: absolute;
+	left: 30px;
+	top: -16px;
 }
-.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail{
+
+.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail {
 	width: 254px;
 	height: 228px;
 	background-color: #fff;
@@ -197,22 +202,23 @@
 	font-weight: lighter;
 	font-size: 14px;
 }
-.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail .triangle2{
+
+.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail .triangle2 {
 	border: 8px solid;
-    border-color: #fff  transparent transparent  transparent ;
-    position: absolute;
-    left: 30px;
-    top: 288px;
-    z-index: 999;
-    
+	border-color: #fff transparent transparent transparent;
+	position: absolute;
+	left: 30px;
+	top: 288px;
+	z-index: 999;
 }
-.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail2{
+
+.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail2 {
 	width: 254px;
 	height: 228px;
 	background-color: #fff;
 	box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2);
 	position: absolute;
-	top:-300px;
+	top: -300px;
 	z-index: 990;
 	border-radius: 4px;
 	color: #484848;
@@ -220,52 +226,60 @@
 	font-weight: lighter;
 	font-size: 14px;
 }
-.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail .header{
+
+.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail .header {
 	height: 48px;
 }
-.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail .user-photo{
+
+.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail .user-photo {
 	width: 48px;
-    height: 48px;
-    line-height: 48px;
-    border-radius: 50%;
-    text-align: center;
-    background-image: url(../img/tx.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center center;
-    overflow: hidden;
-    float: left;
+	height: 48px;
+	line-height: 48px;
+	border-radius: 50%;
+	text-align: center;
+	background-image: url(../img/tx.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+	overflow: hidden;
+	float: left;
 }
-.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail .picText{
+
+.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail .picText {
 	width: 190px;
 	height: 48px;
 	line-height: 48px;
 	margin-left: 16px;
-    display: inline-block;
-    vertical-align: middle;
+	display: inline-block;
+	vertical-align: middle;
 	float: left;
 }
-.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail .picText .I{
+
+.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail .picText .I {
 	width: 190px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
+
 .workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail .item {
 	margin-top: 24px;
 }
-.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail .item .I{
+
+.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail .item .I {
 	margin-right: 35px;
-    color: #757575;
-    display: inline-block;
-}    
+	color: #757575;
+	display: inline-block;
+}
 
 .workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .layui-form .layui-form-item {
 	width: 120px !important;
 }
-.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .layui-form .layui-form-item .layui-form-select .layui-edge{
+
+.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .layui-form .layui-form-item .layui-form-select .layui-edge {
 	display: none;
 }
+
 .workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .layui-form .layui-form-item .layui-input {
 	height: 30px;
 	border-radius: 4px;
@@ -329,6 +343,7 @@
 
 .addmember .invitedmembers .con .tel .tips .mes {
 	display: none;
+	color: #FF5722;
 }
 
 .addmember .invitedmembers .con .ToBeUsers {
@@ -386,7 +401,7 @@
 	padding: 4px 20px 4px 7px;
 	font-size: 12px;
 	border-radius: 4px;
-	transition:.3s;
+	transition: .3s;
 }
 
 .addmember .searchmembers .layui-input-inline i {
@@ -489,24 +504,27 @@
 .create-roles .role-list .item-3:hover {
 	background-image: url(../img/business_h.png);
 }
-.workzone .New-role{
+
+.workzone .New-role {
 	padding: 14px 80px;
-    height: 100%;
-    overflow-y: auto;
-    color: #484848;
-    font-size: 14px;
-    display: none;
+	height: 100%;
+	overflow-y: auto;
+	color: #484848;
+	font-size: 14px;
+	display: none;
 }
-.workzone .New-role .header input[type=button]{
-	font-size: 12px ;
+
+.workzone .New-role .header input[type=button] {
+	font-size: 12px;
 	height: 28px !important;
 	line-height: 28px !important;
 }
-.workzone .New-role .role-name{
+
+.workzone .New-role .role-name {
 	margin: 24px 0;
-	
 }
-.workzone .New-role .role-name input[type=text]{
+
+.workzone .New-role .role-name input[type=text] {
 	width: 140px;
 	height: 30px;
 	font-size: 12px;
@@ -514,45 +532,54 @@
 	display: inline-block;
 	margin-left: 5px;
 }
-.workzone .New-role .authorization-content{
+
+.workzone .New-role .authorization-content {
 	min-height: 340px;
-    margin-top: 16px;
+	margin-top: 16px;
 }
-.workzone .New-role .authorization-content .authorization-list-container{
-    position: relative;
-    padding: 16px;
-    background: #fff;
-    margin-top: 16px;
-    border: 1px solid #ededed;
+
+.workzone .New-role .authorization-content .authorization-list-container {
+	position: relative;
+	padding: 16px;
+	background: #fff;
+	margin-top: 16px;
+	border: 1px solid #ededed;
 }
-.workzone .New-role .authorization-content .authorization-list-container .fun-list .layui-form-checkbox{
+
+.workzone .New-role .authorization-content .authorization-list-container .fun-list .layui-form-checkbox {
 	width: 19%;
 	margin-top: 25px;
 }
-.workzone .New-role .authorization-content .authorization-list-container .title{
+
+.workzone .New-role .authorization-content .authorization-list-container .title {
 	margin: 12px 0;
 }
-.workzone .New-role .authorization-content .authorization-list-container .layui-form-select{
+
+.workzone .New-role .authorization-content .authorization-list-container .layui-form-select {
 	width: 125px;
 	height: 30px;
 	font-size: 12px;
 	position: relative;
 }
-.workzone .New-role .authorization-content .authorization-list-container .layui-form-select .layui-input{
+
+.workzone .New-role .authorization-content .authorization-list-container .layui-form-select .layui-input {
 	height: 30px;
 	border-radius: 4px;
 }
-.workzone .New-role .footer{
+
+.workzone .New-role .footer {
 	margin-top: 50px;
 	text-align: right;
 }
-.workzone .New-role .footer input{
+
+.workzone .New-role .footer input {
 	width: 88px;
 	height: 30px;
 	line-height: 30px;
 	border-radius: 4px;
-	}
-.modal-content{
+}
+
+.modal-content {
 	position: absolute;
 	left: calc(50% - 400px);
 	top: 20%;
@@ -564,21 +591,25 @@
 	z-index: 999;
 	display: none;
 }
-.modal-content .Dips{
+
+.modal-content .Dips {
 	padding: 20px;
 	width: calc(100% - 40px);
 	height: calc(100% - 40px);
 }
-.modal-content .Dips .title{
+
+.modal-content .Dips .title {
 	height: 30px;
 	text-align: right;
 }
-.modal-content .Dips .com{
+
+.modal-content .Dips .com {
 	width: calc(100% - 30px);
 	height: 320px;
 	padding: 25px 0 25px 30px;
 }
-.modal-content .Dips .com .layui-form-checkbox[lay-skin=primary]{
+
+.modal-content .Dips .com .layui-form-checkbox[lay-skin=primary] {
 	width: 32%;
 	margin: 15px 0;
 }

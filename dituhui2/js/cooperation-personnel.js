@@ -66,6 +66,7 @@ $(function() {
 	var i = 0;
 	$('.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User').hover(function() {
 		var height = $(this).offset().top;
+		var name = $(this).find('.userName').text();
 		if($(this).find('.add').length == 0) {
 			if(height <= 650) {
 				$(this).append('<div class="user-detail">' +
@@ -143,4 +144,13 @@ $('.modal-content .Dips .title .layui-icon-close').click(function(){
 $('.CooperationCom .Cooperation .part .people .role').click(function(){
 	$('.modal-content').fadeIn();
 	$('.mask').fadeIn();
+})
+$('.addmember .invitedmembers .footer input[type=button]').click(function(){
+	var Length = $('.addmember .invitedmembers .con .tel .phonenumber').val();
+	if (Length.length != 11) {
+		$('.addmember .invitedmembers .con .tel .phonenumber').css('border-bottom','2px solid #FF5722');
+		$('.addmember .invitedmembers .con .tel .tips .mes').fadeIn();
+	} else{
+		
+	}
 })
