@@ -57,6 +57,10 @@ $(".MapList").click(function() {
 	$(".List").toggle(100);
 	$(".user-content").hide(100);
 })
+$(".MapList").hover(function(){
+	var title = $('.layui-side .layui-side-scroll .Bottom .MapList .btn span').text();
+	$(".MapList").attr('title', title);
+})
 $('.layui-side,.workzone,.map').click(function() {
 	$('.List,.user-content').hide(100);
 })
