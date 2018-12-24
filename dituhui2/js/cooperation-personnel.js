@@ -69,7 +69,6 @@ $(function() {
 		var name = $(this).find('.userName').text();
 		var src= $(this).find('img')[0].src;
 //		alert(src)
-	$('.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail .user-photo').attr('src',src);
 		if($(this).find('.add').length == 0) {
 			if(height <= 650) {
 				$(this).append('<div class="user-detail">' +
