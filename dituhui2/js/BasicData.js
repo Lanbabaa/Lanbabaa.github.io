@@ -11,6 +11,9 @@ layui.use('upload', function() {
 		done: function(res) {
 			//上传完毕回调
 		},
+		accept: 'file' //普通文件
+			,
+		exts: 'jpg|png',
 		error: function() {
 			//请求异常回调
 		}
@@ -26,6 +29,9 @@ layui.use('upload', function() {
 			,
 		size: 3072 //限制文件大小，单位 KB
 			,
+		accept: 'file' //普通文件
+			,
+		exts: 'xls|xlsx|csv',
 		done: function(res) {
 			//上传完毕回调
 		},
@@ -46,6 +52,9 @@ layui.use('upload', function() {
 		},
 		size: 3072 //限制文件大小，单位 KB
 			,
+		accept: 'file' //普通文件
+			,
+		exts: 'xls|xlsx|csv',
 		error: function() {
 			//请求异常回调
 		}
