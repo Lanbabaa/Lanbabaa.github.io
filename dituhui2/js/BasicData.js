@@ -1,5 +1,7 @@
 var j = 0;
+
 layui.use('upload', function() {
+
 	var upload = layui.upload;
 	var uploadInst = upload.render({
 		elem: '.Up .picture' //绑定元素
@@ -14,12 +16,15 @@ layui.use('upload', function() {
 		}
 	});
 });
+
 layui.use('upload', function() {
 	var upload = layui.upload;
 	var uploadInst = upload.render({
 		elem: '.Up .data' //绑定元素
 			,
 		url: '/upload/' //上传接口
+			,
+		size: 3072 //限制文件大小，单位 KB
 			,
 		done: function(res) {
 			//上传完毕回调
@@ -39,6 +44,8 @@ layui.use('upload', function() {
 		done: function(res) {
 			//上传完毕回调
 		},
+		size: 3072 //限制文件大小，单位 KB
+			,
 		error: function() {
 			//请求异常回调
 		}

@@ -124,6 +124,7 @@ hr {
 
 .layui-side .layui-side-scroll {
 	width: 200px;
+	overflow: hidden;
 }
 .layui-side .layui-side-scroll .kit-side-fold {
 	display: inline-block;
