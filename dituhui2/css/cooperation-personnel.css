@@ -187,6 +187,7 @@
 	position: absolute;
 	left: 30px;
 	top: -16px;
+	z-index: 998;
 }
 
 .workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail {
@@ -195,12 +196,12 @@
 	background-color: #fff;
 	box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2);
 	position: absolute;
-	z-index: 990;
 	border-radius: 4px;
 	color: #484848;
 	padding: 30px 50px;
 	font-weight: lighter;
 	font-size: 14px;
+	z-index: 990;
 }
 
 .workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User .user-detail .triangle2 {

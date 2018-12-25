@@ -67,7 +67,7 @@ $(function() {
 	$('.workzone .MapCooperation .CooperationCom .Cooperation .part .people .Users .User').hover(function() {
 		var height = $(this).offset().top;
 		var name = $(this).find('.userName').text();
-		var src= $(this).find('img')[0].src;
+//		var src= $(this).find('img')[0].src;
 //		alert(src)
 		if($(this).find('.add').length == 0) {
 			if(height <= 650) {
