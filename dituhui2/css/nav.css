@@ -26,18 +26,20 @@ ul::-webkit-scrollbar-track {
 	border-radius: 0;
 	background: rgba(0, 0, 0, 0);
 }
-a{
-	 -moz-user-select: -moz-none;
-   -khtml-user-select: none;
-   -webkit-user-select: none;
- 
-   /*
+
+a {
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	/*
      Introduced in IE 10.
      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
    */
-   -ms-user-select: none;
-   user-select: none;
-};
+	-ms-user-select: none;
+	user-select: none;
+}
+
+;
 .layui-icon-close {
 	cursor: pointer;
 }
@@ -69,7 +71,8 @@ hr {
 	position: absolute;
 	top: calc(50% - 22px);
 	left: 480px;
-	background-color:  rgb(33, 50, 79);;
+	background-color: rgb(33, 50, 79);
+	;
 	z-index: 991;
 	font-size: 22px;
 	color: #fff;
@@ -93,15 +96,19 @@ hr {
 .layui-nav {
 	background-color: #293B5A !important;
 }
-.layui-nav-tree .layui-nav-item a{
-	    color: rgba(255, 255, 255, .6);
+
+.layui-nav-tree .layui-nav-item a {
+	color: rgba(255, 255, 255, .6);
 }
-.layui-nav-tree .layui-nav-item dd a{
+
+.layui-nav-tree .layui-nav-item dd a {
 	color: rgb(123, 150, 196);
 }
-.layui-nav-tree .layui-nav-item dd a:hover{
+
+.layui-nav-tree .layui-nav-item dd a:hover {
 	color: #55E4D4!important;
 }
+
 .layui-nav-itemed>.layui-nav-child {
 	background-color: rgb(39, 54, 79) !important;
 }
@@ -137,6 +144,7 @@ hr {
 	width: 200px;
 	overflow: hidden;
 }
+
 .layui-side .layui-side-scroll .kit-side-fold {
 	display: inline-block;
 	width: 40px;
@@ -147,7 +155,8 @@ hr {
 	color: rgb(123, 150, 196);
 	cursor: pointer;
 }
-.layui-side .layui-side-scroll .header-box .animhead{
+
+.layui-side .layui-side-scroll .header-box .animhead {
 	display: inline-block;
 	width: calc(100% - 60px);
 	height: 70px;
@@ -156,9 +165,11 @@ hr {
 	text-align: center;
 	overflow: hidden;
 }
-.layui-side .layui-side-scroll .header-box .animhead img{
+
+.layui-side .layui-side-scroll .header-box .animhead img {
 	height: 100%;
 }
+
 .layui-side .layui-side-scroll div {
 	background: rgb(33, 50, 79);
 }
@@ -360,13 +371,14 @@ hr {
 	text-align: center;
 }
 
-.layui-side .layui-side-scroll .Bottom .MapList .btn{
+.layui-side .layui-side-scroll .Bottom .MapList .btn {
 	width: 126px;
 	display: inline-block;
 	background-color: rgba(0, 0, 0, 0);
 	position: relative;
 }
-.layui-side .layui-side-scroll .Bottom .MapList .btn span{
+
+.layui-side .layui-side-scroll .Bottom .MapList .btn span {
 	display: inline-block;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -375,6 +387,7 @@ hr {
 	margin: auto;
 	margin-left: 20px;
 }
+
 .layui-side .layui-side-scroll .Bottom .MapList i {
 	font-size: 12px !important;
 }
@@ -475,7 +488,7 @@ hr {
 	margin: 5px 10px;
 	text-align: center;
 	color: #aaa;
-	transition: all .2s; 
+	transition: all .2s;
 }
 
 .user-content li:nth-child(4) p i {
@@ -488,12 +501,14 @@ hr {
 	border: 1px solid #108ee9;
 	border-radius: 36px;
 	padding: 0;
-	transition: all .2s; 
+	transition: all .2s;
 }
-.user-content li:nth-child(4) p:hover{
+
+.user-content li:nth-child(4) p:hover {
 	color: #000;
 }
-.user-content li:nth-child(4) p:hover i{
+
+.user-content li:nth-child(4) p:hover i {
 	background: #108ee9;
 	color: #fff;
 }
