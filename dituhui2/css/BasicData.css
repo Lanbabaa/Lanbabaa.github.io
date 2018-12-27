@@ -360,7 +360,10 @@
 	.layui-btn-primary:hover {
 		border-color: #1E9FFF;
 	}
-	
+	.layui-card-body .ps p i{
+		color: #FFB800;
+		margin-right: 5px;
+	}
 	.uppicture {
 		width: 570px;
 		height: 350px;
@@ -502,7 +505,6 @@
 	.uploading .layui-card-body .ps p {
 		color: #c1c1c1;
 	}
-	
 	.uploading .layui-card-body .ps span {
 		color: #666;
 	}
@@ -513,7 +515,7 @@
 	}
 	
 	.uploading .layui-card-body .Up {
-		width: 120px;
+		width: 220px;
 		height: 120px;
 		margin: auto;
 		border: 1px solid #ddd;
@@ -527,12 +529,16 @@
 		border: 1px dashed #ddd;
 		border-radius: 5px;
 		cursor: pointer;
+		color: #cacaca;
 	}
 	
 	.uploading .layui-card-body .network:hover {
 		border: 1px dashed #108EE9;
+		color:  #108EE9;
 	}
-	
+	.uploading .layui-card-body .network:hover i{
+		color:  #108EE9;
+	}
 	.uploading .layui-card-body .network div {
 		margin: auto;
 		margin-top: 30px;
@@ -580,7 +586,7 @@
 	}
 	
 	.updateData .layui-card-body .Up {
-		width: 120px;
+		width: 220px;
 		height: 120px;
 		margin: auto;
 		border: 1px solid #ddd;
@@ -594,12 +600,16 @@
 		border: 1px dashed #ddd;
 		border-radius: 5px;
 		cursor: pointer;
+		color: #cacaca;
 	}
 	
 	.updateData .layui-card-body .data:hover {
 		border: 1px dashed #108EE9;
+		color: #108EE9;
 	}
-	
+	.updateData .layui-card-body .data:hover i{
+		color: #108EE9;
+	}
 	.updateData .layui-card-body .data div {
 		margin: auto;
 		margin-top: 30px;

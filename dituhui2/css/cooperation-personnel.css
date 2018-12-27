@@ -325,7 +325,9 @@
 	height: calc(100% - 130px);
 }
 
-.addmember .invitedmembers .con .tel {}
+.addmember .invitedmembers .con .tel {
+	width: 100%;
+}
 
 .addmember .invitedmembers .con .tel .phonenumber {
 	width: 100%;
@@ -344,7 +346,7 @@
 
 .addmember .invitedmembers .con .tel .tips .mes {
 	display: none;
-	color: #FF5722;
+	color: #f00;
 }
 
 .addmember .invitedmembers .con .ToBeUsers {

@@ -81,6 +81,7 @@ function allhideleft() {
 	$('.all-hide').css('left',left+'px');
 	$('.map').css('left',left+'px');
 	$('.map').css('width',width - left +'px')
+	$('.Editlayer').css('left',left - 35 +'px');
 }
 $(".layui-side .layui-side-scroll .Bottom .User").click(function() {
 	$(".user-content").toggle(100);
