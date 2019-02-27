@@ -85,12 +85,10 @@ iframe {
 	background-color: #fff;
 	z-index: 999;
 	position: absolute;
-	left: calc(50% - 285px);
-	left: -moz-calc(50% - 285px);
-	left: -webkit-calc(50% - 285px);
-	top: calc(50% - 250px);
-	top: -moz-calc(50% - 250px);
-	top: -webkit-calc(50% - 250px);
+	left: calc(50% - 210px);
+	left: -moz-calc(50% - 210px);
+	left: -webkit-calc(50% - 210px);
+	top: 20%;
 	border-radius: 5px;
 	display: none;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);

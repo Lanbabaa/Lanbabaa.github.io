@@ -38,24 +38,26 @@
 		<div id="allmap"></div>
 
 	</body>
-	
+
 	<script src="layui/layui.js" type="text/javascript" charset="utf-8"></script>
 	<script src="layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="http://api.map.baidu.com/library/DrawingManager/1.4/src/DrawingManager_min.js"></script>
-</html>
-<script type="text/javascript">
-	// 百度地图API功能
+	<script type="text/javascript">
+		// 百度地图API功能
 	var map = new BMap.Map("allmap"); // 创建Map实例
 	var point = new BMap.Point(116.400, 39.915);
 	var point1 = new BMap.Point(116.399, 39.9);
 	var point2 = new BMap.Point(116.420, 39.91);
-	map.centerAndZoom(point, 16); // 初始化地图,设置中心点坐标和地图级别
+	var point3 = new BMap.Point(116.50, 39.91);
+	map.centerAndZoom(point, 11); // 初始化地图,设置中心点坐标和地图级别
 	var mak = new BMap.Marker(point);
 	var mak1 = new BMap.Marker(point1);
 	var mak2 = new BMap.Marker(point2);
+	var mak3 = new BMap.Marker(point3);
 	map.addOverlay(mak);
 	map.addOverlay(mak1);
 	map.addOverlay(mak2);
+	map.addOverlay(mak3);
 	//添加地图类型控件
 	map.addControl(new BMap.MapTypeControl({
 		mapTypes: [
@@ -77,9 +79,9 @@
 	var aaa =
 		"<div class='b'><span>附近：</span><select name='city' lay-verify=''>" +
 		"<option value='500'>500</option>" +
-		"<option value='010'>1000</option>" +
-		"<option value='021'>2000</option>" +
-		"<option value='0571'>5000</option>" +
+		"<option value='1000'>1000</option>" +
+		"<option value='2000'>2000</option>" +
+		"<option value='5000'>5000</option>" +
 		"</select><span> 米</span><input type='button' class='layui-btn layui-btn-normal' value='搜索'/></div>";
 	var opts = {
 		width: 120, // 信息窗口宽度
@@ -89,11 +91,15 @@
 	}
 	var infoWindow = new BMap.InfoWindow(aaa, opts);
 	var infoWindow1 = new BMap.InfoWindow(aaa, opts);
-	var infoWindow2 = new BMap.InfoWindow(aaa, opts); // 创建信息窗口对象
+	var infoWindow2 = new BMap.InfoWindow(aaa, opts);
+	var infoWindow3 = new BMap.InfoWindow(aaa, opts);// 创建信息窗口对象
 	mak.addEventListener("click", function() {
 		map.openInfoWindow(infoWindow, point);
 		var circle = new BMap.Circle(point, 500);
 		map.addOverlay(circle); //开启信息窗口
+	});
+	mak.addEventListener("click", function() {
+		map.openInfoWindow(infoWindow, point); //开启信息窗口 
 	});
 	mak1.addEventListener("click", function() {
 		map.openInfoWindow(infoWindow1, point1); //开启信息窗口
@@ -101,9 +107,11 @@
 	mak2.addEventListener("click", function() {
 		map.openInfoWindow(infoWindow2, point2); //开启信息窗口
 	});
+	mak3.addEventListener("click", function() {
+		map.openInfoWindow(infoWindow3, point3); //开启信息窗口
+	});
 	map.setCurrentCity("温州"); // 设置地图显示的城市 此项是必须设置的
 	map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放
-
 	var styleOptions = {
 		strokeColor: "red", //边线颜色。
 		fillColor: "red", //填充颜色。当参数为空时，圆形将没有填充效果。
@@ -125,4 +133,6 @@
 		polygonOptions: styleOptions, //多边形的样式
 		rectangleOptions: styleOptions //矩形的样式
 	});
-</script>
+
+	</script>
+</html>
