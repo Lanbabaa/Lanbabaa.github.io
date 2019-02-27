@@ -1,0 +1,547 @@
+a {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.clearfix {
+	display: block;
+	clear: both;
+	content: '';
+	overflow: hidden;
+}
+
+
+/* 顶部开始  */
+.kaishi{
+	min-height: 969px;
+}
+.topbar {
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 12px;
+	width: 100%;
+	height: 40px;
+	background-color: #333;
+	color: #b0b0b0;
+}
+
+.topbar .topbar-site {
+	width: 1226px;
+	margin: auto;
+}
+
+.topbar .topbar-cart {
+	width: 120px;
+	height: 40px;
+	margin-left: 15px;
+	line-height: 40px;
+	text-align: center;
+	float: right;
+	color: #b0b0b0;
+	background-color: #424242;
+	cursor: pointer;
+}
+
+.topbar .topbar-cart:hover {
+	color: #ff6700;
+	background-color: #fff;
+}
+
+.topbar .topbar-info {
+	float: right;
+	line-height: 40px;
+}
+
+.topbar .topbar-info a {
+	color: #b0b0b0;
+	text-align: center;
+	padding: 0 5px;
+	line-height: 40px;
+}
+
+.topbar .topbar-info span {
+	color: #424242;
+	line-height: 40px;
+}
+
+.topbar .topbar-info a:hover {
+	color: #fff;
+}
+
+
+/* 顶部结束 */
+
+
+/* 菜单开始 */
+
+.header {
+	height: 100px;
+	line-height: 100px;
+	width: 1226px;
+	margin: auto;
+}
+
+.header .header-logo {
+	width: 55px;
+	height: 55px;
+	float: left;
+	margin-right: 250px;
+}
+
+.header .header-nav {
+	display: inline-block;
+	height: 100px;
+	line-height: 100px;
+}
+
+.header .header-nav .nav-list .nav-item {
+	text-align: center;
+	float: left;
+	font-size: 16px;
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+.header .nav-list .nav-item:hover {
+	color: #ff6700;
+}
+
+.header .header-search {
+	width: 250px;
+	float: right;
+	position: relative;
+}
+
+.header .header-search .layui-input {
+	display: inline-block;
+	padding-right: 38px;
+}
+
+.header .header-search .layui-input:hover {
+	border-color: #FF6700 !important;
+}
+
+.header .header-search .layui-input:focus {
+	border-color: #FF6700 !important;
+}
+
+.header .header-search .search {
+	text-align: center;
+	line-height: 38px;
+	position: absolute;
+	top: calc(50% - 18px);
+	right: 0px;
+	cursor: pointer;
+	display: block;
+	width: 36px;
+	height: 36px;
+}
+
+.header .header-search .search i {
+	font-size: 16px;
+}
+
+.header .header-search .search:hover {
+	background-color: #FF6700;
+}
+
+.header .header-search .search:hover i {
+	color: #FFF;
+}
+
+
+/* 菜单结束 */
+
+
+/* 轮播图菜单开始 */
+
+.container {
+	width: 1226px;
+	margin: auto;
+	height: 460px;
+	background-color: #f0f00f;
+	position: relative;
+}
+
+.container .container-nav {
+	overflow: hidden;
+	width: 234px;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+
+.container .container-nav .nav {
+	width: 100%;
+	height: calc(100% - 40px);
+	padding: 20px 0;
+}
+
+.container .container-nav .nav .category-item {
+	width: 100%;
+	height: 42px;
+	color: #fff;
+	padding-left: 30px;
+	line-height: 42px;
+	position: relative;
+	cursor: pointer;
+}
+
+.container .container-nav .nav .category-item:hover {
+	background: #FF6700;
+}
+
+.container .container-nav .nav .category-item i {
+	display: inline-block;
+	line-height: 42px;
+	font-size: 26px;
+	color: #999;
+	float: right;
+	margin-right: 50px;
+}
+
+.container .menu {
+	position: absolute;
+	left: 234px;
+	top: 0;
+	height: 100%;
+	background-color: #fff;
+	box-sizing: border-box;
+	border: 1px solid #e0e0e0;
+	border-left: 0px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+	z-index: 1;
+	display: none;
+}
+
+.container .menu ul {
+	width: 245px;
+	padding: 2px 0;
+	float: left;
+}
+
+.container .menu ul li {
+	position: relative;
+	height: 76px;
+}
+
+.container .menu ul li:hover a {
+	color: #FF6700;
+}
+
+.container .menu ul li a {
+	display: block;
+	padding: 18px 20px;
+	line-height: 40px;
+	color: #333;
+	-webkit-transition: color .2s;
+	transition: color .2s;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.container .menu ul li a img {
+	width: 40px;
+	margin-right: 12px;
+}
+
+.container .container-carousel {
+	width: 100%;
+	height: 100%;
+}
+
+.container .container-carousel img {
+	width: 100%;
+}
+
+.layui-carousel[lay-arrow=always] .layui-carousel-arrow {
+	left: calc(234px + 20px);
+}
+
+.layui-carousel-ind ul {
+	margin-left: 20%;
+}
+
+
+/* 轮播图菜单结束 */
+
+
+/* 服务窗口与推荐菜单开始 */
+
+.passagewayandrecommend {
+	width: 1226px;
+	height: 170px;
+	margin: auto;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.passagewayandrecommend .passageway {
+	float: left;
+	width: 234px;
+	height: 100%;
+	margin-bottom:25px ;
+}
+
+.passagewayandrecommend .passageway li {
+	float: left;
+	width: 70px;
+	height: 81px;
+	text-align: center;
+	padding: 1px 3px;
+	border: 1px solid rgba(140, 140, 140, .1);
+	background-color: #665e57;
+}
+
+.passagewayandrecommend .passageway li a {
+	height: 50px;
+	display: block;
+	padding-top: 18px;
+	font-size: 12px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.passagewayandrecommend .passageway li a:hover {
+	color: #fff;
+}
+
+.passagewayandrecommend .passageway li a i {
+	display: block;
+	font-size: 22px;
+	margin-bottom: 5px;
+}
+
+.passagewayandrecommend .recommend .recommend-item {
+	float: right;
+	height: 170px;
+	width: 316px;
+	margin-left: 14px;
+	margin-bottom: 14px;
+	overflow: hidden;
+	-webkit-transition: -webkit-box-shadow .2s linear;
+	transition: box-shadow .2s linear;
+}
+
+.passagewayandrecommend .recommend .recommend-item:hover {
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.passagewayandrecommend .recommend img {
+	width: 100%;
+}
+
+
+/* 服务窗口与推荐菜单结束 */
+
+.recommend-big{
+	width: 100%;
+	margin-bottom: 25px;
+}
+.recommend-big img{
+	width: 100%;
+}
+/*专卖区开始*/
+
+.monopoly {
+	padding: 20px 0;
+	width: 100%;
+	background-color: #f5f5f5;
+	color: #333;
+}
+
+
+/*手机专卖*/
+
+.monopoly .monopoly-box {
+	width: 1226px;
+	margin: auto;
+}
+
+.monopoly .monopoly-box .title {
+	height: 60px;
+	line-height: 60px;
+}
+
+.monopoly .monopoly-box .title h2 {
+	display: inline-block;
+	float: left;
+}
+
+.monopoly .monopoly-box .title .more-phone {
+	font-size: 16px;
+	color: #424242;
+	-webkit-transition: all .4s;
+	transition: all .4s;
+	float: right;
+}
+.monopoly .monopoly-box .title .more-phone i{
+	-webkit-transition: all .4s;
+	transition: all .4s;
+}
+.monopoly .monopoly-box .title .more-phone:hover,
+.monopoly .monopoly-box .title .more-phone:hover i{
+	color: #FF6700;
+}
+
+.monopoly .monopoly-box .title .more-phone i {
+	font-size: 18px;
+	color: #b0b0b0;
+}
+
+.monopoly .monopoly-box .main {
+	width: 100%;
+}
+.monopoly .monopoly-box .main li{
+	-webkit-transition: all .2s linear;
+	transition: all .2s linear;
+}
+
+.monopoly .monopoly-box .main .big,
+.monopoly .monopoly-box .main .small {
+	float: left;
+	padding: 20px 0;
+}
+
+.monopoly .monopoly-box .main .big {
+	width: 234px;
+	
+}
+.monopoly .monopoly-box .main .big li{
+	margin-bottom: 14px;
+}
+.monopoly .monopoly-box .main .small {
+	width: calc(100% - 234px);
+}
+
+.monopoly .monopoly-box .main .big img {
+	width: 100%;
+	
+}
+
+.li-active {
+	-webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+	-webkit-transform: translate3d(0, -2px, 0);
+	transform: translate3d(0, -2px, 0);
+}
+
+.monopoly .monopoly-box .main .small li {
+	width: 234px;
+	height: 280px;
+	padding-bottom: 20px;
+	margin-left: 14px;
+	margin-bottom: 14px;
+	float: left;
+	background-color: #fff;
+	text-align: center;
+	position: relative;
+}
+
+.monopoly .monopoly-box .main .small li .flag {
+	width: 80px;
+	margin: auto;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	background-color: #e53935;
+	font-size: 12px;
+	color: #fff;
+}
+
+.monopoly .monopoly-box .main .small li .flag-new {
+	background-color: #83c44e !important;
+}
+
+.monopoly .monopoly-box .main .small li img {
+	margin-top: 20px;
+	height: 160px;
+	width: 160px;
+}
+
+.monopoly .monopoly-box .main .small li .product-name {
+	margin: 0 10px 2px;
+	display: block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.monopoly .monopoly-box .main .small li .product-name:hover a {
+	color: #FF6700;
+}
+
+.monopoly .monopoly-box .main .small li .desc {
+	margin: 5px 10px 10px;
+	height: 18px;
+	font-size: 12px;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	color: #b0b0b0;
+}
+.monopoly .monopoly-box .main .small li .price{
+	color: #FF6700;
+}
+.monopoly .monopoly-box .main .small li .price del{
+	color: #b0b0b0 !important;
+}
+.monopoly .monopoly-box .main .small .more{
+	background-color: rgba(0,0,0,0);
+}
+.monopoly .monopoly-box .main .small .more a:hover{
+	color: #FF6700;
+}
+.monopoly .monopoly-box .main .small .more li{
+	padding: 20px;
+	margin-bottom: 14px;
+	width: 194px;
+	height:103px;
+	text-align: left;
+}
+.monopoly .monopoly-box .main .small .more li .figure-img{
+	width: 80px;
+	height: 80px;
+	float: right;
+}
+.monopoly .monopoly-box .main .small .more li .figure-img img{
+	width: 100%;
+	height: 100%;
+}
+.monopoly .monopoly-box .main .small .more li h4 a{
+	display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.monopoly .monopoly-box .main .small .more li .gengduo{
+	position: absolute;
+	right: 20px;
+	top: calc(50% - 25px);
+	width: 50px;
+	height: 50px;
+}
+.monopoly .monopoly-box .main .small .more li .gengduo i{
+	font-size:48px ;
+	color: #FF6700;
+}
+.monopoly .monopoly-box .main .small .more li .see{
+	display: block;
+	font-size: 18px;
+	margin-top: 35px;
+}
+.monopoly .monopoly-box .main .small .more li .see p{
+	display: block;
+	font-size: 12px;
+	color: #757575;
+	text-align: left;
+}
