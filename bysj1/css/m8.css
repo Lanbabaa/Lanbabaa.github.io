@@ -22,7 +22,6 @@ a {
 .active {
 	border-color: #FF6700 !important;
 }
-
 .topbar {
 	margin-right: auto;
 	margin-left: auto;
@@ -177,7 +176,51 @@ a {
 	width: 1226px;
 	margin: auto;
 }
-
+.cover{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: #fff;
+	z-index: 2;
+	display: none;
+}
+.container-carousel .times{
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	position:fixed;
+	top:50px;
+	right: 50px;
+	z-index: 999;
+	cursor: pointer;
+}
+.layui-carousel[lay-arrow=always] .layui-carousel-arrow{
+	left: 50px;
+}
+.layui-carousel:hover .layui-carousel-arrow[lay-type=add], .layui-carousel[lay-arrow=always] .layui-carousel-arrow[lay-type=add]{
+	right: 50px;
+}
+.container-carousel .times i{
+	font-size: 30px;
+}
+#test1{
+	overflow: hidden;
+	position: fixed;
+	background-color: #fff;
+	top: 100px;
+	z-index: 999;
+}
+#test1 div{
+	width: 800px;
+	margin: auto;
+}
+#test1 img{
+	width: 100%;
+}
+.layui-carousel-ind{
+	display: none;
+}
 .main .content {
 	padding: 45px 0;
 }
@@ -211,6 +254,7 @@ a {
 
 .main .content .goods-detail .big-picture li {
 	display: none;
+	cursor: pointer;
 }
 
 .main .content .goods-detail .big-picture li:nth-child(1) {
@@ -423,12 +467,6 @@ a {
 	position: absolute;
 	left: calc(50% - 225px);
 	top: 50px;
+	opacity: .7;
 }
-.details .img .mp4 span{
-	color: #fff;
-	position: absolute;
-	width: 750px;
-	font-size: 24px;
-	left: calc(50% - 375px);
-	top: 160px;
-}
+
