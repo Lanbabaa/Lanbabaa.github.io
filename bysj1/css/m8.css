@@ -254,7 +254,6 @@ a {
 
 .main .content .goods-detail .big-picture li {
 	display: none;
-	cursor: pointer;
 }
 
 .main .content .goods-detail .big-picture li:nth-child(1) {
