@@ -49,18 +49,18 @@ a {
 	background-color: #fff;
 }
 
-.topbar .topbar-info {
+.topbar .topbar-info,
+.topbar .topbar-info-sign{
 	float: right;
 	line-height: 40px;
 }
-
-.topbar .topbar-info a {
+.topbar .topbar-info a,
+.topbar .topbar-info-sign a {
 	color: #b0b0b0;
 	text-align: center;
 	padding: 0 5px;
 	line-height: 40px;
 }
-
 .topbar .topbar-info span {
 	color: #424242;
 	line-height: 40px;
