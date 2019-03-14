@@ -369,20 +369,17 @@ a {
 	-webkit-transition: all .4s;
 	transition: all .4s;
 }
-
-.main .content .commodity-information .cart button:hover {
-	background-color: #f25807;
-}
-
 .main .content .commodity-information .cart button:nth-child(2) {
 	margin-top: 25px;
 	width: 35%;
 	float: right;
 	background-color: #b0b0b0;
 }
-
-.main .content .commodity-information .cart button:nth-child(2):hover {
-	background-color: #757575;
+.main .content .commodity-information .cart .sele{
+	background-color: #FF6700 !important;
+}
+.main .content .commodity-information .cart button:hover {
+	opacity: .7 !important;
 }
 
 .details {

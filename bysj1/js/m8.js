@@ -42,3 +42,6 @@ $('.topbar-info-sign .out').click(function(){
 	localStorage.setItem("lastname1", "0");
 	window.location.reload();
 })
+$(".main .content .commodity-information .cart button:nth-child(2)").click(function(){
+	$('.main .content .commodity-information .cart button:nth-child(2)').toggleClass('sele')
+})
