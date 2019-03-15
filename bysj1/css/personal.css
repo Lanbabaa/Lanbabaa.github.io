@@ -1,0 +1,157 @@
+a {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.clearfix {
+	display: block;
+	clear: both;
+	content: '';
+	overflow: hidden;
+}
+
+
+/* 顶部开始  */
+
+
+.active {
+	border-color: #FF6700 !important;
+}
+
+.topbar {
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 12px;
+	width: 100%;
+	height: 40px;
+	background-color: #333;
+	color: #b0b0b0;
+}
+
+.topbar .topbar-site {
+	width: 1226px;
+	margin: auto;
+}
+
+.topbar .topbar-cart {
+	width: 120px;
+	height: 40px;
+	margin-left: 15px;
+	line-height: 40px;
+	text-align: center;
+	float: right;
+	color: #b0b0b0;
+	background-color: #424242;
+	cursor: pointer;
+}
+
+.topbar .topbar-cart:hover {
+	color: #ff6700;
+	background-color: #fff;
+}
+
+.topbar .topbar-info,
+.topbar .topbar-info-sign {
+	float: right;
+	line-height: 40px;
+}
+
+.topbar .topbar-info a,
+.topbar .topbar-info-sign a {
+	color: #b0b0b0;
+	text-align: center;
+	padding: 0 5px;
+	line-height: 40px;
+}
+
+.topbar .topbar-info span {
+	color: #424242;
+	line-height: 40px;
+}
+
+.topbar .topbar-info a:hover {
+	color: #fff;
+}
+
+
+/* 顶部结束 */
+
+
+/* 菜单开始 */
+
+.header {
+	height: 100px;
+	line-height: 100px;
+	width: 1226px;
+	margin: auto;
+}
+
+.header .header-logo {
+	width: 55px;
+	height: 55px;
+	float: left;
+	margin-right: 250px;
+}
+
+.header .header-nav {
+	display: inline-block;
+	height: 100px;
+	line-height: 100px;
+}
+
+.header .header-nav .nav-list .nav-item {
+	text-align: center;
+	float: left;
+	font-size: 16px;
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+.header .nav-list .nav-item:hover {
+	color: #ff6700;
+}
+
+.header .header-search {
+	width: 250px;
+	float: right;
+	position: relative;
+}
+
+.header .header-search .layui-input {
+	display: inline-block;
+	padding-right: 38px;
+}
+
+.header .header-search .layui-input:hover {
+	border-color: #FF6700 !important;
+}
+
+.header .header-search .layui-input:focus {
+	border-color: #FF6700 !important;
+}
+
+.header .header-search .search {
+	text-align: center;
+	line-height: 38px;
+	position: absolute;
+	top: calc(50% - 18px);
+	right: 0px;
+	cursor: pointer;
+	display: block;
+	width: 36px;
+	height: 36px;
+}
+
+.header .header-search .search i {
+	font-size: 16px;
+}
+
+.header .header-search .search:hover {
+	background-color: #FF6700;
+}
+
+.header .header-search .search:hover i {
+	color: #FFF;
+}
