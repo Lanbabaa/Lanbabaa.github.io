@@ -26,6 +26,11 @@ $(function() {
 		$(this).attr('title', $(this).text())
 	});
 });
+$(".topbar .topbar-cart").hover(function() {
+	$(".topbar .topbar-cart .content p").fadeIn();
+}, function() {
+	$(".topbar .topbar-cart .content p").fadeOut(0);
+});
 $(".container .container-nav .nav .nav-phone,.container .phone").hover(function() {
 	$(".container .phone").fadeIn(0);
 }, function() {

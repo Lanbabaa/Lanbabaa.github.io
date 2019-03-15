@@ -53,9 +53,9 @@ a {
 .topbar .topbar-cart:hover .content{
 	height: 98px;
 }
-.topbar .topbar-cart:hover .content p{
+/*.topbar .topbar-cart:hover .content p{
 	display: block;
-}
+}*/
 .topbar .topbar-cart .content{
 	width: 316px;
 	height: 0px;
