@@ -1,8 +1,3 @@
-
-
-
-/* 轮播图菜单开始 */
-
 .container {
 	width: 1226px;
 	margin: auto;
@@ -114,12 +109,6 @@
 	margin-left: 20%;
 }
 
-
-/* 轮播图菜单结束 */
-
-
-/* 服务窗口与推荐菜单开始 */
-
 .passagewayandrecommend {
 	width: 1226px;
 	height: 170px;
@@ -185,9 +174,6 @@
 	width: 100%;
 }
 
-
-/* 服务窗口与推荐菜单结束 */
-
 .recommend-big {
 	width: 100%;
 	margin-bottom: 25px;
@@ -197,18 +183,12 @@
 	width: 100%;
 }
 
-
-/*专卖区开始*/
-
 .monopoly {
 	padding: 20px 0;
 	width: 100%;
 	background-color: #f5f5f5;
 	color: #333;
 }
-
-
-/*手机专卖*/
 
 .monopoly .monopoly-box {
 	width: 1226px;
@@ -409,198 +389,11 @@
 	color: #757575;
 	text-align: left;
 }
-
-.service {
-	padding: 27px 0;
-	height: 25px;
-	background-color: #ffffff;
-	border-bottom: 1px solid #e0e0e0;
-}
-
-.afterbody {
-	text-align: center;
-}
-
-.service ul li {
-	float: left;
-	width: 239px;
-	height: 25px;
-	line-height: 25px;
-	text-align: center;
-	font-size: 16px;
-	border-right: 1px solid #e0e0e0;
-}
-
-.service ul li:last-child {
-	border: 0;
-}
-
-.service ul li a {
-	color: #616161;
-	display: block;
-}
-
-.service ul li a:hover {
-	color: #ff6700;
-	text-decoration: none;
-}
-
-.service-link {
-	width: 1226px;
-	height: 112px;
-	padding: 40px 0;
-}
-
-.service-link ul li {
-	width: 160px;
-	height: 112px;
-	float: left;
-}
-
-.service-link ul li h1 {
-	padding-bottom: 26px;
-	color: #424242;
-	font-size: 16px
-}
-
-.service-a {
-	color: #757575;
-	font-size: 12px;
-	display: block;
-	margin-bottom: 20px;
-}
-
-.service-a:hover {
-	color: #ff6700;
-	text-decoration: none;
-}
-
-.callme {
-	width: 252px;
-	height: 112px;
-	float: right;
-}
-
-.callme .phone {
-	font-size: 22px;
-	color: #FF0000;
-	margin: 0 0 10px;
-	text-align: center
-}
-
-.relation {
-	height: 29px;
-	width: 120px;
-	margin-top: 20px;
-	margin-left: 70px;
-	text-align: center;
-	line-height: 29px;
-	border: 1px solid #ff6700;
-}
-
-.relation a {
-	width: 120px;
-	height: 29px;
-	color: #ff6700;
-	display: block;
-}
-
-.relation a:hover {
-	background-color: #ff6700;
-	color: #ffffff;
-	text-decoration: none;
-}
-
-.firm {
-	width: 100%;
-	padding: 30px 0;
-	height: 120px;
-	background-color: #fafafa;
-	position: relative;
-}
-
-.firm .centre {
-	position: relative;
-}
-
-.below-1 {
-	float: left;
-	font-size: 12px;
-	text-align: center;
-}
-
-.below-1 a {
-	color: #757575;
-}
-
-.below-2 {
-	width: 750px;
-}
-
-.below-2 a {
-	color: #b0b0b0;
-	font-size: 12px;
-	height: 54px;
-	line-height: 18px;
-}
-
-.make-img img {
-	width: 85px;
-	height: 28px;
-}
-
-.make-img {
-	width: 440px;
-	height: 28px;
-	position: absolute;
-	top: 20%;
-	right: 0;
-}
-
-.spn-new {
-	margin-left: 3px;
-	margin-right: 3px;
-	color: #b0b0b0;
-	font-size: 12px;
-	font-family: sans-serif;
-}
-
-.xiaomi {
-	width: 1226px;
-	font-size: 20px;
-	color: #b0b0b0;
-	margin: 30px auto 0;
-	height: 19px;
-}
-
-.below-1 a:hover {
-	text-decoration: none;
-	color: #ff532e;
-}
-
-.below-2 a:hover {
-	text-decoration: none;
-	color: #ff532e;
-}
-
-.centre {
-	width: 1226px;
-	margin: 0 auto;
-}
-
-.centre:after {
-	content: '.';
-	clear: both;
-	height: 0;
-	visibility: hidden;
-	display: block;
-}
-
 .bar-right {
 	width: 84px;
 	position: fixed;
 	right: 0;
-	bottom: calc(50% - 227px);
+	bottom: 150px;
 	background-color: #fff;
 	text-align: center;
 }

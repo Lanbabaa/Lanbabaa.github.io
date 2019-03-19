@@ -1,12 +1,4 @@
-$(document).ready(function() {
-	var a = localStorage.getItem("lastname1");
-	var id = localStorage.getItem("id");
-	if(a == 'a') {
-		$('.topbar .topbar-info-sign a .id').text(id);
-		$('.topbar-info').fadeOut(0);
-		$('.topbar-info-sign').fadeIn(0)
-	}
-});
+
 layui.use('carousel', function() {
 	var carousel = layui.carousel;
 	//建造实例
