@@ -280,13 +280,14 @@
 
 .monopoly .monopoly-box .main .small li .flag {
 	width: 80px;
-	margin: auto;
 	height: 20px;
 	line-height: 20px;
 	text-align: center;
 	background-color: #e53935;
 	font-size: 12px;
 	color: #fff;
+	position: absolute;
+	left: calc(50% - 40px);
 }
 
 .monopoly .monopoly-box .main .small li .flag-new {
