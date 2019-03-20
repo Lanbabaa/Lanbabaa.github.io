@@ -45,3 +45,6 @@ $('.topbar-info-sign .out').click(function(){
 $(".main .content .commodity-information .cart button:nth-child(2)").click(function(){
 	$('.main .content .commodity-information .cart button:nth-child(2)').toggleClass('sele')
 })
+$('.main .content .commodity-information .cart button').click(function(){
+	window.location.href = "car-1.html";
+})

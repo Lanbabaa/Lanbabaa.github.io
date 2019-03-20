@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/top.css" />
+		<link rel="stylesheet" type="text/css" href="css/car-1.css" />
+		<link rel="stylesheet" type="text/css" href="css/car-2.css" />
+		<link rel="icon" type="text/css" href="img/logo.png" />
+
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="container">
+				<div class="logo">
+					<img src="img/logo.png" />
+				</div>
+				<span>我的购物车</span>
+				<span class="tips">温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</span>
+			</div>
+		</div>
+		<div class="main">
+			<div class="car-box">
+				<ul class="title clearfix">
+					<li style="width: 60%;">商品名称</li>
+					<li style="width: 10%;">单价</li>
+					<li style="width: 10%;">数量</li>
+					<li style="width: 10%;">小计</li>
+					<li style="width: 10%;">操作</li>
+				</ul>
+				<ul class="list clearfix">
+					<li style="width: 60%;">
+						<img src="img/goods-detail/pms_1537324004.08544830.jpg"/>
+						<h3><a href="#">小米8 青春 全网通版 6GB内存 梦幻蓝 64GB</a></h3>
+					</li>
+					<li style="width: 10%;" class="price">1499</li>
+					<li style="width: 10%;"><input type="text" value="1" class="layui-input" style="margin-top: calc(50% - 19px); text-align: center;"/></li>
+					<li style="width: 10%;" class="subtotal"></li>
+					<li style="width: 10%; cursor: pointer;"><i class="layui-icon layui-icon-close"></i></li>
+				</ul>
+				<div class="settlement clearfix">
+					<div class="left">
+						<a href="#">继续购物</a>
+						<span>共 <span class="num">0</span> 件商品</span>
+					</div>
+					<div class="right">
+						<span>合计： <span class="sum">0</span> 元</span>
+						<input type="button" class="layui-btn" value="去结算" />
+					</div>
+				</div>
+			</div>
+			<div class="more">
+				<div class="title">买购物车中商品的人还买了</div>
+				<div class="layui-carousel" id="test1">
+					<div carousel-item>
+						<div>
+							<ul class="goods-more clearfix">
+								<li>
+									<img src="img/goods-more/goods-more1.jpg" />
+									<div>
+										<a href="#" class="name"> 小米8 青春 全网通版 6GB内存 </a>
+										<p class="price">1799元</p>
+									</div>
+									<div class="bottom">
+										<p class="tips">6434人好评</p>
+										<input type="button" class="layui-btn add-car" value="加入购物车" />
+									</div>
+								</li>
+								<li>
+									<img src="img/goods-more/goods-more2.jpg" />
+									<div>
+										<a href="#" class="name"> Redmi Note 7 全网通 6GB </a>
+										<p class="price">1399元</p>
+									</div>
+									<div class="bottom">
+										<p class="tips">3.9万人好评</p>
+										<input type="button" class="layui-btn" value="加入购物车" />
+									</div>
+								</li>
+								<li>
+									<img src="img/goods-more/goods-more3.jpg" />
+									<div>
+										<a href="#" class="name"> 小米8 SE 全网通版 6GB内存 64GB </a>
+										<p class="price">1599元</p>
+									</div>
+									<div class="bottom">
+										<p class="tips">3万人好评</p>
+										<input type="button" class="layui-btn" value="加入购物车" />
+									</div>
+								</li>
+								<li>
+									<img src="img/goods-more/goods-more4.jpg" />
+									<div>
+										<a href="#" class="name"> 小米8青春版极简高透保护壳 </a>
+										<p class="price">29元</p>
+									</div>
+									<div class="bottom">
+										<p class="tips">6434人好评</p>
+										<input type="button" class="layui-btn" value="加入购物车" />
+									</div>
+								</li>
+								<li>
+									<img src="img/goods-more/goods-more5.jpg" />
+									<div>
+										<a href="#" class="name"> USB Type-C 转接头 </a>
+										<p class="price">5元</p>
+									</div>
+									<div class="bottom">
+										<p class="tips">6434人好评</p>
+										<input type="button" class="layui-btn" value="加入购物车" />
+									</div>
+								</li>
+								<li>
+									<img src="img/goods-more/goods-more6.jpg" />
+									<div>
+										<a href="#" class="name"> FREETIE云弹减震运动鞋 男款 </a>
+										<p class="price">249元</p>
+									</div>
+									<div class="bottom">
+										<p class="tips">1532人好评</p>
+										<input type="button" class="layui-btn" value="加入购物车" />
+									</div>
+								</li>
+								<li>
+									<img src="img/goods-more/goods-more7.jpg" />
+									<div>
+										<a href="#" class="name"> 小米USB-C TO USB-C数据线 </a>
+										<p class="price">29元</p>
+									</div>
+									<div class="bottom">
+										<p class="tips">490人好评</p>
+										<input type="button" class="layui-btn" value="加入购物车" />
+									</div>
+								</li>
+								<li>
+									<img src="img/goods-more/goods-more8.jpg" />
+									<div>
+										<a href="#" class="name"> Amazfit智能运动手表2S </a>
+										<p class="price">1499元</p>
+									</div>
+									<div class="bottom">
+										<p class="tips">431人好评</p>
+										<input type="button" class="layui-btn" value="加入购物车" />
+									</div>
+								</li>
+								<li>
+									<img src="img/goods-more/goods-more9.jpg" />
+									<div>
+										<a href="#" class="name"> 小米米家照片打印机 </a>
+										<p class="price">499元</p>
+									</div>
+									<div class="bottom">
+										<p class="tips">4134人好评</p>
+										<input type="button" class="layui-btn" value="加入购物车" />
+									</div>
+								</li>
+								<li>
+									<img src="img/goods-more/goods-more10.png" />
+									<div>
+										<a href="#" class="name"> 最生活毛巾•Air（10条装） </a>
+										<p class="price">169元</p>
+									</div>
+									<div class="bottom">
+										<p class="tips">1.6万人好评</p>
+										<input type="button" class="layui-btn" value="加入购物车" />
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<ul class="goods-more clearfix">
+								<li>
+									<img src="img/goods-more/goods-more11.jpeg" />
+									<div>
+										<a href="#" class="name"> 最生活浴巾•Air（1条装）</a>
+										<p class="price">69元</p>
+									</div>
+									<div class="bottom">
+										<p class="tips">51人好评</p>
+										<input type="button" class="layui-btn" value="加入购物车" />
+									</div>
+								</li>
+								<li>
+									<img src="img/goods-more/goods-more12.jpg" />
+									<div>
+										<a href="#" class="name"> 悦活每日水果燕麦 </a>
+										<p class="price">49元</p>
+									</div>
+									<div class="bottom">
+										<p class="tips">66人好评</p>
+										<input type="button" class="layui-btn" value="加入购物车" />
+									</div>
+								</li>
+								<li>
+									<img src="img/goods-more/goods-more13.jpg" />
+									<div>
+										<a href="#" class="name"> 云米不锈钢真空保温壶 </a>
+										<p class="price">119元</p>
+									</div>
+									<div class="bottom">
+										<p class="tips">6434人好评</p>
+										<input type="button" class="layui-btn" value="加入购物车" />
+									</div>
+								</li>
+								<li>
+									<img src="img/goods-more/goods-more14.jpg" />
+									<div>
+										<a href="#" class="name"> 8H可调节支撑腰靠 </a>
+										<p class="price">89元</p>
+									</div>
+									<div class="bottom">
+										<p class="tips">61人好评</p>
+										<input type="button" class="layui-btn" value="加入购物车" />
+									</div>
+								</li>
+								<li>
+									<img src="img/goods-more/goods-more15.jpg" />
+									<div>
+										<a href="#" class="name"> 小米米家智能门锁 </a>
+										<p class="price">1299元</p>
+									</div>
+									<div class="bottom">
+										<p class="tips">1万人好评</p>
+										<input type="button" class="layui-btn" value="加入购物车" />
+									</div>
+								</li>
+								<li>
+									<img src="img/goods-more/goods-more16.jpg" />
+									<div>
+										<a href="#" class="name"> 九号护具套装 </a>
+										<p class="price">169元</p>
+									</div>
+									<div class="bottom">
+										<p class="tips">1434人好评</p>
+										<input type="button" class="layui-btn" value="加入购物车" />
+									</div>
+								</li>
+								<li>
+									<img src="img/goods-more/goods-more17.jpg" />
+									<div>
+										<a href="#" class="name"> Amazfit 米动健康手环 </a>
+										<p class="price">699元</p>
+									</div>
+									<div class="bottom">
+										<p class="tips">64人好评</p>
+										<input type="button" class="layui-btn" value="加入购物车" />
+									</div>
+								</li>
+								<li>
+									<img src="img/goods-more/goods-more18.jpg" />
+									<div>
+										<a href="#" class="name"> 米家小饭煲 </a>
+										<p class="price">199元</p>
+									</div>
+									<div class="bottom">
+										<p class="tips">2274人好评</p>
+										<input type="button" class="layui-btn" value="加入购物车" />
+									</div>
+								</li>
+								<li>
+									<img src="img/goods-more/goods-more19.jpg" />
+									<div>
+										<a href="#" class="name"> LUCKYME 万福足金祈运珠单颗手链 </a>
+										<p class="price">329元</p>
+									</div>
+									<div class="bottom">
+										<p class="tips">719人好评</p>
+										<input type="button" class="layui-btn" value="加入购物车" />
+									</div>
+								</li>
+								<li>
+									<img src="img/goods-more/goods-more20.jpg" />
+									<div>
+										<a href="#" class="name"> 米兔大颗粒积木 动物乐园 </a>
+										<p class="price">69元</p>
+									</div>
+									<div class="bottom">
+										<p class="tips">634人好评</p>
+										<input type="button" class="layui-btn" value="加入购物车" />
+									</div>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="afterbody">
+			<div class="centre service">
+				<ul>
+					<li>
+						<a href="#">预约维修服务</a>
+					</li>
+					<li>
+						<a href="#">七天无理由退货</a>
+					</li>
+					<li>
+						<a href="#">15天免费换货</a>
+					</li>
+					<li>
+						<a href="#">满150元包邮</a>
+					</li>
+					<li>
+						<a href="#">520余家售后网点</a>
+					</li>
+				</ul>
+			</div>
+			<div class="centre service-link clearfix">
+				<ul>
+					<li>
+						<div>
+							<h1>帮助中心</h1>
+							<a href="#" class="service-a">账户管理</a>
+							<a href="#" class="service-a">购物指南</a>
+							<a href="#" class="service-a">订单操作</a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<h1>服务支持</h1>
+							<a href="#" class="service-a">售后政策</a>
+							<a href="#" class="service-a">自助服务</a>
+							<a href="#" class="service-a">相关下载</a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<h1>线下门店</h1>
+							<a href="#" class="service-a">小米之家</a>
+							<a href="#" class="service-a">服务网店</a>
+							<a href="#" class="service-a">授权体验店</a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<h1>关于小米</h1>
+							<a href="#" class="service-a">了解小米</a>
+							<a href="#" class="service-a">加入小米</a>
+							<a href="#" class="service-a">投资者关系</a>
+						</div>
+					</li>
+					<li>
+						<div>
+							<h1>关注我们</h1>
+							<a href="#" class="service-a">新浪微博</a>
+							<a href="#" class="service-a">官方微信</a>
+							<a href="#" class="service-a">联系我们</a>
+						</div>
+					</li>
+					<li>
+						<div style="border-right: 1px solid #e0e0e0">
+							<h1>特色服务</h1>
+							<a href="#" class="service-a">F 码通道</a>
+							<a href="#" class="service-a">礼物码</a>
+							<a href="#" class="service-a">防伪查询</a>
+						</div>
+					</li>
+				</ul>
+				<div class="callme">
+					<p class="phone">400-100-5678</p>
+					<p style="text-align: center;color: #424242;font-size: 12px;margin: 0 0 16px">
+						周一至周日 8:00-18:00
+						<br> （仅收市话费）
+					</p>
+					<div class="relation">
+						<a href="#">联系客服</a>
+					</div>
+
+				</div>
+			</div>
+			<div class="firm">
+				<div class="centre">
+					<div><img src="img/logo-footer.png" alt="" style="margin-right: 12px;float: left"></div>
+					<p class="below-1">
+						<a href="#">小米商城</a>
+						<span class="spn-new">|</span>
+						<a href="#">MIUI</a>
+						<span class="spn-new">|</span>
+						<a href="#">米家</a>
+						<span class="spn-new">|</span>
+						<a href="#">米聊</a>
+						<span class="spn-new">|</span>
+						<a href="#">多看</a>
+						<span class="spn-new">|</span>
+						<a href="#">游戏</a>
+						<span class="spn-new">|</span>
+						<a href="#">米粉卡</a>
+						<span class="spn-new">|</span>
+						<a href="#">政企服务</a>
+						<span class="spn-new">|</span>
+						<a href="#">小米天猫店</a>
+						<span class="spn-new">|</span>
+						<a href="#">隐私政策</a>
+						<span class="spn-new">|</span>
+						<a href="#">问题反馈</a>
+						<span class="spn-new">|</span>
+						<a href="#">廉正举办</a>
+						<span class="spspn-new">|</span>
+						<a href="#">select region</a>
+					</p>
+					<br>
+					<p class="below-2">
+						<a href="#">mi.com</a>
+						<a href="#">京ICP证110507号</a>
+						<a href="#">京ICP备10046444号</a>
+						<a href="#">京公网安备11010802020134号</a>
+						<a href="#">京网文[2017]1530-131号 </a>
+						<br>
+						<a href="#">（京）网械平台备字（2018）第00005号</a>
+						<a href="#">互联网药品信息服务资格证 (京) -非经营性-2014-0090</a>
+						<a href="#">营业执照</a>
+						<a href="#">医疗器械公告</a>
+						<br>
+						<a href="#">违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</a>
+					</p>
+					<div class="make-img">
+						<img src="img/truste.png" alt="">
+						<img src="img/ba10428a4f9495ac310fd0b5e0cf8370.png" alt="">
+						<img src="img/v-logo-1.png" alt="">
+						<img src="img/v-logo-2.png" alt="">
+						<img src="img/v-logo-3.png" alt="">
+					</div>
+
+				</div>
+				<div class="xiaomi">探索黑科技，小米为发烧而生</div>
+			</div>
+		</div>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/ty.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/car-2.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			layui.use('carousel', function() {
+				var carousel = layui.carousel;
+				carousel.render({
+					elem: '#test1',
+					autoplay: false,
+					width: '100%',
+					height: '680px',
+					arrow: 'none'
+				});
+			});
+		</script>
+	</body>
+
+</html>

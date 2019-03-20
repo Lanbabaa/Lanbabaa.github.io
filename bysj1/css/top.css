@@ -45,7 +45,10 @@ a {
 	background-color: #424242;
 	cursor: pointer;
 }
-
+.topbar .topbar-cart-active{
+	background-color: #ff6700;
+	color: #fff;
+}
 .topbar .topbar-cart:hover {
 	color: #ff6700;
 	background-color: #fff;
@@ -66,10 +69,29 @@ a {
     transition:height .2s;
     cursor: auto;
 }
-.topbar .topbar-cart .content p{
+.topbar .topbar-cart .content .num0{
 	color: #424242;
 	line-height:98px ;
 	display: none;
+}
+.topbar .topbar-cart .content .car{
+	position: relative;
+	margin: 15px 0;
+	display: none;
+}
+.topbar .topbar-cart .content .car span{
+	display: block;
+	color: #333;
+}.topbar .topbar-cart .content .car span strong{
+	font-size: 20px;
+	color: #FF6700;	
+}
+.topbar .topbar-cart .content .car input{
+	height: 30px;
+	line-height: 30px;
+	background-color: #ff6700;
+	float: right;
+	margin-right: 20px;
 }
 .topbar .topbar-info,
 .topbar .topbar-info-sign {

@@ -1,0 +1,99 @@
+.main{
+	background-color: #F5F5F5;
+	width: 100%;
+}
+.main .car-box{
+	width: 1226px;
+	padding: 50px 0;
+	margin: auto;
+	border-bottom:1px solid #e0e0e0 ;
+}
+.main .car-box .goods-content{
+	float: left;
+}
+.main .car-box .goods-content div{
+	float: left;
+}
+.main .car-box .goods-content .goods-info{
+	margin-left:20px ;
+}
+.main .car-box .goods-content .goods-info h3{
+	color: #424242;
+    font-size: 24px;
+    margin-top: 3px;
+}
+.main .car-box .goods-content .goods-info .name{
+	margin-right: 15px;
+    font-size: 14px;
+    color: #757575;
+}
+.main .car-box .layui-btn{
+	float: right;
+	margin-top: 10px;
+	background-color: #FF6700;
+}
+.main .more{
+	width: 1226px;
+	margin: auto;
+	text-align: center;
+}
+.main .more .title{
+	font-size: 30px;
+	padding: 20px 0;
+    color: #757575;
+}
+.layui-carousel>[carousel-item]>*{
+	background-color: #F5F5F5;
+}
+
+.main .more .layui-carousel .goods-more li{
+	float: left;
+	padding: 40px 20px 10px 20px;
+	width: 187px;
+	height: 248px;
+	background-color: #fff;
+	margin-left: 15px;
+	margin-top: 15px;
+	position: relative;
+}
+.main .more .layui-carousel .goods-more li img{
+	margin-bottom: 20px;
+}
+.main .more .layui-carousel .goods-more li .name{
+	display: block;
+	width: 187px;
+	color: #333;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.main .more .layui-carousel .goods-more li .price{
+	margin: 10px 0;
+    color: #ff6700;
+}
+.main .more .layui-carousel .goods-more li .bottom{
+	position: relative;
+    color: #757575;
+    height: 30px;
+    line-height: 30px;
+}
+.main .more .layui-carousel .goods-more li:hover .bottom .layui-btn{
+	display: block;
+}
+.main .more .layui-carousel .goods-more li .bottom .layui-btn{
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #fff;
+	border: 1px solid #FF6700;
+	color: #FF6700;
+	position: absolute;
+	top: 0;
+	left: calc(50% - 60px);
+	display: none;
+}
+.main .more .layui-carousel .goods-more li .bottom .layui-btn:hover{
+	background-color: #ff6700;
+	color: #fff;
+	opacity: 1;
+}
