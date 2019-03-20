@@ -48,7 +48,7 @@ $(document).ready(function() {
 		$('.topbar .topbar-cart .cart-num').text(Number(localStorage.getItem("carnum")));
 		cart()
 	})
-	$('.topbar .topbar-cart .content .car input').click(function(){
+	$('.topbar .topbar-cart .content .car input').click(function() {
 		window.location.href = "car-2.html";
 	})
 });
