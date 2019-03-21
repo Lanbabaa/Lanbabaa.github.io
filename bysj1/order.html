@@ -9,7 +9,8 @@
 		<link rel="stylesheet" type="text/css" href="css/footer.css" />
 		<link rel="stylesheet" type="text/css" href="css/top.css" />
 		<link rel="stylesheet" type="text/css" href="css/personal.css" />
-		<link rel="icon" type="text/css" href="img/logo.png"/>
+		<link rel="stylesheet" type="text/css" href="css/order.css" />
+		<link rel="icon" type="text/css" href="img/logo.png" />
 
 	</head>
 
@@ -67,7 +68,6 @@
 				<div class="search">
 					<i class="fa fa-search"></i>
 				</div>
-
 			</div>
 		</div>
 		<div class="main clearfix">
@@ -79,7 +79,7 @@
 					<div class="nav-left">
 						<div class="nav-box">
 							<p>订单中心</p>
-							<a href="#">我的订单</a>
+							<a href="#" style="color: #FF6700;">我的订单</a>
 							<a href="#">意外保</a>
 							<a href="#">团购订单</a>
 							<a href="#">评价晒单</a>
@@ -88,7 +88,7 @@
 						</div>
 						<div class="nav-box">
 							<p>个人中心</p>
-							<a href="#" style="color: #FF6700;">我的个人中心</a>
+							<a href="#">我的个人中心</a>
 							<a href="#">消息通知</a>
 							<a href="#">购买资格</a>
 							<a href="#">现金账户</a>
@@ -111,59 +111,36 @@
 							<a href="#">社区VIP认证</a>
 						</div>
 					</div>
-					<div class="user">
-						<div class="user-box">
-							<div class="portal-main clearfix">
-								<div class="user-card">
-									<div class="tx">
-										<img src="img/photo.jpg" />
-									</div>
-									<div class="card">
-										<h2 class="username"></h2>
-										<p class="tip"></p>
-										<a href="#">修改个人信息 > </a>
-									</div>
-								</div>
-								<div class="user-actions">
-									<ul class="action-list">
-										<li>账户安全：<span style="color: #ffac13">普通</span></li>
-										<li>绑定手机：173******31</li>
-										<li>绑定邮箱：<input type="button" value="绑定" class="layui-btn layui-btn-sm layui-btn-danger" /> </li>
-									</ul>
-								</div>
+					<div class="order">
+						<div class="order-box">
+							<div class="title">
+								我的订单
+								<span class="small">请谨防钓鱼链接或诈骗电话，<a href="#">了解更多></a></span>
 							</div>
-							<div class="portal-sub">
-								<ul class="info-list clearfix">
-									<li>
-										<img src="img/portal-icon-1.png" />
-										<div>
-											<h3>待支付的订单：<span class="num">0</span></h3>
-											<a href="#">查看待支付订单 <i class="fa fa-angle-right" style="font-size: 16px;"></i></a>
-										</div>
+							<div class="more clearfix">
+								<ul class="list clearfix">
+									<li class="active">
+										<a href="#">全部有效订单</a>
 									</li>
 									<li>
-										<img src="img/portal-icon-2.png" />
-										<div>
-											<h3>待收货的订单：<span class="num">0</span></h3>
-											<a href="#">查看待收货订单 <i class="fa fa-angle-right" style="font-size: 16px;"></i></a>
-										</div>
-
+										<a href="#">待支付</a>
 									</li>
 									<li>
-										<img src="img/portal-icon-3.png" />
-										<div>
-											<h3>待评价商品数：<span class="num">0</span></h3>
-											<a href="#">查看待评价商品 <i class="fa fa-angle-right" style="font-size: 16px;"></i></a>
-										</div>
+										<a href="#">待收货</a>
 									</li>
 									<li>
-										<img src="img/portal-icon-4.png" />
-										<div>
-											<h3>喜欢的商品：<span class="num">0</span></h3>
-											<a href="#">查看喜欢的商品 <i class="fa fa-angle-right" style="font-size: 16px;"></i></a>
-										</div>
+										<a href="#">已关闭</a>
 									</li>
 								</ul>
+								<div class="order-search">
+									<input class="layui-input" placeholder="输入商品名称、商品编号、订单号"/>
+									<div class="search">
+										<i class="fa fa-search"></i>
+									</div>
+								</div>
+							</div>
+							<div class="order-content">
+								<p>当前没有交易订单。</p>
 							</div>
 						</div>
 					</div>
@@ -313,7 +290,12 @@
 		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 		<script src="layui/layui.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/ty.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/phone.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('.order .order-box .more .list li').click(function() {
+				$(this).addClass('active');
+				$(this).siblings().removeClass('active');
+			})
+		</script>
 	</body>
 
 </html>

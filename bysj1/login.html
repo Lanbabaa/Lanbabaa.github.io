@@ -6,17 +6,21 @@
 		<meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<title>登录</title>
 		<link rel="stylesheet" type="text/css" href="css/login.css" />
-		<link rel="icon" type="text/css" href="img/logo.png"/>
+		<link rel="icon" type="text/css" href="img/logo.png" />
 	</head>
 
 	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 
 	<body>
+		<div class="logo">
+			<img src="img/dl_logo.png" />
+		</div>
 		<div class="loginBox">
-			<div class="from">
+
+			<div class="from clearfix">
 				<div class="box">
 					<div class="loginHead">
-						<span class="login">登录</span><span class="register">没有账号,快速<a href="register.html">注册</a></span>
+						<span class="login">登录</span><span class="register">没有账号?,<a href="register.html">快速注册</a></span>
 					</div>
 					<div class="loginMain">
 						<input type="text" id="user" onfocus="onfocu(this.id)" placeholder="请输入手机号" />

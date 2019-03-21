@@ -2,7 +2,7 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	background: #FFF url(/dituhui2/img/bg.png) no-repeat fixed;
+	background: #FFF url(../img/bg.png) no-repeat fixed;
 	background-size: 100%;
 }
 
@@ -27,12 +27,14 @@ label {
 	cursor: pointer;
 }
 
-.login {
-	font-size: 18px;
-	position: relative;
-	font-size: 18px;
-	color: #484848;
-	margin-bottom: 10px;
+.logo{
+	width: 200px;
+	position: absolute;
+	left: calc(50% - 100px);
+	top: calc(50% - 300px);
+}
+.logo img{
+	width: 100%;
 }
 
 .box {
